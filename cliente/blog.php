@@ -17,7 +17,7 @@ include __DIR__ . '/../partials/blog-helpers.php';
 
 <main id="contenido-principal">
     <section class="section container-a1810">
-        <h1 class="section-title" data-section="blog" data-translate="title">Historias desde Argentina</h1>
+        <h1 class="section-title title-tight" data-section="blog" data-translate="title">Historias desde Argentina</h1>
         <p class="section-lede" data-section="blog" data-translate="lede">Relatos, guías y recomendaciones para descubrir el país como lo conocemos nosotros.</p>
 
         <?php if (empty($posts)): ?>

@@ -16,7 +16,7 @@ include __DIR__ . '/../partials/head.php';
     <section class="section container-a1810">
         <div class="nosotros-intro">
             <div>
-                <h1 class="section-title" data-section="nosotros" data-translate="title">Somos jóvenes, sofisticados e intrépidos — pero antes que nada, confiables.</h1>
+                <h1 class="section-title title-tight" data-section="nosotros" data-translate="title">Somos jóvenes, sofisticados e intrépidos — pero antes que nada, confiables</h1>
                 <p class="section-lede" data-section="nosotros" data-translate="paragraph1">Argentina 1810 nace para que tu agencia disponga de un equipo local que responda con rapidez, se comunique con transparencia y cuide a tu pasajero como si fuera propio. Cuando vendes Argentina con nosotros, dejas de contratar a un proveedor y ganas un socio.</p>
                 <p class="section-lede" data-section="nosotros" data-translate="paragraph2">Elegimos colaboradores que comparten nuestros principios de respeto, transparencia y compromiso con el destino, porque cada pasajero que reciben representa también la reputación de tu agencia.</p>
             </div>
@@ -29,7 +29,7 @@ include __DIR__ . '/../partials/head.php';
             </div>
         </div>
 
-        <h2 class="section-title" style="margin-top:88px" data-section="home" data-translate="trust_title">Por qué trabajar con nosotros</h2>
+        <h2 class="section-title title-tight" style="margin-top:88px" data-section="home" data-translate="trust_title">Por qué trabajar con nosotros</h2>
         <div class="trust-coverflow">
             <button type="button" class="trust-coverflow-arrow trust-coverflow-arrow--prev" aria-label="Anterior">&#10094;</button>
             <button type="button" class="trust-coverflow-arrow trust-coverflow-arrow--next" aria-label="Siguiente">&#10095;</button>

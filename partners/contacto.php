@@ -18,7 +18,7 @@ include __DIR__ . '/../partials/head.php';
 
 <main id="contenido-principal">
     <section class="section container-a1810 contact-page">
-        <h1 class="section-title" data-section="contacto" data-translate="title">Únete como agencia socia</h1>
+        <h1 class="section-title title-tight" data-section="contacto" data-translate="title">Únete como agencia socia</h1>
         <p class="section-lede" data-section="contacto" data-translate="lede">Cuéntanos sobre tu agencia y el perfil de pasajero con el que trabajas. Te respondemos en menos de 48 horas para coordinar los próximos pasos.</p>
 
         <div class="contact-layout">

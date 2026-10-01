@@ -9,7 +9,7 @@ include __DIR__ . '/../partials/head.php';
 
 <main id="contenido-principal">
     <section class="section container-a1810">
-        <h1 class="section-title" data-section="como_trabajamos" data-translate="title">Cómo trabajamos</h1>
+        <h1 class="section-title title-tight" data-section="como_trabajamos" data-translate="title">Cómo trabajamos</h1>
         <p class="section-lede" data-section="como_trabajamos" data-translate="intro">Conocemos los destinos, los hoteles y a nuestros operadores locales… pero sobre todo, conocemos los principales desafíos a los que nos enfrentaremos juntos a lo largo de cada viaje, y sabemos cómo resolverlos para que la experiencia sea inolvidable:</p>
 
         <ol class="process-list">
@@ -20,7 +20,7 @@ include __DIR__ . '/../partials/head.php';
             <li data-section="como_trabajamos" data-translate="step5">Cerramos con un reporte de la experiencia y seguimiento posterior al viaje.</li>
         </ol>
 
-        <h2 class="section-title" style="margin-top:88px" data-section="como_trabajamos" data-translate="why_title">Por qué elegirnos</h2>
+        <h2 class="section-title title-tight" style="margin-top:88px" data-section="como_trabajamos" data-translate="why_title">Por qué elegirnos</h2>
         <div class="trust-coverflow trust-coverflow--tall">
             <button type="button" class="trust-coverflow-arrow trust-coverflow-arrow--prev" aria-label="Anterior">&#10094;</button>
             <button type="button" class="trust-coverflow-arrow trust-coverflow-arrow--next" aria-label="Siguiente">&#10095;</button>

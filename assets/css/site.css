@@ -81,6 +81,16 @@ section:nth-child(odd) {
     color: var(--color-accent);
 }
 
+/* Tighter word gaps on a specific, hand-picked set of titles (not every
+   .section-title — e.g. "Destinos" listing pages keep the default). Value
+   tuned for this ~41.6px title scale; other title sizes elsewhere use
+   their own scaled value instead of this one, since word-spacing is
+   em-based and the same ratio reads very differently at a much bigger or
+   smaller font-size. */
+.title-tight {
+    word-spacing: -0.2em;
+}
+
 .section-eyebrow {
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -1147,6 +1157,7 @@ main {
     font-size: 0.92rem;
 }
 
+
 @media (max-width: 860px) {
     .nosotros-intro {
         grid-template-columns: 1fr;
@@ -1390,11 +1401,19 @@ main {
 }
 
 /* Partners' "Por qué elegirnos" has one much longer card (Argentine Host
-   service) — needs a taller wrapper so it never scrolls; the shorter
-   "Por qué trabajar con nosotros" sets on both nosotros pages stay at the
-   compact default instead of inheriting that extra height. */
+   service) — needs a taller wrapper so it never scrolls; partners'
+   shorter "Por qué trabajar con nosotros" stays at the compact default
+   instead of inheriting that extra height. */
 .trust-coverflow--tall .trust-coverflow-wrapper {
     height: 336px;
+}
+
+/* Free Explorer's "Por qué viajar con nosotros" also has one longer card
+   ("Nunca estás solo...") — its own size tier so it doesn't scroll either,
+   without making partners' shorter set (which shares the same compact
+   default) taller than it needs to be. */
+.trust-coverflow--nosotros .trust-coverflow-wrapper {
+    height: 270px;
 }
 
 .trust-coverflow-wrapper .trust-card {
@@ -1487,6 +1506,10 @@ main {
 
     .trust-coverflow--tall .trust-coverflow-wrapper {
         height: 320px;
+    }
+
+    .trust-coverflow--nosotros .trust-coverflow-wrapper {
+        height: 330px;
     }
 }
 
@@ -1610,6 +1633,7 @@ main {
     font-family: var(--font-heading);
     text-transform: uppercase;
     font-size: 1.3rem;
+    word-spacing: -0.15em;
     margin: 0 0 10px;
     color: var(--color-accent-light);
 }
@@ -1833,6 +1857,7 @@ main {
     font-weight: 400;
     text-transform: uppercase;
     font-size: clamp(1.5rem, 2.8vw, 2rem);
+    word-spacing: -0.15em;
     line-height: 1.15;
     margin: 0;
     color: #fff;
@@ -1887,6 +1912,7 @@ main {
     font-weight: 400;
     text-transform: uppercase;
     font-size: clamp(2.4rem, 7vw, 4.6rem);
+    word-spacing: -0.08em;
     color: #fff;
     opacity: 0.9;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
@@ -2240,6 +2266,7 @@ main {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1.35rem;
+    word-spacing: -0.15em;
     margin: 8px 0;
 }
 
@@ -2360,6 +2387,7 @@ main {
     font-weight: 400;
     text-transform: uppercase;
     font-size: clamp(1.6rem, 4vw, 2.4rem);
+    word-spacing: -0.2em;
     max-width: 820px;
     margin: 8px 0 20px;
 }

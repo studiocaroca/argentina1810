@@ -22,7 +22,7 @@ $emptyLabel = ['es' => 'Itinerarios — muy pronto', 'en' => 'Itineraries — co
 
 <main id="contenido-principal">
     <section class="section container-a1810" style="text-align:center">
-        <h1 class="section-title" data-section="travel_vibe" data-translate="title">¿Cuál es tu Travel Vibe?</h1>
+        <h1 class="section-title title-tight" data-section="travel_vibe" data-translate="title">¿Cuál es tu Travel Vibe?</h1>
         <p class="section-lede" style="margin:0 auto" data-section="travel_vibe" data-translate="lede">Elige la energía de tu próximo viaje. Nosotros nos ocupamos del resto.</p>
 
         <div class="vibe-grid" id="vibe-grid">
