@@ -3,7 +3,11 @@ Disallow: /node_modules/
 Disallow: /package-lock.json
 Disallow: /package.json
 Disallow: /readme.md
-Disallow: /translations.json
+Disallow: /cliente/translations.json
+Disallow: /partners/translations.json
+Disallow: /destinos.json
+Disallow: /blog.json
+Disallow: /itinerarios.json
 Disallow: /admin/
 
-Sitemap: https://www.aptoparatodopublico.org/sitemap.xml
+Sitemap: https://www.argentina1810.com/sitemap.xml

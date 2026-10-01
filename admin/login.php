@@ -1,11 +1,9 @@
 <?php
 require __DIR__ . '/config.php';
 
-// The lock icon on the public site opens this inline (a dropdown form,
-// not a full page — see #admin-login-dropdown in index.html and its
-// handler in atp.js), submitting here via fetch with this header set.
-// Direct visits to admin/login.php (no JS, bookmarked URL, etc.) still
-// get the full classic page below as a fallback.
+// Kept AJAX-submittable (checked via this header) even though nothing on
+// the public site currently submits here via fetch — a plain form POST
+// falls back to the classic full-page flow below either way.
 $isAjax = ($_SERVER['HTTP_X_REQUESTED_WITH'] ?? '') === 'XMLHttpRequest';
 
 if (admin_is_logged_in()) {
@@ -14,7 +12,7 @@ if (admin_is_logged_in()) {
         echo json_encode(['success' => true]);
         exit;
     }
-    header('Location: index.php');
+    header('Location: destinos.php');
     exit;
 }
 
@@ -29,13 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($username === ADMIN_USERNAME && password_verify($password, ADMIN_PASSWORD_HASH)) {
             session_regenerate_id(true);
-            $_SESSION['atp_admin_logged_in'] = true;
+            $_SESSION['a1810_admin_logged_in'] = true;
             if ($isAjax) {
                 header('Content-Type: application/json');
                 echo json_encode(['success' => true]);
                 exit;
             }
-            header('Location: index.php');
+            header('Location: destinos.php');
             exit;
         }
 
@@ -57,12 +55,13 @@ $csrf = admin_csrf_token();
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
-    <title>Ingresar — Admin ATP</title>
+    <title>Ingresar — Admin Argentina 1810</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="admin-login-wrap">
-        <h1>Apto para Todo Público<br>Panel de edición</h1>
+        <a class="admin-login-back" href="/">← Volver al sitio</a>
+        <h1>Argentina 1810<br>Panel de edición</h1>
 
         <?php if ($error): ?>
             <div class="admin-alert error"><?= htmlspecialchars($error) ?></div>
@@ -80,6 +79,11 @@ $csrf = admin_csrf_token();
             </div>
             <button type="submit" class="admin-btn" style="width:100%;">Ingresar</button>
         </form>
+
+        <details class="admin-login-forgot">
+            <summary>¿Te olvidaste la contraseña?</summary>
+            <p>Este panel no tiene recuperación automática. Escribile a quien administra el sitio para que te la reestablezca.</p>
+        </details>
     </div>
 </body>
 </html>

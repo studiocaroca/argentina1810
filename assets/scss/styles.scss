@@ -1,18 +1,7 @@
 @charset "UTF-8";
 
 @import "order/variables";
-@import "order/mixins";
 @import "order/typography";
-
-:root {
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Lato", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
 
 *,
 *::after,
@@ -26,7 +15,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(52, 62, 74, 0);
+  -webkit-tap-highlight-color: rgba(114, 8, 183, 0);
 }
 
 // Most of the site's type is sized in rem, so scaling the root here
@@ -54,10 +43,7 @@ html {
   // content (AcceDER II's resource list, a play's ficha técnica) —
   // matched to the same 18px so it doesn't look mismatched sitting
   // right next to now-18px paragraphs in the same card/modal.
-  .op-block-list li,
-  .play-modal-ficha li {
-    font-size: 18px !important;
-  }
+  
 }
 
 article,
@@ -323,9 +309,7 @@ input::file-selector-button:hover {
   border: 1px solid $primary;
 }
 
-.width-limit {
-  max-width: 300px;
-}
+
 
 textarea {
   overflow: auto;
@@ -406,7 +390,7 @@ h6,
   margin-bottom: 0.5rem;
   font-weight: 900;
   line-height: 1.2;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-family-heading;
   color: $white;
   text-transform: uppercase;
 }
@@ -442,86 +426,30 @@ h6,
 }
 
 
-#logo-atp {
-  height: 32px !important;
-  width: auto !important;
-  max-width: none !important;
-  flex-shrink: 0;
-}
 
-#logo-atp2 {
-  width: 35%;
-  display: block;
-  opacity: 1;
-}
 
-.navbar-brand {
-  flex-shrink: 0;
-}
 
-#logo-insignia {
-  height: 32px;
-  width: auto;
-  display: none;
-  flex-shrink: 0;
-}
 
-@media (min-width: 800px) and (max-width: 899px) {
-  #logo-atp { display: none; }
-  #logo-insignia { display: inline-block; }
-}
+
+
+
+
+
 
 /* Navbar: no overflow */
-nav.page-navbar .container {
-  flex-wrap: nowrap;
-  overflow: visible;
-}
+
 
 // Mobile-only "Apto para todo público." wordmark, centered in the
 // navbar between the icon logo and the hamburger — links home like the
 // icon logo does. Hidden on desktop, where the icon logo already reads
 // fine on its own.
-.navbar-brand-text {
-  display: none;
-}
 
-@media (max-width: 700px) {
-  nav.page-navbar .container {
-    position: relative;
-  }
 
-  .navbar-brand-text {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: $dark-blue;
-    font-weight: 700;
-    font-size: 0.85rem;
-    white-space: nowrap;
-    text-decoration: none;
-  }
 
-  .navbar-brand-text-accent {
-    color: $primary;
-  }
 
-  .navbar-brand-text-dot {
-    color: $ocre;
-  }
-}
 
-nav.page-navbar .navbar-nav {
-  flex-wrap: nowrap;
-  flex-shrink: 1;
-  min-width: 0;
-}
 
-nav.page-navbar .nav-item {
-  flex-shrink: 1;
-  min-width: 0;
-}
+
 
 /* Reducir espacio entre items del menú a medida que achica */
 @media (min-width: 800px) and (max-width: 879px) {
@@ -532,7 +460,7 @@ nav.page-navbar .nav-item {
     padding-right: 0.15rem;
     padding-left: 0.15rem;
   }
-  .flags { display: none; }
+  
 }
 
 @media (min-width: 880px) and (max-width: 999px) {
@@ -541,7 +469,7 @@ nav.page-navbar .nav-item {
     font-size: 0.58rem;
     letter-spacing: 0.02em;
   }
-  .flags { display: none; }
+  
 }
 
 @media (min-width: 1000px) and (max-width: 1150px) {
@@ -560,9 +488,7 @@ nav.page-navbar .nav-item {
 }
 
 
-#logo-atp-blanco {
-  width: 60%;
-}
+
 
 @keyframes whatsappShake {
   0%, 100% { transform: scale(1) rotate(0deg); }
@@ -574,85 +500,25 @@ nav.page-navbar .nav-item {
 }
 
 /* Estilos para el botón flotante */
-.whatsapp-button {
-  animation: whatsappShake 5s ease-in-out infinite;
-  position: fixed;
-  // Bumped up to leave room for .scroll-button below it.
-  bottom: 95px;
-  right: 20px;
-  background-color: $primary;
-  color: $white;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 24px;
-  text-align: center;
-  line-height: 60px;
-  box-shadow: 0 2px 5px rgba(52, 62, 74, 0.3);
-  cursor: pointer;
-  z-index: 1000;
-}
+
 
 /* Estilos para el ícono de WhatsApp */
-.whatsapp-button i {
-  font-size: 30px;
-}
+
 
 // Press-and-hold scroll button — sits where the WhatsApp button used to
 // be. JS flips the icon/direction between down and up depending on
 // whether the page is scrolled to the bottom.
-.scroll-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: $celeste;
-  color: $dark-blue;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 22px;
-  text-align: center;
-  line-height: 60px;
-  box-shadow: 0 2px 5px rgba(52, 62, 74, 0.3);
-  cursor: pointer;
-  z-index: 1000;
-  transition: background-color 0.15s ease-in-out;
 
-  &:hover {
-    background-color: darken($celeste, 15%);
-  }
-}
 
-.lead {
-  font-size: 1.25rem;
-  font-weight: 300;
-}
 
-.display-1 {
-  font-size: 6rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
 
-.display-2 {
-  font-size: 5.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
 
-.display-3 {
-  font-size: 4.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
 
-.display-4 {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
+
+
+
+
+
 
 hr {
   margin-top: 1rem;
@@ -678,192 +544,61 @@ a>code {
 }
 
 
-.container {
-  width: 80%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
 
-.margin-right {
-  margin-right: 30px;
-}
 
-.margin-left {
-  margin-left: 30px;
-}
 
-.margin-top {
-  margin-top: 20px;
-}
 
-.form-control {
-  display: block;
-  width: 100%;
-  height: calc(1.5em + 0.8rem + 2px);
-  padding: 0.4rem 0.78rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: $white;
-  background-color: rgba(255, 255, 255, 0.07);
-  background-clip: padding-box;
-  border: 1px solid rgba(222, 58, 26, 0.3);
-  border-radius: 0.2rem;
-  -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
 
-@media (prefers-reduced-motion: reduce) {
-  .form-control {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
 
-.form-control::-ms-expand {
-  background-color: transparent;
-  border: 0;
-}
 
-.form-control:focus {
-  color: $white;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: $primary;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(222, 58, 26, 0.3);
-}
 
-.form-control::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.4);
-  opacity: 1;
-}
 
-.form-control::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.4);
-  opacity: 1;
-}
 
-.form-control:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.4);
-  opacity: 1;
-}
 
-.form-control::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.4);
-  opacity: 1;
-}
 
-.form-control::placeholder {
-  color: rgba(255, 255, 255, 0.4);
-  opacity: 1;
-}
 
-.form-control:disabled,
-.form-control[readonly] {
-  background-color: rgba(255, 255, 255, 0.04);
-  opacity: 1;
-}
 
-select.form-control:focus::-ms-value {
-  color: $gray-500;
-  background-color: $white;
-}
 
-.form-control-file,
-.form-control-range {
-  display: block;
-  width: 100%;
-}
 
-.col-form-label {
-  padding-top: calc(0.4rem + 1px);
-  padding-bottom: calc(0.4rem + 1px);
-  margin-bottom: 0;
-  font-size: inherit;
-  line-height: 1.5;
-}
 
-.col-form-label-lg {
-  padding-top: calc(0.8rem + 1px);
-  padding-bottom: calc(0.8rem + 1px);
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
 
-.col-form-label-sm {
-  padding-top: calc(0.25rem + 1px);
-  padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
 
-.form-control-plaintext {
-  display: block;
-  width: 100%;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  margin-bottom: 0;
-  line-height: 1.5;
-  color: $gray-500;
-  background-color: transparent;
-  border: solid transparent;
-  border-width: 1px 0;
-}
 
-.form-control-plaintext.form-control-sm,
-.form-control-plaintext.form-control-lg {
-  padding-right: 0;
-  padding-left: 0;
-}
 
-.form-control-sm {
-  height: calc(1.5em + 0.5rem + 2px);
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  border-radius: 0.1rem;
-}
 
-.form-control-lg {
-  height: calc(1.5em + 1.6rem + 2px);
-  padding: 0.8rem 1.6rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: 0.15rem;
-}
 
-select.form-control[size],
-select.form-control[multiple] {
-  height: auto;
-}
 
-textarea.form-control {
-  height: auto;
-}
 
-.form-group {
-  margin-bottom: 1rem;
-  width: 100%;
-}
 
-.form-text {
-  display: block;
-  margin-top: 0.25rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .form-row {
   display: -webkit-box;
@@ -883,952 +618,247 @@ textarea.form-control {
   padding-left: 5px;
 }
 
-.form-check {
-  position: relative;
-  display: block;
-  padding-left: 1.25rem;
-}
-
-.form-check-input {
-  position: absolute;
-  margin-top: 0.3rem;
-  margin-left: -1.25rem;
-}
-
-.form-check-input:disabled~.form-check-label {
-  color: $gray-500
-}
-
-.form-check-label {
-  margin-bottom: 0;
-}
-
-.form-check-inline {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-left: 0;
-  margin-right: 0.75rem;
-}
-
-.form-check-inline .form-check-input {
-  position: static;
-  margin-top: 0;
-  margin-right: 0.3125rem;
-  margin-left: 0;
-}
-
-.form-inline {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.form-inline .form-check {
-  width: 100%;
-}
-
-@media (min-width: 576px) {
-  .form-inline label {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 0;
-  }
-
-  .form-inline .form-group {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 0;
-  }
-
-  .form-inline .form-control {
-    display: inline-block;
-    width: auto;
-    vertical-align: middle;
-  }
-
-  .form-inline .form-control-plaintext {
-    display: inline-block;
-  }
-
-  .form-inline .input-group,
-  .form-inline .custom-select {
-    width: auto;
-  }
-
-  .form-inline .form-check {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: auto;
-    padding-left: 0;
-  }
-
-  .form-inline .form-check-input {
-    position: relative;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    margin-top: 0;
-    margin-right: 0.25rem;
-    margin-left: 0;
-  }
-
-  .form-inline .custom-control {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .form-inline .custom-control-label {
-    margin-bottom: 0;
-  }
-}
-
-.btn {
-  display: inline-block;
-  font-weight: 400;
-  color: $gray-500;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.4rem 0.78rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.2rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .btn {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.btn:hover {
-  color: $gray-500;
-  text-decoration: none;
-}
-
-.btn:focus,
-.btn.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem $primary-light;
-}
-
-.btn.disabled,
-.btn:disabled {
-  opacity: 0.65;
-}
-
-a.btn.disabled,
-fieldset:disabled a.btn {
-  pointer-events: none;
-}
-
-.btn-primary {
-  color: $white;
-  background-color: $primary;
-  border-color: $primary;
-}
-
-.btn-primary:hover {
-  color: $black;
-  background-color: $secondary;
-  border-color: $secondary;
-}
-
-.btn-primary:focus,
-.btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem $primary-dark;
-}
-
-.btn-primary.disabled,
-.btn-primary:disabled {
-  color: $white;
-  background-color: $primary;
-  border-color: $primary;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled).active,
-.show>.btn-primary.dropdown-toggle {
-  color: $white;
-  background-color: $primary-dark;
-  border-color: $primary-dark;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(217, 182, 44, 0.5);
-}
-
-.btn-secondary {
-  color: $white;
-  background-color: $secondary;
-  border-color: $secondary;
-}
-
-.btn-secondary:hover {
-  color: $white;
-  background-color: $gray-500;
-  border-color: $gray-500;
-}
-
-.btn-secondary:focus,
-.btn-secondary.focus {
-  box-shadow: $gray-500;
-}
-
-.btn-secondary.disabled,
-.btn-secondary:disabled {
-  color: $white;
-  background-color: $gray-500;
-  border-color: $gray-500;
-}
-
-.btn-secondary:not(:disabled):not(.disabled):active,
-.btn-secondary:not(:disabled):not(.disabled).active,
-.show>.btn-secondary.dropdown-toggle {
-  color: $white;
-  background-color: $gray-500;
-  border-color: $gray-500;
-}
-
-.btn-secondary:not(:disabled):not(.disabled):active:focus,
-.btn-secondary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-secondary.dropdown-toggle:focus {
-  box-shadow: $gray-500;
-}
-
-.btn-outline-primary {
-  color: $primary;
-  border-color: $primary;
-}
-
-.btn-outline-primary:hover {
-  color: $white;
-  background-color: $primary;
-  border-color: $primary;
-}
-
-.btn-outline-primary:focus,
-.btn-outline-primary.focus {
-  box-shadow: 0 0 0 0.2rem $primary-light;
-}
-
-.btn-outline-primary.disabled,
-.btn-outline-primary:disabled {
-  color: $primary;
-  background-color: transparent;
-}
-
-.btn-outline-primary:not(:disabled):not(.disabled):active,
-.btn-outline-primary:not(:disabled):not(.disabled).active,
-.show>.btn-outline-primary.dropdown-toggle {
-  color: $white;
-  background-color: $primary;
-  border-color: $primary;
-}
-
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
-.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem $primary-light;
-}
-
-.btn-outline-secondary {
-  color: $gray-500;
-  border-color: $gray-500;
-}
-
-.btn-outline-secondary:hover {
-  color: $white;
-  background-color: $gray-500;
-  border-color: $gray-500;
-}
-
-.btn-outline-secondary:focus,
-.btn-outline-secondary.focus {
-  box-shadow: 0 0 0 0.2rem $gray-500
-}
-
-.btn-outline-secondary.disabled,
-.btn-outline-secondary:disabled {
-  color: $gray-500;
-  background-color: transparent;
-}
-
-.btn-outline-secondary:not(:disabled):not(.disabled):active,
-.btn-outline-secondary:not(:disabled):not(.disabled).active,
-.show>.btn-outline-secondary.dropdown-toggle {
-  color: $white;
-  background-color: $gray-500;
-  border-color: $gray-500;
-}
-
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
-.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-outline-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem $gray-500
-}
-
-.btn-lg,
-.btn-group-lg>.btn {
-  padding: 0.8rem 1.6rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: 0.15rem;
-}
-
-.btn-sm,
-.btn-group-sm>.btn {
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  border-radius: 0.1rem;
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-.btn-block+.btn-block {
-  margin-top: 0.5rem;
-}
-
-input[type="submit"].btn-block,
-input[type="reset"].btn-block,
-input[type="button"].btn-block {
-  width: 100%;
-}
-
-.fade {
-  -webkit-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .fade {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.fade:not(.show) {
-  opacity: 0;
-}
-
-.collapse:not(.show) {
-  display: none;
-}
-
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-  transition: height 0.35s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .collapsing {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.input-group {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  width: 100%;
-}
-
-.input-group>.form-control,
-.input-group>.form-control-plaintext,
-.input-group>.custom-select,
-.input-group>.custom-file {
-  position: relative;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  width: 1%;
-  margin-bottom: 0;
-}
-
-.input-group>.form-control+.form-control,
-.input-group>.form-control+.custom-select,
-.input-group>.form-control+.custom-file,
-.input-group>.form-control-plaintext+.form-control,
-.input-group>.form-control-plaintext+.custom-select,
-.input-group>.form-control-plaintext+.custom-file,
-.input-group>.custom-select+.form-control,
-.input-group>.custom-select+.custom-select,
-.input-group>.custom-select+.custom-file,
-.input-group>.custom-file+.form-control,
-.input-group>.custom-file+.custom-select,
-.input-group>.custom-file+.custom-file {
-  margin-left: -1px;
-}
-
-.input-group>.form-control:focus,
-.input-group>.custom-select:focus,
-.input-group>.custom-file .custom-file-input:focus~.custom-file-label {
-  z-index: 3;
-}
-
-.input-group>.custom-file .custom-file-input:focus {
-  z-index: 4;
-}
-
-.input-group>.form-control:not(:last-child),
-.input-group>.custom-select:not(:last-child) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.input-group>.form-control:not(:first-child),
-.input-group>.custom-select:not(:first-child) {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.input-group>.custom-file {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.input-group>.custom-file:not(:last-child) .custom-file-label,
-.input-group>.custom-file:not(:last-child) .custom-file-label::after {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.input-group>.custom-file:not(:first-child) .custom-file-label {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.input-group-prepend,
-.input-group-append {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.input-group-prepend .btn,
-.input-group-append .btn {
-  position: relative;
-  z-index: 2;
-}
-
-.input-group-prepend .btn:focus,
-.input-group-append .btn:focus {
-  z-index: 3;
-}
-
-.input-group-prepend .btn+.btn,
-.input-group-prepend .btn+.input-group-text,
-.input-group-prepend .input-group-text+.input-group-text,
-.input-group-prepend .input-group-text+.btn,
-.input-group-append .btn+.btn,
-.input-group-append .btn+.input-group-text,
-.input-group-append .input-group-text+.input-group-text,
-.input-group-append .input-group-text+.btn {
-  margin-left: -1px;
-}
-
-.input-group-prepend {
-  margin-right: -1px;
-}
-
-.input-group-append {
-  margin-left: -1px;
-}
-
-.input-group-text {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0.4rem 0.78rem;
-  margin-bottom: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: $gray-500;
-  text-align: center;
-  white-space: nowrap;
-  background-color: $white;
-  border: 1px solid rgba($dark-blue, 0.25);
-  border-radius: 0.2rem;
-}
-
-.input-group-text input[type="radio"],
-.input-group-text input[type="checkbox"] {
-  margin-top: 0;
-}
-
-.input-group-lg>.form-control:not(textarea),
-.input-group-lg>.custom-select {
-  height: calc(1.5em + 1.6rem + 2px);
-}
-
-.input-group-lg>.form-control,
-.input-group-lg>.custom-select,
-.input-group-lg>.input-group-prepend>.input-group-text,
-.input-group-lg>.input-group-append>.input-group-text,
-.input-group-lg>.input-group-prepend>.btn,
-.input-group-lg>.input-group-append>.btn {
-  padding: 0.8rem 1.6rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: 0.15rem;
-}
-
-.input-group-sm>.form-control:not(textarea),
-.input-group-sm>.custom-select {
-  height: calc(1.5em + 0.5rem + 2px);
-}
-
-.input-group-sm>.form-control,
-.input-group-sm>.custom-select,
-.input-group-sm>.input-group-prepend>.input-group-text,
-.input-group-sm>.input-group-append>.input-group-text,
-.input-group-sm>.input-group-prepend>.btn,
-.input-group-sm>.input-group-append>.btn {
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  border-radius: 0.1rem;
-}
-
-.input-group-lg>.custom-select,
-.input-group-sm>.custom-select {
-  padding-right: 1.78rem;
-}
-
-.input-group>.input-group-prepend>.btn,
-.input-group>.input-group-prepend>.input-group-text,
-.input-group>.input-group-append:not(:last-child)>.btn,
-.input-group>.input-group-append:not(:last-child)>.input-group-text,
-.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle),
-.input-group>.input-group-append:last-child>.input-group-text:not(:last-child) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.input-group>.input-group-append>.btn,
-.input-group>.input-group-append>.input-group-text,
-.input-group>.input-group-prepend:not(:first-child)>.btn,
-.input-group>.input-group-prepend:not(:first-child)>.input-group-text,
-.input-group>.input-group-prepend:first-child>.btn:not(:first-child),
-.input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child) {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.custom-control {
-  position: relative;
-  display: block;
-  min-height: 1.5rem;
-  padding-left: 1.5rem;
-}
-
-.custom-control-inline {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 1rem;
-}
-
-.custom-control-input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.custom-control-input:checked~.custom-control-label::before {
-  color: $white;
-  border-color: $primary;
-  background-color: $primary;
-}
-
-.custom-control-input:focus~.custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem $primary-light;
-}
-
-.custom-control-input:focus:not(:checked)~.custom-control-label::before {
-  border-color: $secondary-light;
-}
-
-.custom-control-input:not(:disabled):active~.custom-control-label::before {
-  color: $white;
-  background-color: $white;
-  border-color: $white;
-}
-
-.custom-control-input:disabled~.custom-control-label {
-  color: $gray-500;
-}
-
-.custom-control-input:disabled~.custom-control-label::before {
-  background-color: $white;
-}
-
-.custom-control-label {
-  position: relative;
-  margin-bottom: 0;
-  vertical-align: top;
-}
-
-.custom-control-label::before {
-  position: absolute;
-  top: 0.25rem;
-  left: -1.5rem;
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  pointer-events: none;
-  content: "";
-  background-color: $white;
-  border: $gray-500 solid 1px;
-}
-
-.custom-control-label::after {
-  position: absolute;
-  top: 0.25rem;
-  left: -1.5rem;
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  content: "";
-  background: no-repeat 50% / 50% 50%;
-}
-
-.custom-checkbox .custom-control-label::before {
-  border-radius: 0.2rem;
-}
-
-.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
-}
-
-.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
-  border-color: $primary;
-  background-color: $primary;
-}
-
-.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3e%3cpath stroke='%23fff' d='M0 2h4'/%3e%3c/svg%3e");
-}
-
-.custom-checkbox .custom-control-input:disabled:checked~.custom-control-label::before {
-  background-color: $primary-light;
-}
-
-.custom-checkbox .custom-control-input:disabled:indeterminate~.custom-control-label::before {
-  background-color: $primary-light;
-}
-
-.custom-radio .custom-control-label::before {
-  border-radius: 50%;
-}
-
-.custom-radio .custom-control-input:checked~.custom-control-label::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-}
-
-.custom-radio .custom-control-input:disabled:checked~.custom-control-label::before {
-  background-color: $primary-light;
-}
-
-.custom-switch {
-  padding-left: 2.25rem;
-}
-
-.custom-switch .custom-control-label::before {
-  left: -2.25rem;
-  width: 1.75rem;
-  pointer-events: all;
-  border-radius: 0.5rem;
-}
-
-.custom-switch .custom-control-label::after {
-  top: calc(0.25rem + 2px);
-  left: calc(-2.25rem + 2px);
-  width: calc(1rem - 4px);
-  height: calc(1rem - 4px);
-  background-color: $gray-500;
-  border-radius: 0.5rem;
-  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
-  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .custom-switch .custom-control-label::after {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.custom-switch .custom-control-input:checked~.custom-control-label::after {
-  background-color: $white;
-  -webkit-transform: translateX(0.75rem);
-  -ms-transform: translateX(0.75rem);
-  transform: translateX(0.75rem);
-}
-
-.custom-switch .custom-control-input:disabled:checked~.custom-control-label::before {
-  background-color: $primary-light;
-}
-
-.custom-select {
-  display: inline-block;
-  width: 100%;
-  height: calc(1.5em + 0.8rem + 2px);
-  padding: 0.4rem 1.78rem 0.4rem 0.78rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: $gray-500;
-  vertical-align: middle;
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.78rem center/8px 10px;
-  background-color: $white;
-  border: 1px solid rgba($dark-blue, 0.25);
-  border-radius: 0.2rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.custom-select:focus {
-  border-color: $secondary-light;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem $primary-light;
-}
-
-.custom-select:focus::-ms-value {
-  color: $gray-500;
-  background-color: $white;
-}
-
-.custom-select[multiple],
-.custom-select[size]:not([size="1"]) {
-  height: auto;
-  padding-right: 0.78rem;
-  background-image: none;
-}
-
-.custom-select:disabled {
-  color: $gray-500;
-  background-color: $white;
-}
-
-.custom-select::-ms-expand {
-  display: none;
-}
-
-.custom-select-sm {
-  height: calc(1.5em + 0.5rem + 2px);
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.5rem;
-  font-size: 0.875rem;
-}
-
-.custom-select-lg {
-  height: calc(1.5em + 1.6rem + 2px);
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-left: 1.6rem;
-  font-size: 1.25rem;
-}
-
-.custom-file {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: calc(1.5em + 0.8rem + 2px);
-  margin-bottom: 0;
-}
-
-.custom-file-input {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: calc(1.5em + 0.8rem + 2px);
-  margin: 0;
-  opacity: 0;
-}
-
-.custom-file-input:focus~.custom-file-label {
-  border-color: $secondary-light;
-  box-shadow: 0 0 0 0.2rem $primary-light;
-}
-
-.custom-file-input:disabled~.custom-file-label {
-  background-color: $white;
-}
-
-.custom-file-input:lang(en)~.custom-file-label::after {
-  content: "Browse";
-}
-
-.custom-file-input~.custom-file-label[data-browse]::after {
-  content: attr(data-browse);
-}
-
-.custom-file-label {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  height: calc(1.5em + 0.8rem + 2px);
-  padding: 0.4rem 0.78rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: $gray-500;
-  background-color: $white;
-  border: 1px solid rgba($dark-blue, 0.25);
-  border-radius: 0.2rem;
-}
-
-.custom-file-label::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
-  display: block;
-  height: calc(1.5em + 0.8rem);
-  padding: 0.4rem 0.78rem;
-  line-height: 1.5;
-  color: $gray-500;
-  content: "Browse";
-  background-color: $white;
-  border-left: inherit;
-  border-radius: 0 0.2rem 0.2rem 0;
-}
-
-.custom-control-label::before,
-.custom-file-label,
-.custom-select {
-  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-  .custom-control-label::before,
-  .custom-file-label,
-  .custom-select {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.nav {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav-link {
   display: block;
@@ -1846,13 +876,9 @@ input[type="button"].btn-block {
   cursor: default;
 }
 
-.nav-tabs {
-  border-bottom: 1px solid $white;
-}
 
-.nav-tabs .nav-item {
-  margin-bottom: -1px;
-}
+
+
 
 .nav-tabs .nav-link {
   border: 1px solid transparent;
@@ -1878,11 +904,7 @@ input[type="button"].btn-block {
   border-color: $white $white $white;
 }
 
-.nav-tabs .dropdown-menu {
-  margin-top: -1px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
+
 
 .nav-pills .nav-link {
   border-radius: 0.2rem;
@@ -1894,220 +916,63 @@ input[type="button"].btn-block {
   background-color: $primary;
 }
 
-.nav-fill .nav-item {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  text-align: center;
-}
 
-.nav-justified .nav-item {
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  text-align: center;
-}
 
-.tab-content>.tab-pane {
-  display: none;
-}
 
-.tab-content>.active {
-  display: block;
-}
 
-.navbar {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-}
 
-.navbar>.container,
-.navbar>.container-fluid {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
 
-.navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
-}
 
-.navbar-brand:hover,
-.navbar-brand:focus {
-  text-decoration: none;
-}
 
-.navbar-nav {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
+
+
+
+
+
+
+
+
+
 
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
 }
 
-.navbar-nav .dropdown-menu {
-  position: static;
-  float: none;
-}
 
-.navbar-text {
-  display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
 
-.navbar-collapse {
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
 
-.navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.2rem;
-}
 
-.navbar-toggler:hover,
-.navbar-toggler:focus {
-  text-decoration: none;
-}
 
-.navbar-toggler-icon {
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  vertical-align: middle;
-  content: "";
-  background: no-repeat center center;
-  background-size: 100% 100%;
-}
 
-.navbar-expand {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
 
-.navbar-expand>.container,
-.navbar-expand>.container-fluid {
-  padding-right: 0;
-  padding-left: 0;
-}
 
-.navbar-expand .navbar-nav {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
 
-.navbar-expand .navbar-nav .dropdown-menu {
-  position: absolute;
-}
+
+
+
+
+
+
+
+
+
+
 
 .navbar-expand .navbar-nav .nav-link {
   padding-right: 0.7rem;
   padding-left: 0.7rem;
 }
 
-.navbar-expand>.container,
-.navbar-expand>.container-fluid {
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-}
 
-.navbar-expand .navbar-collapse {
-  display: -webkit-box !important;
-  display: -webkit-flex !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-}
 
-.navbar-expand .navbar-toggler {
-  display: none;
-}
 
-.navbar-light .navbar-brand {
-  color: $primary;
-}
 
-.navbar-light .navbar-brand:hover,
-.navbar-light .navbar-brand:focus {
-  color: $primary;
-}
+
+
+
+
+
 
 .navbar-light .navbar-nav .nav-link {
   color: $gray-500;
@@ -2119,7 +984,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(52, 62, 74, 0.3);
+  color: rgba(114, 8, 183, 0.3);
 }
 
 .navbar-light .navbar-nav .show>.nav-link,
@@ -2129,37 +994,19 @@ input[type="button"].btn-block {
   color: $primary;
 }
 
-.navbar-light .navbar-toggler {
-  color: $black;
-  background-color: rgba($color: $black, $alpha: 0.12);
-}
 
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  color: $black;
-}
 
-.navbar-light .navbar-text {
-  color: $gray-500;
-}
 
-.navbar-light .navbar-text a {
-  color: $primary;
-}
 
-.navbar-light .navbar-text a:hover,
-.navbar-light .navbar-text a:focus {
-  color: $primary;
-}
 
-.navbar-dark .navbar-brand {
-  color: $primary;
-}
 
-.navbar-dark .navbar-brand:hover,
-.navbar-dark .navbar-brand:focus {
-  color: $primary;
-}
+
+
+
+
+
+
+
 
 .navbar-dark .navbar-nav .nav-link {
   color: $white;
@@ -2181,108 +1028,41 @@ input[type="button"].btn-block {
   color: $primary;
 }
 
-.navbar-dark .navbar-toggler {
-  color: $white;
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-dark .navbar-text {
-  color: $white;
-}
-
-.navbar-dark .navbar-text a {
-  color: $primary;
-}
-
-.navbar-dark .navbar-text a:hover,
-.navbar-dark .navbar-text a:focus {
-  color: $primary;
-}
 
 
-.alert {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.2rem;
-}
-
-.alert-heading {
-  color: inherit;
-}
-
-.alert-link {
-  font-weight: 700;
-}
-
-.alert-dismissible {
-  padding-right: 4rem;
-}
-
-.alert-dismissible .close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0.75rem 1.25rem;
-  color: inherit;
-}
-
-.media {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
-.media-body {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
 
 
-.close {
-  float: right;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1;
-  color: $black;
-  text-shadow: 0 1px 0 $white;
-  opacity: .5;
-}
 
-.close:hover {
-  color: $black;
-  text-decoration: none;
-}
 
-.close:not(:disabled):not(.disabled):hover,
-.close:not(:disabled):not(.disabled):focus {
-  opacity: .75;
-}
 
-button.close {
-  padding: 0;
-  background-color: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
 
-a.close.disabled {
-  pointer-events: none;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .modal-open {
   overflow: hidden;
@@ -2293,575 +1073,174 @@ a.close.disabled {
   overflow-y: auto;
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1050;
-  display: none;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  outline: 0;
-  text-align: left;
-}
-
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 0.5rem;
-  pointer-events: none;
-}
-
-.modal.fade .modal-dialog {
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  -webkit-transform: translate(0, -50px);
-  -ms-transform: translate(0, -50px);
-  transform: translate(0, -50px);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .modal.fade .modal-dialog {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.modal.show .modal-dialog {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-}
-
-.modal-dialog-scrollable {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-height: calc(100% - 1rem);
-}
-
-.modal-dialog-scrollable .modal-content {
-  max-height: calc(100vh - 1rem);
-  overflow: hidden;
-}
-
-.modal-dialog-scrollable .modal-header,
-.modal-dialog-scrollable .modal-footer {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.modal-dialog-scrollable .modal-body {
-  overflow-y: auto;
-}
-
-.modal-dialog-centered {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  min-height: calc(100% - 1rem);
-}
-
-.modal-dialog-centered::before {
-  display: block;
-  height: calc(100vh - 1rem);
-  content: "";
-}
-
-.modal-dialog-centered.modal-dialog-scrollable {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.modal-dialog-centered.modal-dialog-scrollable .modal-content {
-  max-height: none;
-}
-
-.modal-dialog-centered.modal-dialog-scrollable::before {
-  content: none;
-}
-
-.modal-content {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  pointer-events: auto;
-  background-color: $black;
-  background-clip: padding-box;
-  border: 1px solid rgba(222, 58, 26, 0.3);
-  border-radius: 0.15rem;
-  outline: 0;
-}
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1040;
-  width: 100vw;
-  height: 100vh;
-  background-color: $black;
-}
-
-.modal-backdrop.fade {
-  opacity: 0;
-}
-
-.modal-backdrop.show {
-  opacity: 0.5;
-}
-
-.modal-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-  border-bottom: 1px solid $gray-500;
-  border-top-left-radius: 0.15rem;
-  border-top-right-radius: 0.15rem;
-}
-
-.modal-header .close {
-  padding: 1rem 1rem;
-  margin: -1rem -1rem -1rem auto;
-}
-
-.modal-title {
-  margin-bottom: 0;
-  line-height: 1.5;
-}
-
-.modal-body {
-  position: relative;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 1rem;
-}
-
-.modal-footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  padding: 1rem;
-  border-top: 1px solid $gray-500;
-  border-bottom-right-radius: 0.15rem;
-  border-bottom-left-radius: 0.15rem;
-}
-
-.modal-footer> :not(:first-child) {
-  margin-left: .25rem;
-}
-
-.modal-footer> :not(:last-child) {
-  margin-right: .25rem;
-}
-
-.modal-scrollbar-measure {
-  position: absolute;
-  top: -9999px;
-  width: 50px;
-  height: 50px;
-  overflow: scroll;
-}
-
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 500px;
-    margin: 1.75rem auto;
-  }
-
-  .modal-dialog-scrollable {
-    max-height: calc(100% - 3.5rem);
-  }
-
-  .modal-dialog-scrollable .modal-content {
-    max-height: calc(100vh - 3.5rem);
-  }
-
-  .modal-dialog-centered {
-    min-height: calc(100% - 3.5rem);
-  }
-
-  .modal-dialog-centered::before {
-    height: calc(100vh - 3.5rem);
-  }
-
-  .modal-sm {
-    max-width: 300px;
-  }
-}
-
-@media (min-width: 992px) {
-
-  .modal-lg,
-  .modal-xl {
-    max-width: 800px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .modal-xl {
-    max-width: 1140px;
-  }
-}
-
-.align-baseline {
-  vertical-align: baseline !important;
-}
-
-.align-top {
-  vertical-align: top !important;
-}
-
-.align-middle {
-  vertical-align: middle !important;
-}
-
-.align-bottom {
-  vertical-align: bottom !important;
-}
-
-.align-text-bottom {
-  vertical-align: text-bottom !important;
-}
-
-.align-text-top {
-  vertical-align: text-top !important;
-}
-
-.bg-primary {
-  background-color: $primary !important;
-}
-
-a.bg-primary:hover,
-a.bg-primary:focus,
-button.bg-primary:hover,
-button.bg-primary:focus {
-  background-color: $primary-dark !important;
-}
-
-.bg-secondary {
-  background-color: $gray-500 !important;
-}
-
-a.bg-secondary:hover,
-a.bg-secondary:focus,
-button.bg-secondary:hover,
-button.bg-secondary:focus {
-  background-color: $gray-500 !important;
-}
-
-
-.border-0 {
-  border: 0 !important;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: normal !important;
-  -webkit-flex-direction: row !important;
-  -ms-flex-direction: row !important;
-  flex-direction: row !important;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-  -webkit-flex-direction: column !important;
-  -ms-flex-direction: column !important;
-  flex-direction: column !important;
-
-}
-
-.justify-content-start {
-  -webkit-box-pack: start !important;
-  -webkit-justify-content: flex-start !important;
-  -ms-flex-pack: start !important;
-  justify-content: flex-start !important;
-}
-
-.justify-content-end {
-  -webkit-box-pack: end !important;
-  -webkit-justify-content: flex-end !important;
-  -ms-flex-pack: end !important;
-  justify-content: flex-end !important;
-}
-
-.justify-content-center {
-  -webkit-box-pack: center !important;
-  -webkit-justify-content: center !important;
-  -ms-flex-pack: center !important;
-  justify-content: center !important;
-}
-
-.justify-content-between {
-  -webkit-box-pack: justify !important;
-  -webkit-justify-content: space-between !important;
-  -ms-flex-pack: justify !important;
-  justify-content: space-between !important;
-}
-
-.justify-content-around {
-  -webkit-justify-content: space-around !important;
-  -ms-flex-pack: distribute !important;
-  justify-content: space-around !important;
-}
-
-.align-items-start {
-  -webkit-box-align: start !important;
-  -webkit-align-items: flex-start !important;
-  -ms-flex-align: start !important;
-  align-items: flex-start !important;
-}
-
-.align-items-end {
-  -webkit-box-align: end !important;
-  -webkit-align-items: flex-end !important;
-  -ms-flex-align: end !important;
-  align-items: flex-end !important;
-}
-
-.align-items-center {
-  -webkit-box-align: center !important;
-  -webkit-align-items: center !important;
-  -ms-flex-align: center !important;
-  align-items: center !important;
-}
-
-.align-items-baseline {
-  -webkit-box-align: baseline !important;
-  -webkit-align-items: baseline !important;
-  -ms-flex-align: baseline !important;
-  align-items: baseline !important;
-}
-
-.align-items-stretch {
-  -webkit-box-align: stretch !important;
-  -webkit-align-items: stretch !important;
-  -ms-flex-align: stretch !important;
-  align-items: stretch !important;
-}
-
-.position-static {
-  position: static !important;
-}
-
-.position-relative {
-  position: relative !important;
-}
-
-.position-absolute {
-  position: absolute !important;
-}
-
-.position-fixed {
-  position: fixed !important;
-}
-
-.position-sticky {
-  position: -webkit-sticky !important;
-  position: sticky !important;
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-.fixed-bottom {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-@supports ((position: -webkit-sticky) or (position: sticky)) {
-  .sticky-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  overflow: visible;
-  clip: auto;
-  white-space: normal;
-}
-
-.shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(52, 62, 74, 0.075) !important;
-}
-
-.shadow {
-  box-shadow: 0 1px 1px rgba(52, 62, 74, 0.2) !important;
-}
-
-.shadow-lg {
-  box-shadow: 0 1rem 3rem rgba(52, 62, 74, 0.175) !important;
-}
-
-.shadow-none {
-  box-shadow: none !important;
-}
-
-.w-25 {
-  width: 25% !important;
-}
-
-.w-50 {
-  width: 50% !important;
-}
-
-.w-75 {
-  width: 75% !important;
-}
-
-.w-100 {
-  width: 100% !important;
-}
-
-.w-auto {
-  width: auto !important;
-}
-
-.h-25 {
-  height: 25% !important;
-}
-
-.h-50 {
-  height: 50% !important;
-}
-
-.h-75 {
-  height: 75% !important;
-}
-
-.h-100 {
-  height: 100% !important;
-}
-
-.h-auto {
-  height: auto !important;
-}
-
-.mw-100 {
-  max-width: 100% !important;
-}
-
-.mh-100 {
-  max-height: 100% !important;
-}
-
-.min-vw-100 {
-  min-width: 100vw !important;
-}
-
-.min-vh-100 {
-  min-height: 100vh !important;
-}
-
-.vw-100 {
-  width: 100vw !important;
-}
-
-.vh-100 {
-  height: 100vh !important;
-}
-
-.stretched-link::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: auto;
-  content: "";
-  background-color: rgba(52, 62, 74, 0);
-}
-
-.visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Contact form's spam honeypot (see index.html / contact.php) — unlike
 // .visually-hidden above, this needs to disappear for EVERYONE (mouse,
@@ -2870,226 +1249,89 @@ button.bg-secondary:focus {
 // whole point is that only a bot blindly filling every input finds it.
 // aria-hidden + tabindex="-1" on the field itself (see index.html)
 // handle the AT/keyboard side; this just moves it off-screen.
-.hp-field {
-  position: absolute !important;
-  left: -9999px !important;
-  top: -9999px !important;
-}
 
-.text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-}
 
-.text-justify {
-  text-align: justify !important;
-}
 
-.text-wrap {
-  white-space: normal !important;
-}
 
-.text-nowrap {
-  white-space: nowrap !important;
-}
 
-.text-truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 
-.text-left {
-  text-align: left !important;
-}
 
-.text-right {
-  text-align: right !important;
-}
 
-.text-center {
-  text-align: center !important;
-}
 
-@media (min-width: 576px) {
-  .text-sm-left {
-    text-align: left !important;
-  }
 
-  .text-sm-right {
-    text-align: right !important;
-  }
 
-  .text-sm-center {
-    text-align: center !important;
-  }
-}
 
-@media (min-width: 768px) {
-  .text-md-left {
-    text-align: left !important;
-  }
 
-  .text-md-right {
-    text-align: right !important;
-  }
 
-  .text-md-center {
-    text-align: center !important;
-  }
-}
 
-@media (min-width: 992px) {
-  .text-lg-left {
-    text-align: left !important;
-  }
 
-  .text-lg-right {
-    text-align: right !important;
-  }
 
-  .text-lg-center {
-    text-align: center !important;
-  }
-}
 
-@media (min-width: 1200px) {
-  .text-xl-left {
-    text-align: left !important;
-  }
 
-  .text-xl-right {
-    text-align: right !important;
-  }
 
-  .text-xl-center {
-    text-align: center !important;
-  }
-}
 
-.text-lowercase {
-  text-transform: lowercase !important;
-}
 
-.text-uppercase {
-  text-transform: uppercase !important;
-}
 
-.text-capitalize {
-  text-transform: capitalize !important;
-}
 
-.font-weight-light {
-  font-weight: 300 !important;
-}
 
-.font-weight-lighter {
-  font-weight: lighter !important;
-}
 
-.font-weight-normal {
-  font-weight: 400 !important;
-}
 
-.font-weight-bold {
-  font-weight: 700 !important;
-}
 
-.font-weight-bolder {
-  font-weight: bolder !important;
-}
 
-.font-italic {
-  font-style: italic !important;
-}
 
-.text-white {
-  color: $white !important;
-}
 
-.text-primary {
-  color: $primary !important;
-}
 
-a.text-primary:hover,
-a.text-primary:focus {
-  color: $primary-dark !important;
-}
 
-.text-secondary {
-  color: $gray-500 !important;
-}
 
-a.text-secondary:hover,
-a.text-secondary:focus {
-  color: $gray-500 !important;
-}
 
-.text-light {
-  color: $white !important;
-}
 
-a.text-light:hover,
-a.text-light:focus {
-  color: $white !important;
-}
 
-.text-dark {
-  color: $gray-500 !important;
-}
 
-a.text-dark:hover,
-a.text-dark:focus {
-  color: $black !important;
-}
 
-.text-body {
-  color: $gray-500 !important;
-}
 
-.text-muted {
-  color: $gray-500 !important;
-}
 
-.modal-content .text-muted {
-  color: rgba(52, 62, 74, 0.5) !important;
-}
 
-.text-black-50 {
-  color: rgba(52, 62, 74, 0.5) !important;
-}
 
-.text-white-50 {
-  color: rgba(255, 255, 255, 0.5) !important;
-}
 
-.text-hide {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
 
-.text-decoration-none {
-  text-decoration: none !important;
-}
 
-.text-break {
-  word-break: break-word !important;
-  overflow-wrap: break-word !important;
-}
 
-.text-reset {
-  color: inherit !important;
-}
 
-.visible {
-  visibility: visible !important;
-}
 
-.invisible {
-  visibility: hidden !important;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media print {
 
@@ -3100,9 +1342,7 @@ a.text-dark:focus {
     box-shadow: none !important;
   }
 
-  a:not(.btn) {
-    text-decoration: underline;
-  }
+  
 
   abbr[title]::after {
     content: " (" attr(title) ")";
@@ -3147,17 +1387,11 @@ a.text-dark:focus {
     min-width: 992px !important;
   }
 
-  .container {
-    min-width: 992px !important;
-  }
+  
 
-  .navbar {
-    display: none;
-  }
+  
 
-  .badge {
-    border: 1px solid $black;
-  }
+  
 
 }
 
@@ -3170,14 +1404,14 @@ a.text-dark:focus {
 }
 
 body {
-  font-family: 'Lato', sans-serif !important;
+  font-family: $font-family-sans-serif !important;
   color: $white;
   background: $black;
   box-sizing: border-box;
 }
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: $font-family-sans-serif;
 }
 
 /* typography */
@@ -3199,66 +1433,32 @@ p, .simil-p {
   font-weight: 700;
 }
 
-.bg-primary .navbar-brand,
-.bg-secondary .navbar-brand,
-.bg-success .navbar-brand,
-.bg-info .navbar-brand,
-.bg-warning .navbar-brand,
-.bg-danger .navbar-brand,
-.bg-dark .navbar-brand {
-  color: $white;
-}
-
-.bg-primary .navbar-brand:hover,
-.bg-secondary .navbar-brand:hover,
-.bg-success .navbar-brand:hover,
-.bg-info .navbar-brand:hover,
-.bg-warning .navbar-brand:hover,
-.bg-danger .navbar-brand:hover,
-.bg-dark .navbar-brand:hover {
-  color: $white;
-}
-
-.bg-light .navbar-brand {
-  color: $gray-500;
-}
-
-.bg-light .navbar-brand:hover {
-  color: $black;
-}
 
 
-.dropdown-menu.form {
-  width: 300px;
-}
+
+
+
+
+
+
+
+
 
 /* Page Navbar*/
-nav.page-navbar {
-  min-height: 70px;
-  padding: 10px 0px 10px 20px;
-  -webkit-transition: all 0.3s linear 0s;
-  transition: all 0.3s linear 0s;
-  background-color: $celeste;
-}
 
-nav.page-navbar .navbar-brand {
-  font-size: 20px;
-  -webkit-transition: all 0.3s linear 0s;
-  transition: all 0.3s linear 0s;
-}
+
+
 
 .lang-selector__current,
 .lang-selector__option {
   color: $black;
 }
 
-nav.page-navbar .navbar-brand .text-dark {
-  color: $white !important;
-}
+
 
 nav.page-navbar .nav-item .nav-link {
   color: $black;
-  font-family: 'Lato', sans-serif !important;
+  font-family: $font-family-sans-serif !important;
   font-weight: 700;
   position: relative;
   z-index: 0;
@@ -3311,33 +1511,14 @@ nav.page-navbar .nav-item .nav-link.active:not(.btn) {
 
 // Icon-only link to /admin — set apart from the regular menu items with
 // a divider instead of a label, since it isn't page content.
-nav.page-navbar .nav-link-admin {
-  font-size: 0.9rem;
-  margin-left: 6px;
-  padding-left: 20px;
-  border-left: 1px solid rgba($black, 0.25);
-  opacity: 0.6;
 
-  &:hover {
-    opacity: 1;
-  }
-}
 
-@media (max-width: 799px) {
-  nav.page-navbar .nav-link-admin {
-    margin: 18px 0 0;
-    padding: 14px 0 0;
-    border-left: 0;
-    border-top: 1px solid rgba($black, 0.25);
-  }
-}
+
 
 // Login form that drops down right from the lock icon instead of
 // sending you to a whole separate page — same "click icon, small panel
 // opens under it" pattern as the (currently hidden) language selector.
-.admin-login-nav-item {
-  position: relative;
-}
+
 
 .admin-login-dropdown {
   position: absolute;
@@ -3354,29 +1535,7 @@ nav.page-navbar .nav-link-admin {
   &[hidden] { display: none; }
 }
 
-.admin-login-field {
-  margin-bottom: 10px;
 
-  label {
-    display: block;
-    font-size: 0.72rem;
-    font-weight: 700;
-    text-transform: none;
-    letter-spacing: normal;
-    color: $dark-blue;
-    margin-bottom: 4px;
-  }
-
-  input {
-    width: 100%;
-    padding: 7px 9px;
-    border: 1px solid rgba($dark-blue, 0.25);
-    border-radius: 5px;
-    font-size: 0.85rem;
-    font-family: inherit;
-    color: $dark-blue;
-  }
-}
 
 .admin-login-error {
   font-size: 0.75rem;
@@ -3386,22 +1545,7 @@ nav.page-navbar .nav-link-admin {
   &:empty { display: none; }
 }
 
-.admin-login-submit {
-  width: 100%;
-  background: $primary;
-  color: $white;
-  border: 0;
-  padding: 8px;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  cursor: pointer;
 
-  &:hover { opacity: 0.9; }
-  &:disabled { opacity: 0.6; cursor: default; }
-}
 
 @media (max-width: 799px) {
   .admin-login-dropdown {
@@ -3413,10 +1557,7 @@ nav.page-navbar .nav-link-admin {
   }
 }
 
-nav.page-navbar .nav-item .btn {
-  color: $white !important;
-  margin-right: 20px;
-}
+
 
 @media (max-width: 799px) {
   // .navbar-collapse used to sit in-flow as a flex sibling of the brand
@@ -3428,34 +1569,13 @@ nav.page-navbar .nav-item .btn {
   // pushed its own content past the viewport's right edge. Taken out
   // of that flow as a full-width dropdown below the bar instead, so
   // opening it never moves the brand or toggler at all.
-  nav.page-navbar .container {
-    position: relative;
-  }
+  
 
-  nav.page-navbar .navbar-collapse {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    background-color: $celeste;
-    -webkit-transition: all 0.3s linear 0s;
-    transition: all 0.3s linear 0s;
-  }
+  
 
-  nav.page-navbar .navbar-collapse.show {
-    height: auto;
-    opacity: 1;
-  }
+  
 
-  nav.page-navbar .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0 24px;
-  }
+  
 
   nav.page-navbar .nav-item .nav-link {
     margin: 10px 0;
@@ -3463,3484 +1583,48 @@ nav.page-navbar .nav-item .btn {
 
   // The centered "Apto para todo público." wordmark sits right where
   // the dropdown lands when open — hide it then so they don't overlap.
-  nav.page-navbar .container:has(.navbar-collapse.show) .navbar-brand-text {
-    display: none;
-  }
+  
 }
 
-nav.page-navbar.affix {
-  min-height: 75px;
-  padding: 10px 0px 10px 20px;
-  background: $celeste;
-  box-shadow: 0 2px 24px rgba(222, 58, 26, 0.4);
-  border-bottom: 1px solid rgba(222, 58, 26, 0.3);
-  color: $black;
-}
+
 
 nav.page-navbar.affix .nav-link {
   color: $black;
 }
 
-nav.page-navbar.affix .navbar-brand {
-  font-size: 24px;
-}
 
-nav.page-navbar.affix .navbar-brand .text-dark {
-  color: $black !important;
-}
 
-.pre-footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
 
-.pre-footer .list {
-  list-style-type: none;
-  padding-left: 0;
-  width: calc(100% / 3);
-  padding: 0 30px;
-}
 
-.pre-footer .list2 {
-  width: 250px !important;
-}
 
-.pre-footer .list3 {
-  width: auto !important;
-}
 
-.pre-footer .list-head {
-  border-bottom: 1px solid $white;
-  padding-bottom: 6px;
-}
 
-.pre-footer .list-body {
-  padding-top: 6px;
-}
 
-.pre-footer .list-body p {
-  margin-bottom: 5px;
-}
 
-.pre-footer .list-body p i {
-  display: inline-block;
-  width: 20px;
-}
 
-.pre-footer .list-body a {
-  display: block;
-  text-decoration: none;
-  margin-bottom: 4px;
-}
 
-.pre-footer .list-body .social-links {
-  margin-top: 15px;
-}
 
-.pre-footer .list-body .social-links a {
-  display: inline;
-  padding: 0 8px 0 0;
-}
 
-@media (max-width: 767.98px) {
-  .pre-footer {
-    display: block;
-  }
 
-  .pre-footer .list {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 45px;
-  }
-}
 
-@media (max-width: 991.98px) {
-  .pre-footer .list {
-    width: 80%;
-  }
-}
 
-.footer {
-  border-top: 1px solid $white;
-  margin: 40px 30px 0;
-  padding: 15px 5px;
-  text-align: end;
-}
 
-.footer p {
-  margin: 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Second, distinct way to reach any section besides the top nav menu —
 // same anchors, presented as a plain list in the footer.
-.footer-sitemap {
-  text-align: left;
-  margin-bottom: 16px;
-
-  ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 24px;
-    margin: 0;
-    padding: 0;
-  }
-
-  a {
-    color: $white;
-    font-size: 0.85rem;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      color: $celeste;
-    }
-  }
-
-  // Desktop only, per request — side by side again (was briefly a
-  // column), each pair separated by a dash, in the site's own Lato
-  // (this inherits it from body already, but explicit here so it
-  // doesn't depend on that not changing), no underline. Tighter gap
-  // than the shared 24px above (that was sized for the dash-less
-  // mobile row) — the dash's own margin already reads as a separator,
-  // so the base gap on top of it was double-spacing things.
-  @media (min-width: 701px) {
-    ul {
-      gap: 6px 8px;
-    }
-
-    li:not(:last-child)::after {
-      content: "-";
-      margin-left: 8px;
-      color: rgba($white, 0.5);
-    }
-
-    a {
-      font-family: $font-family-base;
-    }
-  }
-
-  // Mobile only, per request — brand red instead of white, and one
-  // section per row instead of a wrapped inline row.
-  @media (max-width: 700px) {
-    ul {
-      flex-direction: column;
-    }
-
-    a {
-      color: $primary;
-    }
-  }
-}
-
-// Hidden until it receives keyboard focus (Tab from the very top of the
-// page) — lets a keyboard user jump straight past the navbar's 8 links
-// to <main> instead of tabbing through all of them every time.
-.skip-link {
-  position: absolute;
-  top: -60px;
-  left: 0;
-  background: $dark-blue;
-  color: $white;
-  padding: 12px 20px;
-  z-index: 2000;
-  text-decoration: none;
-  font-weight: 700;
-  transition: top 0.2s ease;
-
-  &:focus {
-    top: 0;
-  }
-}
-
-.header {
-  background: $coral;
-  text-align: center;
-  color: white;
-  position: relative;
-  // Own stacking context, so the corner dot bleeding past the header's
-  // bottom edge paints above #quienes-somos's background instead of being
-  // covered by it (both would otherwise sit in the same auto z-index
-  // bucket, decided by DOM order — #quienes-somos comes after and would win).
-  z-index: 1;
-  height: 100vh;
-  height: 100dvh;
-  min-height: 500px;
-  overflow: visible;
-
-  // header-intersection.js reads this to pick the fill color for the
-  // box/circle collision patch it paints on <canvas class="header-intersection">
-  // — celeste on desktop, brand ocre on mobile per request. A custom
-  // property (not a hardcoded JS constant) so the breakpoint stays a
-  // plain CSS media query like everywhere else, instead of JS carrying
-  // its own copy of the 700px cutoff.
-  --header-collision-color: #{$celeste};
-
-  @media (max-width: 700px) {
-    --header-collision-color: #{$ocre};
-  }
-}
-
-.header-corner-dot {
-  --dot-size: clamp(320px, 90vh, 750px);
-  --dot-size: clamp(320px, 90dvh, 750px);
-
-  // Sized from viewport HEIGHT above, which on a narrow/tall phone makes
-  // it far wider than the screen — its right edge (at dot-size * 0.88,
-  // per the left/width below) bled past the viewport and caused
-  // page-wide horizontal scroll. Capped by width instead on mobile.
-  @media (max-width: 700px) {
-    // 280px floor never actually mattered on a real phone (95vw only
-    // drops that low below a ~295px-wide viewport, narrower than any
-    // real device) — but it does bite at deep browser zoom, where the
-    // *effective* viewport shrinks the same way, and a circle wider
-    // than the viewport it's floored against caused horizontal scroll.
-    // Lower, so the floor stops mattering at a width nothing real hits.
-    --dot-size: clamp(150px, 95vw, 480px);
-    // Lower than desktop's formula — fine if it overlaps the
-    // #quienes-somos card below, per request. Pushed down further so
-    // less of the circle overlaps the box (smaller celeste collision).
-    // The box (and hence the intersection) stays put, so this shrinks
-    // the celeste part and grows the plain-ocre part, per request.
-    bottom: calc(var(--dot-size) * -0.18 - 160px);
-  }
-
-  position: absolute;
-  // Bleeds past the header's own bottom edge so the circle keeps going
-  // visibly into the section below instead of stopping dead at the fold.
-  bottom: calc(var(--dot-size) * -0.18 - 40px);
-  left: calc(var(--dot-size) * -0.12);
-  width: var(--dot-size);
-  height: var(--dot-size);
-  border-radius: 50%;
-  background: $ocre;
-  z-index: 0;
-  animation: cornerDotPulse 6s ease-in-out infinite;
-}
-
-@keyframes cornerDotPulse {
-  0%   { transform: translateX(0) scale(1); }
-  50%  { transform: translateX(40px) scale(1.08); }
-  100% { transform: translateX(0) scale(1); }
-}
-
-.header-intersection {
-  position: absolute;
-  // top/left/width/height are set inline by header-intersection.js —
-  // sized to the union of the header, box and circle's live rects (they
-  // bleed past the header's own edges), not just the header itself.
-  top: 0;
-  left: 0;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.header-brand {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  // No z-index here on purpose: this must NOT become its own stacking
-  // context, so its children below can be individually placed above or
-  // below .header-intersection's canvas (z-index: 2) — the polygon stays
-  // under it (so the celeste overlap effect still shows through), while
-  // the logo/description are lifted above it (so the canvas never paints
-  // over them).
-}
-
-.header-brand-box {
-  position: relative;
-  width: calc(92vw + 60px);
-  height: 55vw;
-  max-width: 1300px;
-  max-height: 720px;
-  // No min-width/min-height floor anymore — a flat 750x360px floor
-  // meant this box (and #logo-atp2 sized as a % of it, since it's
-  // absolutely positioned relative to .header-brand which shrinks to
-  // fit this box) couldn't shrink past 750px wide even when the actual
-  // viewport was narrower (e.g. zoomed to 200% on an ordinary desktop
-  // width, or just a browser window between the 700px mobile handoff
-  // and 750px) — overflowing off the right edge. The fluid width/height
-  // above already tapers continuously down to the mobile layout's own
-  // rules at 700px, with nothing below ~654px (55vw) ever visible on
-  // desktop anyway since mobile takes over first.
-  flex-shrink: 0;
-  // Was a fixed -72px, tuned against this box's height at typical
-  // desktop sizes (~720px, so ~10% of its own height) — at a squeezed
-  // viewport height (e.g. zoomed in, shrinking 55vw's real height well
-  // below 720), that fixed amount stayed just as large, pushing the
-  // box (and the logo centered against it) increasingly further above
-  // the top edge. A % shift scales down together with the box itself.
-  transform: translateY(-10%);
-  overflow: hidden;
-  // No z-index: stays at the auto/default stacking level, which sits
-  // below .header-intersection's explicit z-index: 2 — so the celeste
-  // circle/polygon overlap the canvas paints is still visible through it.
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: -60px;
-    right: -60px;
-    bottom: 0;
-    left: 0;
-    background: $dark-blue;
-    clip-path: polygon(115px 0, 100% 0, 100% 100%, 0 calc(100% - 133px));
-    // Mobile flips this 180° (see the media query below) via a custom
-    // property, since the animation's own keyframes drive `transform`
-    // continuously and would otherwise override a plain rule here.
-    --brand-rotate: -13deg;
-    transform: rotate(var(--brand-rotate));
-    animation: brandBoxFloat 5s ease-in-out infinite;
-  }
-}
-
-@keyframes brandBoxFloat {
-  0%, 100% { transform: translateY(0) rotate(var(--brand-rotate, -13deg)); }
-  50%      { transform: translateY(-24px) rotate(var(--brand-rotate, -13deg)); }
-}
-
-// Sits on top of .header-brand-box, mirroring its own size/position
-// (same padding, same translateY) so the logo + description line up
-// exactly where they used to when nested inside the box. Kept as a
-// separate element specifically so it can carry a z-index above
-// .header-intersection's canvas (2) while .header-brand-box stays below
-// it — otherwise the canvas's celeste overlap paints over the text.
-.header-brand-content {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5%;
-  // Was a fixed -52px (~7% of this box's height at typical desktop
-  // sizes) — same issue as .header-brand-box's translateY above: fixed
-  // px against a box whose real height shrinks a lot at a squeezed
-  // viewport height pushed the logo increasingly above the top edge
-  // (clipped, not just covered by the fixed navbar). % scales with it.
-  transform: translateY(-7%);
-  z-index: 3;
-
-  #logo-atp2 {
-    width: 32%;
-    margin-bottom: 0;
-  }
-}
-
-.header-brand-description {
-  // Matches #logo-atp2's own width so this sits directly under it
-  // (both centered the same way by the flex column), text ranged left.
-  width: 42%;
-  max-width: 420px;
-  color: $white;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  text-align: left;
-  margin: 16px 0 0;
-  transform: translate(35px, 10px);
-}
-
-.header-eyebrow-stack {
-  position: relative;
-  display: inline-block;
-  margin: 15px 0 10px;
-  // -525px was tuned for wide desktop screens (~1444px+, where this
-  // still leaves it on-screen) — .header-content centers this first,
-  // so on narrower windows (or the same window zoomed) that fixed
-  // shift pushed it increasingly past the left edge, cutting text off.
-  // max() keeps -525px wherever it's safe, and past that switches to a
-  // formula solved to land the box's left edge a fixed 20px from the
-  // viewport's, so it can never go negative.
-  transform: translate(max(-525px, calc(-50vw + 197px)), 180px);
-  z-index: 999;
-}
-
-.header-eyebrow {
-  text-transform: lowercase;
-  letter-spacing: 0.15em;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin: 0;
-  white-space: nowrap;
-
-  span {
-    display: inline-block;
-    animation: eyebrowWave 4.5s ease-in-out infinite;
-    animation-delay: calc(var(--i) * 0.15s);
-  }
-}
-
-// One flat color for the whole string, no per-character split — this
-// text is editable from the admin panel (see the "header.eyebrow"
-// field), and the old effect split it white/dark-blue at a hardcoded
-// 18th character (tuned for "diversidad de posibilidades" specifically)
-// with a second dark-blue copy clipped to track the header circle live
-// (see header-intersection.js's now-removed updateEyebrowFill). Any
-// edited text broke both — wrong split point, stale clip. Brand
-// dark-blue, at any length — this text sits over the ocre/coral
-// shapes, not the header's own dark-blue background.
-.header-eyebrow--base {
-  color: $dark-blue;
-}
-
-@keyframes eyebrowWave {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-16px); }
-}
-
-@keyframes eyebrowWave {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-16px); }
-}
-
-.header .header-content {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: $white;
-  margin-top: 40px;
-  // Above .header-brand-content (z-index: 3) and .header-intersection (2)
-  // so the eyebrow text (e.g. "bilidades") never gets covered by them.
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header .header-content h6 {
-  margin-bottom: 25px;
-  font-size: calc(35px + (60 - 35) * ((100vw - 300px) / (1200 - 300)));
-}
-
-// The whole .header composition (brand box/logo, corner-dot circle,
-// eyebrow text, canvas collision) was built with fixed desktop pixel
-// values (750px+ min-width box, -525px eyebrow offset) and never had a
-// mobile layout — below 700px the brand box rendered mostly off-screen
-// (anchored right:0 but wider than the viewport), the eyebrow text's
-// -525px shift pushed it off the left edge entirely, and the box and
-// corner-dot circle ended up nowhere near each other so the celeste
-// "collision" (painted live by header-intersection.js from their actual
-// rendered positions) never appeared. This re-anchors everything with
-// viewport-relative sizes instead, and deliberately overlaps the box's
-// bottom edge with the circle's top so the collision effect still shows.
-@media (max-width: 700px) {
-  // Shorter than 100dvh — shrinking the header pulls the corner-dot
-  // circle up with it (it's anchored to the header's own bottom edge)
-  // without changing its relationship to #quienes-somos right after,
-  // so the circle now actually reaches the taller box below instead of
-  // there being a gap between them.
-  .header {
-    // 40px shorter — #quienes-somos (and everything after it) starts
-    // right where the header ends, so this pulls all of it up with it.
-    height: calc(78vh - 40px);
-    min-height: 560px;
-  }
-
-  .header-brand {
-    // Tucked up under the fixed navbar (~90px tall) — the navbar's
-    // z-index (1030) is well above the header's own stacking context,
-    // so it paints over whatever part of the box sits underneath it.
-    top: 20px;
-    bottom: auto;
-    right: 0;
-    left: 0;
-    transform: none;
-    align-items: flex-end;
-  }
-
-  .header-brand-box {
-    // Edge to edge — was 90vw with room on both sides, now spans the
-    // full viewport width.
-    width: 100%;
-    // Grows down past the header's own bottom edge into #quienes-somos
-    // (the circle and the eyebrow text below it are deliberately left
-    // untouched).
-    height: 230vw;
-    min-width: 0;
-    max-width: none;
-    max-height: 860px;
-    min-height: 0;
-    transform: none;
-
-    &::before {
-      // No bleed/rotation here — straight left/right edges flush with
-      // the box's own 0%/100%, which (box is full-width) land exactly
-      // on the screen edges. Only the bottom is diagonal now.
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      // The right edge's cutoff (82% before) ended above the circle's
-      // own bottom edge, so a sliver of its solid ocre color peeked out
-      // from behind the box's diagonal cut. Pushed down past it.
-      clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
-      --brand-rotate: 0deg;
-    }
-  }
-
-  .header-brand-content {
-    // Anchored near the top of the box, not vertically centered — the
-    // box is now much taller than the logo needs, and centering would
-    // have dragged the logo down into the eyebrow text below it.
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10% 5% 0;
-    transform: none;
-
-    #logo-atp2 {
-      width: 68%;
-      margin-top: 80px;
-    }
-  }
-
-  // Back on mobile now that the box is much taller (see .header-brand-box
-  // above) — there's finally room for it under the logo.
-  .header-brand-description {
-    display: block;
-    width: 70%;
-    max-width: none;
-    font-size: 15px;
-    text-align: center;
-    transform: none;
-    margin: 40px auto 0;
-  }
-
-  .header-eyebrow-stack {
-    // Below the (now much taller) box instead of overlapping the logo
-    // at its natural vertically-centered position — plus more room
-    // pushed further down (and wider) to clear the description text
-    // above now that the eyebrow itself reads bigger (see .header-eyebrow
-    // below) — a narrower box at the larger size wrapped into an
-    // awkward extra line.
-    transform: translateY(360px);
-    width: 92%;
-    max-width: 400px;
-  }
-
-  // Specificity bump (3 classes) needed to beat a pre-existing legacy
-  // rule elsewhere in this same media query — ".header .header-content
-  // p { font-size: 1em; }" — which also matches this <p> and was
-  // silently winning over a plain ".header-eyebrow" selector.
-  .header .header-content .header-eyebrow {
-    // !important: this <p> would otherwise fall to the blanket mobile
-    // "p { font-size: 18px !important }" rule elsewhere in this file —
-    // that rule beats any non-important override regardless of specificity.
-    font-size: 1.7rem !important;
-    letter-spacing: 0.05em;
-    // Doesn't fit on one line on a phone screen — let it wrap.
-    white-space: normal;
-    text-align: center;
-  }
-
-}
-
-.header-title {
-  font-size: 2.4rem;
-  font-weight: bold;
-  opacity: .8;
-}
-
-.header-mini {
-  min-height: 24rem;
-  height: 24rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-  background: $black !important;
-}
-
-.logo {
-  margin-bottom: 15px;
-}
-
-body,
-html {
-  height: 100%;
-}
-
-section {
-  padding: 100px 0;
-}
-
-// So clicking a menu link doesn't leave the section's own title
-// scrolled underneath the fixed navbar (~90px tall).
-#home,
-#institucional,
-#otros-proyectos,
-#servicios,
-#obras-teatrales {
-  scroll-margin-top: 90px;
-}
-
-// Extra margin so the "Quienes somos" title stays on screen (not just
-// clear of the navbar) when this section is scrolled to.
-#quienes-somos {
-  scroll-margin-top: 105px;
-}
-
-section:nth-child(odd) {
-  background-color: $black;
-}
-
-
-
-/*Slide*/
-@mixin white-gradient {
-  background: linear-gradient(to right, rgba(52, 62, 74, 1) 0%, rgba(52, 62, 74, 0) 100%);
-}
-
-// Animation
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(calc(-250px * 7))
-  }
-}
-
-$animationSpeed: 40s;
-
-.slider {
-  background: $black;
-  box-shadow: 0 10px 20px -5px rgba(222, 58, 26, 0.2);
-  height: 155px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-
-  &::before,
-  &::after {
-    @include white-gradient;
-    content: "";
-    height: 155px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-  }
-
-  &::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
-
-  &::before {
-    left: 0;
-    top: 0;
-  }
-
-  .slide-track {
-    animation: scroll $animationSpeed linear infinite;
-    display: flex;
-    width: calc(250px * 14);
-
-    // Pauses the marquee while the cursor is over it.
-    &:hover {
-      animation-play-state: paused;
-    }
-  }
-
-  .slide {
-    height: 100px;
-    width: 250px;
-  }
-}
-
-// Apoyos slider: 10 unique logos, doubled to 20 slides for a seamless
-// loop. Logos vary a lot in width, so (unlike the fixed-250px slider
-// above) each slide here shrink-wraps its own logo — equal padding on
-// every slide is then what keeps the gap between any two logos' edges
-// truly equal, instead of a fixed slide box splitting leftover space
-// unevenly depending on how wide each logo happens to be. The scroll
-// distance can't be a constant per-slide-width formula anymore since
-// slides aren't a fixed width, so atp.js measures the track and sets
-// --apoyos-scroll-distance at runtime.
-@keyframes scroll-apoyos {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(var(--apoyos-scroll-distance, -1400px)); }
-}
-
-.slider--apoyos {
-  background: transparent;
-  box-shadow: none;
-  // Taller than the shared 155px so the biggest logo (ORT, 130px)
-  // still fits with room to spare.
-  height: 165px;
-
-  &::before,
-  &::after {
-    display: none;
-  }
-
-  .slide {
-    width: auto;
-    height: auto;
-  }
-
-  .slide-track {
-    // Logos vary a lot in height — align-items: center (rather than
-    // the inherited stretch) is what actually centers each one on the
-    // same middle line instead of top-aligning them within a row whose
-    // height is set by the tallest logo.
-    align-items: center;
-    height: 100%;
-    width: max-content;
-    animation-name: scroll-apoyos;
-  }
-}
-
-.apoyo-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  // Half of the intended edge-to-edge gap (70px) on each side — every
-  // slide gets exactly this, regardless of its own logo's width.
-  padding: 0 35px;
-
-  span {
-    // Was white for a dark slider background; now that the slider is
-    // transparent it sits on .apoyos-block's white background instead.
-    color: $dark-blue;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.95rem;
-    line-height: 1.3;
-  }
-
-  // A fixed height (not a max-width/max-height box) — each slide now
-  // shrink-wraps to its logo's own rendered width (see .slider--apoyos
-  // .slide above), so the equal-gap job is handled by .apoyo-slide's
-  // padding instead of this height evening out leftover box space.
-  img {
-    height: 60px;
-    width: auto;
-    max-width: 220px;
-    object-fit: contain;
-
-    // Bigger than the shared height, per-logo.
-    &[src*="logo-defensoria-del-pueblo"] {
-      height: 65px;
-    }
-
-    &[src*="logo-granja-zenon"],
-    &[src*="logo-ctba"] {
-      height: 82px;
-    }
-
-    // Square (1:1) source image, needs extra height to read at the
-    // same visual weight as the wide logos.
-    &[src*="logo-ort"] {
-      height: 130px;
-    }
-
-    // The one right before ORT in the strip — bigger still. Source
-    // image was re-cropped to trim the empty space around the actual
-    // logo marks (was a 1:1 canvas with the content only in the lower
-    // half, which made it render vertically off-center), so it's now
-    // a wide banner shape rather than square — sized by width instead.
-    &[src*="logo-chacra-remedios"] {
-      height: 95px;
-    }
-
-    // Smaller than the shared height, per-logo.
-    &[src*="logo-ocppc"],
-    &[src*="logo-paseo-la-plaza"],
-    &[src*="logo-la-matanza"] {
-      height: 42px;
-    }
-  }
-}
-
-
-#seguridadehigiene {
-  background: $black;
-}
-
-// Flat brand-pink background, same recipe as #quienes-somos.
-#servicios {
-  background-color: $coral;
-  position: relative;
-  overflow: hidden;
-  padding-top: 4rem !important;
-}
-
-#servicios .container {
-  position: relative;
-  z-index: 3;
-}
-
-#seguridadehigiene {
-  color: $white;
-
-  p {
-    color: $white;
-    font-size: 0.94em;
-  }
-
-  .text-muted {
-    color: $white-500 !important;
-  }
-}
-
-.p-seguridadehigiene {
-  margin-left: 40%;
-  margin-right: 120px;
-}
-
-#servicios {
-  li {
-    text-align: left;
-    line-height: 2;
-  }
-
-  ol {
-    margin: 0 100px 100px 100px;
-  }
-}
-
-section.p-sm {
-  padding: 30px 0 !important;
-}
-
-section.p-md {
-  padding: 60px 0 !important;
-}
-
-section.has-bg-img {
-  background-image: url(../imgs/bg-img-1.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 450px;
-  position: relative;
-}
-
-section.has-bg-img .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(52, 62, 74, 0.7);
-}
-
-section.has-bg-img a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  border: 4px solid $primary-light;
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  padding: 13px 0 4px 23px;
-}
-
-section.has-bg-img a i {
-  display: inline-block;
-  height: 0;
-  width: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 30px solid $primary;
-}
-
-section.height-auto {
-  height: auto !important;
-  min-height: auto !important;
-  max-height: auto !important;
-}
-
-.has-bg-overlay {
-  position: relative;
-}
-
-.has-bg-overlay:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../imgs/header.jpg) no-repeat center center fixed;
-  background-size: cover;
-  z-index: -1;
-  opacity: .4;
-}
-
-.has-bg-overlay:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: $black;
-  z-index: -2;
-}
-
-.middle-items {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.section-title {
-  font-size: 4rem;
-}
-
-.has-height-xs {
-  min-height: 75px;
-}
-
-.has-height-sm {
-  min-height: 150px;
-}
-
-.has-height-md {
-  min-height: 300px;
-}
-
-.has-height-lg {
-  min-height: 500px;
-}
-
-/* about */
-.about-title {
-  @extend %section-title-style;
-  // Above .header's bled circle (z-index: 1), which now overlaps the
-  // top of this section since padding-top was removed.
-  position: relative;
-  z-index: 5;
-
-  @media (max-width: 700px) {
-    transform: translateY(-20px);
-  }
-}
-
-// Coverflow-style carousel: one active card centered up front, the
-// others stacked behind it left/right (scaled down + blurred), auto
-// advancing and pausing on hover — arrows for manual control.
-.about-carousel {
-  position: relative;
-  max-width: 1300px;
-  margin: 0 auto 40px;
-  padding: 0 60px;
-}
-
-.about-carousel-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: none;
-  background: $primary;
-  color: $white;
-  font-size: 1.2rem;
-  line-height: 1;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.15s ease-in-out;
-
-  &:hover {
-    background: $primary;
-  }
-
-  &--prev { left: 0; }
-  &--next { right: 0; }
-}
-
-.about-wrapper {
-  margin-left: 0;
-  position: relative;
-  height: 640px;
-}
-
-.about-wrapper .content {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 430px;
-  max-width: calc(100vw - 140px);
-  // Same coral as the section background, just darker, with enough
-  // transparency that the circle bleeding in from the header shows
-  // through underneath it.
-  background-color: rgba($coral, 0.75);
-  box-shadow: 0 3px 80px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.15) !important;
-  border: 1px solid rgba(222, 58, 26, 0.2);
-  border-radius: 0.2rem;
-  padding: 34px;
-  color: $white;
-  pointer-events: auto;
-  // Multiplied into the active card's scale() below — only it grows on
-  // hover, the side cards stay put (see .about-card--active:hover).
-  --hover-scale: 1;
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-              opacity 0.35s ease,
-              filter 0.35s ease;
-
-  .title,
-  p {
-    color: $white;
-    opacity: 1;
-  }
-  .title {
-    font-size: 1.4rem;
-  }
-  p {
-    font-size: 0.95rem;
-  }
-
-  // Positions relative to whichever card is currently active — JS keeps
-  // these classes in sync with the current index.
-  &.about-card--active {
-    transform: translateX(-50%) scale(var(--hover-scale));
-    opacity: 1;
-    filter: blur(0);
-    z-index: 5;
-
-    &:hover {
-      --hover-scale: 1.06;
-    }
-  }
-  &.about-card--next1 {
-    transform: translateX(calc(-50% + 230px)) scale(calc(0.82 * var(--hover-scale)));
-    opacity: 0.65;
-    filter: blur(2px);
-    z-index: 3;
-  }
-  &.about-card--prev1 {
-    transform: translateX(calc(-50% - 230px)) scale(calc(0.82 * var(--hover-scale)));
-    opacity: 0.65;
-    filter: blur(2px);
-    z-index: 3;
-  }
-  // All 5 cards stay visible at once now — the outer pair is just
-  // smaller/dimmer/blurrier than the inner pair, instead of hidden.
-  &.about-card--next2 {
-    transform: translateX(calc(-50% + 420px)) scale(calc(0.66 * var(--hover-scale)));
-    opacity: 0.35;
-    filter: blur(3px);
-    z-index: 1;
-  }
-  &.about-card--prev2 {
-    transform: translateX(calc(-50% - 420px)) scale(calc(0.66 * var(--hover-scale)));
-    opacity: 0.35;
-    filter: blur(3px);
-    z-index: 1;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .about-wrapper {
-    margin-left: 0;
-    // The desktop 640px was tuned for the wider (430px) card, which
-    // wraps its bio into fewer lines. At the narrower mobile card width
-    // the longest bio (Malena's) actually needs ~772px — short of that,
-    // #quienes-somos's own overflow: hidden was clipping the bottom of
-    // the tallest cards clean off, background included.
-    height: 800px;
-  }
-
-  // The desktop "- 140px" left these cards narrow and tall (a lot of
-  // text wrapping down a thin column) on a phone-width screen — a
-  // smaller, fixed side margin instead so the card actually uses most
-  // of the available width.
-  .about-wrapper .content {
-    max-width: calc(100vw - 48px);
-  }
-}
-
-.img-wrapper {
-  position: relative;
-}
-
-.img-wrapper .after {
-  position: absolute;
-  top: 10%;
-  left: -30px;
-  width: 100px;
-  height: 80%;
-  box-shadow: 0 3px 80px rgba(222, 58, 26, 0.3), 0 0 10px rgba(222, 58, 26, 0.2) !important;
-  border-radius: 0.2rem;
-  background: $primary;
-}
-
-.img-wrapper .after.right {
-  left: auto;
-  right: -30px;
-}
-
-.img-wrapper img {
-  position: relative;
-  width: 90%;
-  border-radius: 0.2rem;
-  box-shadow: 0 3px 80px rgba(222, 58, 26, 0.4), 0 0 10px rgba(222, 58, 26, 0.3) !important;
-}
-
-@media (max-width: 767.98px) {
-  .img-wrapper .after {
-    display: none;
-  }
-
-  .img-wrapper img {
-    display: block;
-    margin: 20px 0;
-  }
-}
-
-/* otros proyectos */
-#otros-proyectos {
-  background: $black;
-  // Overrides the global "section { padding: 100px 0 }" top spacing —
-  // trimmed down (not 0) so the title still has room to breathe below
-  // the white Apoyos band above, without the full 100px gap back.
-  padding-top: 90px;
-  position: relative;
-  overflow: hidden;
-}
-
-// Decorative spiral outline, right side, behind the Podcast card.
-.op-bg-spiral {
-  position: absolute;
-  top: 0;
-  right: -20px;
-  height: 92%;
-  width: auto;
-  opacity: 0.5;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.op-wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 40px;
-  position: relative;
-  z-index: 1;
-}
-
-.op-title {
-  @extend %section-title-style;
-}
-
-.op-intro {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 50px;
-}
-
-// AcceDER I / AcceDER II / Podcast as click-to-expand cards, side by
-// side (wrapping to fewer columns on narrower screens), one open at a
-// time.
-.op-blocks {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 24px;
-}
-
-// Frosted-glass card (same recipe as .contact-card), kept visible both
-// collapsed and expanded — not just while the panel is open.
-.op-block {
-  text-align: left;
-  flex: 1 1 calc((100% - 48px) / 3);
-  min-width: 280px;
-  background: rgba($white, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba($white, 0.15);
-  border-radius: 0.6rem;
-  padding: 0 24px;
-}
-
-.op-block-trigger {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 12px;
-  width: 100%;
-  padding: 24px 0;
-  // Floors the collapsed height so all 3 cards match AcceDER II's
-  // (the tallest, since it has the biggest logo) — doesn't cap growth,
-  // so each card can still expand independently when opened.
-  min-height: 300px;
-  background: none;
-  border: 0;
-  cursor: pointer;
-  text-align: left;
-  // Buttons get a default focus ring on click in some browsers — drop
-  // it, but keep a subtle one for keyboard nav (:focus-visible only
-  // matches tab-focus, not mouse clicks).
-  outline: none;
-
-  // AcceDER I/II show a tall program logo instead of plain text — less
-  // vertical padding so the collapsed row doesn't grow so much (Podcast,
-  // with a plain-text title, keeps the default padding above).
-  &:has(.op-block-title img) {
-    padding-top: 2px;
-  }
-
-  &:focus-visible {
-    outline: 2px solid rgba($white, 0.4);
-    outline-offset: 4px;
-  }
-}
-
-// Wraps the title/logo and its preview text, stacked (cards are narrow
-// now that they sit side by side), leaving the chevron pinned to the end.
-.op-block-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
-.op-block-title {
-  color: $white;
-  font-weight: 900;
-  font-size: 1.8rem;
-  margin-bottom: 0;
-  flex: 0 0 auto;
-  align-self: stretch;
-  text-align: center;
-
-  // AcceDER I/II show their own program logo here instead of text
-  // (Podcast has no logo, so it stays plain text).
-  img {
-    display: block;
-    margin: 0 auto;
-    max-height: 130px;
-    width: auto;
-  }
-
-  img[src*="logo-acceder-II"] {
-    max-height: 155px;
-  }
-}
-
-// Short preview of the panel's own intro paragraph — stays visible
-// next to the title/logo whether the row is open or collapsed.
-.op-block-preview {
-  flex: 1 1 auto;
-  min-width: 0;
-  color: rgba($white, 0.65);
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin: 0;
-
-  @media (max-width: 700px) {
-    font-size: 18px;
-  }
-}
-
-// A chevron drawn from two borders (no icon font dependency), rotated
-// to point up when the row's open.
-.op-block-icon {
-  flex: 0 0 auto;
-  align-self: center;
-  width: 12px;
-  height: 12px;
-  border-right: 2px solid $white;
-  border-bottom: 2px solid $white;
-  transform: rotate(45deg);
-  transition: transform 0.3s ease;
-
-  .op-block.is-open & {
-    transform: rotate(-135deg);
-  }
-}
-
-// Height is set inline (px, from JS reading scrollHeight) when toggled,
-// so it can transition smoothly instead of snapping open/closed.
-.op-block-panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease;
-}
-
-.op-block-panel-inner {
-  padding-bottom: 30px;
-}
-
-.op-block-list {
-  padding-left: 20px;
-  margin-bottom: 12px;
-
-  li {
-    margin-bottom: 12px;
-    line-height: 1.6;
-    color: rgba($white, 0.85);
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.link-pending {
-  color: rgba($white, 0.5);
-  font-style: italic;
-  font-size: 0.85em;
-}
-
-.op-block-media {
-  display: flex;
-  gap: 12px;
-  margin: 15px 0;
-
-  img,
-  .missing-photo {
-    width: calc((100% - 12px) / 2);
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 0.2rem;
-  }
-
-  .missing-photo {
-    color: rgba($white, 0.6);
-    border-color: rgba($white, 0.4);
-  }
-
-  // AcceDER I's video sits alone in its row (not paired like the photo
-  // grids), so it gets the full width instead of the 50% split above.
-  video {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: 0.2rem;
-    background: $black;
-  }
-}
-
-.op-block-media--3 img,
-.op-block-media--3 .missing-photo {
-  width: calc((100% - 24px) / 3);
-  // The podcast photos are square (900x900) — the shared 4:3 box was
-  // cropping their top/bottom off.
-  aspect-ratio: 1 / 1;
-}
-
-.op-block-sponsors {
-  color: rgba($white, 0.6);
-  font-size: 0.85rem;
-  letter-spacing: 0.02em;
-  margin-top: 12px;
-  margin-bottom: 8px;
-}
-
-// Sponsor logos are opaque (not transparent), so each gets its own
-// white "badge" background to read intentionally against this dark
-// section instead of showing raw white rectangles.
-.op-block-sponsor-logos {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-
-  img {
-    height: 56px;
-    width: auto;
-    background: $white;
-    padding: 6px 10px;
-    border-radius: 0.2rem;
-  }
-
-  span {
-    color: rgba($white, 0.6);
-    font-size: 0.85rem;
-    letter-spacing: 0.02em;
-  }
-}
-
-.op-block-youtube {
-  display: inline-block;
-  margin-top: 10px;
-  color: $primary;
-  font-weight: 700;
-  text-decoration: underline;
-
-  &:hover {
-    color: $white;
-  }
-}
-
-/* services */
-// Same card shell as the original design (translucent dark background,
-// red-tinted border/shadow, row of cards, small floating icon badge) —
-// just auto-height instead of a fixed 250x200, since these cards now
-// also hold a photo and longer copy.
-.services-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  max-width: 1300px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 3;
-}
-
-.services-wrapper {
-  // Same recipe as .about-wrapper .content (darker coral over the
-  // section's own coral background, same border), now that #servicios
-  // has a flat coral background instead of black.
-  background: rgba($coral, 0.75);
-  border: 1px solid rgba(222, 58, 26, 0.2);
-  box-shadow: 0 2px 5px 0 rgba(222, 58, 26, 0.3) !important;
-  border-radius: 0.2rem;
-  padding: 20px 40px;
-  text-align: left;
-  // Narrow enough that both cards stay side by side within the
-  // .container's 80%-of-viewport width instead of wrapping.
-  flex: 1 1 560px;
-  max-width: 580px;
-
-  &:hover {
-    box-shadow: 0 3px 10px rgba($white, 0.9) !important;
-  }
-
-  p:not(.services-wrapper-credit) {
-    font-size: 1rem;
-    margin-bottom: 12px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    @media (max-width: 700px) {
-      font-size: 18px;
-    }
-  }
-}
-
-.services-wrapper .title {
-  color: $white;
-  // Small enough that "Formación en introducción a la accesibilidad
-  // cultural" (the longest of the two) still fits on one line inside
-  // the card's narrower content area (more side padding now).
-  font-size: 1rem;
-  white-space: nowrap;
-  margin-bottom: 24px;
-
-  // Cards shrink below their content width on narrow screens — wrap
-  // instead of overflowing.
-  @media (max-width: 700px) {
-    white-space: normal;
-  }
-}
-
-// The illustrative photo/media sit below the title, as regular content.
-.services-wrapper-photo {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 0.2rem;
-  margin-bottom: 15px;
-}
-
-// Flyer sits to the right of the intro copy, below the video.
-.services-wrapper-text-flyer {
-  display: flex;
-  gap: 15px;
-  align-items: flex-start;
-  margin-bottom: 15px;
-}
-
-.services-wrapper-text {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
-.services-wrapper-flyer-col {
-  flex: 0 0 140px;
-  width: 140px;
-}
-
-.services-wrapper-flyer {
-  display: block;
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  border-radius: 0.2rem;
-}
-
-// Caption directly under the flyer, like a photo credit line — small
-// enough (and non-wrapping) to fit on one line within the 140px column.
-.services-wrapper-credit {
-  color: $white;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.65rem;
-  letter-spacing: 0.02em;
-  text-align: center;
-  white-space: nowrap;
-  margin-top: 6px;
-  margin-bottom: 0;
-}
-
-@media (max-width: 700px) {
-  // The 560px flex-basis (tuned to fit two cards side by side on
-  // desktop) forced each card to shrink hard to fit a phone screen,
-  // and the flyer's fixed 140px column squeezed next to it fought that
-  // shrink — together, cards were overflowing/pushed right instead of
-  // filling the width. Full width, and the flyer moves below the copy
-  // instead of beside it, matching the order things are already in.
-  .services-wrapper {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .services-wrapper-text-flyer {
-    flex-direction: column;
-  }
-
-  .services-wrapper-flyer-col {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-}
-
-/* Projects Section */
-#obras-teatrales {
-  padding: 80px 0 100px;
-  // A fixed pixel size — not "contain" (rescales with height, which
-  // grows every time enough obras cards wrap to another row) and not a
-  // %-of-width size either (that made it grow on wide desktop windows
-  // faster than the section's content-driven height could keep up,
-  // clipping the top of the shape). A flat px number depends on
-  // neither, so it can't blow past the box in either direction; its
-  // own white background fills the rest of the section evenly since it
-  // matches $white.
-  background-color: $white;
-  background-image: url(../imgs/portada-obras.jpg);
-  background-size: 925px auto;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-
-  // On mobile, pin the image to the bottom-right corner and shrink the
-  // fixed size down — 925px would mostly be cropped off-screen on a
-  // phone-width viewport.
-  @media (max-width: 700px) {
-    background-position: right bottom;
-    background-size: 420px auto;
-  }
-
-  // No dark overlay anymore, so the title/intro (white by default,
-  // meant for #obras-teatrales's old plain-black background) need to switch
-  // to a dark color to stay legible against the now-white background.
-  .projects-title {
-    color: $dark-blue !important;
-  }
-
-  .projects-intro {
-    color: rgba($dark-blue, 0.8);
-  }
-}
-
-.projects-wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-// Shared look for every section's intro title — matches "Quienes somos".
-%section-title-style {
-  font-family: 'Lato', sans-serif !important;
-  font-weight: 900 !important;
-  font-size: 2.2rem !important;
-  color: $white !important;
-  text-align: center;
-  text-transform: uppercase !important;
-  margin-bottom: 30px;
-}
-
-.projects-title,
-.choose-subtitle,
-h1[data-section="choose"][data-translate="title"],
-h2[data-section="our-services"][data-translate="title"],
-h1[data-section="banner"][data-translate="title"],
-h2[data-section="contact"][data-translate="title"],
-h1[data-section="contact"][data-translate="title"] {
-  @extend %section-title-style;
-}
-
-.projects-subtitle {
-  text-align: center;
-  color: $primary;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-}
-
-.projects-intro {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 50px;
-}
-
-// Self-adjusting for however many plays there are, not hardcoded to 5 —
-// flexbox (not grid) is what lets a short last row center itself
-// instead of a leftover card stranding alone on the left. Cards grow to
-// fill full rows (capped at max-width so they don't get huge when
-// there's only one on a line) and wrap once they hit their min-width.
-.projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-
-}
-
-.project-card {
-  // Now a <button> (was a <div>) so it's reachable and operable by
-  // keyboard — resets the browser's default button chrome (border,
-  // padding, font) that would otherwise show through.
-  display: block;
-  // Grows to help fill a full row, shrinks down to 200px before
-  // wrapping, and is capped at 260px so a lone card left on a short
-  // last row (see .projects-grid) doesn't blow up huge just because
-  // it has the whole row's width to itself.
-  flex: 1 1 200px;
-  max-width: 260px;
-  border: 0;
-  padding: 0;
-  font: inherit;
-  text-align: inherit;
-  -webkit-appearance: none;
-  appearance: none;
-  position: relative;
-  overflow: visible;
-  cursor: pointer;
-  background: lighten($black, 4%);
-  z-index: 1;
-  aspect-ratio: 1 / 1;
-  transition: transform 0.35s ease, z-index 0s;
-
-  &:focus-visible {
-    outline: 3px solid $celeste;
-    outline-offset: 3px;
-  }
-
-  .project-img {
-    // Now a <span> (was a <div>) — <button> doesn't allow block-level
-    // children per the HTML spec, so this needs its block layout back.
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: lighten($black, 8%);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-
-    &__default,
-    &__hover {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    &__hover {
-      opacity: 0;
-      transition: opacity 0.4s ease;
-    }
-  }
-
-  // Semi-transparent ribbon across the bottom edge of the photo, always
-  // visible (not just on hover) since it also has to work on mobile,
-  // where hover doesn't exist. Title comes straight from obras.json.
-  .project-ribbon {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 8px 10px 7px;
-    background: rgba($dark-blue, 0.68);
-    text-align: center;
-    z-index: 2;
-  }
-
-  .project-ribbon-text {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    color: $white;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.72rem;
-    font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-  }
-
-  // Mobile-only "tap here" affordance — a blinking tap-ripple icon
-  // centered on the photo, so it reads as touchable even though there's
-  // no hover state to hint at it. Each card randomizes its own
-  // animation-delay/duration (set inline from atp.js) so the whole grid
-  // doesn't blink in sync.
-  .project-tap-icon {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 36px;
-    height: 36px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    // Same translucent-badge treatment as .project-ribbon behind the
-    // title, instead of a solid opaque circle.
-    background: rgba($dark-blue, 0.68);
-    box-shadow: 0 2px 8px rgba($black, 0.35);
-    opacity: 0;
-    pointer-events: none;
-    z-index: 3;
-    animation-name: project-tap-blink;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
-
-  // The 👆 emoji glyph itself — instantly readable as "tap here" (unlike
-  // a hand-drawn icon at this size), forced to solid white since emoji
-  // otherwise ignore `color`/`fill`: brightness(0) flattens it to a
-  // black silhouette, invert(1) flips that to white.
-  .project-tap-icon-glyph {
-    display: inline-block;
-    font-size: 17px;
-    line-height: 1;
-    filter: brightness(0) invert(1);
-    // The emoji's own finger reads a bit stubby at this size — stretched
-    // taller (anchored to its base, not its center) so it elongates
-    // upward instead of just bloating in place.
-    transform: scaleY(1.35);
-    transform-origin: center bottom;
-  }
-
-  &:hover {
-    transform: scale(1.18);
-    z-index: 10;
-    transition: transform 0.35s ease, z-index 0s 0s;
-
-    .project-img__hover {
-      opacity: 1;
-    }
-  }
-}
-
-@keyframes project-tap-blink {
-  0%, 55% { opacity: 0; }
-  65%, 82% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-@media (max-width: 700px) {
-  // 2 per row on mobile — the desktop 200px min-basis wouldn't fit two
-  // side by side under ~410px, so it'd collapse to a single column.
-  // Placed after the unconditional .project-card rule above (not
-  // before it, as it was originally) — same specificity means source
-  // order decides the winner regardless of which one is media-scoped,
-  // so a mobile override placed earlier in the file gets silently
-  // beaten by a later unconditional rule.
-  .projects-grid {
-    gap: 10px;
-  }
-
-  .project-card {
-    flex-basis: calc(50% - 5px);
-    max-width: calc(50% - 5px);
-  }
-
-  // Qualified with .project-card (matching the nested selector these
-  // compile to inside .project-card {}) so this actually outweighs it —
-  // a bare .project-tap-icon here loses to .project-card .project-tap-icon
-  // regardless of media query, since specificity ignores source order.
-  .project-card .project-ribbon-text {
-    font-size: 0.62rem;
-  }
-
-  .project-card .project-tap-icon {
-    display: flex;
-  }
-}
-
-#contact {
-  // Overrides the alternating section:nth-child(odd) background-color
-  // — no color/tint behind the cover image, just the image itself.
-  background-color: transparent !important;
-  background-image: url(../imgs/portada-contactanos.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: top center;
-  // Was the global "section { padding: 100px 0 }" bottom spacing — the
-  // footer credit line (moved in here from its own #footer section)
-  // now sits close beneath the contact info, so everything fits
-  // within the height the cover image actually renders at.
-  padding-bottom: 20px;
-  // Matches the cover image's own ratio (background-size: 100% auto)
-  // so the section is always exactly as tall as the image needs to
-  // show it in full — otherwise its bottom portion goes unseen since
-  // the section (sized by its content) was ending before the image did.
-  aspect-ratio: 4000 / 2250;
-
-  // The landscape image above only covers a thin 16:9 sliver on a tall
-  // narrow phone screen, leaving most of the section flat white behind
-  // the card. A 90°-rotated portrait crop of the same artwork instead
-  // covers the section's whole (content-driven) height, with
-  // background-size: cover — it sits behind the frosted .contact-card
-  // and mostly just peeks out faintly around its edges.
-  @media (max-width: 700px) {
-    background-image: url(../imgs/portada-contactanos-vertical.jpg);
-    background-size: cover;
-    background-position: center top;
-    aspect-ratio: auto;
-  }
-
-  // The footer credit line, moved in here from its own #footer section.
-  .footer {
-    // Negative to cancel out .container's own 15px left padding, so
-    // this sits flush with the section's actual edge.
-    margin: 20px 0 0 -15px;
-    border-top: none;
-    text-align: left;
-
-    p,
-    a {
-      color: $white;
-    }
-
-    // Mobile only, per request. `a` here also reaches the .footer-sitemap
-    // links nested inside (higher specificity than .footer-sitemap a's
-    // own color rule) — stays brand red, as requested for those. The
-    // copyright <p> itself is bold brand ocre/yellow, at its original
-    // smaller size (fine-print size, not the blanket-body-copy 18px —
-    // needs !important for the same reason that blanket rule does: it
-    // otherwise beats this).
-    @media (max-width: 700px) {
-      // Was 20px (set on the unconditional .footer rule above). Zeroing
-      // that out barely moved anything though — most of the real gap
-      // above is .contact-card's own 60px bottom padding plus the
-      // .container's 20px flex gap between the card and this footer, not
-      // this margin. A negative value eats into that instead, so the
-      // sitemap links (and the copyright line right below them) actually
-      // sit closer to the social icons above, per request.
-      margin-top: -30px;
-
-      a {
-        color: $primary;
-      }
-
-      p {
-        color: $ocre;
-        font-weight: 700;
-        font-size: 13px !important;
-      }
-    }
-  }
-}
-
-#contact .container {
-  gap: 20px;
-}
-
-// Frosted-glass card (same recipe as .timeline-card in Institucional)
-// wrapping the title/subtitle/form, so they read clearly over the busy
-// cover image instead of sitting directly on top of it.
-.contact-card {
-  background: rgba($white, 0.75);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba($white, 0.15);
-  border-radius: 0.6rem;
-  padding: 60px;
-  width: 100%;
-  max-width: 700px;
-
-  // The full 60px side padding left little room for the form on a
-  // phone-width screen — trimmed down just left/right, top/bottom stay.
-  @media (max-width: 700px) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  // The global "p, .simil-p { color: rgba(255,255,255,.85) }" rule
-  // targets <p> directly, which always beats a color merely inherited
-  // from this wrapping div — so the subtitle needs its own explicit
-  // override instead of relying on cascade.
-  color: $dark-blue;
-
-  p {
-    color: $dark-blue;
-  }
-
-  h2[data-section="contact"][data-translate="title"] {
-    color: $dark-blue !important;
-  }
-
-  // Inputs were styled for the section's old plain-dark background
-  // (white text/border) — switched to brand blue for the light card.
-  .form-control {
-    color: $dark-blue;
-    border-color: $dark-blue;
-
-    &:focus {
-      color: $dark-blue;
-      border-color: $dark-blue;
-    }
-
-    &::placeholder {
-      color: $dark-blue;
-      opacity: 0.65;
-    }
-  }
-}
-
-.contact-form {
-  // Narrower than the card and centered, instead of stretching
-  // edge-to-edge across the full 700px card.
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-.form-success-msg,
-.form-error-msg {
-  margin-top: 16px;
-  padding: 12px 18px;
-  border-radius: 0.4rem;
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.form-success-msg {
-  background: rgba($celeste, 0.35);
-  color: $dark-blue;
-}
-
-.form-error-msg {
-  background: rgba($primary, 0.12);
-  color: $primary;
-}
-
-// Spread the 4 icons out to span the same width as the Enviar button
-// below them, instead of clustering on one side.
-.contact-info-row {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 20px;
-
-  // Brand blue instead of the default link red.
-  .contact-info-item {
-    color: $dark-blue;
-
-    &:hover {
-      color: $dark-blue;
-      opacity: 0.7;
-    }
-  }
-
-  // Icons only on mobile — the labels crowd the row at that width.
-  @media (max-width: 700px) {
-    .contact-info-item span {
-      display: none;
-    }
-  }
-}
-
-// #contact's .container is a flex column with align-items: center,
-// which was shrinking .footer down to its own content width (losing
-// the long border-top line) and centering it as a block instead of
-// letting text-align: end right-align the text within a full-width
-// line, like it had before the footer moved in here.
-#contact .footer {
-  align-self: stretch;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  // Above every other z-index in the site (including a hovered,
-  // scaled-up .project-card at z-index: 10), so the popup is always
-  // on top of everything, not just the section it opened from.
-  z-index: 2000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgb(52, 62, 74);
-  /* Fallback color */
-  background-color: rgba(52, 62, 74, 0.4);
-  /* Black w/ opacity */
-  // Blurs whatever's behind the modal (the page content) instead of
-  // just dimming it.
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-// Belt-and-suspenders for the .project-card that triggered the modal:
-// closing the modal already lets its :hover state lapse naturally
-// once the modal (topmost, above it) covers the cursor, but this
-// forces it back to resting size immediately rather than relying on
-// that.
-body.modal-open .project-card {
-  transform: none !important;
-  z-index: 1 !important;
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: $black;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid rgba(222, 58, 26, 0.3);
-  width: 80%;
-  /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: rgba($white, 0.5);
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  align-self: end;
-}
-
-.close:hover,
-.close:focus {
-  color: $primary;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-// El Salpicón's modal (and future Obras teatrales entries) — title,
-// description, video, photo gallery and a credits list, instead of the
-// single embedded video the older dubbing-reel modals use.
-.play-modal {
-  max-width: 900px;
-  text-align: left;
-}
-
-.play-modal-title {
-  color: $white;
-  font-weight: 900;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-.play-modal-text {
-  color: rgba($white, 0.85);
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-// Hero + thumbnails gallery: one big main item (video or photo) on the
-// left, smaller clickable thumbnails on the right — clicking a thumb
-// swaps its media into the main slot (see the JS IIFE in atp.js).
-.play-modal-media {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 25px;
-}
-
-.play-modal-media-main {
-  flex: 1 1 auto;
-  min-width: 0;
-  aspect-ratio: 16 / 9;
-  border-radius: 0.2rem;
-  overflow: hidden;
-  background: $black;
-
-  img,
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-}
-
-.play-modal-thumbs {
-  flex: 0 0 96px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  // Fits 6 thumbs (96px wide, 4:3, so 72px tall each) without
-  // scrolling — only kicks in if a modal ever has more than that.
-  max-height: 480px;
-  overflow-y: auto;
-}
-
-.play-modal-thumb {
-  position: relative;
-  flex: 0 0 auto;
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  padding: 0;
-  border: 2px solid transparent;
-  border-radius: 0.2rem;
-  overflow: hidden;
-  cursor: pointer;
-  background: $black;
-  opacity: 0.7;
-  transition: opacity 0.2s ease, border-color 0.2s ease;
-
-  img,
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &.is-active {
-    opacity: 1;
-    border-color: $primary;
-  }
-}
-
-// Play-triangle overlay, only on thumbnails whose full version is a video.
-.play-modal-thumb--video::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-style: solid;
-  border-width: 6px 0 6px 10px;
-  border-color: transparent transparent transparent $white;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.7));
-}
-
-@media (max-width: 600px) {
-  .play-modal-media {
-    flex-direction: column;
-  }
-
-  .play-modal-thumbs {
-    flex-direction: row;
-    flex: 0 0 auto;
-    max-height: none;
-    overflow-x: auto;
-    overflow-y: visible;
-  }
-
-  .play-modal-thumb {
-    flex: 0 0 72px;
-  }
-}
-
-.play-modal-subtitle {
-  color: $white;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 0.04em;
-  padding-top: 15px;
-  margin-bottom: 12px;
-  border-top: 1px solid rgba($white, 0.15);
-}
-
-.play-modal-ficha {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  li {
-    color: rgba($white, 0.85);
-    line-height: 1.6;
-    margin-bottom: 6px;
-  }
-
-  strong {
-    color: $white;
-  }
-}
-
-.play-modal-notes {
-  color: rgba($white, 0.6);
-  font-size: 0.85rem;
-  letter-spacing: 0.02em;
-  margin-top: 16px;
-
-  &:has(+ .play-modal-sponsors) {
-    margin-bottom: 10px;
-  }
-}
-
-// Sponsor logos are opaque white boxes (not transparent), so each gets
-// its own white "badge" background to read intentionally against the
-// modal's dark background instead of showing raw white rectangles.
-.play-modal-sponsors {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-
-  img {
-    height: 32px;
-    width: auto;
-    background: $white;
-    padding: 6px 10px;
-    border-radius: 0.2rem;
-  }
-}
-
-.about-layout {
-  flex-wrap: wrap;
-  gap: 8px;
-  width: 100%;
-}
-
-.about-photo-wrapper {
-  flex: 0 0 auto;
-  // Fixed size instead of matching the card's width, so widening the
-  // card doesn't enlarge the photo — it just centers within it.
-  width: 200px;
-  margin: 0 auto;
-}
-
-.about-photo {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-}
-
-.about-layout .flex-column {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
-#quienes-somos {
-  background-color: $coral;
-  // Overrides the global "section { padding: 100px 0 }" spacing.
-  padding-top: 0;
-  padding-bottom: 0;
-  position: relative;
-  overflow: hidden;
-
-  // Full-bleed instead of the default 80% .container, so the row of
-  // cards can stretch edge to edge.
-  .container {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-// Decorative shape from assets/imgs/formas, bleeding off the bottom-right
-// corner behind the cards (z-index: 5), low opacity so it reads as a
-// background accent rather than competing with the content.
-.about-shape {
-  position: absolute;
-  bottom: -12%;
-  right: -8%;
-  width: 45%;
-  padding-bottom: 45%;
-  background-image: url(../imgs/formas/circulo.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.25;
-  pointer-events: none;
-  z-index: 0;
-}
-
-#institucional {
-  background-color: $ocre;
-  // Overrides the global "section { padding: 100px 0 }" bottom spacing —
-  // 0 so the full-bleed white Apoyos band butts right up against
-  // Otros proyectos below, no ocre gap in between.
-  padding-bottom: 0;
-  // Establishes its own stacking context so the texture's negative
-  // z-index below is contained here — safely behind this section's own
-  // content, without being compared against other sections on the page.
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-}
-
-// Fixed-in-place shapes (circulo, escalera, espiral, estrella, onda,
-// rombo, semicirculo — same set as assets/imgs/formas) that each pulse
-// their own scale in place, some growing and some shrinking, instead of
-// the earlier version where the whole tile scrolled/"fell". That needed
-// a real inline <svg> (see index.html) rather than a CSS background-
-// image: browsers don't run animation on an SVG used as a background —
-// it's decoded as a static image in that context — so each shape has to
-// be an actual DOM element to animate independently.
-.institucional-bg {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  opacity: 0.2;
-  pointer-events: none;
-
-  svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-}
-
-.ip-shape {
-  // transform-box:fill-box makes `transform-origin` resolve against the
-  // shape's own bounding box instead of the whole SVG viewport, so each
-  // one scales from its own center — set per-shape (translate position)
-  // via inline style, since fill-box origin keywords don't account for
-  // an ancestor <g>'s own translate.
-  transform-box: fill-box;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-.ip-shape--grow {
-  animation-name: ip-shape-grow;
-}
-
-.ip-shape--shrink {
-  animation-name: ip-shape-shrink;
-}
-
-@keyframes ip-shape-grow {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.5); }
-}
-
-@keyframes ip-shape-shrink {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(0.55); }
-}
-
-// Shared placeholder for any photo that hasn't been supplied yet — a
-// dashed box naming the expected file, instead of a broken image icon.
-.missing-photo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: rgba($dark-blue, 0.6);
-  border: 1px dashed rgba($dark-blue, 0.4);
-  font-size: 0.7rem;
-  line-height: 1.3;
-  padding: 6px;
-}
-
-.institucional-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  max-width: 900px;
-  margin: 0 auto 50px;
-}
-
-.institucional-tab {
-  background: none;
-  border: 2px solid $primary;
-  border-radius: 2rem;
-  color: $primary;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 0.03em;
-  padding: 10px 22px;
-  cursor: pointer;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-
-  &:hover {
-    background-color: rgba($primary, 0.1);
-  }
-
-  &.active {
-    background-color: $primary;
-    color: $white;
-  }
-}
-
-// Only the active tab's panel is shown — .institucional-block keeps its
-// layout rules, this just adds the toggle.
-.institucional-panel {
-  display: none;
-
-  &.active {
-    display: block;
-  }
-}
-
-.institucional-block {
-  max-width: 900px;
-  margin: 0 auto 80px;
-  text-align: left;
-  color: $dark-blue;
-}
-
-// The timeline's side-by-side photo+text cards need more room than the
-// other panels to stay short — a narrower column just wraps the text
-// into more lines instead, making the cards taller, not shorter.
-.institucional-block[data-tab-panel="participaciones"] {
-  max-width: 1200px;
-}
-
-.institucional-block-title {
-  color: $dark-blue;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-// Apoyos breaks from the rest of Institucional (ocre background +
-// falling shapes): a white band, full-bleed to the viewport edges, so
-// the sponsor logos read cleanly — this also opaquely covers the
-// .institucional-bg shapes in this area.
-.apoyos-block {
-  background: $white;
-  padding: 40px 30px;
-  position: relative;
-  z-index: 1;
-  max-width: none;
-  width: 100vw;
-  // Overrides .institucional-block's margin: 0 auto 80px — 0 here so the
-  // white band sits flush against Otros proyectos below, no ocre gap.
-  margin: 0 calc(50% - 50vw);
-}
-
-.apoyos-title {
-  color: $ocre;
-}
-
-// Alianzas
-.alianza {
-  margin-bottom: 50px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.alianza-name {
-  color: $dark-blue;
-  font-weight: 900;
-  margin-bottom: 15px;
-  // Overrides the global h1-h6 uppercase rule — keep this as written
-  // in the HTML instead of all-caps.
-  text-transform: none;
-}
-
-// Image-left / text-right layout with a self-looping crossfade slideshow
-// on the image side, shared by every alianza block.
-.alianza-body {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-}
-
-// .alianza-slideshow is just the sizing/positioning box now — the
-// clipping (overflow:hidden + shape) lives on .alianza-slideshow-frame
-// instead, so .alianza-slideshow-shadow (a same-shape solid color copy,
-// offset behind it) isn't clipped along with it and can peek out.
-.alianza-slideshow {
-  position: relative;
-  flex: 0 0 40%;
-  aspect-ratio: 4 / 3;
-
-  // A radius bigger than half the box's own width gets capped at 50%
-  // by the browser, so this renders a true semicircle on top that
-  // still tracks the element's actual (responsive) width — a doorway
-  // arch instead of the plain rounded-rectangle frame.
-  &--arch {
-    // Overrides .alianza-body's align-items:flex-start for just this
-    // item, so its height follows the (taller) text column next to it
-    // instead of the fixed 4/3 aspect-ratio.
-    align-self: stretch;
-    aspect-ratio: auto;
-
-    .alianza-slideshow-shadow,
-    .alianza-slideshow-frame {
-      border-radius: 999px 999px 0 0;
-    }
-  }
-
-  // A true square rotated 45° — every corner a real 90° angle. That
-  // only happens if the box itself is a square: the diamond's corners
-  // sit at the box's edge midpoints, so on a non-square (e.g. stretched
-  // to match the text column's height) box they'd be acute/obtuse
-  // instead of 90°. aspect-ratio:1/1 keeps it a square at any width.
-  &--rombo {
-    aspect-ratio: 1 / 1;
-    // Bigger than the base .alianza-slideshow's 40%, but pulled back
-    // from the earlier 80% — that left almost no room for the text.
-    flex: 0 0 55%;
-    // Flips it to the right of the text via flex order (DOM order is
-    // unchanged, so it still reads image-then-text for screen readers).
-    order: 2;
-
-    .alianza-slideshow-shadow,
-    .alianza-slideshow-frame {
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    }
-  }
-}
-
-.alianza-slideshow--rombo ~ .alianza-copy {
-  order: 1;
-}
-
-// Same shape as the frame above it, filled flat and nudged behind it —
-// reads as a second card peeking out from behind.
-.alianza-slideshow-shadow {
-  position: absolute;
-  inset: 0;
-  transform: translate(28px, 10px);
-  background: $primary;
-  border-radius: 0.2rem;
-  z-index: 0;
-}
-
-// The arch's copy: nudged up-left instead of down-right, and further
-// out than the shared default above (still $primary red, like it).
-.alianza-slideshow--arch .alianza-slideshow-shadow {
-  transform: translate(-22px, -22px);
-  background: $primary;
-}
-
-.alianza-slideshow-frame {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  border-radius: 0.2rem;
-  overflow: hidden;
-
-  img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    animation: alianza-slideshow-fade 18s infinite;
-
-    &:nth-child(1) { animation-delay: 0s; }
-    &:nth-child(2) { animation-delay: 6s; }
-    &:nth-child(3) { animation-delay: 12s; }
-  }
-}
-
-// A little playful bounce/tilt on top of the crossfade instead of a
-// plain fade: each photo pops in slightly big & tilted, settles, then
-// tilts the other way as it leaves.
-// Each photo's "on" window (fade in -> hold -> fade out) is deliberately
-// longer than its 6s turn (33.33% of the 18s loop) so it overlaps with
-// the next photo's fade-in — one is always fully opaque, so the yellow
-// background never shows through mid-transition.
-@keyframes alianza-slideshow-fade {
-  0%     { opacity: 0; transform: scale(1.12) rotate(-2deg); }
-  8.33%  { opacity: 1; transform: scale(1) rotate(0deg); }
-  41.67% { opacity: 1; transform: scale(1) rotate(0deg); }
-  50%    { opacity: 0; transform: scale(1.08) rotate(2deg); }
-  100%   { opacity: 0; }
-}
-
-.alianza-copy {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
-.alianza-text {
-  color: $dark-blue;
-  opacity: 1;
-  line-height: 1.6;
-  margin-bottom: 12px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-// Image on top, text below, centered — instead of the side-by-side
-// layout, which gets cramped at mobile widths.
-@media (max-width: 700px) {
-  .alianza-body {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .alianza-slideshow {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 320px;
-
-    &--arch {
-      align-self: center;
-      aspect-ratio: 4 / 3;
-    }
-
-    &--rombo {
-      width: 70%;
-      max-width: 260px;
-      // Was flipped after the copy (via order: 2) to sit on the right
-      // in the row layout — back to its natural DOM order (image first)
-      // now that it's stacked.
-      order: 0;
-    }
-  }
-
-  .alianza-copy {
-    padding: 0 20px;
-  }
-
-  .alianza-slideshow--rombo ~ .alianza-copy {
-    order: 0;
-  }
-}
-
-// Participaciones institucionales (timeline). Cards alternate left/right
-// of a central rail, staggered brick-style — each card's top sits at the
-// vertical midpoint of the previous card (atp.js measures rendered
-// heights and sets each item's `top` in JS; plain CSS can't stagger by
-// "half of the sibling's actual height" since that height is dynamic).
-// Each item fades/slides up the first time it scrolls into view (atp.js
-// adds .is-visible), then stays — never reverses.
-.timeline {
-  position: relative;
-  max-width: 1150px;
-  margin: 0 auto;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: $white;
-  }
-}
-
-.timeline-item {
-  position: absolute;
-  left: 0;
-  width: calc(50% - 20px);
-  box-sizing: border-box;
-  text-align: right;
-  opacity: 0;
-  // Starts well below its final spot so it visibly rises up the rail
-  // into place instead of just nudging up a little.
-  transform: translateY(120px);
-  transition: opacity 0.8s ease, transform 0.8s ease, top 0.3s ease;
-
-  &.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  // Dot centered exactly on the rail (item's right edge sits 20px from
-  // the rail; the dot is 14px across with no border now — box-shadow
-  // doesn't add to the box, so -27px is what centers it here). A solid
-  // white core with a soft glow instead of a hard border, like the
-  // reference image's connector points.
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -27px;
-    transform: translateY(-50%);
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: $white;
-    box-shadow: 0 0 0 3px rgba($ocre, 0.45), 0 0 14px 4px rgba($ocre, 0.5);
-    z-index: 1;
-  }
-
-  &:nth-child(even) {
-    left: calc(50% + 20px);
-    text-align: left;
-
-    &::before {
-      right: auto;
-      left: -27px;
-    }
-  }
-}
-
-.timeline-card {
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  max-width: 100%;
-  // Frosted-glass card: low opacity plus a blur so whatever's behind it
-  // (the falling-shapes texture, photos in other cards) shows through
-  // softened, instead of a flat translucent color.
-  background: rgba($dark-blue, 0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba($white, 0.15);
-  color: $white;
-  border-radius: 0.6rem;
-  padding: 16px 20px;
-  text-align: left;
-  // Own transform (separate from .timeline-item's entrance-animation
-  // translateY) so hover-scaling doesn't fight the reveal animation.
-  transition: transform 0.25s ease;
-
-  &:hover {
-    transform: scale(1.05);
-    z-index: 2;
-  }
-
-  // Photo on the outside edge (away from the rail), copy on the inside
-  // (near the rail) — mirrored so it reads correctly on either side.
-  .timeline-item:nth-child(even) & {
-    flex-direction: row-reverse;
-  }
-}
-
-.timeline-card-copy {
-  min-width: 0;
-}
-
-.timeline-card-title {
-  color: $white;
-  font-weight: 700;
-  font-size: 0.9rem;
-  margin-bottom: 6px;
-}
-
-.timeline-photo {
-  display: block;
-  flex: 0 0 130px;
-  width: 130px;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 0.3rem;
-
-  // The card's own dark background makes the base .missing-photo's
-  // dark-blue text/border invisible — lighten it for this context.
-  &.missing-photo {
-    color: rgba($white, 0.6);
-    border-color: rgba($white, 0.4);
-  }
-}
-
-.timeline-card p {
-  color: rgba($white, 0.85);
-  opacity: 1;
-  line-height: 1.5;
-  margin: 0;
-  font-size: 0.85rem;
-}
-
-// Single column on narrow screens: rail moves to the left edge, every
-// card sits to its right regardless of odd/even, and the stagger is
-// turned off. position:relative (not static!) drops each item back into
-// normal flow — same effect on layout — while still anchoring its own
-// dot (position:absolute, so it needs *a* positioned ancestor): with
-// static it'd fall back to .timeline as a whole, putting every dot at
-// that shared box's top:50%/left instead of each item's own.
-@media (max-width: 700px) {
-  .timeline::before {
-    left: 10px;
-  }
-
-  .timeline-item,
-  .timeline-item:nth-child(even) {
-    position: relative !important;
-    // Resets the desktop even-column offset — relative (unlike static)
-    // still honors left/right, so without this the even cards would
-    // render shifted right by that same calc(50% + 20px).
-    left: 0;
-    width: 100%;
-    padding: 0 0 20px 40px;
-    text-align: left;
-
-    &::before {
-      left: 2px;
-      right: auto;
-    }
-  }
-
-  // Stacked instead of side-by-side — a fixed 90px-wide photo squeezed
-  // next to the text left it cramped on a phone screen. Photo on top,
-  // copy below, same for every card regardless of odd/even.
-  .timeline-card,
-  .timeline-item:nth-child(even) .timeline-card {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .timeline-photo {
-    flex-basis: auto;
-    width: 100%;
-  }
-}
-
-#contact .footer a:hover {
-  color: $secondary;
-}
-
-/*flags*/
-.flags {
-  width: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 5px;
-}
-
-.flags__item {
-  width: 30px;
-}
-
-.flags__item:hover {
-  width: 40px;
-}
-
-.flags__item.active {
-  width: 40px;
-}
-
-.flags__img {
-  cursor: pointer;
-  display: block;
-}
-
-.logo-caroca {
-  opacity: 1;
-}
-
-.logo-caroca:hover {
-  opacity: 0.7;
-}
-
-// Mobile only, per request — the SVG's wordmark is drawn white (built
-// for the old flat-dark footer background); on the busy light/dark
-// mixed background now behind the mobile footer it goes invisible in
-// the light patches. A CSS filter would've had to flatten the whole
-// logo (mark included) to one flat color, losing the mark's own brand
-// colors — instead <picture> (see index.html) swaps in
-// logo-caroca-black.svg here, a copy with just the wordmark's fill
-// changed from white to black; the mark itself is untouched in both
-// files. Shrunk down (from the original 70px, which forced the logo
-// onto its own line below the text) so the row fits on one line, then
-// bumped back up a bit per request — still comfortably under 70px.
-@media (max-width: 700px) {
-  .logo-caroca {
-    height: 34px;
-  }
-}
-
-@media (max-width: 1366px) {
-
-  #servicios .container {
-    width: 90%;
-  }
-}
-
-@media (max-width: 1350px) {
-
-  .p-seguridadehigiene {
-    margin-right: 50px;
-  }
-
-  #servicios .container {
-    width: 100%;
-
-    ol {
-      margin: 0 200px 100px 200px;
-    }
-  }
-
-  #quienes-somos .container {
-    width: 80%;
-  }
-}
-
-@media (max-width: 1300px) {
-  nav .container {
-    width: 98%;
-  }
-}
-
-@media (max-width: 1200px) {
-  nav .container {
-    width: 98%;
-  }
-
-  #seguridadehigiene .container {
-    margin-right: 0px;
-  }
-
-  #workwithus {
-    padding-left: 50%;
-  }
-}
-
-@media (max-width: 1100px) {
-  nav .container {
-    width: 98%;
-  }
-
-  .navbar-brand {
-    width: 30%;
-
-    img:not(#logo-atp):not(#logo-insignia) {
-      width: 50% !important;
-    }
-  }
-
-  .contact-form {
-    width: 70%;
-  }
-
-  #logo-atp {
-    width: 100%;
-  }
-
-}
-
-// The 70% above (legacy, shared with tablet widths up to 1100px) left
-// a lot of unused card padding on a phone screen, with the inputs/
-// textarea/button nowhere near the card's own edges. Wider specifically
-// below 700px — after the 1100px block above in source order, so it
-// wins there despite matching specificity.
-@media (max-width: 700px) {
-  .contact-form {
-    width: 100%;
-  }
-
-  // %section-title-style's 2.2rem (shared with every other section
-  // title) was wrapping "CONTÁCTAME" mid-word on a narrower card.
-  // Matches that rule's own selector + !important so this actually
-  // wins against it instead of losing to equal specificity.
-  h2[data-section="contact"][data-translate="title"] {
-    font-size: 1.7rem !important;
-  }
-}
-
-@media (max-width: 1000px) {
-
-  .pre-footer .list {
-    width: calc(100% / 3) !important;
-  }
-
-  .pre-footer .list2,
-  .pre-footer .list3 {
-    width: auto;
-  }
-
-}
-
-
-@media (max-width: 900px) {
-
-  #workwithus {
-    padding-left: 50%;
-    padding-top: 250px;
-  }
-
-  #footer .container {
-    width: 98%;
-  }
-
-  #quienes-somos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-size: contain !important;
-
-    .container {
-      width: 90%;
-    }
-  }
-
-  #seguridadehigiene {
-    background-color: $black;
-    background-image: none !important;
-
-    .container {
-      margin: auto;
-    }
-  }
-}
-
-@media (max-width: 799px) {
-
-  .navbar-expand-md>.container,
-  .navbar-expand-md>.container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  #quienes-somos .container {
-    background-size: cover !important;
-  }
-}
-
-/* Tablet medio: menú 50% ancho, alineado a la derecha */
-@media (min-width: 500px) and (max-width: 799px) {
-  nav.page-navbar .navbar-collapse.show {
-    width: 50%;
-    margin-left: auto;
-  }
-}
-
-/* Mobile chico: menú 100% ancho */
-@media (max-width: 499px) {
-  nav.page-navbar .navbar-collapse.show {
-    width: 100%;
-  }
-}
-
-@media (min-width: 800px) {
-  .navbar-expand-md {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row nowrap;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .navbar-expand-md .navbar-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .navbar-expand-md .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
-
-  .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0.7rem;
-    padding-left: 0.7rem;
-  }
-
-  .navbar-expand-md>.container,
-  .navbar-expand-md>.container-fluid {
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-
-  .navbar-expand-md .navbar-collapse {
-    display: -webkit-box !important;
-    display: -webkit-flex !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-flex-basis: auto;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-  }
-
-  .navbar-expand-md .navbar-toggler {
-    display: none;
-  }
-
-  nav.page-navbar {
-    padding: 10px 0px 0px 10px !important;
-  }
-
-  .navbar {
-    padding: 0px;
-  }
-
-}
-
-/* Con 6 items el menú horizontal no entra cómodo entre 800 y 1299px:
-   se mantiene el comportamiento de hamburguesa (como en mobile) en ese rango
-   en vez de forzar el menú en una sola línea. */
-@media (min-width: 800px) and (max-width: 1299px) {
-  .navbar-expand-md .navbar-toggler {
-    display: block !important;
-  }
-
-  .navbar-expand-md .navbar-nav {
-    flex-direction: column !important;
-  }
-
-  .navbar-expand-md>.container,
-  .navbar-expand-md>.container-fluid {
-    flex-wrap: wrap !important;
-  }
-
-  nav.page-navbar .navbar-collapse {
-    height: 0 !important;
-    overflow: hidden !important;
-    opacity: 0 !important;
-    transition: all 0.3s linear 0s;
-  }
-
-  nav.page-navbar .navbar-collapse.show {
-    height: auto !important;
-    opacity: 1 !important;
-  }
-
-  nav.page-navbar .nav-item .nav-link {
-    margin: 0;
-    font-size: 1rem;
-    letter-spacing: 0.05em;
-  }
-}
-
-
-@media (max-width: 800px) {
-  .flex-row {
-    flex-direction: column !important;
-  }
-
-  .margin-right {
-    margin-right: 0px;
-  }
-
-  .p-seguridadehigiene {
-    margin-left: 10%;
-  }
-
-  #servicios .container ol {
-    margin: 0 50px 100px 50px;
-  }
-
-  #workwithus {
-    padding-top: 60px;
-    padding-left: 0px;
-    padding-bottom: 60px;
-    background-image: none;
-    height: auto;
-
-  }
-
-  .navbar-brand {
-    padding-right: 0px;
-
-    img:not(#logo-atp):not(#logo-insignia) {
-      width: 100% !important;
-    }
-  }
-
-  #logo-atp {
-    width: 100%;
-  }
-
-}
-
-@media (max-width: 700px) {
-  #seguridadehigiene {
-    background-image: url(../imgs/bg-img-4-mb.jpg) !important;
-    background-size: contain !important;
-    background-repeat: no-repeat;
-  }
-
-  .p-seguridadehigiene {
-    margin-top: 200px;
-  }
-
-  .pre-footer .list,
-  .pre-footer .list2,
-  .pre-footer .list3 {
-    width: 90% !important;
-  }
-
-  #servicios {
-    li {
-      font-size: 0.94em;
-    }
-  }
-
-
-  .header .header-content {
-    margin-top: 0px;
-
-    .logo {
-      margin-bottom: 40px;
-      margin-left: -10px;
-    }
-
-    p {
-      font-size: 1em;
-      margin-left: 0px;
-    }
-  }
-
-  #quienes-somos {
-    // Real (flow-affecting) spacing, not transform — pushes the title
-    // AND the carousel below it down together as one block, for
-    // breathing room under the eyebrow text above (a transform on just
-    // the title moved it without moving its sibling .about-carousel,
-    // which then collided with it).
-    padding: 170px 0 50px;
-  }
-
-  #logo-atp {
-    width: 100%;
-  }
-
-}
-
-@media (max-width: 450px) {
-  .header .header-content {
-    .logo {
-      margin-bottom: 40px;
-      width: 80%;
-    }
-  }
-
-  input::file-selector-button {
-    display: flex;
-    flex-direction: column;
-  }
-
-  input[type="file"] {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navbar-brand {
-    width: 50%;
-    padding-right: 0px;
-  }
-
-  #logo-atp {
-    width: 100%;
-  }
-
-  .navbar {
-    padding: 0px;
-  }
-
-  .has-bg-img h1{
-    font-size: 2.8em;
-  }
-}
-
-// ===========================================================
-// Accessibility: high-contrast toggle
-// ===========================================================
-// Several titles/cards use white text over the site's coral/ocre
-// accent backgrounds, which only reaches ~2:1 contrast (WCAG needs
-// 4.5:1) — but switching them to dark-blue by default changes the
-// site's look, so instead it's opt-in: a floating button (above the
-// WhatsApp button) toggles a `.a11y-contrast` class on <body> via
-// assets/js/atp.js, which is what every rule below is scoped to. The
-// preference is remembered (localStorage) so it stays on next visit.
-// Off by default, the page renders exactly as it did before.
-
-.contrast-toggle-button {
-  position: fixed;
-  bottom: 170px;
-  right: 20px;
-  background-color: $celeste;
-  color: $dark-blue;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 22px;
-  text-align: center;
-  line-height: 60px;
-  box-shadow: 0 2px 5px rgba(52, 62, 74, 0.3);
-  cursor: pointer;
-  z-index: 1000;
-
-  // Marks the toggle itself as currently on. Icon flips to white here —
-  // dark-blue (the resting-state icon color) doesn't have enough
-  // contrast against this red.
-  &[aria-pressed="true"] {
-    background-color: $primary;
-    color: $white;
-  }
-}
-
-// Same button stack as .contrast-toggle-button, one slot further up
-// (170px + the same 75px gap used between every button below it).
-.colorblind-toggle-button {
-  position: fixed;
-  bottom: 245px;
-  right: 20px;
-  background-color: $celeste;
-  color: $dark-blue;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 22px;
-  text-align: center;
-  line-height: 60px;
-  box-shadow: 0 2px 5px rgba(52, 62, 74, 0.3);
-  cursor: pointer;
-  z-index: 1000;
-
-  // Icon flips to white here — dark-blue (the resting-state icon
-  // color) doesn't have enough contrast against this red.
-  &[aria-pressed="true"] {
-    background-color: $primary;
-    color: $white;
-  }
-}
-
-// Applied to the navbar and <main> separately (not body) — filter on a
-// shared ancestor would turn it into the containing block for every
-// position:fixed descendant, which would drag the WhatsApp/scroll/these
-// two toggle buttons out of their normal viewport-fixed spot. Between
-// the two of them, #scrollspy + #contenido-principal already cover
-// every bit of visible page content.
-body.a11y-colorblind {
-  #scrollspy,
-  #contenido-principal {
-    filter: url(#daltonize-deuteranopia);
-  }
-}
-
-body.a11y-contrast {
-  .about-title,
-  .choose-subtitle,
-  h2[data-section="our-services"][data-translate="title"] {
-    color: $dark-blue !important;
-  }
-
-  .institucional-tab {
-    border-color: $dark-blue;
-    color: $dark-blue;
-
-    &:hover {
-      background-color: rgba($dark-blue, 0.1);
-    }
-
-    &.active {
-      background-color: $dark-blue;
-      border-color: $dark-blue;
-      color: $white;
-    }
-  }
-
-  .timeline-card {
-    background: rgba($dark-blue, 0.85);
-  }
-
-  .about-wrapper .content {
-    color: $dark-blue;
-
-    .title,
-    p {
-      color: $dark-blue;
-    }
-  }
-
-  .services-wrapper {
-    p:not(.services-wrapper-credit) {
-      color: $dark-blue;
-    }
-  }
-
-  .services-wrapper .title,
-  .services-wrapper-credit {
-    color: $dark-blue;
-  }
-
-  // "Nos acompañan" — ocre text on the Apoyos band's white background
-  // only reaches ~2.1:1 contrast (needs 4.5:1).
-  .apoyos-title {
-    color: $dark-blue;
-  }
-
-  // Already dark-blue on #obras-teatrales's white background, just
-  // faded to 80% opacity — solidifying it here for full contrast
-  // headroom, not because it currently fails.
-  .projects-intro {
-    opacity: 1;
-  }
-
-  // Faded/gray body text sitting on dark-blue backgrounds — bumped to
-  // solid white here (not dark-blue, which would be invisible against
-  // a dark-blue background). Covers the header intro paragraph, the
-  // "Otros proyectos" intro and its accordion cards, and the timeline
-  // cards in Participaciones institucionales.
-  .header-brand-description,
-  .op-intro,
-  .op-block-preview,
-  .op-block-sponsors,
-  .op-block-panel-inner p,
-  .timeline-card p {
-    color: $white;
-    opacity: 1;
-  }
-}

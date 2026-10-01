@@ -1,0 +1,381 @@
+{
+    "destinations": [
+        {
+            "id": "buenos-aires",
+            "order": 1,
+            "name": "Buenos Aires",
+            "images": [
+                "destinos/buenos-aires.jpg"
+            ],
+            "best_season": {
+                "es": "Primavera (septiembre-noviembre, con los jacarandás en flor) y otoño (marzo-mayo) — clima templado, sin el calor húmedo del verano porteño.",
+                "en": "Spring (September–November, with jacarandas in bloom) and autumn (March–May) — mild weather, without Buenos Aires' humid summer heat.",
+                "it": "Primavera (settembre-novembre, con le jacaranda in fiore) e autunno (marzo-maggio) — clima mite, senza l'afa umida dell'estate di Buenos Aires."
+            },
+            "duration": {
+                "es": "3-4 días para conocerla con profundidad, alguno más si quieres conocer Uruguay viajando 1 hora desde la ciudad.",
+                "en": "3-4 days to explore it in depth, plus an extra day or two if you'd like to visit Uruguay, just an hour away by ferry.",
+                "it": "3-4 giorni per scoprirla a fondo, uno o due in più se vuoi visitare l'Uruguay, a solo un'ora di distanza in traghetto."
+            },
+            "b2c": {
+                "unique": {
+                    "es": "Buenos Aires te llevará a recorrer la historia de Argentina, desde el lugar donde empieza la gesta histórica de independencia, en Plaza de Mayo, atravesando el barrio de San Telmo que vio florecer a nuestros más grandes tangueros mientras la jerga Lunfarda fue abriéndose camino dando lugar a una mixtura europea-criolla única. La ciudad está llena de rincones mágicos donde comer, beber y sumergirse en nuestra cultura van todo el tiempo de la mano.",
+                    "en": "Buenos Aires takes you through the history of Argentina, from Plaza de Mayo — where the independence movement began — through San Telmo, the neighborhood that saw our greatest tango legends rise while Lunfardo slang carved its way into everyday speech, creating a unique European-criollo blend. The city is full of magical corners where eating, drinking and soaking up our culture always go hand in hand.",
+                    "it": "Buenos Aires ti porta a percorrere la storia dell'Argentina, da Plaza de Mayo — dove è nato il movimento per l'indipendenza — attraverso San Telmo, il quartiere che ha visto fiorire i nostri più grandi tangheri mentre lo slang Lunfardo si faceva strada, dando vita a un mix europeo-criollo unico. La città è piena di angoli magici dove mangiare, bere e immergersi nella nostra cultura vanno sempre di pari passo."
+                },
+                "local_tip": {
+                    "es": "Buenos Aires es una gran ciudad, por lo que conviene mantener las mismas precauciones que adoptarías en cualquier otra capital. Nosotros te ayudaremos a evitar las trampas para turistas y a aprovechar mejor tu tiempo. Solo tienes que contarnos qué te gustaría descubrir.",
+                    "en": "Buenos Aires is a big city, so the same precautions you'd take in any other capital apply here too. We'll help you avoid tourist traps and make the most of your time — just tell us what you'd like to discover.",
+                    "it": "Buenos Aires è una grande città, quindi valgono le stesse precauzioni che adotteresti in qualsiasi altra capitale. Ti aiuteremo a evitare le trappole per turisti e a sfruttare al meglio il tuo tempo. Basta dirci cosa vorresti scoprire."
+                }
+            },
+            "b2b": {
+                "value_prop": {
+                    "es": "Recorrido histórico y cultural — desde Plaza de Mayo hasta San Telmo, cuna del tango y el lunfardo. Ciudad de gastronomía y vida nocturna intensa, ideal como punto de entrada o cierre de cualquier itinerario.",
+                    "en": "A historical and cultural journey — from Plaza de Mayo to San Telmo, the birthplace of tango and lunfardo. A city of great food and intense nightlife, ideal as the opening or closing chapter of any itinerary.",
+                    "it": "Un percorso storico e culturale — da Plaza de Mayo a San Telmo, culla del tango e del lunfardo. Una città di gastronomia e vita notturna intensa, ideale come apertura o chiusura di qualsiasi itinerario."
+                },
+                "ideal_for": {
+                    "es": "Food, Wine & Comfort; Slow & Immersive (gastronomía y cultura urbana).",
+                    "en": "Food, Wine & Comfort; Slow & Immersive (gastronomy and urban culture).",
+                    "it": "Food, Wine & Comfort; Slow & Immersive (gastronomia e cultura urbana)."
+                },
+                "operational_note": {
+                    "es": "Destino de entrada/salida en casi todo itinerario — buen candidato para extender noches sin afectar el resto del programa. Aplican las mismas precauciones de seguridad urbana que en cualquier gran ciudad; documentar bien al pasajero sobre zonas y trampas turísticas reduce consultas durante el viaje.",
+                    "en": "An entry/exit destination for almost every itinerary — a good candidate for extending nights without affecting the rest of the program. The same urban safety precautions apply as in any big city; briefing the traveler well on areas and tourist traps reduces questions during the trip.",
+                    "it": "Una destinazione di ingresso/uscita per quasi ogni itinerario — un buon candidato per aggiungere notti extra senza influire sul resto del programma. Valgono le stesse precauzioni di sicurezza urbana di qualsiasi grande città; informare bene il viaggiatore su zone e trappole turistiche riduce le richieste durante il viaggio."
+                }
+            }
+        },
+        {
+            "id": "iguazu",
+            "order": 2,
+            "name": "Iguazú",
+            "images": [
+                "destinos/misiones.jpg"
+            ],
+            "best_season": {
+                "es": "Todo el año es visitable. Abril-junio y agosto-octubre evitan el calor más intenso; diciembre-marzo trae más caudal (espectáculo mayor) pero también más humedad y calor.",
+                "en": "Visitable year-round. April–June and August–October avoid the most intense heat; December–March brings a higher water flow (a bigger spectacle) but also more humidity and heat.",
+                "it": "Visitabile tutto l'anno. Aprile-giugno e agosto-ottobre evitano il caldo più intenso; dicembre-marzo porta una portata d'acqua maggiore (spettacolo più imponente) ma anche più umidità e caldo."
+            },
+            "duration": {
+                "es": "2-3 días (un día completo en el lado argentino, medio día en el lado brasileño y margen para la Gran Aventura en lancha si te apetece).",
+                "en": "2-3 days (a full day on the Argentine side, half a day on the Brazilian side, plus time for the Gran Aventura boat ride if you're up for it).",
+                "it": "2-3 giorni (una giornata intera sul lato argentino, mezza giornata sul lato brasiliano, più margine per la Gran Aventura in gommone se ti va)."
+            },
+            "b2c": {
+                "unique": {
+                    "es": "El encuentro de tres grandes culturas como la Paraguaya, la Brasilera y la Argentina hace que este lugar invite a querer descubrir más allá de lo que estamos viendo. Las Cataratas se llevan todos los reflectores, pero para llegar hay que adentrarse en un parque lleno de una vegetación densa que cobija a muchos animales y aves, que están acostumbradas a la visita del humano pero es necesario guardar distancia y respetar su espacio.",
+                    "en": "The meeting point of three great cultures — Paraguayan, Brazilian and Argentine — makes this a place that invites you to discover more than what you're looking at. The Falls take all the spotlight, but reaching them means walking through a park full of dense vegetation, home to animals and birds that are used to human visitors but still deserve their distance and respect.",
+                    "it": "L'incontro di tre grandi culture — paraguaiana, brasiliana e argentina — rende questo luogo un invito a scoprire più di ciò che si vede. Le Cascate catturano tutta l'attenzione, ma per raggiungerle bisogna addentrarsi in un parco dalla vegetazione fitta, che ospita animali e uccelli abituati alla presenza umana ma ai quali va comunque riservata distanza e rispetto."
+                },
+                "local_tip": {
+                    "es": "Llegar a la Garganta del Diablo antes de las 10am — mejor luz para fotos y todavía sin las multitudes de los grupos grandes que llegan al mediodía.",
+                    "en": "Get to the Garganta del Diablo before 10am — the light is better for photos, and you'll still beat the crowds of large groups that arrive around midday.",
+                    "it": "Arriva alla Garganta del Diablo prima delle 10 del mattino — la luce è migliore per le foto e anticiperai la folla dei grandi gruppi che arrivano verso mezzogiorno."
+                }
+            },
+            "b2b": {
+                "value_prop": {
+                    "es": "Las Cataratas del Iguazú en un entorno de selva densa con fauna visible, en el cruce de tres culturas (Argentina, Brasil, Paraguay). Alto factor \"wow\" con relativamente poco tiempo de estadía.",
+                    "en": "The Iguazú Falls set in dense jungle with visible wildlife, at the crossroads of three cultures (Argentina, Brazil, Paraguay). A high \"wow\" factor with a relatively short stay.",
+                    "it": "Le Cascate dell'Iguazú immerse in una fitta giungla con fauna visibile, all'incrocio di tre culture (Argentina, Brasile, Paraguay). Un alto fattore \"wow\" con una permanenza relativamente breve."
+                },
+                "ideal_for": {
+                    "es": "Active & Wild (Gran Aventura en lancha); Family Journeys; Slow & Immersive.",
+                    "en": "Active & Wild (Gran Aventura boat ride); Family Journeys; Slow & Immersive.",
+                    "it": "Active & Wild (Gran Aventura in gommone); Family Journeys; Slow & Immersive."
+                },
+                "operational_note": {
+                    "es": "La Garganta del Diablo antes de las 10am evita las multitudes de grupos grandes — útil para posicionar como \"experiencia exclusiva\" en la propuesta. Si el pasajero visita el lado brasileño, confirmar requisitos de visa/documentación con anticipación.",
+                    "en": "Visiting the Garganta del Diablo before 10am avoids the crowds of large groups — useful for positioning it as an \"exclusive experience\" in your proposal. If the traveler is visiting the Brazilian side, confirm visa/documentation requirements in advance.",
+                    "it": "Visitare la Garganta del Diablo prima delle 10 evita la folla dei grandi gruppi — utile per posizionarla come \"esperienza esclusiva\" nella proposta. Se il viaggiatore visita il lato brasiliano, verificare in anticipo i requisiti di visto/documenti."
+                }
+            }
+        },
+        {
+            "id": "salta-jujuy",
+            "order": 3,
+            "name": "Salta y Jujuy",
+            "images": [
+                "destinos/salta.JPG",
+                "destinos/jujuy.jpg"
+            ],
+            "best_season": {
+                "es": "Abril-noviembre (estación seca). Mayo-agosto tiene noches frías pero días soleados con cielos despejados, ideales para paisajes.",
+                "en": "April–November (dry season). May–August has cold nights but sunny days with clear skies, ideal for landscape views.",
+                "it": "Aprile-novembre (stagione secca). Maggio-agosto ha notti fredde ma giornate soleggiate con cieli tersi, ideali per i paesaggi."
+            },
+            "duration": {
+                "es": "2 días en la ciudad + 3-4 días adicionales si se suma Cafayate, Cachi o la Quebrada.",
+                "en": "2 days in the city, plus 3-4 additional days if you add Cafayate, Cachi or the Quebrada.",
+                "it": "2 giorni in città, più 3-4 giorni aggiuntivi se si aggiungono Cafayate, Cachi o la Quebrada."
+            },
+            "b2c": {
+                "unique": {
+                    "es": "En Salta y Jujuy, siglos de historia andina, presencia inca e influencia colonial española conviven con culturas originarias que permanecen vivas. Esa diversidad se expresa en la arquitectura, el arte, la música y una gastronomía profundamente ligada al territorio. Quebradas, pueblos de adobe y paisajes de altura, iluminados por atardeceres extraordinarios, hacen del noroeste argentino un destino difícil de comparar.",
+                    "en": "In Salta and Jujuy, centuries of Andean history, Inca presence and Spanish colonial influence live alongside native cultures that remain very much alive. That diversity shows in the architecture, art, music and a cuisine deeply tied to the land. Ravines, adobe villages and high-altitude landscapes, lit by extraordinary sunsets, make Argentina's northwest a destination hard to compare to anywhere else.",
+                    "it": "A Salta e Jujuy, secoli di storia andina, presenza inca e influenza coloniale spagnola convivono con culture originarie ancora molto vive. Questa diversità si esprime nell'architettura, nell'arte, nella musica e in una gastronomia profondamente legata al territorio. Quebradas, villaggi di adobe e paesaggi d'alta quota, illuminati da tramonti straordinari, rendono il nordovest argentino una destinazione difficile da eguagliare."
+                },
+                "local_tip": {
+                    "es": "Si quieres visitar las Salinas Grandes, a 3.450 metros sobre el nivel del mar, organizaremos el itinerario para que el ascenso sea gradual. Es una experiencia extraordinaria, pero requiere ciertas precauciones.",
+                    "en": "If you'd like to visit the Salinas Grandes, at 3,450 meters above sea level, we'll organize the itinerary so the ascent is gradual. It's an extraordinary experience, but it does call for some precautions.",
+                    "it": "Se vuoi visitare le Salinas Grandes, a 3.450 metri sul livello del mare, organizzeremo l'itinerario in modo che la salita sia graduale. È un'esperienza straordinaria, ma richiede alcune precauzioni."
+                }
+            },
+            "b2b": {
+                "value_prop": {
+                    "es": "Noroeste argentino con fuerte identidad andina e inca, arquitectura colonial y cultura originaria viva. Paisajes de altura y gastronomía de autor ligada al territorio — difícil de comparar con el resto del país.",
+                    "en": "Argentina's northwest, with a strong Andean and Inca identity, colonial architecture and living native culture. High-altitude landscapes and territory-driven signature cuisine — hard to compare to anywhere else in the country.",
+                    "it": "Il nordovest argentino, con una forte identità andina e inca, architettura coloniale e cultura originaria viva. Paesaggi d'alta quota e una cucina d'autore legata al territorio — difficile da confrontare con il resto del paese."
+                },
+                "ideal_for": {
+                    "es": "Slow & Immersive; Active & Wild (alta montaña); Food, Wine & Comfort (gastronomía regional).",
+                    "en": "Slow & Immersive; Active & Wild (high mountain); Food, Wine & Comfort (regional cuisine).",
+                    "it": "Slow & Immersive; Active & Wild (alta montagna); Food, Wine & Comfort (cucina regionale)."
+                },
+                "operational_note": {
+                    "es": "Para excursiones a las Salinas Grandes (3.450 msnm) es necesario planificar una aclimatación progresiva — importante advertir al pasajero en la etapa de venta para evitar malestar por altura y ajustar expectativas.",
+                    "en": "Excursions to the Salinas Grandes (3,450 masl) require planning a gradual acclimatization — it's important to flag this to the traveler at the sales stage, to avoid altitude discomfort and set the right expectations.",
+                    "it": "Le escursioni alle Salinas Grandes (3.450 m s.l.m.) richiedono un'acclimatazione graduale — è importante avvisare il viaggiatore già in fase di vendita, per evitare malesseri da altitudine e impostare le aspettative giuste."
+                }
+            }
+        },
+        {
+            "id": "mendoza",
+            "order": 4,
+            "name": "Mendoza",
+            "images": [
+                "destinos/mendoza.jpeg"
+            ],
+            "best_season": {
+                "es": "Marzo-abril (vendimia/cosecha, imperdible pero concurrido) o primavera (septiembre-noviembre) para buen clima con menos gente.",
+                "en": "March–April (harvest season — unmissable, but busy) or spring (September–November) for good weather with fewer crowds.",
+                "it": "Marzo-aprile (vendemmia — imperdibile, ma affollata) oppure primavera (settembre-novembre) per un clima piacevole con meno folla."
+            },
+            "duration": {
+                "es": "3-4 días para recorrer distintas zonas vitivinícolas (Luján de Cuyo, Valle de Uco) sin apuro.",
+                "en": "3-4 days to explore different wine regions (Luján de Cuyo, Valle de Uco) without rushing.",
+                "it": "3-4 giorni per visitare senza fretta le diverse zone vitivinicole (Luján de Cuyo, Valle de Uco)."
+            },
+            "b2c": {
+                "unique": {
+                    "es": "Mendoza te permite descubrir algunas de las regiones vitivinícolas más reconocidas de Argentina y combinarlas con paisajes de la cordillera de los Andes. En sus bodegas boutique conocerás a personas que dedican su vida al vino y disfrutan compartiendo su trabajo contigo.",
+                    "en": "Mendoza lets you discover some of Argentina's most renowned wine regions alongside the landscapes of the Andes mountain range. In its boutique wineries you'll meet people who've dedicated their lives to wine and love sharing their craft with you.",
+                    "it": "Mendoza ti permette di scoprire alcune delle regioni vitivinicole più rinomate dell'Argentina, insieme ai paesaggi della cordigliera delle Ande. Nelle sue cantine boutique incontrerai persone che hanno dedicato la vita al vino e amano condividere il proprio lavoro con te."
+                },
+                "local_tip": {
+                    "es": "Nuestra propuesta será que descubras pequeñas bodegas de producción limitada y conozcas a las personas apasionadas que hay detrás de cada vino. Según tu Travel Vibe, también podrás visitar la zona del Aconcagua o relajarte en el spa de tu hotel.",
+                    "en": "Our approach is to introduce you to small, limited-production wineries and the passionate people behind each wine. Depending on your Travel Vibe, you could also visit the Aconcagua area or simply relax at your hotel's spa.",
+                    "it": "La nostra proposta è farti scoprire piccole cantine a produzione limitata e le persone appassionate dietro ogni vino. A seconda del tuo Travel Vibe, potrai anche visitare la zona dell'Aconcagua o semplicemente rilassarti nella spa del tuo hotel."
+                }
+            },
+            "b2b": {
+                "value_prop": {
+                    "es": "Enoturismo de nivel mundial en bodegas boutique, con el Aconcagua de fondo. Combina producto de vinos premium con servicio personalizado de anfitriones especializados.",
+                    "en": "World-class wine tourism in boutique wineries, with the Aconcagua as a backdrop. Combines a premium wine product with personalized service from specialized hosts.",
+                    "it": "Enoturismo di livello mondiale in cantine boutique, con l'Aconcagua sullo sfondo. Unisce un prodotto vinicolo premium a un servizio personalizzato di host specializzati."
+                },
+                "ideal_for": {
+                    "es": "Food, Wine & Comfort; Slow & Immersive.",
+                    "en": "Food, Wine & Comfort; Slow & Immersive.",
+                    "it": "Food, Wine & Comfort; Slow & Immersive."
+                },
+                "operational_note": {
+                    "es": "Priorizar bodegas boutique de producción limitada por sobre las masivas — mejor experiencia y diferencial de venta. Es un destino flexible para combinar con una excursión al Aconcagua o day-spa, según el Travel Vibe del pasajero.",
+                    "en": "Prioritize small, limited-production wineries over large-scale ones — a better experience and a clear selling point. It's a flexible destination to combine with an Aconcagua excursion or a day-spa, depending on the traveler's Travel Vibe.",
+                    "it": "Dare priorità a cantine boutique a produzione limitata rispetto a quelle su larga scala — un'esperienza migliore e un chiaro punto di forza in fase di vendita. È una destinazione flessibile da abbinare a un'escursione all'Aconcagua o a una giornata di spa, a seconda del Travel Vibe del viaggiatore."
+                }
+            }
+        },
+        {
+            "id": "puerto-madryn",
+            "order": 5,
+            "name": "Puerto Madryn",
+            "images": [
+                "destinos/puerto-madryn.webp"
+            ],
+            "best_season": {
+                "es": "Junio-diciembre para ballenas (pico julio-septiembre); pingüinos de septiembre a marzo.",
+                "en": "June–December for whales (peak July–September); penguins from September to March.",
+                "it": "Giugno-dicembre per le balene (picco luglio-settembre); pinguini da settembre a marzo."
+            },
+            "duration": {
+                "es": "3-4 días para cubrir el avistaje y recorrer Península Valdés con calma.",
+                "en": "3-4 days to cover the wildlife-watching and explore Península Valdés unhurried.",
+                "it": "3-4 giorni per dedicarsi all'avvistamento della fauna e visitare con calma la Península Valdés."
+            },
+            "b2c": {
+                "unique": {
+                    "es": "La vida marina al alcance de la mano con los Pingüinos de Magallanes, la Ballena Franca Austral y los Lobos Marinos de un Pelo, que invitan a visitarlos de la mano de locales especializados en el cuidado y la conservación de la flora y fauna local.",
+                    "en": "Marine life within arm's reach: Magellanic Penguins, the Southern Right Whale and South American Sea Lions, all best visited alongside locals specialized in the care and conservation of the local flora and fauna.",
+                    "it": "La vita marina a portata di mano: pinguini di Magellano, balena franca australe e otarie sudamericane, da scoprire insieme a esperti locali specializzati nella cura e nella conservazione della flora e fauna del posto."
+                },
+                "local_tip": {
+                    "es": "Te recomendamos reservar un margen adicional si quieres realizar una navegación para observar ballenas, ya que el viento puede obligar a cancelarla. En determinados momentos de la temporada también es posible verlas desde la costa, aunque el avistamiento nunca puede garantizarse.",
+                    "en": "We recommend leaving an extra buffer of time if you want to take a whale-watching boat trip, since wind can force a cancellation. At certain points in the season it's also possible to spot them from the coast, though a sighting can never be guaranteed.",
+                    "it": "Ti consigliamo di lasciare un margine di tempo extra se vuoi fare un'uscita in barca per l'avvistamento delle balene, perché il vento può costringere ad annullarla. In alcuni momenti della stagione è possibile avvistarle anche dalla costa, anche se l'avvistamento non può mai essere garantito."
+                }
+            },
+            "b2b": {
+                "value_prop": {
+                    "es": "Avistaje de fauna marina de primer nivel — Ballena Franca Austral, Pingüinos de Magallanes, Lobos Marinos — con guías locales especializados en conservación.",
+                    "en": "Top-tier marine wildlife watching — Southern Right Whale, Magellanic Penguins, Sea Lions — with local guides specialized in conservation.",
+                    "it": "Avvistamento di fauna marina di prim'ordine — balena franca australe, pinguini di Magellano, otarie — con guide locali specializzate in conservazione."
+                },
+                "ideal_for": {
+                    "es": "Family Journeys; Slow & Immersive.",
+                    "en": "Family Journeys; Slow & Immersive.",
+                    "it": "Family Journeys; Slow & Immersive."
+                },
+                "operational_note": {
+                    "es": "Dejar margen adicional en la temporada de ballenas — los vientos moderados a fuertes suelen cancelar navegaciones. Vale la pena aclarar al pasajero que hay buena probabilidad de avistaje desde la costa sin necesidad de embarcarse, como respaldo ante cancelaciones.",
+                    "en": "Build in extra buffer time during whale season — moderate to strong winds often cancel boat trips. It's worth telling the traveler there's a good chance of sighting whales from the coast without boarding a boat, as a backup in case of cancellations.",
+                    "it": "Prevedere un margine di tempo extra durante la stagione delle balene — venti da moderati a forti spesso causano l'annullamento delle uscite in barca. Vale la pena informare il viaggiatore che c'è una buona probabilità di avvistamento dalla costa senza dover salire in barca, come alternativa in caso di annullamento."
+                }
+            }
+        },
+        {
+            "id": "el-calafate",
+            "order": 6,
+            "name": "El Calafate",
+            "images": [
+                "destinos/santa-cruz-calafate.webp"
+            ],
+            "best_season": {
+                "es": "Octubre-abril (temporada alta); noviembre-marzo tiene el mejor clima. En invierno el glaciar sigue accesible, con menos horas de luz.",
+                "en": "October–April (high season); November–March has the best weather. In winter the glacier remains accessible, with fewer daylight hours.",
+                "it": "Ottobre-aprile (alta stagione); novembre-marzo offre il clima migliore. In inverno il ghiacciaio resta accessibile, con meno ore di luce."
+            },
+            "duration": {
+                "es": "3 días (uno para el glaciar, uno para trekking sobre hielo o navegación, uno de margen por el clima).",
+                "en": "3 days (one for the glacier, one for ice trekking or a boat trip, one as a weather buffer).",
+                "it": "3 giorni (uno per il ghiacciaio, uno per il trekking sul ghiaccio o la navigazione, uno di margine per il meteo)."
+            },
+            "b2c": {
+                "unique": {
+                    "es": "El Calafate es la puerta de entrada al Parque Nacional Los Glaciares, el más extenso de Argentina. Aquí podrás acercarte a algunos de los grandes paisajes de hielo de la Patagonia, conocer la vida local y disfrutar de la gastronomía regional. Si las condiciones naturales lo permiten, quizá también puedas presenciar un desprendimiento glaciar.",
+                    "en": "El Calafate is the gateway to Los Glaciares National Park, the largest in Argentina. Here you can get close to some of Patagonia's great ice landscapes, experience local life and enjoy regional cuisine. If conditions allow, you might even witness a piece of the glacier calving.",
+                    "it": "El Calafate è la porta d'accesso al Parco Nazionale Los Glaciares, il più esteso dell'Argentina. Qui potrai avvicinarti ad alcuni dei grandi paesaggi di ghiaccio della Patagonia, scoprire la vita locale e goderti la cucina regionale. Se le condizioni lo permettono, potresti persino assistere al distacco di un pezzo di ghiacciaio."
+                },
+                "local_tip": {
+                    "es": "Durante la temporada alta son muchas las personas que disfrutan de este destino, pero siempre podemos organizar horarios de visita especiales para que puedas disfrutar en paz y con un guía dedicado para ti. Además, te recomendamos visitar alguna Estancia donde descubrir el estilo de vida Patagónico, sus usos y costumbres y, lo más importante, su gastronomía.",
+                    "en": "During high season this destination gets busy, but we can always arrange special visiting times so you can enjoy it in peace with a guide dedicated to you. We also recommend visiting an Estancia to discover the Patagonian way of life, its customs and — most importantly — its food.",
+                    "it": "Durante l'alta stagione questa destinazione è molto frequentata, ma possiamo sempre organizzare orari di visita speciali per farti godere il posto in tranquillità, con una guida dedicata solo a te. Ti consigliamo inoltre di visitare una Estancia per scoprire lo stile di vita patagonico, i suoi usi e costumi e, soprattutto, la sua gastronomia."
+                }
+            },
+            "b2b": {
+                "value_prop": {
+                    "es": "Puerta de entrada al Parque Nacional Los Glaciares, el más grande del país. Combina paisaje patagónico extremo con gastronomía regional de alto nivel.",
+                    "en": "The gateway to Los Glaciares National Park, the country's largest. Combines extreme Patagonian landscapes with high-level regional cuisine.",
+                    "it": "La porta d'accesso al Parco Nazionale Los Glaciares, il più grande del paese. Unisce paesaggi patagonici estremi a una cucina regionale di alto livello."
+                },
+                "ideal_for": {
+                    "es": "Active & Wild (senderismo sobre hielo); Slow & Immersive; Food, Wine & Comfort.",
+                    "en": "Active & Wild (ice trekking); Slow & Immersive; Food, Wine & Comfort.",
+                    "it": "Active & Wild (trekking sul ghiaccio); Slow & Immersive; Food, Wine & Comfort."
+                },
+                "operational_note": {
+                    "es": "En temporada alta es posible coordinar horarios de visita especiales para evitar los grupos masivos — diferencial claro para un pasajero premium. Sumar una noche en estancia patagónica agrega valor percibido.",
+                    "en": "In high season it's possible to arrange special visiting times to avoid mass groups — a clear differentiator for a premium traveler. Adding a night at a Patagonian estancia boosts perceived value.",
+                    "it": "In alta stagione è possibile organizzare orari di visita speciali per evitare i grandi gruppi — un chiaro elemento distintivo per un viaggiatore premium. Aggiungere una notte in un'estancia patagonica aumenta il valore percepito."
+                }
+            }
+        },
+        {
+            "id": "el-chalten",
+            "order": 7,
+            "name": "El Chaltén",
+            "images": [
+                "destinos/santa-cruz-chalten.jpg"
+            ],
+            "best_season": {
+                "es": "Noviembre-marzo (verano austral). El viento patagónico es una constante durante todo el año.",
+                "en": "November–March (austral summer). The Patagonian wind is a constant all year round.",
+                "it": "Novembre-marzo (estate australe). Il vento patagonico è una costante tutto l'anno."
+            },
+            "duration": {
+                "es": "3-4 días para al menos dos trekkings principales (Laguna de los Tres, Laguna Torre) con margen para el clima.",
+                "en": "3-4 days for at least two of the main treks (Laguna de los Tres, Laguna Torre), with a weather buffer.",
+                "it": "3-4 giorni per almeno due dei trekking principali (Laguna de los Tres, Laguna Torre), con margine per il meteo."
+            },
+            "b2c": {
+                "unique": {
+                    "es": "Desde que empieces el camino hacia El Chaltén sentirás la inmensidad de la Patagonia y comprenderás las distancias entre cada lugar. Una vez allí, el ambiente de montaña te invitará a descubrir cada sendero y cada laguna. El Chaltén es la Capital Nacional del Trekking y ofrece amaneceres extraordinarios frente al macizo del Fitz Roy.",
+                    "en": "From the moment you start the road to El Chaltén you'll feel the immensity of Patagonia and understand the distances between each place. Once there, the mountain atmosphere invites you to discover every trail and every lagoon. El Chaltén is Argentina's National Trekking Capital, with extraordinary sunrises facing the Fitz Roy massif.",
+                    "it": "Dal momento in cui inizi la strada verso El Chaltén sentirai l'immensità della Patagonia e capirai le distanze tra un luogo e l'altro. Una volta lì, l'atmosfera di montagna ti invita a scoprire ogni sentiero e ogni laguna. El Chaltén è la Capitale Nazionale del Trekking, con albe straordinarie di fronte al massiccio del Fitz Roy."
+                },
+                "local_tip": {
+                    "es": "Puedes salir muy temprano hacia Laguna de los Tres para intentar ver la luz del amanecer sobre el Fitz Roy, siempre que el tiempo y las condiciones del sendero lo permitan. Si no te sientes seguro con tu nivel de senderismo, podemos organizar el acompañamiento de un guía para que disfrutes del recorrido con tranquilidad.",
+                    "en": "You can head out very early toward Laguna de los Tres to try to catch the sunrise light on the Fitz Roy, weather and trail conditions permitting. If you're not confident about your hiking level, we can arrange a guide to accompany you so you can enjoy the hike at ease.",
+                    "it": "Puoi partire molto presto verso la Laguna de los Tres per provare a vedere la luce dell'alba sul Fitz Roy, meteo e condizioni del sentiero permettendo. Se non ti senti sicuro del tuo livello di trekking, possiamo organizzare l'accompagnamento di una guida per goderti il percorso in tranquillità."
+                }
+            },
+            "b2b": {
+                "value_prop": {
+                    "es": "Capital nacional del trekking, con amaneceres de referencia mundial sobre el Fitz Roy. Ambiente de montaña internacional, ideal para perfiles activos.",
+                    "en": "Argentina's national trekking capital, with world-reference sunrises over the Fitz Roy. An international mountain-town atmosphere, ideal for active travelers.",
+                    "it": "La capitale nazionale del trekking, con albe di riferimento mondiale sul Fitz Roy. Un'atmosfera da villaggio di montagna internazionale, ideale per viaggiatori attivi."
+                },
+                "ideal_for": {
+                    "es": "Active & Wild.",
+                    "en": "Active & Wild.",
+                    "it": "Active & Wild."
+                },
+                "operational_note": {
+                    "es": "La salida a Laguna de los Tres se recomienda muy temprano (5-6am) para el fenómeno de \"alpenglow\" antes de que se nuble, algo frecuente a media mañana. Para un pasajero con experiencia limitada en senderismo, se puede asignar un guía dedicado — buen argumento para no descartar el destino si el cliente tiene menos experiencia.",
+                    "en": "The Laguna de los Tres hike is best started very early (5-6am) for the \"alpenglow\" effect before it clouds over, which often happens by mid-morning. For a traveler with limited hiking experience, a dedicated guide can be assigned — a good reason not to rule out this destination for less experienced clients.",
+                    "it": "L'escursione alla Laguna de los Tres è consigliata molto presto (5-6 del mattino) per cogliere l'effetto \"alpenglow\" prima che il cielo si copra, cosa frequente in tarda mattinata. Per un viaggiatore con poca esperienza di trekking, si può assegnare una guida dedicata — un buon motivo per non escludere questa destinazione anche con clienti meno esperti."
+                }
+            }
+        },
+        {
+            "id": "ushuaia",
+            "order": 8,
+            "name": "Ushuaia",
+            "images": [
+                "destinos/usuahia.avif"
+            ],
+            "best_season": {
+                "es": "Diciembre-marzo (verano austral, días largos) para trekking y navegación; junio-septiembre para nieve y esquí.",
+                "en": "December–March (austral summer, long days) for trekking and boat trips; June–September for snow and skiing.",
+                "it": "Dicembre-marzo (estate australe, giornate lunghe) per trekking e navigazione; giugno-settembre per neve e sci."
+            },
+            "duration": {
+                "es": "3-4 días (ciudad + Parque Nacional + una navegación por el Canal Beagle).",
+                "en": "3-4 days (city + National Park + a Beagle Channel boat trip).",
+                "it": "3-4 giorni (città + Parco Nazionale + una navigazione nel Canale di Beagle)."
+            },
+            "b2c": {
+                "unique": {
+                    "es": "Ushuaia se encuentra entre el Canal Beagle y los Andes fueguinos, en uno de los paisajes más australes del continente. Durante tu visita podrás recorrer lagos, montañas y el Parque Nacional Tierra del Fuego. En temporada, determinadas navegaciones por el Canal Beagle permiten observar colonias de pingüinos de Magallanes y pingüinos papúa. La ciudad más austral del mundo, puerta de entrada a la Antártida y al Parque Nacional Tierra del Fuego — el \"fin del mundo\" real, no una frase de marketing.",
+                    "en": "Ushuaia sits between the Beagle Channel and the Fuegian Andes, in one of the southernmost landscapes on the continent. During your visit you can explore lakes, mountains and Tierra del Fuego National Park. In season, certain Beagle Channel boat trips let you spot colonies of Magellanic and Gentoo penguins. The southernmost city in the world, gateway to Antarctica and to Tierra del Fuego National Park — the real \"end of the world\", not a marketing line.",
+                    "it": "Ushuaia si trova tra il Canale di Beagle e le Ande della Terra del Fuoco, in uno dei paesaggi più australi del continente. Durante la visita potrai esplorare laghi, montagne e il Parco Nazionale Tierra del Fuego. In stagione, alcune navigazioni nel Canale di Beagle permettono di osservare colonie di pinguini di Magellano e pinguini papua. La città più australe del mondo, porta d'accesso all'Antartide e al Parco Nazionale Tierra del Fuego — la vera \"fine del mondo\", non uno slogan di marketing."
+                },
+                "local_tip": {
+                    "es": "Invierno o verano, Ushuaia no cesará de sorprenderte con atardeceres fantásticos y actividades de todo tipo. En verano, te recomendamos visitar el Parque Nacional y hacer excursiones de montaña con 4x4, mientras que en invierno se convierte en un centro de esquí de nivel mundial. Al ser un destino pequeño y selecto, la previsión es lo más importante para satisfacer tu Travel Vibe.",
+                    "en": "Winter or summer, Ushuaia never stops surprising you with fantastic sunsets and all kinds of activities. In summer, we recommend visiting the National Park and doing 4x4 mountain excursions, while in winter it becomes a world-class ski destination. Being a small, select destination, planning ahead matters most to match your Travel Vibe.",
+                    "it": "Inverno o estate, Ushuaia non smette mai di sorprendere con tramonti fantastici e attività di ogni tipo. In estate consigliamo di visitare il Parco Nazionale e fare escursioni in montagna con il 4x4, mentre in inverno diventa una meta sciistica di livello mondiale. Trattandosi di una destinazione piccola e ricercata, la pianificazione anticipata è ciò che conta di più per soddisfare il tuo Travel Vibe."
+                }
+            },
+            "b2b": {
+                "value_prop": {
+                    "es": "La ciudad más austral del mundo, puerta de entrada a la Antártida y al Parque Nacional Tierra del Fuego. Incluye navegación por el Canal Beagle con avistaje de Pingüinos de Magallanes y Papúa.",
+                    "en": "The southernmost city in the world, gateway to Antarctica and Tierra del Fuego National Park. Includes a Beagle Channel boat trip with Magellanic and Gentoo penguin sightings.",
+                    "it": "La città più australe del mondo, porta d'accesso all'Antartide e al Parco Nazionale Tierra del Fuego. Include una navigazione nel Canale di Beagle con avvistamento di pinguini di Magellano e papua."
+                },
+                "ideal_for": {
+                    "es": "Active & Wild (nieve y esquí en invierno; 4x4 en verano); Slow & Immersive.",
+                    "en": "Active & Wild (snow and skiing in winter; 4x4 in summer); Slow & Immersive.",
+                    "it": "Active & Wild (neve e sci in inverno; 4x4 in estate); Slow & Immersive."
+                },
+                "operational_note": {
+                    "es": "Destino pequeño y de alta demanda estacional — la anticipación en la reserva es crítica, sobre todo para navegaciones y alojamiento en temporada alta. Doble temporada (verano/invierno) permite ofrecerlo casi todo el año con propuestas distintas.",
+                    "en": "A small destination with high seasonal demand — booking ahead is critical, especially for boat trips and accommodation in high season. A double season (summer/winter) lets you offer it almost year-round with different proposals.",
+                    "it": "Una destinazione piccola con un'alta domanda stagionale — prenotare in anticipo è fondamentale, soprattutto per le navigazioni e l'alloggio in alta stagione. Una doppia stagione (estate/inverno) permette di proporla quasi tutto l'anno con offerte diverse."
+                }
+            }
+        }
+    ]
+}

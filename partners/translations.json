@@ -1,0 +1,197 @@
+{
+  "es": {
+    "menu": {
+      "home": "Home",
+      "about": "Nosotros",
+      "how_we_work": "Cómo trabajamos",
+      "destinos": "Destinos",
+      "contacto": "Contacto"
+    },
+    "home": {
+      "eyebrow": "Partner Agency",
+      "title": "Tu socio local en Argentina.",
+      "lede": "Tu pasajero es nuestra prioridad. Trabajaremos contigo para cuidar su experiencia y mantenerte informado durante todo el viaje. A través de Argentine Host dispondrá de asistencia las 24 horas y, cuando sea necesario, podrá contactar con una persona que conoce su itinerario.",
+      "cta_primary": "Conoce cómo trabajamos",
+      "cta_secondary": "Únete como agencia socia",
+      "video_placeholder": "Video institucional",
+      "trust_title": "Por qué trabajar con nosotros",
+      "highlight1": "Respondemos rápido — entre 24 y 48 horas.",
+      "highlight2": "Itinerarios a medida — nunca propuestas genéricas.",
+      "highlight3": "Argentine Host — comunicación constante, 24/7."
+    },
+    "nosotros": {
+      "title": "Somos jóvenes, sofisticados e intrépidos — pero antes que nada, confiables.",
+      "paragraph1": "Argentina 1810 nace para que tu agencia disponga de un equipo local que responda con rapidez, se comunique con transparencia y cuide a tu pasajero como si fuera propio. Cuando vendes Argentina con nosotros, dejas de contratar a un proveedor y ganas un socio.",
+      "paragraph2": "Elegimos colaboradores que comparten nuestros principios de respeto, transparencia y compromiso con el destino, porque cada pasajero que reciben representa también la reputación de tu agencia."
+    },
+    "como_trabajamos": {
+      "title": "Cómo trabajamos",
+      "intro": "Conocemos los destinos, los hoteles y a nuestros operadores locales… pero sobre todo, conocemos los principales desafíos a los que nos enfrentaremos juntos a lo largo de cada viaje, y sabemos cómo resolverlos para que la experiencia sea inolvidable:",
+      "step1": "Nos cuentas el perfil de tu pasajero y lo que estás buscando.",
+      "step2": "Diseñamos un itinerario a medida con proveedores verificados en destino.",
+      "step3": "Te enviamos un presupuesto clara y profesional, sin letra pequeña.",
+      "step4": "Nuestro Argentine Host acompañará a tu pasajero antes y durante el viaje, con una comunicación proactiva.",
+      "step5": "Cerramos con un reporte de la experiencia y seguimiento posterior al viaje.",
+      "why_title": "Por qué elegirnos",
+      "why1": "Respondemos entre 24 a 48 horas buscando las mejores soluciones.",
+      "why2": "Itinerarios realmente a medida, nunca propuestas genéricas, pero sí proveedores probados.",
+      "why3": "Servicio Argentine Host: comunicación constante y un número de teléfono disponible las 24 horas. Cuando sea necesario, tu pasajero podrá hablar con una persona que conozca su itinerario y hable su idioma. Tú recibirás la información necesaria sin tener que perseguirnos para saber qué está ocurriendo.",
+      "why4": "Ante cualquier imprevisto, te informamos de las alternativas y compartimos nuestra recomendación. Después decidimos contigo cómo actuar para que tu pasajero nunca esté solo.",
+      "why5": "Procesos y documentación claros, pensados para integrarse fácilmente a tu forma de trabajar."
+    },
+    "destinos": {
+      "title": "Destinos",
+      "lede": "Lo esencial de cada destino, listo para armar tu propuesta.",
+      "label_best_season": "Mejor época",
+      "label_duration": "Duración sugerida",
+      "label_ideal_for": "Ideal para",
+      "label_operational_note": "Nota operativa",
+      "image_placeholder": "Fotos — muy pronto"
+    },
+    "contacto": {
+      "title": "Únete como agencia socia",
+      "lede": "Cuéntanos sobre tu agencia y el perfil de pasajero con el que trabajas. Te respondemos en menos de 48 horas para coordinar los próximos pasos.",
+      "label_agencia": "Nombre de la agencia",
+      "label_pais": "País",
+      "label_contacto_nombre": "Nombre de contacto",
+      "label_cargo": "Cargo",
+      "label_email": "Email",
+      "label_telefono": "Teléfono / WhatsApp",
+      "label_mercado": "Mercado en el que trabajas (luxury, adventure, honeymoon, etc.)",
+      "label_mensaje": "Cuéntanos más",
+      "submit": "Enviar",
+      "success": "Gracias — ya recibimos tu mensaje. Te responderemos en las próximas 24 a 48 horas.",
+      "error": "Hubo un error. Probá de nuevo en un rato."
+    }
+  },
+  "en": {
+    "menu": {
+      "home": "Home",
+      "about": "About us",
+      "how_we_work": "How we work",
+      "destinos": "Destinations",
+      "contacto": "Contact"
+    },
+    "home": {
+      "eyebrow": "Partner Agency",
+      "title": "Your local partner in Argentina.",
+      "lede": "Your traveler is our priority. We'll work with you to look after their experience and keep you informed throughout the trip. Through Argentine Host they'll have 24-hour assistance and, when needed, can reach someone who knows their itinerary.",
+      "cta_primary": "See how we work",
+      "cta_secondary": "Join as a partner agency",
+      "video_placeholder": "Institutional video",
+      "trust_title": "Why work with us",
+      "highlight1": "We respond fast — within 24 to 48 hours.",
+      "highlight2": "Tailor-made itineraries — never generic proposals.",
+      "highlight3": "Argentine Host — constant communication, 24/7."
+    },
+    "nosotros": {
+      "title": "We're young, sophisticated and bold — but trustworthy above all.",
+      "paragraph1": "Argentina 1810 was created so your agency has a local team that responds quickly, communicates transparently, and looks after your traveler as if they were our own. When you sell Argentina with us, you stop hiring a supplier and gain a partner.",
+      "paragraph2": "We choose collaborators who share our principles of respect, transparency and commitment to the destination, because every traveler they receive also represents your agency's reputation."
+    },
+    "como_trabajamos": {
+      "title": "How we work",
+      "intro": "We know the destinations, the hotels and our local operators… but above all, we know the main challenges we'll face together throughout each trip, and we know how to solve them so the experience is unforgettable:",
+      "step1": "You tell us your traveler's profile and what you're looking for.",
+      "step2": "We design a tailor-made itinerary with verified local providers.",
+      "step3": "We send you a clear, professional quote — no fine print.",
+      "step4": "Our Argentine Host accompanies your traveler before and during the trip, with proactive communication.",
+      "step5": "We close with an experience report and post-trip follow-up.",
+      "why_title": "Why choose us",
+      "why1": "We respond within 24 to 48 hours, looking for the best solutions.",
+      "why2": "Genuinely tailor-made itineraries — never generic proposals, but always proven providers.",
+      "why3": "Argentine Host service: constant communication and a phone number available 24 hours a day. When needed, your traveler can speak with someone who knows their itinerary and speaks their language. You get the information you need without having to chase us for updates.",
+      "why4": "Whenever something unexpected comes up, we inform you of the alternatives and share our recommendation. Then we decide together how to act, so your traveler is never alone.",
+      "why5": "Clear processes and documentation, designed to fit easily into the way you work."
+    },
+    "destinos": {
+      "title": "Destinations",
+      "lede": "The essentials of each destination, ready to build your proposal.",
+      "label_best_season": "Best time to visit",
+      "label_duration": "Suggested duration",
+      "label_ideal_for": "Ideal for",
+      "label_operational_note": "Operational note",
+      "image_placeholder": "Photos — coming soon"
+    },
+    "contacto": {
+      "title": "Join as a partner agency",
+      "lede": "Tell us about your agency and the traveler profile you work with. We'll get back to you in less than 48 hours to coordinate next steps.",
+      "label_agencia": "Agency name",
+      "label_pais": "Country",
+      "label_contacto_nombre": "Contact name",
+      "label_cargo": "Role",
+      "label_email": "Email",
+      "label_telefono": "Phone / WhatsApp",
+      "label_mercado": "Market you work with (luxury, adventure, honeymoon, etc.)",
+      "label_mensaje": "Tell us more",
+      "submit": "Send",
+      "success": "Thank you — we've received your message. We'll get back to you within 24 to 48 hours.",
+      "error": "Something went wrong. Please try again shortly."
+    }
+  },
+  "it": {
+    "menu": {
+      "home": "Home",
+      "about": "Chi siamo",
+      "how_we_work": "Come lavoriamo",
+      "destinos": "Destinazioni",
+      "contacto": "Contatti"
+    },
+    "home": {
+      "eyebrow": "Partner Agency",
+      "title": "Il tuo partner locale in Argentina.",
+      "lede": "Il tuo viaggiatore è la nostra priorità. Lavoreremo con te per curare la sua esperienza e tenerti informato durante tutto il viaggio. Grazie all'Argentine Host avrà assistenza 24 ore su 24 e, quando necessario, potrà contattare una persona che conosce il suo itinerario.",
+      "cta_primary": "Scopri come lavoriamo",
+      "cta_secondary": "Unisciti come agenzia partner",
+      "video_placeholder": "Video istituzionale",
+      "trust_title": "Perché lavorare con noi",
+      "highlight1": "Rispondiamo in fretta — entro 24-48 ore.",
+      "highlight2": "Itinerari su misura — mai proposte generiche.",
+      "highlight3": "Argentine Host — comunicazione costante, 24/7."
+    },
+    "nosotros": {
+      "title": "Siamo giovani, sofisticati e intrepidi — ma prima di tutto affidabili.",
+      "paragraph1": "Argentina 1810 nasce perché la tua agenzia abbia un team locale che risponde rapidamente, comunica con trasparenza e si prende cura del tuo viaggiatore come se fosse suo. Quando vendi l'Argentina con noi, smetti di assumere un fornitore e guadagni un partner.",
+      "paragraph2": "Scegliamo collaboratori che condividono i nostri principi di rispetto, trasparenza e impegno verso la destinazione, perché ogni viaggiatore che ricevono rappresenta anche la reputazione della tua agenzia."
+    },
+    "como_trabajamos": {
+      "title": "Come lavoriamo",
+      "intro": "Conosciamo le destinazioni, gli hotel e i nostri operatori locali… ma soprattutto conosciamo le principali sfide che affronteremo insieme lungo ogni viaggio, e sappiamo come risolverle perché l'esperienza sia indimenticabile:",
+      "step1": "Ci racconti il profilo del tuo viaggiatore e cosa stai cercando.",
+      "step2": "Progettiamo un itinerario su misura con fornitori locali verificati.",
+      "step3": "Ti inviamo un preventivo chiaro e professionale, senza lettera piccola.",
+      "step4": "Il nostro Argentine Host accompagnerà il tuo viaggiatore prima e durante il viaggio, con una comunicazione proattiva.",
+      "step5": "Chiudiamo con un report dell'esperienza e un follow-up post-viaggio.",
+      "why_title": "Perché sceglierci",
+      "why1": "Rispondiamo entro 24-48 ore cercando le soluzioni migliori.",
+      "why2": "Itinerari davvero su misura, mai proposte generiche, ma sempre fornitori collaudati.",
+      "why3": "Servizio Argentine Host: comunicazione costante e un numero di telefono disponibile 24 ore su 24. Quando necessario, il tuo viaggiatore potrà parlare con una persona che conosce il suo itinerario e parla la sua lingua. Tu riceverai le informazioni necessarie senza doverci rincorrere per sapere cosa sta succedendo.",
+      "why4": "Di fronte a qualsiasi imprevisto, ti informiamo delle alternative e condividiamo il nostro consiglio. Poi decidiamo insieme come agire, perché il tuo viaggiatore non sia mai solo.",
+      "why5": "Processi e documentazione chiari, pensati per integrarsi facilmente nel tuo modo di lavorare."
+    },
+    "destinos": {
+      "title": "Destinazioni",
+      "lede": "L'essenziale di ogni destinazione, pronto per costruire la tua proposta.",
+      "label_best_season": "Periodo migliore",
+      "label_duration": "Durata suggerita",
+      "label_ideal_for": "Ideale per",
+      "label_operational_note": "Nota operativa",
+      "image_placeholder": "Foto — in arrivo a breve"
+    },
+    "contacto": {
+      "title": "Unisciti come agenzia partner",
+      "lede": "Raccontaci della tua agenzia e del profilo di viaggiatore con cui lavori. Ti risponderemo entro 48 ore per coordinare i prossimi passi.",
+      "label_agencia": "Nome dell'agenzia",
+      "label_pais": "Paese",
+      "label_contacto_nombre": "Nome del referente",
+      "label_cargo": "Ruolo",
+      "label_email": "Email",
+      "label_telefono": "Telefono / WhatsApp",
+      "label_mercado": "Mercato in cui lavori (luxury, adventure, honeymoon, ecc.)",
+      "label_mensaje": "Raccontaci di più",
+      "submit": "Invia",
+      "success": "Grazie — abbiamo ricevuto il tuo messaggio. Ti risponderemo entro 24-48 ore.",
+      "error": "Si è verificato un errore. Riprova tra poco."
+    }
+  }
+}

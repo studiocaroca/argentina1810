@@ -5,30 +5,66 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- "/" (the access-picker splash) is intentionally left out — it's
+       marked noindex since it has no content of its own, just two links. -->
+
+  <!-- Free Explorer (B2C) -->
   <url>
-    <loc>https://www.aptoparatodopublico.org/</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
+    <loc>https://www.argentina1810.com/cliente/</loc>
+    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.aptoparatodopublico.org/#about</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
+    <loc>https://www.argentina1810.com/cliente/nosotros.php</loc>
+    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.aptoparatodopublico.org/#ourservices</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.argentina1810.com/cliente/travel-vibe.php</loc>
+    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.aptoparatodopublico.org/#portfolio</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.argentina1810.com/cliente/destinos.php</loc>
+    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.aptoparatodopublico.org/#contact</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
+    <loc>https://www.argentina1810.com/cliente/blog.php</loc>
+    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/cliente/contacto.php</loc>
+    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
     <priority>0.70</priority>
+  </url>
+
+  <!-- Partner Agency (B2B) -->
+  <url>
+    <loc>https://www.argentina1810.com/partners/</loc>
+    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/partners/nosotros.php</loc>
+    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/partners/como-trabajamos.php</loc>
+    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/partners/destinos.php</loc>
+    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/partners/contacto.php</loc>
+    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
   </url>
 
 </urlset>

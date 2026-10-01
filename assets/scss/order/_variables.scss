@@ -1,94 +1,172 @@
-$blue:    #A9E3FB;
-$indigo:  #C45F90;
-$purple:  #7948EC;
-$pink:    #FC8BC0;
-$red:     #DE3A1A;
-$orange:  #FF9E83;
-$yellow:  #E8A529;
-$green:   #A3C14A;
-$teal:    #20c997;
-$cyan:    #47D8E0;
+// ---------------------------------------------------------------------------
+// Argentina 1810 — brand tokens (see manual de marca)
+// Single source of truth for the site's palette. Every other color name
+// below is a semantic alias onto one of these five, so a palette change
+// only ever happens here.
+// ---------------------------------------------------------------------------
+$color-primary:      #7208B7; // Tech Purple — headers, primary buttons, hero backgrounds, footer
+$color-secondary:    #B979F7; // Deep Mauve — hovers, accents, alternate section backgrounds
+$color-accent:       #EFBB52; // Traditional Gold — CTAs, underlines, badges, accent details
+$color-accent-light: #FED16E; // Golden Glow — accent highlight/glow variant
+$color-neutral:      #D3D3D3; // Light Gray — neutral backgrounds, secondary text, separators
+
+:root {
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-accent: #{$color-accent};
+  --color-accent-light: #{$color-accent-light};
+  --color-neutral: #{$color-neutral};
+}
 
 $white:    #FFFFFF;
-$black:    #343E4A;
-$gray-500: #A09CB0;
-$white-500: rgba(255, 255, 255, 0.6);
+$black:    $color-primary;
+$gray-500: $color-neutral;
 
-$celeste:       #A9E3FB;
-$rojo:          #DE3A1A;
-$coral:         #FF9E83;
-$ocre:          #E8A529;
-$peach:         #FCC094;
-$dark-blue:     #343E4A;
+$dark-blue:     $color-primary;
 
-$primary:       #DE3A1A;
-$secondary:     #E8A529;
-$primary-light:        rgba(222, 58, 26, 0.3);
-$primary-dark:          #A82C13;
-$secondary-light:       rgba(232, 165, 41, 0.4);
-$secondary-dark:        #B37E1E;
-
-// Define common padding and border radius sizes and more.
-$line-height-lg:              1.5;
-$line-height-sm:              1.5;
-
-$border-width:                1px;
-$border-color:                $primary;
-
-$border-radius:               .2rem;
-$border-radius-lg:            .15rem;
-$border-radius-sm:            .1rem;
-
-
+$primary:       $color-primary;
+$primary-dark:          darken($color-primary, 12%);
 
 // Body
 //
 // Settings for the `<body>` element.
-$body-bg:                   #343E4A;
+$body-bg:                   $color-primary;
 $body-color:                #FFFFFF;
 
 
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;900&display=swap');
-
-// stylelint-disable value-keyword-case
-$font-family-sans-serif:      'Lato', sans-serif;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-base:            $font-family-sans-serif;
-// Fonts
-//
-// Font, line-height, and color for body text, headings, and more.
-$font-size-base:              1rem; // Assumes the browser default, typically `16px`
-
-$h1-font-size:                $font-size-base * 3;
-$h2-font-size:                $font-size-base * 2.5;
-$h3-font-size:                $font-size-base * 1.85;
-$h4-font-size:                $font-size-base * 1.6;
-$h5-font-size:                $font-size-base * 1.3;
-$h6-font-size:                $font-size-base;
-
-$text-muted:                  $gray-500;
-
-$section-title-font-size:     4rem;
-
-.bg-primary,
-.bg-secondary,
-.bg-success,
-.bg-info,
-.bg-warning,
-.bg-danger,
-.bg-dark{
-	.navbar-brand{
-		color: $white;
-		&:hover { color: darken($white, 10%); }
-	}
+// "Andor" (manual de marca) — the real family, straight from the client's
+// files in assets/fonts/andor/ (OTF, one weight per file). Every heading
+// in the site uses font-weight:400, so Regular is the one that actually
+// renders, but the rest of the family is wired up too in case that
+// changes. Body copy uses Montserrat throughout.
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
-.bg-light{
-	.navbar-brand{
-		color: $primary-dark;
-		&:hover { color: darken($primary-dark, 10%); }
-	}
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Thin-Italic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Light-Italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Regular-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Medium-Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Semi-Bold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Semi-Bold-Italic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Demi-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Demi-Bold-Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Andor';
+  src: url('/assets/fonts/andor/Andor-Bold-Italic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+// stylelint-disable value-keyword-case
+$font-family-heading:         'Andor', 'Anton', 'Archivo Black', 'League Gothic', sans-serif;
+$font-family-sans-serif:      'Montserrat', sans-serif;
+$font-family-base:            $font-family-sans-serif;
+
+// Was hardcoded here as just 'Andor', sans-serif — out of sync with
+// $font-family-heading above, so every element site-wide styled via
+// var(--font-heading) (site.css, 14+ rules) was missing the Anton/Archivo
+// Black/League Gothic fallbacks that $font-family-heading itself already
+// had. Interpolated now so the two can't drift apart again.
+:root {
+  --font-heading: #{$font-family-heading};
+  --font-body: #{$font-family-sans-serif};
 }

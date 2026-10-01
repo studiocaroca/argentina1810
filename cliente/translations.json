@@ -1,0 +1,230 @@
+{
+  "es": {
+    "menu": {
+      "home": "Home",
+      "about": "Nosotros",
+      "travel_vibe": "Travel Vibe",
+      "blog": "Blog",
+      "destinos": "Destinos",
+      "contacto": "Contacto"
+    },
+    "home": {
+      "eyebrow": "Free Explorer",
+      "title1": "This is where",
+      "title2": "Argentina begins.",
+      "lede1": "Diseñamos viajes por la Argentina más auténtica: organizados, cercanos y pensados únicamente para ti.",
+      "lede2": "Esta es tu oportunidad de descubrir Argentina, de concretar todas tus ideas mientras escuchas propuestas de profesionales apasionados por su país y su cultura. Estamos aquí para acompañarte en una aventura con recuerdos para toda la vida a través de un viaje que solamente te hará querer seguir descubriendo nuestro rincón del mundo.",
+      "cta_primary": "Descubre tu Travel Vibe",
+      "cta_secondary": "Conoce Argentina 1810",
+      "video_placeholder": "Video institucional",
+      "trust_title": "Por qué viajar con nosotros"
+    },
+    "principles": {
+      "p1": "Viajamos con <strong>responsabilidad</strong> — solo trabajamos con proveedores que cuidan el destino y a sus comunidades.",
+      "p2": "<strong>Nunca estás solo</strong> — ante cualquier imprevisto, estaremos ahí para ayudarte y ofrecerte todas las posibilidades mientras te damos nuestro consejo profesional para que tu viaje no se vea afectado.",
+      "p3": "La <strong>honestidad</strong> está por encima de la venta — aconsejamos, no presionamos.",
+      "p4": "<strong>Cero sorpresas</strong> — sabes exactamente qué incluye tu viaje en cada etapa.",
+      "p5": "<strong>Cada viaje es único</strong> — escuchamos antes de proponer."
+    },
+    "nosotros": {
+      "title": "Somos tu equipo local en Argentina",
+      "paragraph1": "Argentina 1810 nace para ti, que quieres descubrir nuestro país sin preocuparte por la organización. Escuchamos lo que buscas y diseñamos el viaje contigo para que puedas compartirlo con quien elijas. Nosotros te ayudaremos a recorrer este país inmenso y a crear una experiencia personal en cada destino.",
+      "paragraph2": "Antes de que llegues, nos conoceremos; cuando regreses a casa, seguiremos estando a tu disposición.",
+      "paragraph3": "Somos jóvenes, pero no improvisamos. Somos intrépidos, pero nunca ponemos la aventura por encima de tu seguridad y tu tranquilidad. Cada recomendación nace de cómo nos sentimos nosotros al visitar estos destinos.",
+      "host_title": "Argentine Host",
+      "host_paragraph1": "Antes de tu llegada, tu <strong>Argentine Host</strong> se pondrá en contacto contigo por el canal que prefieras para responder a tus preguntas. También te ayudará a preparar el equipaje y te facilitará la información necesaria para llegar con tranquilidad. En el aeropuerto, tu conductor te esperará con un cartel en el que aparecerán tu nombre y nuestro logotipo para que puedas identificarlo. Durante el primer día, tu <strong>Argentine Host</strong> se reunirá contigo para repasar el itinerario y resolver las últimas dudas. Después, mantendréis el contacto por WhatsApp o correo electrónico para que recibas la información y la ayuda que necesites durante el viaje.",
+      "host_paragraph2": "En caso de emergencia o si necesitas una respuesta inmediata, dispondrás de un <strong>número de asistencia activo las 24 horas</strong>. Te atenderá una persona que conoce los servicios incluidos en tu viaje y dispone de los contactos necesarios de cada operador local y alojamiento. Te ayudará a valorar las alternativas y a encontrar una solución adecuada.",
+      "principles_title": "Nuestros principios"
+    },
+    "travel_vibe": {
+      "title": "¿Cuál es tu Travel Vibe?",
+      "lede": "Elige la energía de tu próximo viaje. Nosotros nos ocupamos del resto.",
+      "active_wild_desc": "Para ti, que disfrutas viajando en movimiento. Senderismo, montaña y aventura entre paisajes impresionantes, con la seguridad de un equipo que conoce cada terreno.",
+      "slow_immersive_desc": "Para ti, que quieres bajar el ritmo y conectar con cada lugar. Naturaleza, silencio y tiempo sin una agenda rígida, al ritmo que tú elijas.",
+      "family_journeys_desc": "Para compartir el viaje en familia, con un itinerario adaptado para que puedas disfrutarlo en cualquier etapa de la vida.",
+      "food_wine_desc": "Para descubrir Argentina a través de su gastronomía y sus vinos, con alojamientos cuidados, buenos anfitriones y tiempo para disfrutar sin prisas.",
+      "itinerary_placeholder": "Itinerario modelo — muy pronto. Mientras lo preparamos, contanos qué estás imaginando y armamos un itinerario a medida para vos.",
+      "cta": "Empecemos tu aventura"
+    },
+    "destinos": {
+      "title": "Destinos",
+      "lede": "Lo esencial de cada lugar, antes de que lo vivas.",
+      "label_best_season": "Mejor época",
+      "label_duration": "Tiempo recomendado",
+      "label_local_tip": "Consejo local",
+      "image_placeholder": "Fotos — muy pronto"
+    },
+    "blog": {
+      "title": "Historias desde Argentina",
+      "lede": "Relatos, guías y recomendaciones para descubrir el país como lo conocemos nosotros.",
+      "empty_state": "Muy pronto vas a encontrar acá relatos, guías y recomendaciones. Mientras tanto, contanos qué te gustaría leer."
+    },
+    "contacto": {
+      "title": "Empecemos tu aventura.",
+      "lede": "Cuéntanos qué estás imaginando —el destino, las fechas, con quién viajas y qué Travel Vibe te representa— y te responderemos en un plazo de 24 a 48 horas para acordar los próximos pasos.",
+      "label_nombre": "Nombre",
+      "label_pais": "País de origen",
+      "label_email": "Email",
+      "label_telefono": "Teléfono / WhatsApp",
+      "label_fechas": "Fechas aproximadas de viaje",
+      "label_viajeros": "Número de viajeros",
+      "label_travel_vibe": "Travel Vibe",
+      "label_mensaje": "Cuéntanos más sobre tu viaje ideal",
+      "submit": "Enviar",
+      "success": "Gracias — ya recibimos tu mensaje. Te responderemos en las próximas 24 a 48 horas.",
+      "error": "Hubo un error. Probá de nuevo en un rato."
+    }
+  },
+  "en": {
+    "menu": {
+      "home": "Home",
+      "about": "About us",
+      "travel_vibe": "Travel Vibe",
+      "blog": "Blog",
+      "destinos": "Destinations",
+      "contacto": "Contact"
+    },
+    "home": {
+      "eyebrow": "Free Explorer",
+      "title1": "This is where",
+      "title2": "Argentina begins.",
+      "lede1": "We design journeys through Argentina at its most authentic: organized, personal, and designed only for you.",
+      "lede2": "This is your chance to discover Argentina, to bring every idea to life while hearing from professionals who are passionate about their country and culture. We're here to walk with you through an adventure you'll remember for a lifetime — a journey that will only make you want to keep discovering our corner of the world.",
+      "cta_primary": "Discover your Travel Vibe",
+      "cta_secondary": "Meet Argentina 1810",
+      "video_placeholder": "Institutional video",
+      "trust_title": "Why travel with us"
+    },
+    "principles": {
+      "p1": "We travel <strong>responsibly</strong> — we only work with providers who care for the destination and its communities.",
+      "p2": "<strong>You're never alone</strong> — whatever comes up, we'll be there to help, laying out every option while giving you our professional advice so your trip stays on track.",
+      "p3": "<strong>Honesty</strong> comes before the sale — we advise, we don't pressure.",
+      "p4": "<strong>Zero surprises</strong> — you know exactly what's included at every stage of your trip.",
+      "p5": "<strong>Every trip is unique</strong> — we listen before we propose."
+    },
+    "nosotros": {
+      "title": "We are your local team in Argentina",
+      "paragraph1": "Argentina 1810 was born for you — someone who wants to discover our country without worrying about the logistics. We listen to what you're looking for and design the trip together with you, so you can share it with whoever you choose. We'll help you travel across this immense country and create a personal experience at every destination.",
+      "paragraph2": "Before you arrive, we'll get to know each other; once you're back home, we'll still be here for you.",
+      "paragraph3": "We're young, but we don't improvise. We're bold, but we never put adventure above your safety and peace of mind. Every recommendation comes from how we ourselves feel when we visit these destinations.",
+      "host_title": "Argentine Host",
+      "host_paragraph1": "Before you arrive, your <strong>Argentine Host</strong> will reach out through whichever channel you prefer to answer your questions. They'll also help you prepare your luggage and give you the information you need to arrive with peace of mind. At the airport, your driver will be waiting with a sign showing your name and our logo so you can spot them easily. On your first day, your <strong>Argentine Host</strong> will meet with you to go over the itinerary and settle any last questions. After that, you'll stay in touch by WhatsApp or email so you get whatever information and help you need throughout the trip.",
+      "host_paragraph2": "In case of an emergency, or if you need an immediate response, you'll have a <strong>24-hour assistance line</strong>. You'll be attended by someone who knows the services included in your trip and has the contacts for every local operator and place you're staying. They'll help you weigh your options and find the right solution.",
+      "principles_title": "Our principles"
+    },
+    "travel_vibe": {
+      "title": "What's your Travel Vibe?",
+      "lede": "Choose the energy of your next trip. We'll take care of the rest.",
+      "active_wild_desc": "For you, who loves traveling on the move. Hiking, mountains and adventure among breathtaking landscapes, backed by a team that knows every trail.",
+      "slow_immersive_desc": "For you, who wants to slow down and connect with each place. Nature, quiet, and time without a rigid schedule, at whatever pace you choose.",
+      "family_journeys_desc": "To share the journey as a family, with an itinerary adapted so everyone can enjoy it at any stage of life.",
+      "food_wine_desc": "To discover Argentina through its food and wine, with carefully chosen places to stay, great hosts, and time to enjoy it all without rushing.",
+      "itinerary_placeholder": "Sample itinerary — coming soon. While we put it together, tell us what you're picturing and we'll build a custom itinerary for you.",
+      "cta": "Let's start your adventure"
+    },
+    "destinos": {
+      "title": "Destinations",
+      "lede": "The essentials of each place, before you live it.",
+      "label_best_season": "Best time to visit",
+      "label_duration": "Recommended time",
+      "label_local_tip": "Local tip",
+      "image_placeholder": "Photos — coming soon"
+    },
+    "blog": {
+      "title": "Stories from Argentina",
+      "lede": "Stories, guides and recommendations to discover the country the way we know it.",
+      "empty_state": "Soon you'll find stories, guides and recommendations here. In the meantime, tell us what you'd like to read about."
+    },
+    "contacto": {
+      "title": "Let's start your adventure.",
+      "lede": "Tell us what you're picturing — the destination, the dates, who you're traveling with, and which Travel Vibe feels like you — and we'll get back to you within 24 to 48 hours to plan the next steps.",
+      "label_nombre": "Name",
+      "label_pais": "Country of origin",
+      "label_email": "Email",
+      "label_telefono": "Phone / WhatsApp",
+      "label_fechas": "Approximate travel dates",
+      "label_viajeros": "Number of travelers",
+      "label_travel_vibe": "Travel Vibe",
+      "label_mensaje": "Tell us more about your ideal trip",
+      "submit": "Send",
+      "success": "Thank you — we've received your message. We'll get back to you within 24 to 48 hours.",
+      "error": "Something went wrong. Please try again shortly."
+    }
+  },
+  "it": {
+    "menu": {
+      "home": "Home",
+      "about": "Chi siamo",
+      "travel_vibe": "Travel Vibe",
+      "blog": "Blog",
+      "destinos": "Destinazioni",
+      "contacto": "Contatti"
+    },
+    "home": {
+      "eyebrow": "Free Explorer",
+      "title1": "This is where",
+      "title2": "Argentina begins.",
+      "lede1": "Progettiamo viaggi nell'Argentina più autentica: organizzati, personali e pensati solo per te.",
+      "lede2": "Questa è la tua occasione per scoprire l'Argentina, per dare forma a ogni tua idea ascoltando le proposte di professionisti appassionati del proprio paese e della propria cultura. Siamo qui per accompagnarti in un'avventura che ricorderai per tutta la vita, un viaggio che ti farà solo venire voglia di continuare a scoprire il nostro angolo di mondo.",
+      "cta_primary": "Scopri il tuo Travel Vibe",
+      "cta_secondary": "Conosci Argentina 1810",
+      "video_placeholder": "Video istituzionale",
+      "trust_title": "Perché viaggiare con noi"
+    },
+    "principles": {
+      "p1": "Viaggiamo in modo <strong>responsabile</strong> — lavoriamo solo con fornitori che si prendono cura della destinazione e delle sue comunità.",
+      "p2": "<strong>Non sei mai solo</strong> — qualsiasi imprevisto accada, saremo lì per aiutarti, presentandoti tutte le possibilità e offrendoti il nostro consiglio professionale perché il tuo viaggio non ne risenta.",
+      "p3": "L'<strong>onestà</strong> viene prima della vendita — consigliamo, non facciamo pressione.",
+      "p4": "<strong>Zero sorprese</strong> — sai esattamente cosa include il tuo viaggio in ogni tappa.",
+      "p5": "<strong>Ogni viaggio è unico</strong> — ascoltiamo prima di proporre."
+    },
+    "nosotros": {
+      "title": "Siamo il tuo team locale in Argentina",
+      "paragraph1": "Argentina 1810 nasce per te, che vuoi scoprire il nostro paese senza doverti preoccupare dell'organizzazione. Ascoltiamo ciò che cerchi e progettiamo il viaggio insieme a te, così potrai condividerlo con chi vuoi. Ti aiuteremo a percorrere questo immenso paese e a creare un'esperienza personale in ogni destinazione.",
+      "paragraph2": "Prima del tuo arrivo, ci conosceremo; quando tornerai a casa, saremo ancora a tua disposizione.",
+      "paragraph3": "Siamo giovani, ma non improvvisiamo. Siamo intrepidi, ma non mettiamo mai l'avventura al di sopra della tua sicurezza e tranquillità. Ogni consiglio nasce da come ci sentiamo noi stessi quando visitiamo queste destinazioni.",
+      "host_title": "Argentine Host",
+      "host_paragraph1": "Prima del tuo arrivo, il tuo <strong>Argentine Host</strong> ti contatterà tramite il canale che preferisci per rispondere alle tue domande. Ti aiuterà anche a preparare i bagagli e ti darà le informazioni necessarie per arrivare tranquillo. In aeroporto, il tuo autista ti aspetterà con un cartello con il tuo nome e il nostro logo, così potrai riconoscerlo facilmente. Durante il primo giorno, il tuo <strong>Argentine Host</strong> si incontrerà con te per rivedere l'itinerario e risolvere gli ultimi dubbi. In seguito, resterete in contatto via WhatsApp o email per ricevere le informazioni e l'aiuto di cui hai bisogno durante il viaggio.",
+      "host_paragraph2": "In caso di emergenza, o se hai bisogno di una risposta immediata, avrai a disposizione un <strong>numero di assistenza attivo 24 ore su 24</strong>. Ti risponderà una persona che conosce i servizi inclusi nel tuo viaggio e dispone dei contatti di ogni operatore locale e struttura ricettiva. Ti aiuterà a valutare le alternative e a trovare la soluzione più adatta.",
+      "principles_title": "I nostri principi"
+    },
+    "travel_vibe": {
+      "title": "Qual è il tuo Travel Vibe?",
+      "lede": "Scegli l'energia del tuo prossimo viaggio. Al resto pensiamo noi.",
+      "active_wild_desc": "Per te, che ami viaggiare in movimento. Trekking, montagna e avventura tra paesaggi mozzafiato, con la sicurezza di un team che conosce ogni terreno.",
+      "slow_immersive_desc": "Per te, che vuoi rallentare e connetterti con ogni luogo. Natura, silenzio e tempo senza un'agenda rigida, al ritmo che scegli tu.",
+      "family_journeys_desc": "Per condividere il viaggio in famiglia, con un itinerario pensato per essere goduto in ogni fase della vita.",
+      "food_wine_desc": "Per scoprire l'Argentina attraverso la sua gastronomia e i suoi vini, con alloggi curati, ottimi ospiti e tempo per goderseli senza fretta.",
+      "itinerary_placeholder": "Itinerario modello — in arrivo a breve. Nel frattempo, raccontaci cosa hai in mente e prepareremo un itinerario su misura per te.",
+      "cta": "Iniziamo la tua avventura"
+    },
+    "destinos": {
+      "title": "Destinazioni",
+      "lede": "L'essenziale di ogni luogo, prima di viverlo.",
+      "label_best_season": "Periodo migliore",
+      "label_duration": "Durata consigliata",
+      "label_local_tip": "Consiglio locale",
+      "image_placeholder": "Foto — in arrivo a breve"
+    },
+    "blog": {
+      "title": "Storie dall'Argentina",
+      "lede": "Racconti, guide e consigli per scoprire il paese come lo conosciamo noi.",
+      "empty_state": "Presto troverai qui racconti, guide e consigli. Nel frattempo, raccontaci cosa ti piacerebbe leggere."
+    },
+    "contacto": {
+      "title": "Iniziamo la tua avventura.",
+      "lede": "Raccontaci cosa hai in mente — la destinazione, le date, con chi viaggi e quale Travel Vibe ti rappresenta — e ti risponderemo entro 24-48 ore per definire i prossimi passi.",
+      "label_nombre": "Nome",
+      "label_pais": "Paese di origine",
+      "label_email": "Email",
+      "label_telefono": "Telefono / WhatsApp",
+      "label_fechas": "Date di viaggio approssimative",
+      "label_viajeros": "Numero di viaggiatori",
+      "label_travel_vibe": "Travel Vibe",
+      "label_mensaje": "Raccontaci di più sul tuo viaggio ideale",
+      "submit": "Invia",
+      "success": "Grazie — abbiamo ricevuto il tuo messaggio. Ti risponderemo entro 24-48 ore.",
+      "error": "Si è verificato un errore. Riprova tra poco."
+    }
+  }
+}

@@ -1,0 +1,1492 @@
+{
+    "vibes": {
+        "active-wild": {
+            "name": "Active & Wild",
+            "itineraries": [
+                {
+                    "id": "chalten-trekking",
+                    "cover": "destinos/santa-cruz-chalten.jpg",
+                    "title": {
+                        "es": "Trekking en El Chaltén",
+                        "en": "Trekking in El Chaltén",
+                        "it": "Trekking a El Chaltén"
+                    },
+                    "duration": {
+                        "es": "4 días",
+                        "en": "4 days",
+                        "it": "4 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Moderada a alta",
+                        "en": "Moderate to high",
+                        "it": "Da moderata ad alta"
+                    },
+                    "summary": {
+                        "es": "La capital nacional del trekking. Caminatas hasta los miradores del Fitz Roy y el Cerro Torre, con noches en El Chaltén rodeado de montaña.",
+                        "en": "Argentina's trekking capital. Hikes to the Fitz Roy and Cerro Torre viewpoints, with nights in El Chaltén surrounded by mountains.",
+                        "it": "La capitale nazionale del trekking. Escursioni fino ai belvedere del Fitz Roy e del Cerro Torre, con notti a El Chaltén circondati dalle montagne."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a El Chaltén",
+                                "en": "Arrival in El Chaltén",
+                                "it": "Arrivo a El Chaltén"
+                            },
+                            "description": {
+                                "es": "Traslado desde El Calafate. Tarde libre para recorrer el pueblo y prepararte para los próximos días de trekking.",
+                                "en": "Transfer from El Calafate. Free afternoon to explore the village and get ready for the trekking days ahead.",
+                                "it": "Trasferimento da El Calafate. Pomeriggio libero per esplorare il paese e prepararti per i prossimi giorni di trekking."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Laguna de los Tres",
+                                "en": "Laguna de los Tres",
+                                "it": "Laguna de los Tres"
+                            },
+                            "description": {
+                                "es": "Caminata de día completo hasta el mirador del Fitz Roy, la vista más icónica de la Patagonia.",
+                                "en": "Full-day hike to the Fitz Roy viewpoint, Patagonia's most iconic view.",
+                                "it": "Escursione di un'intera giornata fino al belvedere del Fitz Roy, la vista più iconica della Patagonia."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Laguna Torre",
+                                "en": "Laguna Torre",
+                                "it": "Laguna Torre"
+                            },
+                            "description": {
+                                "es": "Trekking hacia el Cerro Torre, con paradas en miradores y tiempo libre junto al glaciar.",
+                                "en": "Trek towards Cerro Torre, with stops at viewpoints and free time by the glacier.",
+                                "it": "Trekking verso il Cerro Torre, con soste ai belvedere e tempo libero vicino al ghiacciaio."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Mañana libre y traslado de regreso a El Calafate.",
+                                "en": "Free morning and transfer back to El Calafate.",
+                                "it": "Mattina libera e trasferimento di ritorno a El Calafate."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "ushuaia-fin-del-mundo",
+                    "cover": "destinos/usuahia.avif",
+                    "title": {
+                        "es": "Fin del mundo: Ushuaia",
+                        "en": "The end of the world: Ushuaia",
+                        "it": "La fine del mondo: Ushuaia"
+                    },
+                    "duration": {
+                        "es": "4 días",
+                        "en": "4 days",
+                        "it": "4 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja a moderada",
+                        "en": "Low to moderate",
+                        "it": "Da bassa a moderata"
+                    },
+                    "summary": {
+                        "es": "Navegación por el Canal Beagle, trekking en el Parque Nacional Tierra del Fuego y la energía única de la ciudad más austral del mundo.",
+                        "en": "Sailing the Beagle Channel, trekking in Tierra del Fuego National Park, and the unique energy of the southernmost city in the world.",
+                        "it": "Navigazione nel Canale di Beagle, trekking nel Parco Nazionale della Terra del Fuoco e l'energia unica della città più australe del mondo."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Ushuaia",
+                                "en": "Arrival in Ushuaia",
+                                "it": "Arrivo a Ushuaia"
+                            },
+                            "description": {
+                                "es": "Recepción y tarde libre para recorrer el centro y la costanera del Canal Beagle.",
+                                "en": "Welcome and free afternoon to explore downtown and the Beagle Channel waterfront.",
+                                "it": "Accoglienza e pomeriggio libero per esplorare il centro e il lungomare del Canale di Beagle."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Parque Nacional Tierra del Fuego",
+                                "en": "Tierra del Fuego National Park",
+                                "it": "Parco Nazionale della Terra del Fuoco"
+                            },
+                            "description": {
+                                "es": "Caminatas cortas por bosques y costa, con vistas al fin de la Ruta Nacional 3.",
+                                "en": "Short walks through forests and coastline, with views of the end of National Route 3.",
+                                "it": "Brevi passeggiate tra boschi e costa, con vista sulla fine della Strada Nazionale 3."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Navegación por el Canal Beagle",
+                                "en": "Sailing the Beagle Channel",
+                                "it": "Navigazione nel Canale di Beagle"
+                            },
+                            "description": {
+                                "es": "Salida en catamarán para ver lobos marinos, aves y el Faro Les Éclaireurs.",
+                                "en": "Catamaran excursion to see sea lions, birds, and the Les Éclaireurs Lighthouse.",
+                                "it": "Escursione in catamarano per vedere leoni marini, uccelli e il Faro Les Éclaireurs."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día libre y regreso",
+                                "en": "Free day and departure",
+                                "it": "Giorno libero e ritorno"
+                            },
+                            "description": {
+                                "es": "Tiempo libre para compras o una excursión opcional antes del traslado al aeropuerto.",
+                                "en": "Free time for shopping or an optional excursion before the airport transfer.",
+                                "it": "Tempo libero per shopping o un'escursione opzionale prima del trasferimento in aeroporto."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "glaciares-santa-cruz",
+                    "cover": "destinos/santa-cruz-calafate.webp",
+                    "title": {
+                        "es": "Glaciares de Santa Cruz",
+                        "en": "Glaciers of Santa Cruz",
+                        "it": "Ghiacciai di Santa Cruz"
+                    },
+                    "duration": {
+                        "es": "3 días",
+                        "en": "3 days",
+                        "it": "3 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja a moderada",
+                        "en": "Low to moderate",
+                        "it": "Da bassa a moderata"
+                    },
+                    "summary": {
+                        "es": "El Glaciar Perito Moreno desde las pasarelas y, para quienes se animan, un mini trekking sobre el hielo con crampones.",
+                        "en": "The Perito Moreno Glacier from the walkways and, for the adventurous, a mini ice trekking with crampons.",
+                        "it": "Il Ghiacciaio Perito Moreno dalle passerelle e, per i più avventurosi, un mini trekking sul ghiaccio con i ramponi."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a El Calafate",
+                                "en": "Arrival in El Calafate",
+                                "it": "Arrivo a El Calafate"
+                            },
+                            "description": {
+                                "es": "Recepción y tarde libre junto al lago Argentino.",
+                                "en": "Welcome and free afternoon by Lake Argentino.",
+                                "it": "Accoglienza e pomeriggio libero vicino al lago Argentino."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Perito Moreno",
+                                "en": "Perito Moreno",
+                                "it": "Perito Moreno"
+                            },
+                            "description": {
+                                "es": "Día completo en el glaciar: pasarelas panorámicas y, opcional, mini trekking sobre el hielo.",
+                                "en": "Full day at the glacier: panoramic walkways and, optionally, a mini ice trekking.",
+                                "it": "Giornata intera al ghiacciaio: passerelle panoramiche e, facoltativamente, un mini trekking sul ghiaccio."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Mañana libre y traslado de salida.",
+                                "en": "Free morning and departure transfer.",
+                                "it": "Mattina libera e trasferimento di partenza."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "cataratas-iguazu",
+                    "cover": "destinos/misiones.jpg",
+                    "title": {
+                        "es": "Cataratas del Iguazú",
+                        "en": "Iguazú Falls",
+                        "it": "Cascate di Iguazú"
+                    },
+                    "duration": {
+                        "es": "3 días",
+                        "en": "3 days",
+                        "it": "3 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja",
+                        "en": "Low",
+                        "it": "Bassa"
+                    },
+                    "summary": {
+                        "es": "Circuitos superior e inferior por la selva misionera hasta la Garganta del Diablo, con la opción de la Gran Aventura en lancha.",
+                        "en": "Upper and lower circuits through the Misiones jungle up to the Devil's Throat, with the option of the Gran Aventura boat ride.",
+                        "it": "Circuiti superiore e inferiore nella giungla di Misiones fino alla Gola del Diavolo, con l'opzione della Gran Aventura in barca."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Puerto Iguazú",
+                                "en": "Arrival in Puerto Iguazú",
+                                "it": "Arrivo a Puerto Iguazú"
+                            },
+                            "description": {
+                                "es": "Recepción y tarde libre.",
+                                "en": "Welcome and free afternoon.",
+                                "it": "Accoglienza e pomeriggio libero."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Circuito Iguazú Argentina",
+                                "en": "Argentine side circuit",
+                                "it": "Circuito lato argentino"
+                            },
+                            "description": {
+                                "es": "Circuitos superior e inferior y la Garganta del Diablo, con opción de Gran Aventura en lancha.",
+                                "en": "Upper and lower circuits and the Devil's Throat, with the option of the Gran Aventura boat ride.",
+                                "it": "Circuiti superiore e inferiore e la Gola del Diavolo, con l'opzione della Gran Aventura in barca."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Tiempo libre y regreso",
+                                "en": "Free time and departure",
+                                "it": "Tempo libero e ritorno"
+                            },
+                            "description": {
+                                "es": "Mañana libre para descansar o cruzar al lado brasileño. Traslado de salida.",
+                                "en": "Free morning to rest or cross to the Brazilian side. Departure transfer.",
+                                "it": "Mattina libera per riposare o attraversare il lato brasiliano. Trasferimento di partenza."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "quebradas-del-norte",
+                    "cover": "destinos/jujuy.jpg",
+                    "title": {
+                        "es": "Quebradas del Norte",
+                        "en": "Northern Canyons",
+                        "it": "Gole del Nord"
+                    },
+                    "duration": {
+                        "es": "5 días",
+                        "en": "5 days",
+                        "it": "5 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja a moderada",
+                        "en": "Low to moderate",
+                        "it": "Da bassa a moderata"
+                    },
+                    "summary": {
+                        "es": "Salta y Jujuy de punta a punta: la Quebrada de Humahuaca, los Cerros de Siete Colores y los paisajes del noroeste argentino.",
+                        "en": "Salta and Jujuy from end to end: the Quebrada de Humahuaca, the Seven-Color Hills, and the landscapes of northwestern Argentina.",
+                        "it": "Salta e Jujuy da un capo all'altro: la Quebrada de Humahuaca, le Colline dei Sette Colori e i paesaggi del nord-ovest argentino."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Salta",
+                                "en": "Arrival in Salta",
+                                "it": "Arrivo a Salta"
+                            },
+                            "description": {
+                                "es": "Recepción y recorrido por el centro histórico.",
+                                "en": "Welcome and a tour of the historic center.",
+                                "it": "Accoglienza e visita al centro storico."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Valles Calchaquíes",
+                                "en": "Calchaquí Valleys",
+                                "it": "Valli Calchaquí"
+                            },
+                            "description": {
+                                "es": "Excursión a Cafayate por la Quebrada de las Conchas.",
+                                "en": "Excursion to Cafayate through the Quebrada de las Conchas.",
+                                "it": "Escursione a Cafayate attraverso la Quebrada de las Conchas."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Salta a Purmamarca",
+                                "en": "Salta to Purmamarca",
+                                "it": "Da Salta a Purmamarca"
+                            },
+                            "description": {
+                                "es": "Traslado a Jujuy, con parada en Purmamarca y el Cerro de los Siete Colores.",
+                                "en": "Transfer to Jujuy, stopping in Purmamarca and the Seven-Color Hill.",
+                                "it": "Trasferimento a Jujuy, con sosta a Purmamarca e il Cerro de los Siete Colores."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Quebrada de Humahuaca",
+                                "en": "Quebrada de Humahuaca",
+                                "it": "Quebrada de Humahuaca"
+                            },
+                            "description": {
+                                "es": "Recorrido por Tilcara, Uquía y Humahuaca.",
+                                "en": "Tour through Tilcara, Uquía, and Humahuaca.",
+                                "it": "Visita a Tilcara, Uquía e Humahuaca."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Traslado de regreso a Salta y vuelo de salida.",
+                                "en": "Transfer back to Salta and departure flight.",
+                                "it": "Trasferimento di ritorno a Salta e volo di partenza."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "slow-immersive": {
+            "name": "Slow & Immersive",
+            "itineraries": [
+                {
+                    "id": "slow-immersive-buenos-aires",
+                    "cover": "destinos/buenos-aires.jpg",
+                    "title": {
+                        "es": "Buenos Aires: Slow & Immersive",
+                        "en": "Buenos Aires: Slow & Immersive",
+                        "it": "Buenos Aires: Slow & Immersive"
+                    },
+                    "duration": {
+                        "es": "3 días",
+                        "en": "3 days",
+                        "it": "3 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja",
+                        "en": "Low",
+                        "it": "Bassa"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Buenos Aires con el espíritu Slow & Immersive. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Buenos Aires with the Slow & Immersive spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Buenos Aires con lo spirito Slow & Immersive. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Buenos Aires",
+                                "en": "Arrival in Buenos Aires",
+                                "it": "Arrivo a Buenos Aires"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Buenos Aires",
+                                "en": "Day 2 in Buenos Aires",
+                                "it": "Giorno 2 a Buenos Aires"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "slow-immersive-mendoza",
+                    "cover": "destinos/mendoza.jpeg",
+                    "title": {
+                        "es": "Mendoza: Slow & Immersive",
+                        "en": "Mendoza: Slow & Immersive",
+                        "it": "Mendoza: Slow & Immersive"
+                    },
+                    "duration": {
+                        "es": "4 días",
+                        "en": "4 days",
+                        "it": "4 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja a moderada",
+                        "en": "Low to moderate",
+                        "it": "Da bassa a moderata"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Mendoza con el espíritu Slow & Immersive. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Mendoza with the Slow & Immersive spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Mendoza con lo spirito Slow & Immersive. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Mendoza",
+                                "en": "Arrival in Mendoza",
+                                "it": "Arrivo a Mendoza"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Mendoza",
+                                "en": "Day 2 in Mendoza",
+                                "it": "Giorno 2 a Mendoza"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 3 en Mendoza",
+                                "en": "Day 3 in Mendoza",
+                                "it": "Giorno 3 a Mendoza"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 4 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "slow-immersive-puerto-madryn",
+                    "cover": "destinos/puerto-madryn.webp",
+                    "title": {
+                        "es": "Puerto Madryn: Slow & Immersive",
+                        "en": "Puerto Madryn: Slow & Immersive",
+                        "it": "Puerto Madryn: Slow & Immersive"
+                    },
+                    "duration": {
+                        "es": "5 días",
+                        "en": "5 days",
+                        "it": "5 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Moderada",
+                        "en": "Moderate",
+                        "it": "Moderata"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Puerto Madryn con el espíritu Slow & Immersive. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Puerto Madryn with the Slow & Immersive spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Puerto Madryn con lo spirito Slow & Immersive. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Puerto Madryn",
+                                "en": "Arrival in Puerto Madryn",
+                                "it": "Arrivo a Puerto Madryn"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Puerto Madryn",
+                                "en": "Day 2 in Puerto Madryn",
+                                "it": "Giorno 2 a Puerto Madryn"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 3 en Puerto Madryn",
+                                "en": "Day 3 in Puerto Madryn",
+                                "it": "Giorno 3 a Puerto Madryn"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 4 en Puerto Madryn",
+                                "en": "Day 4 in Puerto Madryn",
+                                "it": "Giorno 4 a Puerto Madryn"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 4 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 5 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 5 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 5 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "slow-immersive-salta",
+                    "cover": "destinos/salta.JPG",
+                    "title": {
+                        "es": "Salta: Slow & Immersive",
+                        "en": "Salta: Slow & Immersive",
+                        "it": "Salta: Slow & Immersive"
+                    },
+                    "duration": {
+                        "es": "3 días",
+                        "en": "3 days",
+                        "it": "3 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja",
+                        "en": "Low",
+                        "it": "Bassa"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Salta con el espíritu Slow & Immersive. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Salta with the Slow & Immersive spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Salta con lo spirito Slow & Immersive. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Salta",
+                                "en": "Arrival in Salta",
+                                "it": "Arrivo a Salta"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Salta",
+                                "en": "Day 2 in Salta",
+                                "it": "Giorno 2 a Salta"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "slow-immersive-el-chalten",
+                    "cover": "destinos/santa-cruz-chalten.jpg",
+                    "title": {
+                        "es": "El Chaltén: Slow & Immersive",
+                        "en": "El Chaltén: Slow & Immersive",
+                        "it": "El Chaltén: Slow & Immersive"
+                    },
+                    "duration": {
+                        "es": "4 días",
+                        "en": "4 days",
+                        "it": "4 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja a moderada",
+                        "en": "Low to moderate",
+                        "it": "Da bassa a moderata"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir El Chaltén con el espíritu Slow & Immersive. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience El Chaltén with the Slow & Immersive spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere El Chaltén con lo spirito Slow & Immersive. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a El Chaltén",
+                                "en": "Arrival in El Chaltén",
+                                "it": "Arrivo a El Chaltén"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en El Chaltén",
+                                "en": "Day 2 in El Chaltén",
+                                "it": "Giorno 2 a El Chaltén"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 3 en El Chaltén",
+                                "en": "Day 3 in El Chaltén",
+                                "it": "Giorno 3 a El Chaltén"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 4 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "family-journeys": {
+            "name": "Family Journeys",
+            "itineraries": [
+                {
+                    "id": "family-journeys-ushuaia",
+                    "cover": "destinos/usuahia.avif",
+                    "title": {
+                        "es": "Ushuaia: Family Journeys",
+                        "en": "Ushuaia: Family Journeys",
+                        "it": "Ushuaia: Family Journeys"
+                    },
+                    "duration": {
+                        "es": "5 días",
+                        "en": "5 days",
+                        "it": "5 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Moderada",
+                        "en": "Moderate",
+                        "it": "Moderata"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Ushuaia con el espíritu Family Journeys. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Ushuaia with the Family Journeys spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Ushuaia con lo spirito Family Journeys. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Ushuaia",
+                                "en": "Arrival in Ushuaia",
+                                "it": "Arrivo a Ushuaia"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Ushuaia",
+                                "en": "Day 2 in Ushuaia",
+                                "it": "Giorno 2 a Ushuaia"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 3 en Ushuaia",
+                                "en": "Day 3 in Ushuaia",
+                                "it": "Giorno 3 a Ushuaia"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 4 en Ushuaia",
+                                "en": "Day 4 in Ushuaia",
+                                "it": "Giorno 4 a Ushuaia"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 4 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 5 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 5 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 5 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "family-journeys-el-calafate",
+                    "cover": "destinos/santa-cruz-calafate.webp",
+                    "title": {
+                        "es": "El Calafate: Family Journeys",
+                        "en": "El Calafate: Family Journeys",
+                        "it": "El Calafate: Family Journeys"
+                    },
+                    "duration": {
+                        "es": "3 días",
+                        "en": "3 days",
+                        "it": "3 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja",
+                        "en": "Low",
+                        "it": "Bassa"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir El Calafate con el espíritu Family Journeys. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience El Calafate with the Family Journeys spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere El Calafate con lo spirito Family Journeys. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a El Calafate",
+                                "en": "Arrival in El Calafate",
+                                "it": "Arrivo a El Calafate"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en El Calafate",
+                                "en": "Day 2 in El Calafate",
+                                "it": "Giorno 2 a El Calafate"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "family-journeys-iguazu",
+                    "cover": "destinos/misiones.jpg",
+                    "title": {
+                        "es": "Iguazú: Family Journeys",
+                        "en": "Iguazú: Family Journeys",
+                        "it": "Iguazú: Family Journeys"
+                    },
+                    "duration": {
+                        "es": "4 días",
+                        "en": "4 days",
+                        "it": "4 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja a moderada",
+                        "en": "Low to moderate",
+                        "it": "Da bassa a moderata"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Iguazú con el espíritu Family Journeys. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Iguazú with the Family Journeys spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Iguazú con lo spirito Family Journeys. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Iguazú",
+                                "en": "Arrival in Iguazú",
+                                "it": "Arrivo a Iguazú"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Iguazú",
+                                "en": "Day 2 in Iguazú",
+                                "it": "Giorno 2 a Iguazú"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 3 en Iguazú",
+                                "en": "Day 3 in Iguazú",
+                                "it": "Giorno 3 a Iguazú"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 4 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "family-journeys-jujuy",
+                    "cover": "destinos/jujuy.jpg",
+                    "title": {
+                        "es": "Jujuy: Family Journeys",
+                        "en": "Jujuy: Family Journeys",
+                        "it": "Jujuy: Family Journeys"
+                    },
+                    "duration": {
+                        "es": "5 días",
+                        "en": "5 days",
+                        "it": "5 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Moderada",
+                        "en": "Moderate",
+                        "it": "Moderata"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Jujuy con el espíritu Family Journeys. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Jujuy with the Family Journeys spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Jujuy con lo spirito Family Journeys. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Jujuy",
+                                "en": "Arrival in Jujuy",
+                                "it": "Arrivo a Jujuy"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Jujuy",
+                                "en": "Day 2 in Jujuy",
+                                "it": "Giorno 2 a Jujuy"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 3 en Jujuy",
+                                "en": "Day 3 in Jujuy",
+                                "it": "Giorno 3 a Jujuy"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 4 en Jujuy",
+                                "en": "Day 4 in Jujuy",
+                                "it": "Giorno 4 a Jujuy"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 4 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 5 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 5 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 5 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "family-journeys-buenos-aires",
+                    "cover": "destinos/buenos-aires.jpg",
+                    "title": {
+                        "es": "Buenos Aires: Family Journeys",
+                        "en": "Buenos Aires: Family Journeys",
+                        "it": "Buenos Aires: Family Journeys"
+                    },
+                    "duration": {
+                        "es": "3 días",
+                        "en": "3 days",
+                        "it": "3 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja",
+                        "en": "Low",
+                        "it": "Bassa"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Buenos Aires con el espíritu Family Journeys. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Buenos Aires with the Family Journeys spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Buenos Aires con lo spirito Family Journeys. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Buenos Aires",
+                                "en": "Arrival in Buenos Aires",
+                                "it": "Arrivo a Buenos Aires"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Buenos Aires",
+                                "en": "Day 2 in Buenos Aires",
+                                "it": "Giorno 2 a Buenos Aires"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "food-wine-comfort": {
+            "name": "Food, Wine & Comfort",
+            "itineraries": [
+                {
+                    "id": "food-wine-comfort-mendoza",
+                    "cover": "destinos/mendoza.jpeg",
+                    "title": {
+                        "es": "Mendoza: Food, Wine & Comfort",
+                        "en": "Mendoza: Food, Wine & Comfort",
+                        "it": "Mendoza: Food, Wine & Comfort"
+                    },
+                    "duration": {
+                        "es": "4 días",
+                        "en": "4 days",
+                        "it": "4 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja a moderada",
+                        "en": "Low to moderate",
+                        "it": "Da bassa a moderata"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Mendoza con el espíritu Food, Wine & Comfort. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Mendoza with the Food, Wine & Comfort spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Mendoza con lo spirito Food, Wine & Comfort. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Mendoza",
+                                "en": "Arrival in Mendoza",
+                                "it": "Arrivo a Mendoza"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Mendoza",
+                                "en": "Day 2 in Mendoza",
+                                "it": "Giorno 2 a Mendoza"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 3 en Mendoza",
+                                "en": "Day 3 in Mendoza",
+                                "it": "Giorno 3 a Mendoza"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 4 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "food-wine-comfort-puerto-madryn",
+                    "cover": "destinos/puerto-madryn.webp",
+                    "title": {
+                        "es": "Puerto Madryn: Food, Wine & Comfort",
+                        "en": "Puerto Madryn: Food, Wine & Comfort",
+                        "it": "Puerto Madryn: Food, Wine & Comfort"
+                    },
+                    "duration": {
+                        "es": "5 días",
+                        "en": "5 days",
+                        "it": "5 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Moderada",
+                        "en": "Moderate",
+                        "it": "Moderata"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Puerto Madryn con el espíritu Food, Wine & Comfort. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Puerto Madryn with the Food, Wine & Comfort spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Puerto Madryn con lo spirito Food, Wine & Comfort. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Puerto Madryn",
+                                "en": "Arrival in Puerto Madryn",
+                                "it": "Arrivo a Puerto Madryn"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Puerto Madryn",
+                                "en": "Day 2 in Puerto Madryn",
+                                "it": "Giorno 2 a Puerto Madryn"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 3 en Puerto Madryn",
+                                "en": "Day 3 in Puerto Madryn",
+                                "it": "Giorno 3 a Puerto Madryn"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 4 en Puerto Madryn",
+                                "en": "Day 4 in Puerto Madryn",
+                                "it": "Giorno 4 a Puerto Madryn"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 4 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 5 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 5 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 5 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "food-wine-comfort-salta",
+                    "cover": "destinos/salta.JPG",
+                    "title": {
+                        "es": "Salta: Food, Wine & Comfort",
+                        "en": "Salta: Food, Wine & Comfort",
+                        "it": "Salta: Food, Wine & Comfort"
+                    },
+                    "duration": {
+                        "es": "3 días",
+                        "en": "3 days",
+                        "it": "3 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja",
+                        "en": "Low",
+                        "it": "Bassa"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Salta con el espíritu Food, Wine & Comfort. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Salta with the Food, Wine & Comfort spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Salta con lo spirito Food, Wine & Comfort. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Salta",
+                                "en": "Arrival in Salta",
+                                "it": "Arrivo a Salta"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Salta",
+                                "en": "Day 2 in Salta",
+                                "it": "Giorno 2 a Salta"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "food-wine-comfort-el-chalten",
+                    "cover": "destinos/santa-cruz-chalten.jpg",
+                    "title": {
+                        "es": "El Chaltén: Food, Wine & Comfort",
+                        "en": "El Chaltén: Food, Wine & Comfort",
+                        "it": "El Chaltén: Food, Wine & Comfort"
+                    },
+                    "duration": {
+                        "es": "4 días",
+                        "en": "4 days",
+                        "it": "4 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Baja a moderada",
+                        "en": "Low to moderate",
+                        "it": "Da bassa a moderata"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir El Chaltén con el espíritu Food, Wine & Comfort. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience El Chaltén with the Food, Wine & Comfort spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere El Chaltén con lo spirito Food, Wine & Comfort. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a El Chaltén",
+                                "en": "Arrival in El Chaltén",
+                                "it": "Arrivo a El Chaltén"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en El Chaltén",
+                                "en": "Day 2 in El Chaltén",
+                                "it": "Giorno 2 a El Chaltén"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 3 en El Chaltén",
+                                "en": "Day 3 in El Chaltén",
+                                "it": "Giorno 3 a El Chaltén"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 4 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "food-wine-comfort-ushuaia",
+                    "cover": "destinos/usuahia.avif",
+                    "title": {
+                        "es": "Ushuaia: Food, Wine & Comfort",
+                        "en": "Ushuaia: Food, Wine & Comfort",
+                        "it": "Ushuaia: Food, Wine & Comfort"
+                    },
+                    "duration": {
+                        "es": "5 días",
+                        "en": "5 days",
+                        "it": "5 giorni"
+                    },
+                    "difficulty": {
+                        "es": "Moderada",
+                        "en": "Moderate",
+                        "it": "Moderata"
+                    },
+                    "summary": {
+                        "es": "Un recorrido pensado para vivir Ushuaia con el espíritu Food, Wine & Comfort. Contenido de ejemplo — se reemplaza desde el panel de edición.",
+                        "en": "A route designed to experience Ushuaia with the Food, Wine & Comfort spirit. Sample content — replaced from the admin panel.",
+                        "it": "Un percorso pensato per vivere Ushuaia con lo spirito Food, Wine & Comfort. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                    },
+                    "days": [
+                        {
+                            "title": {
+                                "es": "Llegada a Ushuaia",
+                                "en": "Arrival in Ushuaia",
+                                "it": "Arrivo a Ushuaia"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 1 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 2 en Ushuaia",
+                                "en": "Day 2 in Ushuaia",
+                                "it": "Giorno 2 a Ushuaia"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 2 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 3 en Ushuaia",
+                                "en": "Day 3 in Ushuaia",
+                                "it": "Giorno 3 a Ushuaia"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 3 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Día 4 en Ushuaia",
+                                "en": "Day 4 in Ushuaia",
+                                "it": "Giorno 4 a Ushuaia"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 4 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
+                            }
+                        },
+                        {
+                            "title": {
+                                "es": "Regreso",
+                                "en": "Departure",
+                                "it": "Ritorno"
+                            },
+                            "description": {
+                                "es": "Actividad de ejemplo para el día 5 — se reemplaza desde el panel de edición.",
+                                "en": "Sample activity for day 5 — replaced from the admin panel.",
+                                "it": "Attività di esempio per il giorno 5 — sostituita dal pannello di amministrazione."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
