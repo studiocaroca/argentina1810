@@ -1,1 +1,8 @@
 node_modules/
+
+# Contenido editable desde /admin/ — vive en el servidor, no en Git.
+# El deploy nunca debe pisar lo que carga el cliente desde el panel.
+# Semillas versionadas: itinerarios.example.json, destinos.example.json, blog.example.json
+/itinerarios.json
+/destinos.json
+/blog.json
