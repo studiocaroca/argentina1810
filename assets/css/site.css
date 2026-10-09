@@ -462,7 +462,6 @@ section:nth-child(odd) {
 }
 
 .nav-cliente-alt .vibe-card__desc,
-.nav-cliente-alt .vibe-itinerary__text,
 .nav-cliente-alt .blog-card__excerpt,
 .nav-cliente-alt .blog-empty {
     color: color-mix(in srgb, #2b1400 85%, transparent);
@@ -1651,6 +1650,7 @@ main {
     border: 1px dashed rgba(239, 187, 82, 0.5);
     border-radius: 16px;
     padding: 28px;
+    text-align: left;
 }
 
 .vibe-itinerary[hidden] {
@@ -1665,79 +1665,38 @@ main {
     margin: 0 0 8px;
 }
 
-.vibe-itinerary__choose {
-    font-size: 0.92rem;
-    color: rgba(255, 255, 255, 0.75);
-    margin: 0 0 18px;
-}
-
-.nav-cliente-alt .vibe-itinerary__choose {
-    color: color-mix(in srgb, #2b1400 70%, transparent);
-}
-
-.vibe-itinerary__gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 12px;
-    margin: 0 0 20px;
-}
-
-.vibe-itinerary__media {
-    position: relative;
-    aspect-ratio: 4 / 3;
-    border-radius: 12px;
-    overflow: hidden;
-    background: linear-gradient(155deg, color-mix(in srgb, var(--color-primary) 55%, black), var(--color-secondary));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Real photos bleed edge-to-edge instead of sitting padded/centered like
-   the icon-less placeholder state — otherwise the container's own
-   gradient background shows through as a colored frame around them. */
-.vibe-itinerary__media:has(img) {
-    padding: 0;
-}
-
-.vibe-itinerary__media img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.35s ease;
-}
-
-.vibe-itinerary__media:hover img {
-    transform: scale(1.08);
-}
-
-.vibe-itinerary__media-scrim {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.15) 45%, transparent 70%);
-}
-
-.vibe-itinerary__media-title {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    padding: 12px;
+.vibe-itinerary__title {
     font-family: var(--font-heading);
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 0.95rem;
-    line-height: 1.15;
-    margin: 0;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    word-spacing: -0.15em;
+    margin: 0 0 18px;
     color: #fff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.nav-cliente-alt .vibe-itinerary__title {
+    color: #2b1400;
+}
+
+/* .destino-detail__meta's -64px margin-top is for overlapping a photo
+   banner above it (destino/itinerario hero pages) — there's no banner
+   here, so it needs resetting. Two classes on the same element to
+   out-rank .destino-detail__meta alone regardless of source order. */
+.destino-detail__meta.vibe-itinerary__meta {
+    max-width: none;
+    margin-top: 0;
+    z-index: auto;
+    position: static;
+}
+
+.vibe-itinerary__summary {
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 18px;
+}
+
+.nav-cliente-alt .vibe-itinerary__summary {
+    color: color-mix(in srgb, #2b1400 85%, transparent);
 }
 
 .vibe-itinerary__placeholder {
@@ -1748,22 +1707,6 @@ main {
     color: rgba(255, 255, 255, 0.75);
 }
 
-.vibe-itinerary .btn-cta {
-    margin-right: 10px;
-    margin-top: 6px;
-}
-
-.vibe-itinerary .btn-cta--outline {
-    border-color: #EFBB52;
-    color: #EFBB52;
-}
-
-.vibe-itinerary .btn-cta--outline:hover,
-.vibe-itinerary .btn-cta--outline:focus-visible {
-    border-color: #FED16E;
-    color: #FED16E;
-}
-
 .vibe-cta {
     margin-top: 32px;
     text-align: center;
@@ -1771,11 +1714,6 @@ main {
 
 .vibe-cta[hidden] {
     display: none;
-}
-
-.vibe-itinerary__text {
-    color: rgba(255, 255, 255, 0.85);
-    margin: 0 0 18px;
 }
 
 /* Destinos — uniform photo tiles, 3 per row, name overlaid at the bottom.
@@ -1914,7 +1852,7 @@ main {
     font-size: clamp(2.4rem, 7vw, 4.6rem);
     word-spacing: -0.08em;
     color: #fff;
-    opacity: 0.9;
+    opacity: 0.6;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
@@ -2245,6 +2183,9 @@ main {
 
 .blog-card__body {
     padding: 22px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .blog-card__category {
@@ -2278,6 +2219,8 @@ main {
 
 .blog-card__cta {
     display: inline-block;
+    margin-top: auto;
+    padding-top: 12px;
     font-size: 0.78rem;
     font-weight: 700;
     text-transform: uppercase;

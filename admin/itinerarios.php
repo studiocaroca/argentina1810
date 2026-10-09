@@ -3,12 +3,11 @@ require __DIR__ . '/config.php';
 admin_require_login();
 
 // Itineraries are data, not hand-authored HTML: /cliente/travel-vibe.php
-// reads this file directly and shows a clickable tile per itinerary inside
-// each Travel Vibe category; clicking one opens /cliente/itinerario.php
-// with that itinerary's full day-by-day content. The 4 categories
-// themselves are fixed (they're brand-level names, never renamed on the
-// site) and always exist even with zero itineraries, but each one can
-// hold any number of itineraries — added, edited or removed here.
+// reads this file directly and shows one itinerary (duration, difficulty,
+// summary, day-by-day, map) inline as soon as its Travel Vibe card is
+// clicked. The 4 categories themselves are fixed (brand-level names, never
+// renamed on the site) and each always has exactly one itinerary — no
+// add/delete here, just 4 permanent records to edit.
 define('ITINERARIOS_FILE', SITE_ROOT . '/itinerarios.json');
 $allowedImgExt = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
 $maxImgBytes = 12 * 1024 * 1024;
@@ -34,15 +33,15 @@ function admin_load_itinerarios() {
     if (!is_array($data) || !isset($data['vibes']) || !is_array($data['vibes'])) {
         $data = ['vibes' => []];
     }
-    // Every fixed vibe always exists, even with no itineraries yet.
+    // Every fixed vibe always exists, even with no itinerary content yet.
     foreach ($vibeOrder as $slug => $name) {
         if (!isset($data['vibes'][$slug]) || !is_array($data['vibes'][$slug])) {
-            $data['vibes'][$slug] = ['name' => $name, 'itineraries' => []];
-        }
-        if (!isset($data['vibes'][$slug]['itineraries']) || !is_array($data['vibes'][$slug]['itineraries'])) {
-            $data['vibes'][$slug]['itineraries'] = [];
+            $data['vibes'][$slug] = [];
         }
         $data['vibes'][$slug]['name'] = $name;
+        if (!isset($data['vibes'][$slug]['days']) || !is_array($data['vibes'][$slug]['days'])) {
+            $data['vibes'][$slug]['days'] = [];
+        }
     }
     return $data;
 }
@@ -53,38 +52,9 @@ function admin_save_itinerarios($data) {
     return file_put_contents(ITINERARIOS_FILE, $json, LOCK_EX) !== false;
 }
 
-function admin_slugify_i($title) {
-    $map = [
-        'á' => 'a', 'é' => 'e', 'í' => 'i', 'ó' => 'o', 'ú' => 'u', 'ü' => 'u', 'ñ' => 'n',
-        'Á' => 'a', 'É' => 'e', 'Í' => 'i', 'Ó' => 'o', 'Ú' => 'u', 'Ü' => 'u', 'Ñ' => 'n',
-    ];
-    $slug = strtolower(strtr($title, $map));
-    $slug = preg_replace('/[^a-z0-9]+/', '-', $slug);
-    $slug = trim($slug, '-');
-    return $slug !== '' ? $slug : 'itinerario';
-}
-
-function admin_unique_slug_i($base, $existingIds) {
-    $slug = $base;
-    $n = 2;
-    while (in_array($slug, $existingIds, true)) {
-        $slug = $base . '-' . $n;
-        $n++;
-    }
-    return $slug;
-}
-
-function admin_all_itinerary_ids($data) {
-    $ids = [];
-    foreach ($data['vibes'] as $vibe) {
-        foreach ($vibe['itineraries'] as $it) $ids[] = $it['id'];
-    }
-    return $ids;
-}
-
-// One cover photo per itinerary, fixed filename (overwritten on re-upload)
-// rather than the numbered convention destinos uses for photo galleries.
-function admin_save_itinerary_cover($fileError, $tmpName, $sizeBytes, $originalName, $itinId, &$error) {
+// One cover photo per vibe, fixed filename (overwritten on re-upload)
+// rather than a numbered gallery convention.
+function admin_save_itinerary_cover($fileError, $tmpName, $sizeBytes, $originalName, $vibeSlug, &$error) {
     global $allowedImgExt, $maxImgBytes;
 
     if ($fileError === UPLOAD_ERR_NO_FILE) return null;
@@ -106,7 +76,7 @@ function admin_save_itinerary_cover($fileError, $tmpName, $sizeBytes, $originalN
         return null;
     }
 
-    $filename = 'itinerarios-' . $itinId . '.' . $ext;
+    $filename = 'itinerarios-' . $vibeSlug . '.' . $ext;
     if (!move_uploaded_file($tmpName, IMAGES_DIR . '/' . $filename)) {
         $error = 'No se pudo guardar la imagen.';
         return null;
@@ -167,118 +137,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $message = 'La sesión expiró, volvé a cargar la página e intentá de nuevo.';
         $messageType = 'error';
     } else {
-        $action = $_POST['action'] ?? '';
         $vibeSlug = $_POST['vibe'] ?? '';
-
         if (!isset($data['vibes'][$vibeSlug])) {
             $message = 'No se encontró esa categoría de Travel Vibe.';
             $messageType = 'error';
-        } elseif ($action === 'save_itinerary') {
-            $itinId = $_POST['itinerary_id'] ?? '';
-            $index = null;
-            foreach ($data['vibes'][$vibeSlug]['itineraries'] as $i => $it) {
-                if ($it['id'] === $itinId) { $index = $i; break; }
+        } else {
+            $itin = $data['vibes'][$vibeSlug];
+            $itin['title'] = admin_read_tri_i('title');
+            $itin['duration'] = admin_read_tri_i('duration');
+            $itin['difficulty'] = admin_read_tri_i('difficulty');
+            $itin['summary'] = admin_read_tri_i('summary');
+            $itin['days'] = admin_read_days((int) ($_POST['day_count'] ?? 0));
+
+            $imgError = '';
+            if (!empty($_FILES['cover']) && $_FILES['cover']['error'] !== UPLOAD_ERR_NO_FILE) {
+                $cover = admin_save_itinerary_cover(
+                    $_FILES['cover']['error'], $_FILES['cover']['tmp_name'], $_FILES['cover']['size'], $_FILES['cover']['name'],
+                    $vibeSlug, $imgError
+                );
+                if ($cover) $itin['cover'] = $cover;
             }
-            if ($index === null) {
-                $message = 'No se encontró ese itinerario.';
+
+            if ($imgError) {
+                $message = $imgError;
                 $messageType = 'error';
             } else {
-                $itin = $data['vibes'][$vibeSlug]['itineraries'][$index];
-                $itin['title'] = admin_read_tri_i('title');
-                $itin['duration'] = admin_read_tri_i('duration');
-                $itin['difficulty'] = admin_read_tri_i('difficulty');
-                $itin['summary'] = admin_read_tri_i('summary');
-                $itin['days'] = admin_read_days((int) ($_POST['day_count'] ?? 0));
-
-                $imgError = '';
-                if (!empty($_FILES['cover']) && $_FILES['cover']['error'] !== UPLOAD_ERR_NO_FILE) {
-                    $cover = admin_save_itinerary_cover(
-                        $_FILES['cover']['error'], $_FILES['cover']['tmp_name'], $_FILES['cover']['size'], $_FILES['cover']['name'],
-                        $itin['id'], $imgError
-                    );
-                    if ($cover) $itin['cover'] = $cover;
-                }
-
-                if ($imgError) {
-                    $message = $imgError;
-                    $messageType = 'error';
-                } else {
-                    $data['vibes'][$vibeSlug]['itineraries'][$index] = $itin;
-                    if (admin_save_itinerarios($data)) {
-                        $message = '"' . $itin['title']['es'] . '" actualizado. Ya se ve en Travel Vibe.';
-                        $messageType = 'success';
-                    } else {
-                        $message = 'No se pudieron guardar los cambios.';
-                        $messageType = 'error';
-                    }
-                }
-            }
-        } elseif ($action === 'delete_itinerary') {
-            $itinId = $_POST['itinerary_id'] ?? '';
-            $index = null;
-            foreach ($data['vibes'][$vibeSlug]['itineraries'] as $i => $it) {
-                if ($it['id'] === $itinId) { $index = $i; break; }
-            }
-            if ($index === null) {
-                $message = 'No se encontró ese itinerario.';
-                $messageType = 'error';
-            } else {
-                $removed = $data['vibes'][$vibeSlug]['itineraries'][$index];
-                array_splice($data['vibes'][$vibeSlug]['itineraries'], $index, 1);
+                $data['vibes'][$vibeSlug] = $itin;
                 if (admin_save_itinerarios($data)) {
-                    if (!empty($removed['cover'])) {
-                        $path = IMAGES_DIR . '/' . basename($removed['cover']);
-                        if (is_file($path)) @unlink($path);
-                    }
-                    $message = '"' . $removed['title']['es'] . '" borrado.';
+                    $message = '"' . $vibeOrder[$vibeSlug] . '" actualizado. Ya se ve en Travel Vibe.';
                     $messageType = 'success';
                 } else {
-                    $message = 'No se pudo borrar el itinerario.';
+                    $message = 'No se pudieron guardar los cambios.';
                     $messageType = 'error';
-                }
-            }
-        } elseif ($action === 'add_itinerary') {
-            $titleEs = trim($_POST['title_es'] ?? '');
-            if ($titleEs === '') {
-                $message = 'Completá al menos el título en español.';
-                $messageType = 'error';
-            } else {
-                $id = admin_unique_slug_i($vibeSlug . '-' . admin_slugify_i($titleEs), admin_all_itinerary_ids($data));
-
-                $cover = '';
-                $imgError = '';
-                if (!empty($_FILES['cover']) && $_FILES['cover']['error'] !== UPLOAD_ERR_NO_FILE) {
-                    $saved = admin_save_itinerary_cover(
-                        $_FILES['cover']['error'], $_FILES['cover']['tmp_name'], $_FILES['cover']['size'], $_FILES['cover']['name'],
-                        $id, $imgError
-                    );
-                    if ($saved) $cover = $saved;
-                }
-
-                if ($imgError) {
-                    $message = $imgError;
-                    $messageType = 'error';
-                } else {
-                    $data['vibes'][$vibeSlug]['itineraries'][] = [
-                        'id' => $id,
-                        'cover' => $cover,
-                        'title' => admin_read_tri_i('title'),
-                        'duration' => admin_read_tri_i('duration'),
-                        'difficulty' => admin_read_tri_i('difficulty'),
-                        'summary' => admin_read_tri_i('summary'),
-                        'days' => [],
-                    ];
-                    if (admin_save_itinerarios($data)) {
-                        $message = '"' . $titleEs . '" agregado. Editalo para sumar el día a día.';
-                        $messageType = 'success';
-                    } else {
-                        if ($cover) {
-                            $path = IMAGES_DIR . '/' . basename($cover);
-                            if (is_file($path)) @unlink($path);
-                        }
-                        $message = 'No se pudo agregar el itinerario.';
-                        $messageType = 'error';
-                    }
                 }
             }
         }
@@ -370,94 +260,54 @@ function admin_new_day_fields() {
 
     <div class="admin-wrap admin-wrap-wide">
         <h1 class="admin-title">Itinerarios de Travel Vibe</h1>
-        <p class="admin-subtitle">Cada Travel Vibe (las 4 categorías de la marca, fijas) puede tener cualquier cantidad de itinerarios. Cada uno aparece como una tarjeta con foto en <code>/cliente/travel-vibe.php</code> y, al hacer clic, abre su propia página con el día a día en <code>/cliente/itinerario.php</code>. Cargá los tres idiomas — el selector ES/EN/IT del sitio depende de que estén completos.</p>
+        <p class="admin-subtitle">Cada Travel Vibe (las 4 categorías de la marca, fijas) tiene un único itinerario: al hacer clic en su tarjeta en <code>/cliente/travel-vibe.php</code>, se despliega ahí mismo con duración, dificultad, resumen, día a día y mapa. Cargá los tres idiomas — el selector ES/EN/IT del sitio depende de que estén completos.</p>
 
         <?php if ($message): ?>
             <div class="admin-alert <?= htmlspecialchars($messageType) ?>"><?= htmlspecialchars($message) ?></div>
         <?php endif; ?>
 
         <?php foreach ($vibeOrder as $vibeSlug => $vibeName): ?>
-            <?php $itineraries = $data['vibes'][$vibeSlug]['itineraries']; ?>
+            <?php $itin = $data['vibes'][$vibeSlug]; ?>
             <details class="admin-section" open>
-                <summary><?= htmlspecialchars($vibeName) ?> (<?= count($itineraries) ?>)</summary>
+                <summary><?= htmlspecialchars($vibeName) ?></summary>
                 <div class="admin-section-body">
-                    <?php if (empty($itineraries)): ?>
-                        <p class="admin-hint">Todavía no tiene itinerarios — el sitio muestra un estado "muy pronto" mientras tanto.</p>
-                    <?php endif; ?>
+                    <form method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrf) ?>">
+                        <input type="hidden" name="vibe" value="<?= htmlspecialchars($vibeSlug) ?>">
+                        <input type="hidden" name="day_count" value="<?= count($itin['days']) ?>">
 
-                    <?php foreach ($itineraries as $itin): ?>
-                        <details class="admin-section">
-                            <summary><?= htmlspecialchars($itin['title']['es'] ?? $itin['id']) ?></summary>
-                            <div class="admin-section-body">
-                                <form method="post" enctype="multipart/form-data">
-                                    <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrf) ?>">
-                                    <input type="hidden" name="action" value="save_itinerary">
-                                    <input type="hidden" name="vibe" value="<?= htmlspecialchars($vibeSlug) ?>">
-                                    <input type="hidden" name="itinerary_id" value="<?= htmlspecialchars($itin['id']) ?>">
-                                    <input type="hidden" name="day_count" value="<?= count($itin['days'] ?? []) ?>">
+                        <?php admin_tri_fields_i('title', $itin['title'] ?? [], $vibeSlug, 'Título del itinerario', false); ?>
+                        <?php admin_tri_fields_i('duration', $itin['duration'] ?? [], $vibeSlug, 'Duración', false); ?>
+                        <?php admin_tri_fields_i('difficulty', $itin['difficulty'] ?? [], $vibeSlug, 'Dificultad', false); ?>
+                        <?php admin_tri_fields_i('summary', $itin['summary'] ?? [], $vibeSlug, 'Resumen'); ?>
 
-                                    <?php admin_tri_fields_i('title', $itin['title'] ?? [], $itin['id'], 'Título', false); ?>
-                                    <?php admin_tri_fields_i('duration', $itin['duration'] ?? [], $itin['id'], 'Duración', false); ?>
-                                    <?php admin_tri_fields_i('difficulty', $itin['difficulty'] ?? [], $itin['id'], 'Dificultad', false); ?>
-                                    <?php admin_tri_fields_i('summary', $itin['summary'] ?? [], $itin['id'], 'Resumen'); ?>
+                        <div class="admin-field">
+                            <label>Foto de portada</label>
+                            <?php if (!empty($itin['cover'])): ?>
+                                <div class="admin-image-card-thumb">
+                                    <img src="../assets/imgs/<?= htmlspecialchars($itin['cover']) ?>?v=<?= $cacheBust ?>" alt="" loading="lazy">
+                                </div>
+                            <?php endif; ?>
+                            <input type="file" name="cover" accept="image/*">
+                            <p class="admin-hint">Subir una nueva reemplaza la actual.</p>
+                        </div>
 
-                                    <div class="admin-field">
-                                        <label>Foto de portada</label>
-                                        <?php if (!empty($itin['cover'])): ?>
-                                            <div class="admin-image-card-thumb">
-                                                <img src="../assets/imgs/<?= htmlspecialchars($itin['cover']) ?>?v=<?= $cacheBust ?>" alt="" loading="lazy">
-                                            </div>
-                                        <?php endif; ?>
-                                        <input type="file" name="cover" accept="image/*">
-                                        <p class="admin-hint">Subir una nueva reemplaza la actual.</p>
-                                    </div>
-
-                                    <div class="admin-field">
-                                        <label>Día a día</label>
-                                        <?php foreach (($itin['days'] ?? []) as $di => $day): ?>
-                                            <div class="admin-day-block">
-                                                <p class="admin-hint"><strong>Día <?= $di + 1 ?></strong> — <label class="admin-image-card-delete"><input type="checkbox" name="delete_day_<?= $di ?>" value="1"> Borrar este día</label></p>
-                                                <?php admin_day_fields($day, $di); ?>
-                                            </div>
-                                        <?php endforeach; ?>
-                                        <div class="admin-day-block">
-                                            <p class="admin-hint"><strong>Agregar día nuevo</strong></p>
-                                            <?php admin_new_day_fields(); ?>
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="admin-btn admin-btn-small">Guardar cambios</button>
-                                </form>
-
-                                <form method="post" class="admin-delete-form" onsubmit="return confirm('¿Borrar &quot;<?= htmlspecialchars(addslashes($itin['title']['es'] ?? $itin['id'])) ?>&quot;? No se puede deshacer.');">
-                                    <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrf) ?>">
-                                    <input type="hidden" name="action" value="delete_itinerary">
-                                    <input type="hidden" name="vibe" value="<?= htmlspecialchars($vibeSlug) ?>">
-                                    <input type="hidden" name="itinerary_id" value="<?= htmlspecialchars($itin['id']) ?>">
-                                    <button type="submit" class="admin-btn admin-btn-small admin-btn-danger">Borrar este itinerario</button>
-                                </form>
+                        <div class="admin-field">
+                            <label>Día a día</label>
+                            <?php foreach ($itin['days'] as $di => $day): ?>
+                                <div class="admin-day-block">
+                                    <p class="admin-hint"><strong>Día <?= $di + 1 ?></strong> — <label class="admin-image-card-delete"><input type="checkbox" name="delete_day_<?= $di ?>" value="1"> Borrar este día</label></p>
+                                    <?php admin_day_fields($day, $di); ?>
+                                </div>
+                            <?php endforeach; ?>
+                            <div class="admin-day-block">
+                                <p class="admin-hint"><strong>Agregar día nuevo</strong></p>
+                                <?php admin_new_day_fields(); ?>
                             </div>
-                        </details>
-                    <?php endforeach; ?>
+                        </div>
 
-                    <fieldset class="admin-section admin-section-add">
-                        <legend>Agregar itinerario a <?= htmlspecialchars($vibeName) ?></legend>
-                        <form method="post" enctype="multipart/form-data">
-                            <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrf) ?>">
-                            <input type="hidden" name="action" value="add_itinerary">
-                            <input type="hidden" name="vibe" value="<?= htmlspecialchars($vibeSlug) ?>">
-                            <?php admin_tri_fields_i('title', [], 'new_' . $vibeSlug, 'Título (español requerido)', false); ?>
-                            <?php admin_tri_fields_i('duration', [], 'new_' . $vibeSlug, 'Duración', false); ?>
-                            <?php admin_tri_fields_i('difficulty', [], 'new_' . $vibeSlug, 'Dificultad', false); ?>
-                            <?php admin_tri_fields_i('summary', [], 'new_' . $vibeSlug, 'Resumen'); ?>
-                            <div class="admin-field">
-                                <label for="cover_new_<?= htmlspecialchars($vibeSlug) ?>">Foto de portada</label>
-                                <input type="file" id="cover_new_<?= htmlspecialchars($vibeSlug) ?>" name="cover" accept="image/*">
-                            </div>
-                            <p class="admin-hint">El día a día se agrega editando el itinerario después de crearlo.</p>
-                            <button type="submit" class="admin-btn">Agregar itinerario</button>
-                        </form>
-                    </fieldset>
+                        <button type="submit" class="admin-btn admin-btn-small">Guardar cambios</button>
+                    </form>
                 </div>
             </details>
         <?php endforeach; ?>

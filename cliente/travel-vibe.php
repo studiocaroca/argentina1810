@@ -14,8 +14,12 @@ $vibes = [
 $itinerariosData = json_decode(file_get_contents(__DIR__ . '/../itinerarios.json'), true);
 $vibesData = $itinerariosData['vibes'] ?? [];
 $langs = ['es', 'en', 'it'];
-$chooseLabel = ['es' => 'Elegí el que más te guste.', 'en' => 'Pick the one you like best.', 'it' => 'Scegli quello che ti piace di più.'];
-$emptyLabel = ['es' => 'Itinerarios — muy pronto', 'en' => 'Itineraries — coming soon', 'it' => 'Itinerari — in arrivo a breve'];
+$labels = [
+    'es' => ['duration' => 'Duración', 'difficulty' => 'Dificultad', 'itinerary' => 'Itinerario', 'day' => 'Día'],
+    'en' => ['duration' => 'Duration', 'difficulty' => 'Difficulty', 'itinerary' => 'Itinerary', 'day' => 'Day'],
+    'it' => ['duration' => 'Durata', 'difficulty' => 'Difficoltà', 'itinerary' => 'Itinerario', 'day' => 'Giorno'],
+];
+$emptyLabel = ['es' => 'Itinerario — muy pronto', 'en' => 'Itinerary — coming soon', 'it' => 'Itinerario — in arrivo a breve'];
 ?>
 <body data-i18n-src="<?= htmlspecialchars($i18nSrc) ?>" class="nav-cliente-alt page-white-canvas">
 <?php $activePage = 'travel-vibe'; include __DIR__ . '/../partials/nav-cliente.php'; ?>
@@ -36,30 +40,73 @@ $emptyLabel = ['es' => 'Itinerarios — muy pronto', 'en' => 'Itineraries — co
 
         <div id="vibe-itineraries">
             <?php foreach ($vibes as $slug => $vibe): ?>
-                <?php $vibeItineraries = $vibesData[$slug]['itineraries'] ?? []; ?>
+                <?php $itin = $vibesData[$slug] ?? null; ?>
                 <div class="vibe-itinerary" id="itinerary-<?= htmlspecialchars($slug) ?>" hidden>
                     <p class="vibe-itinerary__vibe"><?= htmlspecialchars($vibe['name']) ?></p>
-                    <?php foreach ($langs as $lang): ?>
-                        <p class="vibe-itinerary__choose" data-lang="<?= $lang ?>"><?= htmlspecialchars($chooseLabel[$lang]) ?></p>
-                    <?php endforeach; ?>
 
-                    <div class="vibe-itinerary__gallery">
-                        <?php if (!empty($vibeItineraries)): ?>
-                            <?php foreach ($vibeItineraries as $item): ?>
-                                <a class="vibe-itinerary__media" href="/cliente/itinerario.php?vibe=<?= urlencode($slug) ?>&id=<?= urlencode($item['id']) ?>">
-                                    <img src="/assets/imgs/<?= htmlspecialchars($item['cover']) ?>" alt="<?= htmlspecialchars($item['title']['es'] ?? '') ?>">
-                                    <div class="vibe-itinerary__media-scrim"></div>
-                                    <?php foreach ($langs as $lang): ?>
-                                        <p class="vibe-itinerary__media-title" data-lang="<?= $lang ?>"><?= htmlspecialchars($item['title'][$lang] ?? '') ?></p>
+                    <?php if ($itin && !empty($itin['days'])): ?>
+                        <?php foreach ($langs as $lang): ?>
+                            <h2 class="vibe-itinerary__title" data-lang="<?= $lang ?>"><?= htmlspecialchars($itin['title'][$lang] ?? '') ?></h2>
+                        <?php endforeach; ?>
+
+                        <?php foreach ($langs as $lang): ?>
+                            <div class="destino-detail__meta vibe-itinerary__meta" data-lang="<?= $lang ?>">
+                                <div class="destino-detail__meta-item">
+                                    <span class="destino-detail__meta-icon" aria-hidden="true">⏱</span>
+                                    <div>
+                                        <p class="destino-detail__meta-label"><?= htmlspecialchars($labels[$lang]['duration']) ?></p>
+                                        <p class="destino-detail__meta-value"><?= htmlspecialchars($itin['duration'][$lang] ?? '') ?></p>
+                                    </div>
+                                </div>
+                                <div class="destino-detail__meta-item">
+                                    <span class="destino-detail__meta-icon" aria-hidden="true">⛰</span>
+                                    <div>
+                                        <p class="destino-detail__meta-label"><?= htmlspecialchars($labels[$lang]['difficulty']) ?></p>
+                                        <p class="destino-detail__meta-value"><?= htmlspecialchars($itin['difficulty'][$lang] ?? '') ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+
+                        <?php foreach ($langs as $lang): ?>
+                            <p class="vibe-itinerary__summary" data-lang="<?= $lang ?>"><?= nl2br(htmlspecialchars($itin['summary'][$lang] ?? '')) ?></p>
+                        <?php endforeach; ?>
+
+                        <div class="itinerary-layout">
+                            <div class="itinerary-layout__days">
+                                <?php foreach ($langs as $lang): ?>
+                                    <h3 class="itinerary-days__title" data-lang="<?= $lang ?>"><?= htmlspecialchars($labels[$lang]['itinerary']) ?></h3>
+                                <?php endforeach; ?>
+                                <div class="itinerary-days">
+                                    <?php foreach ($itin['days'] as $i => $day): ?>
+                                        <details class="itinerary-day">
+                                            <summary class="itinerary-day__summary">
+                                                <?php foreach ($langs as $lang): ?>
+                                                    <span class="itinerary-day__label" data-lang="<?= $lang ?>"><?= htmlspecialchars($labels[$lang]['day']) ?> <?= $i + 1 ?></span>
+                                                <?php endforeach; ?>
+                                                <?php foreach ($langs as $lang): ?>
+                                                    <span class="itinerary-day__title" data-lang="<?= $lang ?>"><?= htmlspecialchars($day['title'][$lang] ?? '') ?></span>
+                                                <?php endforeach; ?>
+                                                <span class="itinerary-day__chevron" aria-hidden="true">&#9662;</span>
+                                            </summary>
+                                            <?php foreach ($langs as $lang): ?>
+                                                <p class="itinerary-day__desc" data-lang="<?= $lang ?>"><?= htmlspecialchars($day['description'][$lang] ?? '') ?></p>
+                                            <?php endforeach; ?>
+                                        </details>
                                     <?php endforeach; ?>
-                                </a>
-                            <?php endforeach; ?>
-                        <?php else: ?>
-                            <?php foreach ($langs as $lang): ?>
-                                <span class="vibe-itinerary__placeholder" data-lang="<?= $lang ?>"><?= htmlspecialchars($emptyLabel[$lang]) ?></span>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
-                    </div>
+                                </div>
+                            </div>
+
+                            <?php $mapQuery = urlencode(($itin['title']['es'] ?? $vibe['name']) . ', Argentina'); ?>
+                            <div class="itinerary-layout__map">
+                                <iframe src="https://maps.google.com/maps?q=<?= $mapQuery ?>&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-hidden="true"></iframe>
+                            </div>
+                        </div>
+                    <?php else: ?>
+                        <?php foreach ($langs as $lang): ?>
+                            <span class="vibe-itinerary__placeholder" data-lang="<?= $lang ?>"><?= htmlspecialchars($emptyLabel[$lang]) ?></span>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
             <?php endforeach; ?>
         </div>
@@ -75,8 +122,8 @@ $emptyLabel = ['es' => 'Itinerarios — muy pronto', 'en' => 'Itineraries — co
 <script src="/assets/js/i18n.js"></script>
 <script>
     // One or several Travel Vibe cards can be selected at once — each
-    // toggle shows/hides its own itinerary placeholder block below,
-    // per the "elegí una o varias" behavior in the content brief.
+    // toggle shows/hides its own itinerary block below, per the "elegí
+    // una o varias" behavior in the content brief.
     var ctaWrap = document.getElementById('vibe-cta');
     var ctaLink = document.getElementById('vibe-cta-link');
     document.querySelectorAll('.vibe-card').forEach(function (card) {
