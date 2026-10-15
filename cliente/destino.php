@@ -29,8 +29,13 @@ include __DIR__ . '/../partials/head.php';
 
 <main id="contenido-principal">
     <div class="destino-hero">
+        <?php
+            $heroVideo = !empty($dest['video']) ? '/assets/imgs/' . $dest['video'] : '/assets/videos/paisajes-argentina.mp4';
+            $heroVideoExt = strtolower(pathinfo($heroVideo, PATHINFO_EXTENSION));
+            $heroVideoType = ['mp4' => 'video/mp4', 'webm' => 'video/webm', 'mov' => 'video/quicktime'][$heroVideoExt] ?? 'video/mp4';
+        ?>
         <video autoplay muted loop playsinline aria-hidden="true">
-            <source src="/assets/videos/paisajes-argentina.mp4" type="video/mp4">
+            <source src="<?= htmlspecialchars($heroVideo) ?>" type="<?= htmlspecialchars($heroVideoType) ?>">
         </video>
         <div class="destino-hero__scrim" aria-hidden="true"></div>
         <h1 class="destino-hero__title"><?= htmlspecialchars($dest['name']) ?></h1>

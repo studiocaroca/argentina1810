@@ -45,7 +45,8 @@
                     "en": "An entry/exit destination for almost every itinerary — a good candidate for extending nights without affecting the rest of the program. The same urban safety precautions apply as in any big city; briefing the traveler well on areas and tourist traps reduces questions during the trip.",
                     "it": "Una destinazione di ingresso/uscita per quasi ogni itinerario — un buon candidato per aggiungere notti extra senza influire sul resto del programma. Valgono le stesse precauzioni di sicurezza urbana di qualsiasi grande città; informare bene il viaggiatore su zone e trappole turistiche riduce le richieste durante il viaggio."
                 }
-            }
+            },
+            "video": null
         },
         {
             "id": "iguazu",
@@ -92,7 +93,8 @@
                     "en": "Visiting the Garganta del Diablo before 10am avoids the crowds of large groups — useful for positioning it as an \"exclusive experience\" in your proposal. If the traveler is visiting the Brazilian side, confirm visa/documentation requirements in advance.",
                     "it": "Visitare la Garganta del Diablo prima delle 10 evita la folla dei grandi gruppi — utile per posizionarla come \"esperienza esclusiva\" nella proposta. Se il viaggiatore visita il lato brasiliano, verificare in anticipo i requisiti di visto/documenti."
                 }
-            }
+            },
+            "video": null
         },
         {
             "id": "salta-jujuy",
@@ -140,7 +142,8 @@
                     "en": "Excursions to the Salinas Grandes (3,450 masl) require planning a gradual acclimatization — it's important to flag this to the traveler at the sales stage, to avoid altitude discomfort and set the right expectations.",
                     "it": "Le escursioni alle Salinas Grandes (3.450 m s.l.m.) richiedono un'acclimatazione graduale — è importante avvisare il viaggiatore già in fase di vendita, per evitare malesseri da altitudine e impostare le aspettative giuste."
                 }
-            }
+            },
+            "video": null
         },
         {
             "id": "mendoza",
@@ -187,7 +190,8 @@
                     "en": "Prioritize small, limited-production wineries over large-scale ones — a better experience and a clear selling point. It's a flexible destination to combine with an Aconcagua excursion or a day-spa, depending on the traveler's Travel Vibe.",
                     "it": "Dare priorità a cantine boutique a produzione limitata rispetto a quelle su larga scala — un'esperienza migliore e un chiaro punto di forza in fase di vendita. È una destinazione flessibile da abbinare a un'escursione all'Aconcagua o a una giornata di spa, a seconda del Travel Vibe del viaggiatore."
                 }
-            }
+            },
+            "video": null
         },
         {
             "id": "puerto-madryn",
@@ -234,7 +238,8 @@
                     "en": "Build in extra buffer time during whale season — moderate to strong winds often cancel boat trips. It's worth telling the traveler there's a good chance of sighting whales from the coast without boarding a boat, as a backup in case of cancellations.",
                     "it": "Prevedere un margine di tempo extra durante la stagione delle balene — venti da moderati a forti spesso causano l'annullamento delle uscite in barca. Vale la pena informare il viaggiatore che c'è una buona probabilità di avvistamento dalla costa senza dover salire in barca, come alternativa in caso di annullamento."
                 }
-            }
+            },
+            "video": null
         },
         {
             "id": "el-calafate",
@@ -281,7 +286,8 @@
                     "en": "In high season it's possible to arrange special visiting times to avoid mass groups — a clear differentiator for a premium traveler. Adding a night at a Patagonian estancia boosts perceived value.",
                     "it": "In alta stagione è possibile organizzare orari di visita speciali per evitare i grandi gruppi — un chiaro elemento distintivo per un viaggiatore premium. Aggiungere una notte in un'estancia patagonica aumenta il valore percepito."
                 }
-            }
+            },
+            "video": null
         },
         {
             "id": "el-chalten",
@@ -328,7 +334,8 @@
                     "en": "The Laguna de los Tres hike is best started very early (5-6am) for the \"alpenglow\" effect before it clouds over, which often happens by mid-morning. For a traveler with limited hiking experience, a dedicated guide can be assigned — a good reason not to rule out this destination for less experienced clients.",
                     "it": "L'escursione alla Laguna de los Tres è consigliata molto presto (5-6 del mattino) per cogliere l'effetto \"alpenglow\" prima che il cielo si copra, cosa frequente in tarda mattinata. Per un viaggiatore con poca esperienza di trekking, si può assegnare una guida dedicata — un buon motivo per non escludere questa destinazione anche con clienti meno esperti."
                 }
-            }
+            },
+            "video": null
         },
         {
             "id": "ushuaia",
@@ -375,7 +382,8 @@
                     "en": "A small destination with high seasonal demand — booking ahead is critical, especially for boat trips and accommodation in high season. A double season (summer/winter) lets you offer it almost year-round with different proposals.",
                     "it": "Una destinazione piccola con un'alta domanda stagionale — prenotare in anticipo è fondamentale, soprattutto per le navigazioni e l'alloggio in alta stagione. Una doppia stagione (estate/inverno) permette di proporla quasi tutto l'anno con offerte diverse."
                 }
-            }
+            },
+            "video": null
         }
     ]
 }

@@ -253,6 +253,7 @@ function admin_tri_fields_b($fieldName, $values, $idSuffix, $label) {
             <a href="destinos.php">Destinos</a>
             <a href="itinerarios.php">Itinerarios</a>
             <a href="blog.php">Blog</a>
+            <a href="cambiar-contrasena.php">Cambiar contraseña</a>
             <a href="/cliente/" target="_blank">Ver Free Explorer ↗</a>
             <a href="/partners/" target="_blank">Ver Partner Agency ↗</a>
             <a href="logout.php">Salir</a>
@@ -261,7 +262,7 @@ function admin_tri_fields_b($fieldName, $values, $idSuffix, $label) {
 
     <div class="admin-wrap admin-wrap-wide">
         <h1 class="admin-title">Blog</h1>
-        <p class="admin-subtitle">Solo aparece en <code>/cliente/blog.php</code> (Free Explorer). Un artículo sin "Publicado" tildado queda guardado como borrador y no se muestra en el sitio.</p>
+        <p class="admin-subtitle">Solo aparece el blog en Free Explorer. Un artículo sin "Publicado" tildado queda guardado como borrador y no se muestra en el sitio.</p>
 
         <?php if ($message): ?>
             <div class="admin-alert <?= htmlspecialchars($messageType) ?>"><?= htmlspecialchars($message) ?></div>

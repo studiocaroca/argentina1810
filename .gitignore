@@ -6,3 +6,8 @@ node_modules/
 /itinerarios.json
 /destinos.json
 /blog.json
+
+# Contraseña del panel una vez que el cliente la cambia. Si no existe,
+# admin_get_password_hash() usa el fallback de config.php (conocido solo
+# por el developer) — borrar este archivo en el servidor resetea el acceso.
+/admin/admin-password.json

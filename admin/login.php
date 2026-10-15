@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $username = $_POST['username'] ?? '';
         $password = $_POST['password'] ?? '';
 
-        if ($username === ADMIN_USERNAME && password_verify($password, ADMIN_PASSWORD_HASH)) {
+        if ($username === ADMIN_USERNAME && password_verify($password, admin_get_password_hash())) {
             session_regenerate_id(true);
             $_SESSION['a1810_admin_logged_in'] = true;
             if ($isAjax) {
@@ -82,7 +82,7 @@ $csrf = admin_csrf_token();
 
         <details class="admin-login-forgot">
             <summary>¿Te olvidaste la contraseña?</summary>
-            <p>Este panel no tiene recuperación automática. Escribile a quien administra el sitio para que te la reestablezca.</p>
+            <p>Este panel no tiene recuperación automática por mail. Escribile a quien administra el sitio para que te la reestablezca.</p>
         </details>
     </div>
 </body>

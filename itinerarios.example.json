@@ -25,7 +25,11 @@
             },
             "days": [
                 {
-                    "title": { "es": "Llegada a El Chaltén", "en": "Arrival in El Chaltén", "it": "Arrivo a El Chaltén" },
+                    "title": {
+                        "es": "Llegada a El Chaltén",
+                        "en": "Arrival in El Chaltén",
+                        "it": "Arrivo a El Chaltén"
+                    },
                     "description": {
                         "es": "Traslado desde El Calafate. Tarde libre para recorrer el pueblo y prepararte para los próximos días de trekking.",
                         "en": "Transfer from El Calafate. Free afternoon to explore the village and get ready for the trekking days ahead.",
@@ -33,7 +37,11 @@
                     }
                 },
                 {
-                    "title": { "es": "Laguna de los Tres", "en": "Laguna de los Tres", "it": "Laguna de los Tres" },
+                    "title": {
+                        "es": "Laguna de los Tres",
+                        "en": "Laguna de los Tres",
+                        "it": "Laguna de los Tres"
+                    },
                     "description": {
                         "es": "Caminata de día completo hasta el mirador del Fitz Roy, la vista más icónica de la Patagonia.",
                         "en": "Full-day hike to the Fitz Roy viewpoint, Patagonia's most iconic view.",
@@ -41,7 +49,11 @@
                     }
                 },
                 {
-                    "title": { "es": "Laguna Torre", "en": "Laguna Torre", "it": "Laguna Torre" },
+                    "title": {
+                        "es": "Laguna Torre",
+                        "en": "Laguna Torre",
+                        "it": "Laguna Torre"
+                    },
                     "description": {
                         "es": "Trekking hacia el Cerro Torre, con paradas en miradores y tiempo libre junto al glaciar.",
                         "en": "Trek towards Cerro Torre, with stops at viewpoints and free time by the glacier.",
@@ -49,14 +61,19 @@
                     }
                 },
                 {
-                    "title": { "es": "Regreso", "en": "Departure", "it": "Ritorno" },
+                    "title": {
+                        "es": "Regreso",
+                        "en": "Departure",
+                        "it": "Ritorno"
+                    },
                     "description": {
                         "es": "Mañana libre y traslado de regreso a El Calafate.",
                         "en": "Free morning and transfer back to El Calafate.",
                         "it": "Mattina libera e trasferimento di ritorno a El Calafate."
                     }
                 }
-            ]
+            ],
+            "map_query": ""
         },
         "slow-immersive": {
             "name": "Slow & Immersive",
@@ -83,7 +100,11 @@
             },
             "days": [
                 {
-                    "title": { "es": "Llegada a Buenos Aires", "en": "Arrival in Buenos Aires", "it": "Arrivo a Buenos Aires" },
+                    "title": {
+                        "es": "Llegada a Buenos Aires",
+                        "en": "Arrival in Buenos Aires",
+                        "it": "Arrivo a Buenos Aires"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 1 — replaced from the admin panel.",
@@ -91,7 +112,11 @@
                     }
                 },
                 {
-                    "title": { "es": "Día 2 en Buenos Aires", "en": "Day 2 in Buenos Aires", "it": "Giorno 2 a Buenos Aires" },
+                    "title": {
+                        "es": "Día 2 en Buenos Aires",
+                        "en": "Day 2 in Buenos Aires",
+                        "it": "Giorno 2 a Buenos Aires"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 2 — replaced from the admin panel.",
@@ -99,14 +124,19 @@
                     }
                 },
                 {
-                    "title": { "es": "Regreso", "en": "Departure", "it": "Ritorno" },
+                    "title": {
+                        "es": "Regreso",
+                        "en": "Departure",
+                        "it": "Ritorno"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 3 — replaced from the admin panel.",
                         "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
                     }
                 }
-            ]
+            ],
+            "map_query": ""
         },
         "family-journeys": {
             "name": "Family Journeys",
@@ -133,7 +163,11 @@
             },
             "days": [
                 {
-                    "title": { "es": "Llegada a Ushuaia", "en": "Arrival in Ushuaia", "it": "Arrivo a Ushuaia" },
+                    "title": {
+                        "es": "Llegada a Ushuaia",
+                        "en": "Arrival in Ushuaia",
+                        "it": "Arrivo a Ushuaia"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 1 — replaced from the admin panel.",
@@ -141,7 +175,11 @@
                     }
                 },
                 {
-                    "title": { "es": "Día 2 en Ushuaia", "en": "Day 2 in Ushuaia", "it": "Giorno 2 a Ushuaia" },
+                    "title": {
+                        "es": "Día 2 en Ushuaia",
+                        "en": "Day 2 in Ushuaia",
+                        "it": "Giorno 2 a Ushuaia"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 2 — replaced from the admin panel.",
@@ -149,7 +187,11 @@
                     }
                 },
                 {
-                    "title": { "es": "Día 3 en Ushuaia", "en": "Day 3 in Ushuaia", "it": "Giorno 3 a Ushuaia" },
+                    "title": {
+                        "es": "Día 3 en Ushuaia",
+                        "en": "Day 3 in Ushuaia",
+                        "it": "Giorno 3 a Ushuaia"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 3 — replaced from the admin panel.",
@@ -157,7 +199,11 @@
                     }
                 },
                 {
-                    "title": { "es": "Día 4 en Ushuaia", "en": "Day 4 in Ushuaia", "it": "Giorno 4 a Ushuaia" },
+                    "title": {
+                        "es": "Día 4 en Ushuaia",
+                        "en": "Day 4 in Ushuaia",
+                        "it": "Giorno 4 a Ushuaia"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 4 — replaced from the admin panel.",
@@ -165,14 +211,19 @@
                     }
                 },
                 {
-                    "title": { "es": "Regreso", "en": "Departure", "it": "Ritorno" },
+                    "title": {
+                        "es": "Regreso",
+                        "en": "Departure",
+                        "it": "Ritorno"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 5 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 5 — replaced from the admin panel.",
                         "it": "Attività di esempio per il giorno 5 — sostituita dal pannello di amministrazione."
                     }
                 }
-            ]
+            ],
+            "map_query": ""
         },
         "food-wine-comfort": {
             "name": "Food, Wine & Comfort",
@@ -199,7 +250,11 @@
             },
             "days": [
                 {
-                    "title": { "es": "Llegada a Mendoza", "en": "Arrival in Mendoza", "it": "Arrivo a Mendoza" },
+                    "title": {
+                        "es": "Llegada a Mendoza",
+                        "en": "Arrival in Mendoza",
+                        "it": "Arrivo a Mendoza"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 1 — replaced from the admin panel.",
@@ -207,7 +262,11 @@
                     }
                 },
                 {
-                    "title": { "es": "Día 2 en Mendoza", "en": "Day 2 in Mendoza", "it": "Giorno 2 a Mendoza" },
+                    "title": {
+                        "es": "Día 2 en Mendoza",
+                        "en": "Day 2 in Mendoza",
+                        "it": "Giorno 2 a Mendoza"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 2 — replaced from the admin panel.",
@@ -215,7 +274,11 @@
                     }
                 },
                 {
-                    "title": { "es": "Día 3 en Mendoza", "en": "Day 3 in Mendoza", "it": "Giorno 3 a Mendoza" },
+                    "title": {
+                        "es": "Día 3 en Mendoza",
+                        "en": "Day 3 in Mendoza",
+                        "it": "Giorno 3 a Mendoza"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 3 — replaced from the admin panel.",
@@ -223,14 +286,19 @@
                     }
                 },
                 {
-                    "title": { "es": "Regreso", "en": "Departure", "it": "Ritorno" },
+                    "title": {
+                        "es": "Regreso",
+                        "en": "Departure",
+                        "it": "Ritorno"
+                    },
                     "description": {
                         "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
                         "en": "Sample activity for day 4 — replaced from the admin panel.",
                         "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
                     }
                 }
-            ]
+            ],
+            "map_query": ""
         }
     }
 }

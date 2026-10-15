@@ -11,6 +11,8 @@ admin_require_login();
 define('DESTINOS_FILE', SITE_ROOT . '/destinos.json');
 $allowedExt = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
 $maxBytes = 12 * 1024 * 1024;
+$allowedVideoExt = ['mp4', 'webm', 'mov'];
+$maxVideoBytes = 60 * 1024 * 1024;
 $langs = ['es' => 'Español', 'en' => 'English', 'it' => 'Italiano'];
 
 function admin_post_too_large_d() {
@@ -96,6 +98,39 @@ function admin_save_destino_image($fileError, $tmpName, $sizeBytes, $originalNam
     return $candidate;
 }
 
+// One hero video per destino, fixed filename (minus extension) so a
+// re-upload replaces it — same convention as the itinerario cover photo.
+// Deletes any previous file first in case the extension changed.
+function admin_save_destino_video($fileError, $tmpName, $sizeBytes, $originalName, $destinoId, &$error) {
+    global $allowedVideoExt, $maxVideoBytes;
+
+    if ($fileError === UPLOAD_ERR_NO_FILE) return null;
+    if ($fileError !== UPLOAD_ERR_OK) {
+        $error = 'Hubo un problema subiendo el video.';
+        return null;
+    }
+    if ($sizeBytes > $maxVideoBytes) {
+        $error = 'El video pesa más de 60MB.';
+        return null;
+    }
+    $ext = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
+    if (!in_array($ext, $allowedVideoExt, true)) {
+        $error = 'El video no es un formato soportado (mp4, webm, mov).';
+        return null;
+    }
+
+    foreach (glob(IMAGES_DIR . '/destinos-video-' . $destinoId . '.*') as $old) {
+        @unlink($old);
+    }
+
+    $filename = 'destinos-video-' . $destinoId . '.' . $ext;
+    if (!move_uploaded_file($tmpName, IMAGES_DIR . '/' . $filename)) {
+        $error = 'No se pudo guardar el video.';
+        return null;
+    }
+    return $filename;
+}
+
 // Reads the trilingual fields for one destino out of $_POST, given a field
 // prefix like "unique" -> unique_es / unique_en / unique_it.
 function admin_read_tri($prefix) {
@@ -164,6 +199,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     }
                 }
 
+                if (!$imgError && !empty($_POST['delete_video'])) {
+                    if (!empty($dest['video'])) {
+                        $path = IMAGES_DIR . '/' . basename($dest['video']);
+                        if (is_file($path)) @unlink($path);
+                    }
+                    $dest['video'] = null;
+                }
+
+                if (!$imgError && !empty($_FILES['new_video']) && $_FILES['new_video']['error'] !== UPLOAD_ERR_NO_FILE) {
+                    $video = admin_save_destino_video(
+                        $_FILES['new_video']['error'], $_FILES['new_video']['tmp_name'], $_FILES['new_video']['size'], $_FILES['new_video']['name'],
+                        $dest['id'], $imgError
+                    );
+                    if ($video) $dest['video'] = $video;
+                }
+
                 if ($imgError) {
                     $message = $imgError;
                     $messageType = 'error';
@@ -200,6 +251,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if (admin_save_destinos($data)) {
                     foreach ($removed['images'] as $img) {
                         $path = IMAGES_DIR . '/' . basename($img);
+                        if (is_file($path)) @unlink($path);
+                    }
+                    if (!empty($removed['video'])) {
+                        $path = IMAGES_DIR . '/' . basename($removed['video']);
                         if (is_file($path)) @unlink($path);
                     }
                     $message = '"' . $removed['name'] . '" borrado.';
@@ -249,6 +304,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         'order' => $maxOrder + 1,
                         'name' => $name,
                         'images' => $images,
+                        'video' => null,
                         'best_season' => admin_read_tri('best_season'),
                         'duration' => admin_read_tri('duration'),
                         'b2c' => [
@@ -315,6 +371,7 @@ function admin_tri_fields($fieldName, $values, $idSuffix, $label, $multiline = t
             <a href="destinos.php">Destinos</a>
             <a href="itinerarios.php">Itinerarios</a>
             <a href="blog.php">Blog</a>
+            <a href="cambiar-contrasena.php">Cambiar contraseña</a>
             <a href="/cliente/" target="_blank">Ver Free Explorer ↗</a>
             <a href="/partners/" target="_blank">Ver Partner Agency ↗</a>
             <a href="logout.php">Salir</a>
@@ -323,7 +380,7 @@ function admin_tri_fields($fieldName, $values, $idSuffix, $label, $multiline = t
 
     <div class="admin-wrap admin-wrap-wide">
         <h1 class="admin-title">Destinos</h1>
-        <p class="admin-subtitle">Cada destino aparece como tarjeta en <code>/cliente/destinos.php</code> (copy para viajeros) y <code>/partners/destinos.php</code> (copy para agencias) con el mismo set de fotos. Cargá los tres idiomas — el selector ES/EN/IT del sitio depende de que estén completos.</p>
+        <p class="admin-subtitle">Cada destino aparece como tarjeta en viajeros y en agencias con el mismo set de fotos. Cargá los tres idiomas — el selector ES/EN/IT del sitio depende de que estén completos.</p>
 
         <?php if ($message): ?>
             <div class="admin-alert <?= htmlspecialchars($messageType) ?>"><?= htmlspecialchars($message) ?></div>
@@ -376,6 +433,22 @@ function admin_tri_fields($fieldName, $values, $idSuffix, $label, $multiline = t
                         <div class="admin-field">
                             <label for="new_images_<?= htmlspecialchars($dest['id']) ?>">Agregar fotos nuevas</label>
                             <input type="file" id="new_images_<?= htmlspecialchars($dest['id']) ?>" name="new_images[]" accept="image/*" multiple>
+                        </div>
+
+                        <div class="admin-field">
+                            <label>Video de portada</label>
+                            <?php if (!empty($dest['video'])): ?>
+                                <div class="admin-image-card-thumb">
+                                    <video src="../assets/imgs/<?= htmlspecialchars($dest['video']) ?>?v=<?= $cacheBust ?>" controls muted></video>
+                                </div>
+                                <label class="admin-image-card-delete">
+                                    <input type="checkbox" name="delete_video" value="1"> Borrar este video
+                                </label>
+                            <?php else: ?>
+                                <p class="admin-hint">Sin video todavía — la página muestra el video genérico del sitio mientras tanto.</p>
+                            <?php endif; ?>
+                            <input type="file" id="new_video_<?= htmlspecialchars($dest['id']) ?>" name="new_video" accept="video/mp4,video/webm,video/quicktime">
+                            <p class="admin-hint">Subir uno nuevo reemplaza el actual. Hasta 60MB, mp4/webm/mov.</p>
                         </div>
 
                         <button type="submit" class="admin-btn admin-btn-small">Guardar cambios</button>

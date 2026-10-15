@@ -76,6 +76,10 @@ function admin_save_itinerary_cover($fileError, $tmpName, $sizeBytes, $originalN
         return null;
     }
 
+    foreach (glob(IMAGES_DIR . '/itinerarios-' . $vibeSlug . '.*') as $old) {
+        @unlink($old);
+    }
+
     $filename = 'itinerarios-' . $vibeSlug . '.' . $ext;
     if (!move_uploaded_file($tmpName, IMAGES_DIR . '/' . $filename)) {
         $error = 'No se pudo guardar la imagen.';
@@ -147,6 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $itin['duration'] = admin_read_tri_i('duration');
             $itin['difficulty'] = admin_read_tri_i('difficulty');
             $itin['summary'] = admin_read_tri_i('summary');
+            $itin['map_query'] = trim($_POST['map_query'] ?? '');
             $itin['days'] = admin_read_days((int) ($_POST['day_count'] ?? 0));
 
             $imgError = '';
@@ -252,6 +257,7 @@ function admin_new_day_fields() {
             <a href="destinos.php">Destinos</a>
             <a href="itinerarios.php">Itinerarios</a>
             <a href="blog.php">Blog</a>
+            <a href="cambiar-contrasena.php">Cambiar contraseña</a>
             <a href="/cliente/" target="_blank">Ver Free Explorer ↗</a>
             <a href="/partners/" target="_blank">Ver Partner Agency ↗</a>
             <a href="logout.php">Salir</a>
@@ -260,7 +266,7 @@ function admin_new_day_fields() {
 
     <div class="admin-wrap admin-wrap-wide">
         <h1 class="admin-title">Itinerarios de Travel Vibe</h1>
-        <p class="admin-subtitle">Cada Travel Vibe (las 4 categorías de la marca, fijas) tiene un único itinerario: al hacer clic en su tarjeta en <code>/cliente/travel-vibe.php</code>, se despliega ahí mismo con duración, dificultad, resumen, día a día y mapa. Cargá los tres idiomas — el selector ES/EN/IT del sitio depende de que estén completos.</p>
+        <p class="admin-subtitle">Cada Travel Vibe (las 4 categorías de la marca, fijas) tiene un único itinerario: al hacer clic en su tarjeta en travel vibe, se despliega ahí mismo con duración, dificultad, resumen, día a día y mapa. Cargá los tres idiomas — el selector ES/EN/IT del sitio depende de que estén completos.</p>
 
         <?php if ($message): ?>
             <div class="admin-alert <?= htmlspecialchars($messageType) ?>"><?= htmlspecialchars($message) ?></div>
@@ -290,6 +296,12 @@ function admin_new_day_fields() {
                             <?php endif; ?>
                             <input type="file" name="cover" accept="image/*">
                             <p class="admin-hint">Subir una nueva reemplaza la actual.</p>
+                        </div>
+
+                        <div class="admin-field">
+                            <label for="map_query_<?= htmlspecialchars($vibeSlug) ?>">Ubicación en el mapa (opcional)</label>
+                            <input type="text" id="map_query_<?= htmlspecialchars($vibeSlug) ?>" name="map_query" value="<?= htmlspecialchars($itin['map_query'] ?? '') ?>" placeholder="Ej: El Chaltén, Santa Cruz, Argentina">
+                            <p class="admin-hint">Si lo dejás vacío, el mapa busca el título del itinerario en español.</p>
                         </div>
 
                         <div class="admin-field">

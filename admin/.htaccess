@@ -1,0 +1,12 @@
+# Blocks direct web access to the password hash file — it should only
+# ever be read by PHP (admin_get_password_hash() in config.php), never
+# served as a raw file to a visitor who guesses the URL.
+<Files "admin-password.json">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>

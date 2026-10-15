@@ -213,7 +213,8 @@ details.admin-section[open] > summary {
   margin-bottom: 8px;
 }
 
-.admin-image-card-thumb img {
+.admin-image-card-thumb img,
+.admin-image-card-thumb video {
   width: 100%;
   height: 100%;
   object-fit: contain;

@@ -97,7 +97,10 @@ $emptyLabel = ['es' => 'Itinerario — muy pronto', 'en' => 'Itinerary — comin
                                 </div>
                             </div>
 
-                            <?php $mapQuery = urlencode(($itin['title']['es'] ?? $vibe['name']) . ', Argentina'); ?>
+                            <?php
+                                $mapLocation = !empty($itin['map_query']) ? $itin['map_query'] : (($itin['title']['es'] ?? $vibe['name']) . ', Argentina');
+                                $mapQuery = urlencode($mapLocation);
+                            ?>
                             <div class="itinerary-layout__map">
                                 <iframe src="https://maps.google.com/maps?q=<?= $mapQuery ?>&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-hidden="true"></iframe>
                             </div>
