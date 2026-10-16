@@ -28,12 +28,36 @@ body {
   font-weight: 700;
 }
 
-.admin-topbar nav a {
-  margin-left: 20px;
-  opacity: 0.85;
+.admin-topbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.admin-topbar nav a:hover { opacity: 1; }
+.admin-topbar nav a {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  opacity: 0.9;
+  font-size: 0.85rem;
+  transition: background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.admin-topbar nav a:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.26);
+}
+
+@media (max-width: 768px) {
+  .admin-topbar {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .admin-topbar nav {
+    width: 100%;
+  }
+}
 
 .admin-wrap {
   max-width: 780px;

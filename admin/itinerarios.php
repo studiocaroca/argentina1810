@@ -258,8 +258,7 @@ function admin_new_day_fields() {
             <a href="itinerarios.php">Itinerarios</a>
             <a href="blog.php">Blog</a>
             <a href="cambiar-contrasena.php">Cambiar contraseña</a>
-            <a href="/cliente/" target="_blank">Ver Free Explorer ↗</a>
-            <a href="/partners/" target="_blank">Ver Partner Agency ↗</a>
+            <a href="/" target="_blank">Ver sitio ↗</a>
             <a href="logout.php">Salir</a>
         </nav>
     </div>

@@ -1029,6 +1029,50 @@ main {
         display: flex;
     }
 
+    /* The header is a fixed-height box that just grows taller when the
+       mobile menu opens, flush against the page content below it — a
+       shadow on that edge keeps it from blending into whatever color
+       the page itself has there. */
+    .site-header:has(.site-navbar__links.is-open) {
+        box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.35);
+    }
+
+    /* Free Explorer's violet hover/active (normally scoped to
+       .nav-cliente-alt, the marker its inner pages carry) never reaches
+       Home, which only has site-header--cliente — it fell back to the
+       site's default gold accent instead. Scoping to site-header--cliente
+       instead covers every Free Explorer page, Home included, so the menu
+       behaves the same everywhere. */
+    .site-header--cliente .nav-link.active {
+        color: #7208B7;
+        border-bottom-color: #7208B7;
+    }
+
+    .site-header--cliente .nav-link:hover,
+    .site-header--cliente .nav-link:focus-visible,
+    .site-header--cliente .nav-link.active:hover,
+    .site-header--cliente .nav-link.active:focus-visible {
+        color: #4B0578;
+    }
+
+    /* Mirror issue, opposite direction: .theme-partners-violet (meant only
+       for Partner Agency Home's own hero — eyebrow, title, CTA button) sits
+       on <body>, so its --color-accent/-light swap to violet inherits into
+       the nav too since those are just CSS custom properties. Force the nav
+       back to the brand gold every other Partner Agency page already uses,
+       regardless of that page-level theme swap. */
+    .site-header--partners .nav-link.active {
+        color: #EFBB52;
+        border-bottom-color: #EFBB52;
+    }
+
+    .site-header--partners .nav-link:hover,
+    .site-header--partners .nav-link:focus-visible,
+    .site-header--partners .nav-link.active:hover,
+    .site-header--partners .nav-link.active:focus-visible {
+        color: #FED16E;
+    }
+
     .admin-login {
         order: 3;
         margin-left: 0;
@@ -1038,7 +1082,18 @@ main {
         flex-direction: column;
     }
 
+    .site-footer__col--brand {
+        /* flex-basis: 320px was sized for the desktop row layout (width).
+           In column direction that 320px becomes a height hint instead,
+           leaving a tall empty box — reset it to size by content. */
+        flex-basis: auto;
+    }
+
     .site-footer__shapes {
+        display: none;
+    }
+
+    .site-footer__col--links {
         display: none;
     }
 }
@@ -2323,6 +2378,12 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 620px) {
+    .blog-post__media {
+        aspect-ratio: 8 / 3;
+    }
 }
 
 .blog-post__title {
