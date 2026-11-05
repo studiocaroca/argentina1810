@@ -662,11 +662,11 @@ main {
 }
 
 .site-header--cliente .lang-selector__option {
-    color: #2b1400;
+    color: #fff;
 }
 
 .site-header--cliente .lang-selector__option:hover {
-    background: rgba(43, 20, 0, 0.12);
+    background: rgba(255, 255, 255, 0.18);
 }
 
 /* ---------- Admin login (lock icon in the nav) ---------- */
@@ -1588,12 +1588,32 @@ main {
         overflow: hidden;
     }
 
+    /* Both variants: taller than the longest card actually needs, with
+       plenty of headroom, and the internal scrollbar turned off — every
+       card in a given coverflow shares the same fixed height (so the
+       carousel doesn't jump as it cycles), so that height has to fit the
+       longest one with room to spare instead of clipping it. */
     .trust-coverflow--tall .trust-coverflow-wrapper {
-        height: 320px;
+        height: 440px;
     }
 
     .trust-coverflow--nosotros .trust-coverflow-wrapper {
-        height: 330px;
+        height: 360px;
+    }
+
+    .trust-coverflow--tall .trust-card,
+    .trust-coverflow--nosotros .trust-card {
+        overflow-y: visible;
+    }
+
+    /* "Por qué elegirnos" on Partner Agency's Cómo trabajamos — at 6%
+       white the cards barely read against the violet canvas on a small
+       screen. More opaque, frosted-glass look instead of near-invisible. */
+    .trust-coverflow--tall .trust-card {
+        background: rgba(255, 255, 255, 0.16);
+        border-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 }
 
