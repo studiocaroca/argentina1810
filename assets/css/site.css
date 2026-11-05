@@ -652,17 +652,20 @@ main {
 }
 
 /* Free Explorer's nav is gold, not violet — the dropdown panel was still
-   using the site's base violet regardless of which track's menu opened it. */
-.nav-cliente-alt .lang-selector__dropdown {
+   using the site's base violet regardless of which track's menu opened it.
+   Scoped to site-header--cliente (every Free Explorer page) rather than
+   nav-cliente-alt, which Home doesn't carry — see the nav-link hover fix
+   above for the same reasoning. */
+.site-header--cliente .lang-selector__dropdown {
     background: #EDB034;
     border-color: rgba(43, 20, 0, 0.25);
 }
 
-.nav-cliente-alt .lang-selector__option {
+.site-header--cliente .lang-selector__option {
     color: #2b1400;
 }
 
-.nav-cliente-alt .lang-selector__option:hover {
+.site-header--cliente .lang-selector__option:hover {
     background: rgba(43, 20, 0, 0.12);
 }
 
