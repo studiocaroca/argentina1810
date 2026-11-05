@@ -2586,14 +2586,6 @@ main {
     transform: rotate(-1deg);
 }
 
-@media (max-width: 767.98px) {
-    .blog-post__aside {
-        float: none;
-        width: min(280px, 70vw);
-        margin: 0 auto 24px;
-    }
-}
-
 .blog-post__aside-frame {
     position: relative;
     aspect-ratio: 3 / 4;
