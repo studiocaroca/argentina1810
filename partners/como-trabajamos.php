@@ -16,7 +16,7 @@ include __DIR__ . '/../partials/head.php';
             <li data-section="como_trabajamos" data-translate="step1">Nos cuentas el perfil de tu pasajero y lo que estás buscando.</li>
             <li data-section="como_trabajamos" data-translate="step2">Diseñamos un itinerario a medida con proveedores verificados en destino.</li>
             <li data-section="como_trabajamos" data-translate="step3">Te enviamos un presupuesto clara y profesional, sin letra pequeña.</li>
-            <li data-section="como_trabajamos" data-translate="step4">Nuestro Argentine Host acompañará a tu pasajero antes y durante el viaje, con una comunicación proactiva.</li>
+            <li data-section="como_trabajamos" data-translate="step4">Nuestro Copiloto acompañará a tu pasajero antes y durante el viaje, con una comunicación proactiva.</li>
             <li data-section="como_trabajamos" data-translate="step5">Cerramos con un reporte de la experiencia y seguimiento posterior al viaje.</li>
         </ol>
 
@@ -27,7 +27,7 @@ include __DIR__ . '/../partials/head.php';
             <div class="trust-coverflow-wrapper">
                 <div class="trust-card" data-section="como_trabajamos" data-translate="why1">Respondemos entre 24 a 48 horas buscando las mejores soluciones.</div>
                 <div class="trust-card" data-section="como_trabajamos" data-translate="why2">Itinerarios realmente a medida, nunca propuestas genéricas, pero sí proveedores probados.</div>
-                <div class="trust-card" data-section="como_trabajamos" data-translate="why3">Servicio Argentine Host: comunicación constante y un número de teléfono disponible las 24 horas. Cuando sea necesario, tu pasajero podrá hablar con una persona que conozca su itinerario y hable su idioma. Tú recibirás la información necesaria sin tener que perseguirnos para saber qué está ocurriendo.</div>
+                <div class="trust-card" data-section="como_trabajamos" data-translate="why3">Servicio Copiloto: comunicación constante y un número de teléfono disponible las 24 horas. Cuando sea necesario, tu pasajero podrá hablar con una persona que conozca su itinerario y hable su idioma. Tú recibirás la información necesaria sin tener que perseguirnos para saber qué está ocurriendo.</div>
                 <div class="trust-card" data-section="como_trabajamos" data-translate="why4">Ante cualquier imprevisto, te informamos de las alternativas y compartimos nuestra recomendación. Después decidimos contigo cómo actuar para que tu pasajero nunca esté solo.</div>
                 <div class="trust-card" data-section="como_trabajamos" data-translate="why5">Procesos y documentación claros, pensados para integrarse fácilmente a tu forma de trabajar.</div>
             </div>

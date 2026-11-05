@@ -31,8 +31,8 @@
       "paragraph1": "Argentina 1810 nace para ti, que quieres descubrir nuestro país sin preocuparte por la organización. Escuchamos lo que buscas y diseñamos el viaje contigo para que puedas compartirlo con quien elijas. Nosotros te ayudaremos a recorrer este país inmenso y a crear una experiencia personal en cada destino.",
       "paragraph2": "Antes de que llegues, nos conoceremos; cuando regreses a casa, seguiremos estando a tu disposición.",
       "paragraph3": "Somos jóvenes, pero no improvisamos. Somos intrépidos, pero nunca ponemos la aventura por encima de tu seguridad y tu tranquilidad. Cada recomendación nace de cómo nos sentimos nosotros al visitar estos destinos.",
-      "host_title": "Argentine Host",
-      "host_paragraph1": "Antes de tu llegada, tu <strong>Argentine Host</strong> se pondrá en contacto contigo por el canal que prefieras para responder a tus preguntas. También te ayudará a preparar el equipaje y te facilitará la información necesaria para llegar con tranquilidad. En el aeropuerto, tu conductor te esperará con un cartel en el que aparecerán tu nombre y nuestro logotipo para que puedas identificarlo. Durante el primer día, tu <strong>Argentine Host</strong> se reunirá contigo para repasar el itinerario y resolver las últimas dudas. Después, mantendréis el contacto por WhatsApp o correo electrónico para que recibas la información y la ayuda que necesites durante el viaje.",
+      "host_title": "Copiloto",
+      "host_paragraph1": "Antes de tu llegada, tu <strong>Copiloto</strong> se pondrá en contacto contigo por el canal que prefieras para responder a tus preguntas. También te ayudará a preparar el equipaje y te facilitará la información necesaria para llegar con tranquilidad. En el aeropuerto, tu conductor te esperará con un cartel en el que aparecerán tu nombre y nuestro logotipo para que puedas identificarlo. Durante el primer día, tu <strong>Copiloto</strong> se reunirá contigo para repasar el itinerario y resolver las últimas dudas. Después, mantendréis el contacto por WhatsApp o correo electrónico para que recibas la información y la ayuda que necesites durante el viaje.",
       "host_paragraph2": "En caso de emergencia o si necesitas una respuesta inmediata, dispondrás de un <strong>número de asistencia activo las 24 horas</strong>. Te atenderá una persona que conoce los servicios incluidos en tu viaje y dispone de los contactos necesarios de cada operador local y alojamiento. Te ayudará a valorar las alternativas y a encontrar una solución adecuada.",
       "principles_title": "Nuestros principios"
     },
@@ -44,6 +44,8 @@
       "family_journeys_desc": "Para compartir el viaje en familia, con un itinerario adaptado para que puedas disfrutarlo en cualquier etapa de la vida.",
       "food_wine_desc": "Para descubrir Argentina a través de su gastronomía y sus vinos, con alojamientos cuidados, buenos anfitriones y tiempo para disfrutar sin prisas.",
       "itinerary_placeholder": "Itinerario modelo — muy pronto. Mientras lo preparamos, contanos qué estás imaginando y armamos un itinerario a medida para vos.",
+      "selection_hint": "Elegiste estos Travel Vibe:",
+      "selection_instruction": "Para pedir información hacé clic en el botón.",
       "cta": "Empecemos tu aventura"
     },
     "destinos": {
@@ -107,8 +109,8 @@
       "paragraph1": "Argentina 1810 was born for you — someone who wants to discover our country without worrying about the logistics. We listen to what you're looking for and design the trip together with you, so you can share it with whoever you choose. We'll help you travel across this immense country and create a personal experience at every destination.",
       "paragraph2": "Before you arrive, we'll get to know each other; once you're back home, we'll still be here for you.",
       "paragraph3": "We're young, but we don't improvise. We're bold, but we never put adventure above your safety and peace of mind. Every recommendation comes from how we ourselves feel when we visit these destinations.",
-      "host_title": "Argentine Host",
-      "host_paragraph1": "Before you arrive, your <strong>Argentine Host</strong> will reach out through whichever channel you prefer to answer your questions. They'll also help you prepare your luggage and give you the information you need to arrive with peace of mind. At the airport, your driver will be waiting with a sign showing your name and our logo so you can spot them easily. On your first day, your <strong>Argentine Host</strong> will meet with you to go over the itinerary and settle any last questions. After that, you'll stay in touch by WhatsApp or email so you get whatever information and help you need throughout the trip.",
+      "host_title": "Copiloto",
+      "host_paragraph1": "Before you arrive, your <strong>Copiloto</strong> will reach out through whichever channel you prefer to answer your questions. They'll also help you prepare your luggage and give you the information you need to arrive with peace of mind. At the airport, your driver will be waiting with a sign showing your name and our logo so you can spot them easily. On your first day, your <strong>Copiloto</strong> will meet with you to go over the itinerary and settle any last questions. After that, you'll stay in touch by WhatsApp or email so you get whatever information and help you need throughout the trip.",
       "host_paragraph2": "In case of an emergency, or if you need an immediate response, you'll have a <strong>24-hour assistance line</strong>. You'll be attended by someone who knows the services included in your trip and has the contacts for every local operator and place you're staying. They'll help you weigh your options and find the right solution.",
       "principles_title": "Our principles"
     },
@@ -120,6 +122,8 @@
       "family_journeys_desc": "To share the journey as a family, with an itinerary adapted so everyone can enjoy it at any stage of life.",
       "food_wine_desc": "To discover Argentina through its food and wine, with carefully chosen places to stay, great hosts, and time to enjoy it all without rushing.",
       "itinerary_placeholder": "Sample itinerary — coming soon. While we put it together, tell us what you're picturing and we'll build a custom itinerary for you.",
+      "selection_hint": "You've chosen these Travel Vibes:",
+      "selection_instruction": "To request information, click the button below.",
       "cta": "Let's start your adventure"
     },
     "destinos": {
@@ -183,8 +187,8 @@
       "paragraph1": "Argentina 1810 nasce per te, che vuoi scoprire il nostro paese senza doverti preoccupare dell'organizzazione. Ascoltiamo ciò che cerchi e progettiamo il viaggio insieme a te, così potrai condividerlo con chi vuoi. Ti aiuteremo a percorrere questo immenso paese e a creare un'esperienza personale in ogni destinazione.",
       "paragraph2": "Prima del tuo arrivo, ci conosceremo; quando tornerai a casa, saremo ancora a tua disposizione.",
       "paragraph3": "Siamo giovani, ma non improvvisiamo. Siamo intrepidi, ma non mettiamo mai l'avventura al di sopra della tua sicurezza e tranquillità. Ogni consiglio nasce da come ci sentiamo noi stessi quando visitiamo queste destinazioni.",
-      "host_title": "Argentine Host",
-      "host_paragraph1": "Prima del tuo arrivo, il tuo <strong>Argentine Host</strong> ti contatterà tramite il canale che preferisci per rispondere alle tue domande. Ti aiuterà anche a preparare i bagagli e ti darà le informazioni necessarie per arrivare tranquillo. In aeroporto, il tuo autista ti aspetterà con un cartello con il tuo nome e il nostro logo, così potrai riconoscerlo facilmente. Durante il primo giorno, il tuo <strong>Argentine Host</strong> si incontrerà con te per rivedere l'itinerario e risolvere gli ultimi dubbi. In seguito, resterete in contatto via WhatsApp o email per ricevere le informazioni e l'aiuto di cui hai bisogno durante il viaggio.",
+      "host_title": "Copiloto",
+      "host_paragraph1": "Prima del tuo arrivo, il tuo <strong>Copiloto</strong> ti contatterà tramite il canale che preferisci per rispondere alle tue domande. Ti aiuterà anche a preparare i bagagli e ti darà le informazioni necessarie per arrivare tranquillo. In aeroporto, il tuo autista ti aspetterà con un cartello con il tuo nome e il nostro logo, così potrai riconoscerlo facilmente. Durante il primo giorno, il tuo <strong>Copiloto</strong> si incontrerà con te per rivedere l'itinerario e risolvere gli ultimi dubbi. In seguito, resterete in contatto via WhatsApp o email per ricevere le informazioni e l'aiuto di cui hai bisogno durante il viaggio.",
       "host_paragraph2": "In caso di emergenza, o se hai bisogno di una risposta immediata, avrai a disposizione un <strong>numero di assistenza attivo 24 ore su 24</strong>. Ti risponderà una persona che conosce i servizi inclusi nel tuo viaggio e dispone dei contatti di ogni operatore locale e struttura ricettiva. Ti aiuterà a valutare le alternative e a trovare la soluzione più adatta.",
       "principles_title": "I nostri principi"
     },
@@ -196,6 +200,8 @@
       "family_journeys_desc": "Per condividere il viaggio in famiglia, con un itinerario pensato per essere goduto in ogni fase della vita.",
       "food_wine_desc": "Per scoprire l'Argentina attraverso la sua gastronomia e i suoi vini, con alloggi curati, ottimi ospiti e tempo per goderseli senza fretta.",
       "itinerary_placeholder": "Itinerario modello — in arrivo a breve. Nel frattempo, raccontaci cosa hai in mente e prepareremo un itinerario su misura per te.",
+      "selection_hint": "Hai scelto questi Travel Vibe:",
+      "selection_instruction": "Per richiedere informazioni, clicca sul pulsante.",
       "cta": "Iniziamo la tua avventura"
     },
     "destinos": {

@@ -32,6 +32,14 @@ $canonicalUrl = 'https://www.argentina1810.com' . $canonicalPath;
 
     <title><?= htmlspecialchars($pageTitle) ?></title>
     <link rel="icon" type="image/png" href="/assets/imgs/favicon.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/site.css">
+    <?php
+        // Cache-busting: the version query string changes whenever the file
+        // itself changes, so browsers fetch the new CSS instead of serving a
+        // stale cached copy indefinitely (these links had no versioning at
+        // all before, which is why edits sometimes didn't show up live).
+        $stylesCssVersion = @filemtime(__DIR__ . '/../assets/css/styles.css') ?: time();
+        $siteCssVersion = @filemtime(__DIR__ . '/../assets/css/site.css') ?: time();
+    ?>
+    <link rel="stylesheet" href="/assets/css/styles.css?v=<?= $stylesCssVersion ?>">
+    <link rel="stylesheet" href="/assets/css/site.css?v=<?= $siteCssVersion ?>">
 </head>

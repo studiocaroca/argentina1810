@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Nosotros | Argentina 1810';
-$pageDescription = 'Somos tu equipo local en Argentina — conocé cómo trabajamos y qué es el Argentine Host.';
+$pageDescription = 'Somos tu equipo local en Argentina — conocé cómo trabajamos y qué es el Copiloto.';
 $i18nSrc = '/cliente/translations.json';
 include __DIR__ . '/../partials/head.php';
 ?>
@@ -21,7 +21,7 @@ include __DIR__ . '/../partials/head.php';
                 <p class="section-lede" data-section="nosotros" data-translate="paragraph2">Antes de que llegues, nos conoceremos; cuando regreses a casa, seguiremos estando a tu disposición.</p>
                 <p class="section-lede" data-section="nosotros" data-translate="paragraph3">Somos jóvenes, pero no improvisamos. Somos intrépidos, pero nunca ponemos la aventura por encima de tu seguridad y tu tranquilidad. Cada recomendación nace de cómo nos sentimos nosotros al visitar estos destinos.</p>
             </div>
-            <div class="video-placeholder" role="img" aria-label="Video institucional">
+            <div class="video-placeholder" data-institutional-video="cliente" role="img" aria-label="Video institucional">
                 <video class="video-placeholder__bg" autoplay muted loop playsinline aria-hidden="true">
                     <source src="/assets/videos/paisajes-argentina.mp4" type="video/mp4">
                 </video>
@@ -48,8 +48,8 @@ include __DIR__ . '/../partials/head.php';
                 <img src="/assets/imgs/iconos/Destacadas-10.png" alt="" class="host-block__icon">
             </div>
             <div class="host-block__content">
-                <h2 class="host-block__title" data-section="nosotros" data-translate="host_title">Argentine Host</h2>
-                <p data-section="nosotros" data-translate="host_paragraph1" data-translate-html>Antes de tu llegada, tu <strong>Argentine Host</strong> se pondrá en contacto contigo por el canal que prefieras para responder a tus preguntas. También te ayudará a preparar el equipaje y te facilitará la información necesaria para llegar con tranquilidad. En el aeropuerto, tu conductor te esperará con un cartel en el que aparecerán tu nombre y nuestro logotipo para que puedas identificarlo. Durante el primer día, tu <strong>Argentine Host</strong> se reunirá contigo para repasar el itinerario y resolver las últimas dudas. Después, mantendréis el contacto por WhatsApp o correo electrónico para que recibas la información y la ayuda que necesites durante el viaje.</p>
+                <h2 class="host-block__title" data-section="nosotros" data-translate="host_title">Copiloto</h2>
+                <p data-section="nosotros" data-translate="host_paragraph1" data-translate-html>Antes de tu llegada, tu <strong>Copiloto</strong> se pondrá en contacto contigo por el canal que prefieras para responder a tus preguntas. También te ayudará a preparar el equipaje y te facilitará la información necesaria para llegar con tranquilidad. En el aeropuerto, tu conductor te esperará con un cartel en el que aparecerán tu nombre y nuestro logotipo para que puedas identificarlo. Durante el primer día, tu <strong>Copiloto</strong> se reunirá contigo para repasar el itinerario y resolver las últimas dudas. Después, mantendréis el contacto por WhatsApp o correo electrónico para que recibas la información y la ayuda que necesites durante el viaje.</p>
                 <p data-section="nosotros" data-translate="host_paragraph2" data-translate-html>En caso de emergencia o si necesitas una respuesta inmediata, dispondrás de un <strong>número de asistencia activo las 24 horas</strong>. Te atenderá una persona que conoce los servicios incluidos en tu viaje y dispone de los contactos necesarios de cada operador local y alojamiento. Te ayudará a valorar las alternativas y a encontrar una solución adecuada.</p>
             </div>
         </div>
@@ -59,5 +59,6 @@ include __DIR__ . '/../partials/head.php';
 <?php $footerTrack = 'cliente'; include __DIR__ . '/../partials/footer.php'; ?>
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/institutional-video.js"></script>
 </body>
 </html>

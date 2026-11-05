@@ -88,6 +88,19 @@ function admin_save_itinerary_cover($fileError, $tmpName, $sizeBytes, $originalN
     return $filename;
 }
 
+// Accepts either a bare mid or a full Google My Maps URL
+// (.../maps/d/...?mid=XXXX&...) and returns just the mid, so whoever is
+// editing this can paste the link straight from their browser's address
+// bar instead of having to pick the id out of it by hand.
+function admin_extract_mid($value) {
+    $value = trim($value);
+    if ($value === '') return '';
+    if (preg_match('/[?&]mid=([a-zA-Z0-9_-]+)/', $value, $m)) {
+        return $m[1];
+    }
+    return $value;
+}
+
 // Reads the trilingual fields for one field out of $_POST, given a prefix
 // like "title" -> title_es / title_en / title_it.
 function admin_read_tri_i($prefix) {
@@ -110,21 +123,33 @@ function admin_read_days($dayCount) {
         if (!empty($_POST['delete_day_' . $i])) continue;
         $title = [];
         $desc = [];
+        $tip = [];
+        $includes = [];
+        $stay = [];
         foreach (array_keys($langs) as $lang) {
             $title[$lang] = trim($_POST['day_title_' . $lang . '_' . $i] ?? '');
             $desc[$lang] = trim(str_replace(["\r\n", "\r"], "\n", $_POST['day_desc_' . $lang . '_' . $i] ?? ''));
+            $tip[$lang] = trim($_POST['day_tip_' . $lang . '_' . $i] ?? '');
+            $includes[$lang] = trim($_POST['day_includes_' . $lang . '_' . $i] ?? '');
+            $stay[$lang] = trim($_POST['day_stay_' . $lang . '_' . $i] ?? '');
         }
-        $days[] = ['title' => $title, 'description' => $desc];
+        $days[] = ['title' => $title, 'description' => $desc, 'tip' => $tip, 'includes' => $includes, 'stay' => $stay];
     }
     $newTitleEs = trim($_POST['new_day_title_es'] ?? '');
     if ($newTitleEs !== '') {
         $title = [];
         $desc = [];
+        $tip = [];
+        $includes = [];
+        $stay = [];
         foreach (array_keys($langs) as $lang) {
             $title[$lang] = trim($_POST['new_day_title_' . $lang] ?? '');
             $desc[$lang] = trim(str_replace(["\r\n", "\r"], "\n", $_POST['new_day_desc_' . $lang] ?? ''));
+            $tip[$lang] = trim($_POST['new_day_tip_' . $lang] ?? '');
+            $includes[$lang] = trim($_POST['new_day_includes_' . $lang] ?? '');
+            $stay[$lang] = trim($_POST['new_day_stay_' . $lang] ?? '');
         }
-        $days[] = ['title' => $title, 'description' => $desc];
+        $days[] = ['title' => $title, 'description' => $desc, 'tip' => $tip, 'includes' => $includes, 'stay' => $stay];
     }
     return $days;
 }
@@ -149,9 +174,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $itin = $data['vibes'][$vibeSlug];
             $itin['title'] = admin_read_tri_i('title');
             $itin['duration'] = admin_read_tri_i('duration');
+            $itin['nights'] = admin_read_tri_i('nights');
+            $itin['stops'] = admin_read_tri_i('stops');
             $itin['difficulty'] = admin_read_tri_i('difficulty');
             $itin['summary'] = admin_read_tri_i('summary');
             $itin['map_query'] = trim($_POST['map_query'] ?? '');
+            $itin['map_mid'] = admin_extract_mid($_POST['map_mid'] ?? '');
             $itin['days'] = admin_read_days((int) ($_POST['day_count'] ?? 0));
 
             $imgError = '';
@@ -221,6 +249,27 @@ function admin_day_fields($day, $index) {
         echo '<textarea name="day_desc_' . $lang . '_' . $index . '">' . $value . '</textarea>';
     }
     echo '</div>';
+    echo '<div class="admin-field"><label>Tip (opcional)</label>';
+    foreach ($langs as $lang => $langLabel) {
+        $value = htmlspecialchars($day['tip'][$lang] ?? '');
+        echo '<p class="admin-hint" style="margin-bottom:2px">' . $langLabel . '</p>';
+        echo '<input type="text" name="day_tip_' . $lang . '_' . $index . '" value="' . $value . '">';
+    }
+    echo '</div>';
+    echo '<div class="admin-field"><label>Incluye (opcional)</label>';
+    foreach ($langs as $lang => $langLabel) {
+        $value = htmlspecialchars($day['includes'][$lang] ?? '');
+        echo '<p class="admin-hint" style="margin-bottom:2px">' . $langLabel . '</p>';
+        echo '<input type="text" name="day_includes_' . $lang . '_' . $index . '" value="' . $value . '">';
+    }
+    echo '</div>';
+    echo '<div class="admin-field"><label>Alojamiento (opcional)</label>';
+    foreach ($langs as $lang => $langLabel) {
+        $value = htmlspecialchars($day['stay'][$lang] ?? '');
+        echo '<p class="admin-hint" style="margin-bottom:2px">' . $langLabel . '</p>';
+        echo '<input type="text" name="day_stay_' . $lang . '_' . $index . '" value="' . $value . '">';
+    }
+    echo '</div>';
 }
 
 // Fixed field names (new_day_title_es, etc.) — admin_read_days() only
@@ -237,6 +286,24 @@ function admin_new_day_fields() {
     foreach ($langs as $lang => $langLabel) {
         echo '<p class="admin-hint" style="margin-bottom:2px">' . $langLabel . '</p>';
         echo '<textarea name="new_day_desc_' . $lang . '"></textarea>';
+    }
+    echo '</div>';
+    echo '<div class="admin-field"><label>Tip del día nuevo (opcional)</label>';
+    foreach ($langs as $lang => $langLabel) {
+        echo '<p class="admin-hint" style="margin-bottom:2px">' . $langLabel . '</p>';
+        echo '<input type="text" name="new_day_tip_' . $lang . '">';
+    }
+    echo '</div>';
+    echo '<div class="admin-field"><label>Incluye del día nuevo (opcional)</label>';
+    foreach ($langs as $lang => $langLabel) {
+        echo '<p class="admin-hint" style="margin-bottom:2px">' . $langLabel . '</p>';
+        echo '<input type="text" name="new_day_includes_' . $lang . '">';
+    }
+    echo '</div>';
+    echo '<div class="admin-field"><label>Alojamiento del día nuevo (opcional)</label>';
+    foreach ($langs as $lang => $langLabel) {
+        echo '<p class="admin-hint" style="margin-bottom:2px">' . $langLabel . '</p>';
+        echo '<input type="text" name="new_day_stay_' . $lang . '">';
     }
     echo '</div>';
 }
@@ -281,10 +348,12 @@ function admin_new_day_fields() {
                         <input type="hidden" name="vibe" value="<?= htmlspecialchars($vibeSlug) ?>">
                         <input type="hidden" name="day_count" value="<?= count($itin['days']) ?>">
 
-                        <?php admin_tri_fields_i('title', $itin['title'] ?? [], $vibeSlug, 'Título del itinerario', false); ?>
-                        <?php admin_tri_fields_i('duration', $itin['duration'] ?? [], $vibeSlug, 'Duración', false); ?>
+                        <?php admin_tri_fields_i('title', $itin['title'] ?? [], $vibeSlug, 'Bajada (debajo del nombre del Travel Vibe)', false); ?>
+                        <?php admin_tri_fields_i('duration', $itin['duration'] ?? [], $vibeSlug, 'Días (ej: "17 días")', false); ?>
+                        <?php admin_tri_fields_i('nights', $itin['nights'] ?? [], $vibeSlug, 'Noches (ej: "16 noches")', false); ?>
+                        <?php admin_tri_fields_i('stops', $itin['stops'] ?? [], $vibeSlug, 'Destinos/regiones/bases (ej: "5 destinos")', false); ?>
                         <?php admin_tri_fields_i('difficulty', $itin['difficulty'] ?? [], $vibeSlug, 'Dificultad', false); ?>
-                        <?php admin_tri_fields_i('summary', $itin['summary'] ?? [], $vibeSlug, 'Resumen'); ?>
+                        <?php admin_tri_fields_i('summary', $itin['summary'] ?? [], $vibeSlug, 'Resumen ("Tu viaje de un vistazo")'); ?>
 
                         <div class="admin-field">
                             <label>Foto de portada</label>
@@ -298,7 +367,13 @@ function admin_new_day_fields() {
                         </div>
 
                         <div class="admin-field">
-                            <label for="map_query_<?= htmlspecialchars($vibeSlug) ?>">Ubicación en el mapa (opcional)</label>
+                            <label for="map_mid_<?= htmlspecialchars($vibeSlug) ?>">Mapa personalizado (Google My Maps)</label>
+                            <input type="text" id="map_mid_<?= htmlspecialchars($vibeSlug) ?>" name="map_mid" value="<?= htmlspecialchars($itin['map_mid'] ?? '') ?>" placeholder="Pegá acá el link de My Maps (my maps → Compartir → copiar enlace)">
+                            <p class="admin-hint">Pegá el link completo tal cual lo copiaste de Google My Maps — el panel se queda solo con la parte que necesita. Para que se vea en el sitio, ese mapa tiene que estar compartido como "Cualquier usuario con el enlace puede ver" (no alcanza con acceso de edición). Dejalo vacío para usar la ubicación de abajo en su lugar.</p>
+                        </div>
+
+                        <div class="admin-field">
+                            <label for="map_query_<?= htmlspecialchars($vibeSlug) ?>">Ubicación en el mapa (si no hay mapa personalizado)</label>
                             <input type="text" id="map_query_<?= htmlspecialchars($vibeSlug) ?>" name="map_query" value="<?= htmlspecialchars($itin['map_query'] ?? '') ?>" placeholder="Ej: El Chaltén, Santa Cruz, Argentina">
                             <p class="admin-hint">Si lo dejás vacío, el mapa busca el título del itinerario en español.</p>
                         </div>

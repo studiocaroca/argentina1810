@@ -9,8 +9,8 @@ $isPartners = $footerTrack === 'partners';
 // and the phone doubles as the WhatsApp number). Swap in the real values
 // whenever the client has them; nothing else needs to change.
 $footerAddress = 'Av. Corrientes 1810, CABA, Argentina';
-$footerPhone = '+54 9 11 1810-1810';
-$footerEmail = 'hola@argentina1810.com';
+$footerPhone = '+34 667 89 25 54';
+$footerEmail = 'info@argentina1810.com';
 ?>
 <footer class="site-footer">
     <div class="site-footer__shapes" aria-hidden="true"></div>

@@ -4,14 +4,14 @@
             "name": "Active & Wild",
             "cover": "destinos/santa-cruz-chalten.jpg",
             "title": {
-                "es": "Trekking en El Chaltén",
-                "en": "Trekking in El Chaltén",
-                "it": "Trekking a El Chaltén"
+                "es": "Montañas, glaciares y senderos en el fin del mundo",
+                "en": "Mountains, glaciers and trails at the end of the world",
+                "it": "Montagne, ghiacciai e sentieri alla fine del mondo"
             },
             "duration": {
-                "es": "4 días",
-                "en": "4 days",
-                "it": "4 giorni"
+                "es": "17 días",
+                "en": "17 days",
+                "it": "17 giorni"
             },
             "difficulty": {
                 "es": "Moderada a alta",
@@ -19,84 +19,9 @@
                 "it": "Da moderata ad alta"
             },
             "summary": {
-                "es": "La capital nacional del trekking. Caminatas hasta los miradores del Fitz Roy y el Cerro Torre, con noches en El Chaltén rodeado de montaña.",
-                "en": "Argentina's trekking capital. Hikes to the Fitz Roy and Cerro Torre viewpoints, with nights in El Chaltén surrounded by mountains.",
-                "it": "La capitale nazionale del trekking. Escursioni fino ai belvedere del Fitz Roy e del Cerro Torre, con notti a El Chaltén circondati dalle montagne."
-            },
-            "days": [
-                {
-                    "title": {
-                        "es": "Llegada a El Chaltén",
-                        "en": "Arrival in El Chaltén",
-                        "it": "Arrivo a El Chaltén"
-                    },
-                    "description": {
-                        "es": "Traslado desde El Calafate. Tarde libre para recorrer el pueblo y prepararte para los próximos días de trekking.",
-                        "en": "Transfer from El Calafate. Free afternoon to explore the village and get ready for the trekking days ahead.",
-                        "it": "Trasferimento da El Calafate. Pomeriggio libero per esplorare il paese e prepararti per i prossimi giorni di trekking."
-                    }
-                },
-                {
-                    "title": {
-                        "es": "Laguna de los Tres",
-                        "en": "Laguna de los Tres",
-                        "it": "Laguna de los Tres"
-                    },
-                    "description": {
-                        "es": "Caminata de día completo hasta el mirador del Fitz Roy, la vista más icónica de la Patagonia.",
-                        "en": "Full-day hike to the Fitz Roy viewpoint, Patagonia's most iconic view.",
-                        "it": "Escursione di un'intera giornata fino al belvedere del Fitz Roy, la vista più iconica della Patagonia."
-                    }
-                },
-                {
-                    "title": {
-                        "es": "Laguna Torre",
-                        "en": "Laguna Torre",
-                        "it": "Laguna Torre"
-                    },
-                    "description": {
-                        "es": "Trekking hacia el Cerro Torre, con paradas en miradores y tiempo libre junto al glaciar.",
-                        "en": "Trek towards Cerro Torre, with stops at viewpoints and free time by the glacier.",
-                        "it": "Trekking verso il Cerro Torre, con soste ai belvedere e tempo libero vicino al ghiacciaio."
-                    }
-                },
-                {
-                    "title": {
-                        "es": "Regreso",
-                        "en": "Departure",
-                        "it": "Ritorno"
-                    },
-                    "description": {
-                        "es": "Mañana libre y traslado de regreso a El Calafate.",
-                        "en": "Free morning and transfer back to El Calafate.",
-                        "it": "Mattina libera e trasferimento di ritorno a El Calafate."
-                    }
-                }
-            ],
-            "map_query": ""
-        },
-        "slow-immersive": {
-            "name": "Slow & Immersive",
-            "cover": "destinos/buenos-aires.jpg",
-            "title": {
-                "es": "Buenos Aires: Slow & Immersive",
-                "en": "Buenos Aires: Slow & Immersive",
-                "it": "Buenos Aires: Slow & Immersive"
-            },
-            "duration": {
-                "es": "3 días",
-                "en": "3 days",
-                "it": "3 giorni"
-            },
-            "difficulty": {
-                "es": "Baja",
-                "en": "Low",
-                "it": "Bassa"
-            },
-            "summary": {
-                "es": "Un recorrido pensado para vivir Buenos Aires con el espíritu Slow & Immersive. Contenido de ejemplo — se reemplaza desde el panel de edición.",
-                "en": "A route designed to experience Buenos Aires with the Slow & Immersive spirit. Sample content — replaced from the admin panel.",
-                "it": "Un percorso pensato per vivere Buenos Aires con lo spirito Slow & Immersive. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                "es": "Diecisiete días para recorrer Argentina en movimiento: Buenos Aires con food tour, kayak y estancia, las cataratas del Iguazú desde Brasil y la Argentina, el fin del mundo en Ushuaia, el glaciar Perito Moreno en El Calafate y tres días de trekking libre bajo el Fitz Roy. Un viaje para quienes disfrutan moverse.",
+                "en": "Seventeen days to cross Argentina in motion: Buenos Aires with a food tour, kayaking and a day at an estancia, the Iguazú Falls from both the Brazilian and Argentine sides, the end of the world in Ushuaia, the Perito Moreno glacier in El Calafate, and three days of self-guided trekking beneath the Fitz Roy. A trip for those who love to keep moving.",
+                "it": "Diciassette giorni per attraversare l'Argentina in movimento: Buenos Aires con food tour, kayak e una giornata in estancia, le cascate di Iguazú viste dal lato brasiliano e da quello argentino, la fine del mondo a Ushuaia, il ghiacciaio Perito Moreno a El Calafate e tre giorni di trekking libero sotto il Fitz Roy. Un viaggio per chi ama muoversi."
             },
             "days": [
                 {
@@ -106,137 +31,927 @@
                         "it": "Arrivo a Buenos Aires"
                     },
                     "description": {
-                        "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 1 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                        "es": "Buenos Aires los recibe con su carácter de gran capital: avenidas anchas, fachadas europeas, librerías abiertas hasta tarde y cafés donde nadie tiene apuro. Cada barrio cuenta algo distinto: la elegancia de Recoleta, el aire bohemio de San Telmo, los parques y restaurantes de Palermo. Un traslado privado los lleva desde el aeropuerto de Ezeiza hasta el hotel. El día queda libre para descansar del vuelo y caminar sin plan.",
+                        "en": "Buenos Aires greets you with the character of a great capital: wide avenues, European façades, bookstores open late and cafés where no one's in a hurry. Each neighborhood tells a different story: the elegance of Recoleta, the bohemian air of San Telmo, the parks and restaurants of Palermo. A private transfer takes you from Ezeiza airport to the hotel. The day is free to rest from the flight and walk without a plan.",
+                        "it": "Buenos Aires vi accoglie con il suo carattere di grande capitale: ampi viali, facciate europee, librerie aperte fino a tardi e caffè dove nessuno ha fretta. Ogni quartiere racconta qualcosa di diverso: l'eleganza di Recoleta, l'aria bohémien di San Telmo, i parchi e i ristoranti di Palermo. Un trasferimento privato vi porta dall'aeroporto di Ezeiza all'hotel. La giornata resta libera per riposarvi dal volo e camminare senza un piano."
+                    },
+                    "tip": {
+                        "es": "Para la primera noche, una parrilla de barrio o una cena en Palermo es la mejor forma de entrar en el ritmo porteño. Se cena tarde, después de las 21.",
+                        "en": "For the first night, a neighborhood parrilla or dinner in Palermo is the best way to ease into the porteño rhythm. Dinner is late, after 9pm.",
+                        "it": "Per la prima serata, una parrilla di quartiere o una cena a Palermo è il modo migliore per entrare nel ritmo porteño. Si cena tardi, dopo le 21."
+                    },
+                    "includes": {
+                        "es": "traslado privado aeropuerto – hotel · alojamiento con desayuno",
+                        "en": "private airport–hotel transfer · accommodation with breakfast",
+                        "it": "trasferimento privato aeroporto–hotel · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires · check-in desde las 15:00 h",
+                        "en": "Hotel Pulitzer, Buenos Aires · check-in from 3:00pm",
+                        "it": "Hotel Pulitzer, Buenos Aires · check-in dalle 15:00"
                     }
                 },
                 {
                     "title": {
-                        "es": "Día 2 en Buenos Aires",
-                        "en": "Day 2 in Buenos Aires",
-                        "it": "Giorno 2 a Buenos Aires"
+                        "es": "City tour y food tour",
+                        "en": "City tour and food tour",
+                        "it": "City tour e food tour"
                     },
                     "description": {
-                        "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 2 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                        "es": "Por la mañana, un recorrido privado de unas cuatro horas con guía: la Plaza de Mayo con la Casa Rosada, el Cabildo y la Catedral, los barrios de San Telmo y La Boca, y las avenidas de Recoleta y Palermo. Por la tarde, un food tour: una caminata a pie por barrios porteños, con paradas para probar empanadas, alfajores, helado y otros sabores de la ciudad, con la historia de cada lugar.",
+                        "en": "In the morning, a private guided tour of about four hours: Plaza de Mayo with the Casa Rosada, the Cabildo and the Cathedral, the neighborhoods of San Telmo and La Boca, and the avenues of Recoleta and Palermo. In the afternoon, a food tour: a walk through porteño neighborhoods, with stops to try empanadas, alfajores, ice cream and other flavors of the city, with the story behind each place.",
+                        "it": "Al mattino, un giro privato con guida di circa quattro ore: Plaza de Mayo con la Casa Rosada, il Cabildo e la Cattedrale, i quartieri di San Telmo e La Boca, e i viali di Recoleta e Palermo. Nel pomeriggio, un food tour: una passeggiata tra i quartieri porteños, con soste per assaggiare empanadas, alfajores, gelato e altri sapori della città, con la storia di ogni luogo."
+                    },
+                    "tip": {
+                        "es": "Vayan con hambre: el food tour combina varias degustaciones a lo largo de la tarde.",
+                        "en": "Come hungry: the food tour combines several tastings throughout the afternoon.",
+                        "it": "Venite con appetito: il food tour unisce diverse degustazioni nel corso del pomeriggio."
+                    },
+                    "includes": {
+                        "es": "city tour privado de 4 hs con guía · food tour · alojamiento con desayuno",
+                        "en": "private 4-hour guided city tour · food tour · accommodation with breakfast",
+                        "it": "city tour privato di 4 ore con guida · food tour · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires",
+                        "en": "Hotel Pulitzer, Buenos Aires",
+                        "it": "Hotel Pulitzer, Buenos Aires"
                     }
                 },
                 {
                     "title": {
-                        "es": "Regreso",
-                        "en": "Departure",
-                        "it": "Ritorno"
+                        "es": "Kayak en el delta del Tigre",
+                        "en": "Kayaking in the Tigre delta",
+                        "it": "Kayak nel delta di Tigre"
                     },
                     "description": {
-                        "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 3 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                        "es": "Una salida activa a una hora de la ciudad. En el delta del Tigre se rema por canales y arroyos entre casas sobre pilotes, muelles de madera y vegetación de isla, lejos del ruido urbano. Regreso a Buenos Aires por la tarde, con tiempo libre.",
+                        "en": "An active outing an hour from the city. In the Tigre delta you paddle through channels and streams between houses on stilts, wooden docks and island vegetation, far from the noise of the city. Return to Buenos Aires in the afternoon, with free time.",
+                        "it": "Un'uscita attiva a un'ora dalla città. Nel delta di Tigre si rema tra canali e ruscelli, fra case su palafitte, moli di legno e vegetazione dell'isola, lontano dal rumore urbano. Rientro a Buenos Aires nel pomeriggio, con tempo libero."
+                    },
+                    "tip": {
+                        "es": "Lleven ropa que se pueda mojar, gorra y protector solar. El kayak es apto para principiantes.",
+                        "en": "Bring clothes that can get wet, a cap and sunscreen. The kayak outing is suitable for beginners.",
+                        "it": "Portate abiti che possano bagnarsi, un cappellino e protezione solare. Il kayak è adatto ai principianti."
+                    },
+                    "includes": {
+                        "es": "traslado a Tigre · kayak en el delta · alojamiento con desayuno",
+                        "en": "transfer to Tigre · kayaking in the delta · accommodation with breakfast",
+                        "it": "trasferimento a Tigre · kayak nel delta · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires",
+                        "en": "Hotel Pulitzer, Buenos Aires",
+                        "it": "Hotel Pulitzer, Buenos Aires"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Estancia El Ombú de Areco",
+                        "en": "El Ombú de Areco ranch",
+                        "it": "Estancia El Ombú de Areco"
+                    },
+                    "description": {
+                        "es": "Un día de campo en la pampa, en una de las estancias más tradicionales de San Antonio de Areco, cuna de las costumbres gauchas. Estancia El Ombú de Areco los recibe con la vida rural de siempre: galpones, sombras de árboles añejos y un asado a las brasas servido sin apuro. El pueblo de Areco, con su casco histórico y sus plateros, queda cerca. Regreso a Buenos Aires por la tarde.",
+                        "en": "A day in the countryside on the pampa, at one of the most traditional ranches in San Antonio de Areco, the birthplace of gaucho customs. Estancia El Ombú de Areco welcomes you with timeless rural life: barns, the shade of old trees and a slow-cooked asado over embers. The town of Areco, with its historic center and silversmiths, is close by. Return to Buenos Aires in the afternoon.",
+                        "it": "Una giornata di campagna nella pampa, in una delle estancias più tradizionali di San Antonio de Areco, culla delle usanze gauchas. Estancia El Ombú de Areco vi accoglie con la vita rurale di sempre: capannoni, l'ombra di alberi secolari e un asado alla brace servito senza fretta. Il paese di Areco, con il suo centro storico e i suoi argentieri, è vicino. Rientro a Buenos Aires nel pomeriggio."
+                    },
+                    "tip": {
+                        "es": "Lleven calzado cómodo y una prenda liviana: en el campo refresca al caer la tarde.",
+                        "en": "Bring comfortable shoes and a light layer: the countryside cools down as the afternoon ends.",
+                        "it": "Portate scarpe comode e un capo leggero: in campagna rinfresca sul finire del pomeriggio."
+                    },
+                    "includes": {
+                        "es": "día de campo en estancia con almuerzo · traslado privado ida y vuelta · alojamiento con desayuno",
+                        "en": "day in the countryside at the ranch with lunch · private round-trip transfer · accommodation with breakfast",
+                        "it": "giornata di campagna in estancia con pranzo · trasferimento privato andata e ritorno · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires",
+                        "en": "Hotel Pulitzer, Buenos Aires",
+                        "it": "Hotel Pulitzer, Buenos Aires"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "A Iguazú y lado brasileño",
+                        "en": "To Iguazú and the Brazilian side",
+                        "it": "A Iguazú e lato brasiliano"
+                    },
+                    "description": {
+                        "es": "Vuelo a Puerto Iguazú, en plena selva misionera, donde el río Iguazú se junta con el Paraná en la triple frontera. Traslado al hotel. Por la tarde, la visita al lado brasileño de las cataratas: una pasarela larga ofrece una vista panorámica de los saltos, y llega hasta la base de la Garganta del Diablo.",
+                        "en": "Flight to Puerto Iguazú, deep in the Misiones jungle, where the Iguazú River meets the Paraná at the triple border. Transfer to the hotel. In the afternoon, a visit to the Brazilian side of the falls: a long walkway offers a panoramic view of the cascades and reaches the base of the Devil's Throat.",
+                        "it": "Volo a Puerto Iguazú, nel cuore della foresta di Misiones, dove il fiume Iguazú si unisce al Paraná nella tripla frontiera. Trasferimento in hotel. Nel pomeriggio, la visita al lato brasiliano delle cascate: una lunga passerella offre una vista panoramica dei salti e arriva fino alla base della Garganta del Diablo."
+                    },
+                    "tip": {
+                        "es": "Para cruzar a Brasil, lleven el pasaporte y consulten con anticipación si su nacionalidad requiere visa.",
+                        "en": "To cross into Brazil, bring your passport and check in advance whether your nationality requires a visa.",
+                        "it": "Per attraversare il confine con il Brasile, portate il passaporto e verificate in anticipo se la vostra nazionalità richiede un visto."
+                    },
+                    "includes": {
+                        "es": "traslados privados · visita al lado brasileño · alojamiento con desayuno",
+                        "en": "private transfers · visit to the Brazilian side · accommodation with breakfast",
+                        "it": "trasferimenti privati · visita al lato brasiliano · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Yvy Hotel, Puerto Iguazú · check-in desde las 15:00 h",
+                        "en": "Yvy Hotel, Puerto Iguazú · check-in from 3:00pm",
+                        "it": "Yvy Hotel, Puerto Iguazú · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Lado argentino y Gran Aventura",
+                        "en": "Argentine side and Gran Aventura",
+                        "it": "Lato argentino e Gran Aventura"
+                    },
+                    "description": {
+                        "es": "El día más grande del viaje. En el lado argentino, los circuitos de pasarelas recorren la selva hasta la Garganta del Diablo, donde el agua cae con un estruendo que se siente en el pecho. Para cerrar, la Gran Aventura: un recorrido en camión por la selva y una navegación en lancha por el río Iguazú hasta los pies de los saltos, con paso bajo las cascadas. Sí, se mojan.",
+                        "en": "The biggest day of the trip. On the Argentine side, the walkway circuits cross the jungle to the Devil's Throat, where the water falls with a roar you feel in your chest. To close the day, the Gran Aventura: a truck ride through the jungle and a boat navigation along the Iguazú River to the foot of the falls, passing right under the cascades. Yes, you get wet.",
+                        "it": "Il giorno più intenso del viaggio. Sul lato argentino, i circuiti di passerelle attraversano la foresta fino alla Garganta del Diablo, dove l'acqua cade con un boato che si sente nel petto. Per chiudere, la Gran Aventura: un percorso in camion attraverso la foresta e una navigazione in barca sul fiume Iguazú fino ai piedi dei salti, passando sotto le cascate. Sì, ci si bagna."
+                    },
+                    "tip": {
+                        "es": "La entrada al Parque Nacional se abona aparte. Lleven una muda de ropa seca, calzado que se moje y funda para el celular y la cámara.",
+                        "en": "The National Park entrance fee is paid separately. Bring a dry change of clothes, footwear that can get wet, and a waterproof pouch for your phone and camera.",
+                        "it": "L'ingresso al Parco Nazionale si paga a parte. Portate un cambio asciutto, scarpe che possano bagnarsi e una custodia impermeabile per cellulare e macchina fotografica."
+                    },
+                    "includes": {
+                        "es": "Gran Aventura · alojamiento con desayuno",
+                        "en": "Gran Aventura · accommodation with breakfast",
+                        "it": "Gran Aventura · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Yvy Hotel, Puerto Iguazú",
+                        "en": "Yvy Hotel, Puerto Iguazú",
+                        "it": "Yvy Hotel, Puerto Iguazú"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Iguazú – Ushuaia",
+                        "en": "Iguazú – Ushuaia",
+                        "it": "Iguazú – Ushuaia"
+                    },
+                    "description": {
+                        "es": "Vuelo hacia Ushuaia, la ciudad más austral del mundo. Entre el canal Beagle y las montañas nevadas de la cordillera Martial, Ushuaia fue puerto de exploradores y presidio, y hoy es la puerta de entrada a la Antártida. Un traslado privado los lleva al hotel. La tarde queda libre para caminar por el puerto o la avenida San Martín.",
+                        "en": "Flight to Ushuaia, the southernmost city in the world. Between the Beagle Channel and the snow-capped peaks of the Martial mountain range, Ushuaia was once a port for explorers and a penal colony, and today is the gateway to Antarctica. A private transfer takes you to the hotel. The afternoon is free to walk along the port or San Martín avenue.",
+                        "it": "Volo verso Ushuaia, la città più australe del mondo. Tra il canale di Beagle e le montagne innevate della cordigliera Martial, Ushuaia fu porto di esploratori e colonia penale, e oggi è la porta d'accesso all'Antartide. Un trasferimento privato vi porta in hotel. Il pomeriggio resta libero per passeggiare lungo il porto o l'avenida San Martín."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "traslado privado aeropuerto – hotel · alojamiento con desayuno",
+                        "en": "private airport–hotel transfer · accommodation with breakfast",
+                        "it": "trasferimento privato aeroporto–hotel · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel en Ushuaia (a confirmar) · check-in desde las 15:00 h",
+                        "en": "Hotel in Ushuaia (to be confirmed) · check-in from 3:00pm",
+                        "it": "Hotel a Ushuaia (da confermare) · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Parque Nacional Tierra del Fuego",
+                        "en": "Tierra del Fuego National Park",
+                        "it": "Parco Nazionale Terra del Fuoco"
+                    },
+                    "description": {
+                        "es": "Un recorrido por el Parque Nacional Tierra del Fuego, donde la cordillera llega al mar. Bosques de lengas y ñires, turberas, bahía Lapataia y el final de la Ruta 3, que empieza en Buenos Aires, a más de 3.000 kilómetros. Con guía, se hacen paradas en miradores y caminatas cortas por la costa del canal Beagle.",
+                        "en": "A tour of Tierra del Fuego National Park, where the mountains meet the sea. Forests of lenga and ñire trees, peat bogs, Lapataia bay and the end of Route 3, which begins in Buenos Aires over 3,000 kilometers away. With a guide, you stop at viewpoints and take short walks along the coast of the Beagle Channel.",
+                        "it": "Un giro nel Parco Nazionale Terra del Fuoco, dove la cordigliera arriva al mare. Boschi di lenga e ñire, torbiere, la baia di Lapataia e la fine della Route 3, che inizia a Buenos Aires a più di 3.000 chilometri di distanza. Con una guida, si fanno soste ai belvedere e brevi passeggiate lungo la costa del canale di Beagle."
+                    },
+                    "tip": {
+                        "es": "Calzado impermeable y ropa por capas: en Tierra del Fuego puede haber sol y lluvia el mismo día. El ingreso al Parque Nacional se abona aparte.",
+                        "en": "Waterproof footwear and layered clothing: in Tierra del Fuego you can have sun and rain on the same day. The National Park entrance fee is paid separately.",
+                        "it": "Scarpe impermeabili e abbigliamento a strati: in Terra del Fuoco si può avere sole e pioggia nello stesso giorno. L'ingresso al Parco Nazionale si paga a parte."
+                    },
+                    "includes": {
+                        "es": "excursión de medio día con guía · traslados",
+                        "en": "half-day guided excursion · transfers",
+                        "it": "escursione di mezza giornata con guida · trasferimenti"
+                    },
+                    "stay": {
+                        "es": "Hotel en Ushuaia (a confirmar)",
+                        "en": "Hotel in Ushuaia (to be confirmed)",
+                        "it": "Hotel a Ushuaia (da confermare)"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Lagos Escondido y Fagnano en 4x4",
+                        "en": "Escondido and Fagnano lakes by 4x4",
+                        "it": "Laghi Escondido e Fagnano in 4x4"
+                    },
+                    "description": {
+                        "es": "Un día completo por la cordillera fueguina en vehículo 4x4. La ruta sube por el paso Garibaldi hasta miradores de lagos y bosques, y sigue por caminos de ripio hasta el lago Escondido y el lago Fagnano, una de las grandes extensiones de agua de la isla. El almuerzo se sirve en la montaña. Un día de paisaje y aventura sin demasiada caminata.",
+                        "en": "A full day across the Fuegian cordillera by 4x4. The route climbs the Garibaldi pass to lake and forest viewpoints, and continues along gravel roads to Lake Escondido and Lake Fagnano, one of the island's great stretches of water. Lunch is served in the mountains. A day of scenery and adventure without much walking.",
+                        "it": "Una giornata intera attraverso la cordigliera fueguina in 4x4. Il percorso sale per il passo Garibaldi fino a belvedere su laghi e boschi, e prosegue su strade sterrate fino al lago Escondido e al lago Fagnano, una delle grandi distese d'acqua dell'isola. Il pranzo si serve in montagna. Una giornata di paesaggio e avventura senza troppo cammino."
+                    },
+                    "tip": {
+                        "es": "Lleven abrigo y cámara: los miradores del paso Garibaldi tienen algunas de las mejores vistas de la isla.",
+                        "en": "Bring warm clothing and a camera: the viewpoints at the Garibaldi pass offer some of the best views on the island.",
+                        "it": "Portate un capo caldo e la macchina fotografica: i belvedere del passo Garibaldi offrono alcune delle viste più belle dell'isola."
+                    },
+                    "includes": {
+                        "es": "excursión 4x4 de día completo con guía · almuerzo",
+                        "en": "full-day guided 4x4 excursion · lunch",
+                        "it": "escursione in 4x4 di giornata intera con guida · pranzo"
+                    },
+                    "stay": {
+                        "es": "Hotel en Ushuaia (a confirmar)",
+                        "en": "Hotel in Ushuaia (to be confirmed)",
+                        "it": "Hotel a Ushuaia (da confermare)"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Trekking a la Laguna Esmeralda",
+                        "en": "Trek to Laguna Esmeralda",
+                        "it": "Trekking alla Laguna Esmeralda"
+                    },
+                    "description": {
+                        "es": "Trekking hacia la Laguna Esmeralda, un clásico de Ushuaia. El sendero cruza turberas y bosques de lenga hasta una laguna de agua verde esmeralda al pie del glaciar Ojo del Albino. Se camina de unas seis horas, con bastones, y se almuerza con vista. Una jornada de esfuerzo moderado, con un paisaje que recompensa cada paso.",
+                        "en": "A trek to Laguna Esmeralda, a classic of Ushuaia. The trail crosses peat bogs and lenga forests to an emerald-green lagoon at the foot of the Ojo del Albino glacier. It's about six hours of walking, with trekking poles, and lunch with a view. A moderately demanding day, with scenery that rewards every step.",
+                        "it": "Trekking verso la Laguna Esmeralda, un classico di Ushuaia. Il sentiero attraversa torbiere e boschi di lenga fino a una laguna di un verde smeraldo ai piedi del ghiacciaio Ojo del Albino. Si cammina per circa sei ore, con bastoncini da trekking, e si pranza con vista. Una giornata di sforzo moderato, con un paesaggio che ripaga ogni passo."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "trekking con guía · box lunch · traslados desde el hotel",
+                        "en": "guided trek · box lunch · transfers from the hotel",
+                        "it": "trekking con guida · box lunch · trasferimenti dall'hotel"
+                    },
+                    "stay": {
+                        "es": "Hotel en Ushuaia (a confirmar)",
+                        "en": "Hotel in Ushuaia (to be confirmed)",
+                        "it": "Hotel a Ushuaia (da confermare)"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "A El Calafate y Perito Moreno",
+                        "en": "To El Calafate and Perito Moreno",
+                        "it": "A El Calafate e Perito Moreno"
+                    },
+                    "description": {
+                        "es": "Por la mañana, vuelo a El Calafate y traslado al hotel. El Calafate es el pueblo desde donde se visita el Glaciar Perito Moreno, sobre el Lago Argentino. Por la tarde, la visita tradicional: las pasarelas del Perito Moreno recorren la costa frente a la pared de hielo, a pocos metros. Se escucha el glaciar crujir y, con suerte, se ve caer un gran bloque al lago.",
+                        "en": "In the morning, flight to El Calafate and transfer to the hotel. El Calafate is the town from which you visit the Perito Moreno Glacier, on Lake Argentino. In the afternoon, the traditional visit: the Perito Moreno walkways run along the coast facing the wall of ice, just meters away. You hear the glacier creak and, with luck, see a great block fall into the lake.",
+                        "it": "Al mattino, volo a El Calafate e trasferimento in hotel. El Calafate è il paese da cui si visita il Ghiacciaio Perito Moreno, sul Lago Argentino. Nel pomeriggio, la visita tradizionale: le passerelle del Perito Moreno costeggiano la parete di ghiaccio a pochi metri di distanza. Si sente il ghiacciaio scricchiolare e, con un po' di fortuna, si vede cadere un grande blocco nel lago."
+                    },
+                    "tip": {
+                        "es": "La entrada al Parque Nacional Los Glaciares se abona aparte. Lleven abrigo: junto al hielo el viento es frío.",
+                        "en": "The entrance fee to Los Glaciares National Park is paid separately. Bring warm clothing: it's windy and cold next to the ice.",
+                        "it": "L'ingresso al Parco Nazionale Los Glaciares si paga a parte. Portate un capo caldo: vicino al ghiaccio il vento è freddo."
+                    },
+                    "includes": {
+                        "es": "traslado privado aeropuerto – hotel · visita tradicional con pasarelas · alojamiento con desayuno",
+                        "en": "private airport–hotel transfer · traditional walkway visit · accommodation with breakfast",
+                        "it": "trasferimento privato aeroporto–hotel · visita tradizionale con passerelle · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Esplendor by Wyndham El Calafate · check-in desde las 15:00 h",
+                        "en": "Esplendor by Wyndham El Calafate · check-in from 3:00pm",
+                        "it": "Esplendor by Wyndham El Calafate · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Minitrekking en el Perito Moreno",
+                        "en": "Minitrekking on the Perito Moreno",
+                        "it": "Minitrekking sul Perito Moreno"
+                    },
+                    "description": {
+                        "es": "Hoy no solo se ve el glaciar de cerca: se camina sobre él. Se llega en barco a la orilla del glaciar y, con grampones y guías de montaña, se recorre durante una hora y media un mundo de grietas, lagunas azules y cuevas de hielo. Es una de las experiencias más impresionantes del viaje. Tarde libre en El Calafate.",
+                        "en": "Today you don't just see the glacier up close: you walk on it. A boat takes you to the glacier's edge and, with crampons and mountain guides, you spend an hour and a half exploring a world of crevasses, blue lagoons and ice caves. It's one of the most impressive experiences of the trip. Free afternoon in El Calafate.",
+                        "it": "Oggi non vi limitate a guardare il ghiacciaio da vicino: ci camminate sopra. Si arriva in barca al bordo del ghiacciaio e, con ramponi e guide di montagna, si esplora per un'ora e mezza un mondo di crepacci, laghetti azzurri e grotte di ghiaccio. È una delle esperienze più impressionanti del viaggio. Pomeriggio libero a El Calafate."
+                    },
+                    "tip": {
+                        "es": "Es una actividad física, no apta para embarazadas ni para personas con problemas respiratorios, cardíacos, de columna o rodillas.",
+                        "en": "This is a physical activity, not suitable for pregnant travelers or people with respiratory, heart, spine or knee conditions.",
+                        "it": "È un'attività fisica, non adatta a donne in gravidanza né a persone con problemi respiratori, cardiaci, alla colonna o alle ginocchia."
+                    },
+                    "includes": {
+                        "es": "minitrekking con navegación y traslado regular · alojamiento con desayuno",
+                        "en": "minitrekking with boat trip and shared transfer · accommodation with breakfast",
+                        "it": "minitrekking con navigazione e trasferimento regolare · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Esplendor by Wyndham El Calafate",
+                        "en": "Esplendor by Wyndham El Calafate",
+                        "it": "Esplendor by Wyndham El Calafate"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "El Calafate – El Chaltén",
+                        "en": "El Calafate – El Chaltén",
+                        "it": "El Calafate – El Chaltén"
+                    },
+                    "description": {
+                        "es": "Traslado por la ruta de la Patagonia hasta El Chaltén, capital nacional del trekking, a los pies del macizo del Fitz Roy. El pueblo es chico, con senderos que salen directamente de sus calles. Por la tarde, un primer trekking suave por su cuenta: el sendero a los miradores de los Cóndores y las Águilas, de menos de una hora, con vistas del pueblo, el valle y el Fitz Roy.",
+                        "en": "Transfer along the Patagonian route to El Chaltén, the national trekking capital, at the foot of the Fitz Roy massif. It's a small village, with trails that start right from its streets. In the afternoon, a first easy trek on your own: the trail to the Cóndores and Águilas viewpoints, under an hour, with views of the village, the valley and the Fitz Roy.",
+                        "it": "Trasferimento lungo la rotta della Patagonia fino a El Chaltén, capitale nazionale del trekking, ai piedi del massiccio del Fitz Roy. È un paese piccolo, con sentieri che partono direttamente dalle sue strade. Nel pomeriggio, un primo trekking leggero in autonomia: il sentiero ai belvedere dei Cóndores e delle Águilas, di meno di un'ora, con viste sul paese, la valle e il Fitz Roy."
+                    },
+                    "tip": {
+                        "es": "Antes de salir, pidan en el hotel el mapa de senderos y consulten el pronóstico: el viento cambia el humor del Fitz Roy.",
+                        "en": "Before heading out, ask the hotel for the trail map and check the forecast: the wind can change the Fitz Roy's mood.",
+                        "it": "Prima di uscire, chiedete in hotel la mappa dei sentieri e controllate le previsioni: il vento cambia l'umore del Fitz Roy."
+                    },
+                    "includes": {
+                        "es": "traslado regular puerta a puerta · alojamiento con desayuno",
+                        "en": "shared door-to-door transfer · accommodation with breakfast",
+                        "it": "trasferimento regolare porta a porta · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Chaltén Suites, El Chaltén · check-in desde las 15:00 h",
+                        "en": "Chaltén Suites, El Chaltén · check-in from 3:00pm",
+                        "it": "Chaltén Suites, El Chaltén · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Trekking libre: Laguna de los Tres",
+                        "en": "Free trek: Laguna de los Tres",
+                        "it": "Trekking libero: Laguna de los Tres"
+                    },
+                    "description": {
+                        "es": "El gran día de El Chaltén, a su ritmo y sin guía. El sendero sale del pueblo y sube entre bosques de lenga hasta la base del Fitz Roy. El último tramo es empinado, pero termina en la Laguna de los Tres, frente a la pared de granito. Son unos 20 kilómetros ida y vuelta, entre 8 y 10 horas, con buen estado físico. Si el cielo está nublado, hay alternativas más cortas.",
+                        "en": "El Chaltén's big day, at your own pace and without a guide. The trail leaves the village and climbs through lenga forests to the base of the Fitz Roy. The last stretch is steep, but ends at Laguna de los Tres, facing the granite wall. It's about 20 kilometers round trip, between 8 and 10 hours, requiring good physical condition. If the sky is cloudy, there are shorter alternatives.",
+                        "it": "Il grande giorno di El Chaltén, al vostro ritmo e senza guida. Il sentiero parte dal paese e sale tra boschi di lenga fino alla base del Fitz Roy. L'ultimo tratto è ripido, ma termina alla Laguna de los Tres, di fronte alla parete di granito. Sono circa 20 chilometri andata e ritorno, tra le 8 e le 10 ore, con una buona condizione fisica. Se il cielo è nuvoloso, ci sono alternative più brevi."
+                    },
+                    "tip": {
+                        "es": "Salgan temprano, lleven agua, abrigo, comida y calzado de trekking probado. El sendero está bien marcado, pero conviene avisar en el hotel el horario previsto de regreso.",
+                        "en": "Set out early, and bring water, warm clothing, food and trekking shoes you've already broken in. The trail is well marked, but it's a good idea to tell the hotel your expected return time.",
+                        "it": "Partite presto e portate acqua, un capo caldo, cibo e scarpe da trekking già rodate. Il sentiero è ben segnalato, ma conviene avvisare in hotel l'orario di rientro previsto."
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "Chaltén Suites, El Chaltén",
+                        "en": "Chaltén Suites, El Chaltén",
+                        "it": "Chaltén Suites, El Chaltén"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Trekking libre: Laguna Torre",
+                        "en": "Free trek: Laguna Torre",
+                        "it": "Trekking libero: Laguna Torre"
+                    },
+                    "description": {
+                        "es": "Segundo día de senderos libres, ahora hacia el Cerro Torre. El camino sigue el valle del río Fitz Roy hasta la Laguna Torre, con témpanos flotando y, en los días despejados, la aguja de granito al fondo. Son unos 18 kilómetros ida y vuelta, de dificultad media. Para quienes tengan energía, el mirador Maestri suma una vista más cercana.",
+                        "en": "Second day of free trails, now toward Cerro Torre. The path follows the Fitz Roy river valley to Laguna Torre, with icebergs floating and, on clear days, the granite spire in the background. It's about 18 kilometers round trip, moderate difficulty. For those with energy left, the Maestri viewpoint adds a closer view.",
+                        "it": "Secondo giorno di sentieri liberi, questa volta verso il Cerro Torre. Il cammino segue la valle del fiume Fitz Roy fino alla Laguna Torre, con iceberg galleggianti e, nelle giornate serene, la guglia di granito sullo sfondo. Sono circa 18 chilometri andata e ritorno, di difficoltà media. Per chi ha ancora energia, il belvedere Maestri regala una vista più ravvicinata."
+                    },
+                    "tip": {
+                        "es": "Si prefieren un día más corto, la Loma del Pliegue Tumbado ofrece una vista amplia de la cordillera en medio día.",
+                        "en": "If you'd like a shorter day, the Loma del Pliegue Tumbado offers a wide view of the cordillera in half a day.",
+                        "it": "Se preferite una giornata più breve, la Loma del Pliegue Tumbado offre una vista ampia sulla cordigliera in mezza giornata."
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "Chaltén Suites, El Chaltén",
+                        "en": "Chaltén Suites, El Chaltén",
+                        "it": "Chaltén Suites, El Chaltén"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "El Chaltén – Buenos Aires",
+                        "en": "El Chaltén – Buenos Aires",
+                        "it": "El Chaltén – Buenos Aires"
+                    },
+                    "description": {
+                        "es": "Traslado al aeropuerto de El Calafate y vuelo a Buenos Aires. Traslado al hotel y tarde libre para una última caminata por la ciudad. Una cena de despedida cierra el viaje.",
+                        "en": "Transfer to El Calafate airport and flight to Buenos Aires. Transfer to the hotel and free afternoon for one last walk around the city. A farewell dinner closes the trip.",
+                        "it": "Trasferimento all'aeroporto di El Calafate e volo a Buenos Aires. Trasferimento in hotel e pomeriggio libero per un'ultima passeggiata in città. Una cena di addio chiude il viaggio."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "traslado regular El Chaltén – El Calafate · traslado privado aeropuerto – hotel · alojamiento con desayuno",
+                        "en": "shared transfer El Chaltén – El Calafate · private airport–hotel transfer · accommodation with breakfast",
+                        "it": "trasferimento regolare El Chaltén – El Calafate · trasferimento privato aeroporto–hotel · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires · check-in desde las 15:00 h",
+                        "en": "Hotel Pulitzer, Buenos Aires · check-in from 3:00pm",
+                        "it": "Hotel Pulitzer, Buenos Aires · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Buenos Aires – Barcelona",
+                        "en": "Buenos Aires – Barcelona",
+                        "it": "Buenos Aires – Barcellona"
+                    },
+                    "description": {
+                        "es": "Traslado al aeropuerto de Ezeiza y vuelo de regreso a Barcelona, con la cabeza llena de paisajes.",
+                        "en": "Transfer to Ezeiza airport and flight back to Barcelona, with your head full of landscapes.",
+                        "it": "Trasferimento all'aeroporto di Ezeiza e volo di ritorno a Barcellona, con la testa piena di paesaggi."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
                     }
                 }
             ],
-            "map_query": ""
+            "map_query": "",
+            "map_mid": "1KCA4PTYW2ge23XF81QYpBFPBUkZUuPs",
+            "nights": {
+                "es": "16 noches",
+                "en": "16 nights",
+                "it": "16 notti"
+            },
+            "stops": {
+                "es": "5 destinos",
+                "en": "5 destinations",
+                "it": "5 destinazioni"
+            }
+        },
+        "slow-immersive": {
+            "name": "Slow & Immersive",
+            "cover": "destinos/buenos-aires.jpg",
+            "title": {
+                "es": "Pocas bases, más noches y tiempo para quedarse",
+                "en": "Fewer bases, more nights, more time to stay",
+                "it": "Poche basi, più notti e tempo per fermarsi"
+            },
+            "duration": {
+                "es": "15 días",
+                "en": "15 days",
+                "it": "15 giorni"
+            },
+            "difficulty": {
+                "es": "Baja",
+                "en": "Low",
+                "it": "Bassa"
+            },
+            "summary": {
+                "es": "Un viaje para quedarse: tango en Buenos Aires, los valles calchaquíes del norte con sus bodegas y pueblos de adobe, y los senderos suaves de El Chaltén, a los pies del Fitz Roy. Pocas bases, caminatas cortas y espacio para no hacer nada.",
+                "en": "A trip to settle into: tango in Buenos Aires, the calchaquí valleys of the north with their wineries and adobe towns, and the gentle trails of El Chaltén, at the foot of the Fitz Roy. Few bases, short walks and room to do nothing at all.",
+                "it": "Un viaggio per fermarsi: tango a Buenos Aires, le valli calchaquíes del nord con le loro cantine e i paesi di adobe, e i sentieri leggeri di El Chaltén, ai piedi del Fitz Roy. Poche basi, camminate brevi e spazio per non fare nulla."
+            },
+            "days": [
+                {
+                    "title": {
+                        "es": "Barcelona – Buenos Aires",
+                        "en": "Barcelona – Buenos Aires",
+                        "it": "Barcellona – Buenos Aires"
+                    },
+                    "description": {
+                        "es": "Vuelo nocturno a Buenos Aires. El viaje empieza sin apuro.",
+                        "en": "Overnight flight to Buenos Aires. The trip begins without rushing.",
+                        "it": "Volo notturno a Buenos Aires. Il viaggio comincia senza fretta."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Llegada a Buenos Aires",
+                        "en": "Arrival in Buenos Aires",
+                        "it": "Arrivo a Buenos Aires"
+                    },
+                    "description": {
+                        "es": "Buenos Aires los recibe con avenidas anchas, plazas con sombra, librerías y cafés donde se puede pasar la tarde sin mirar el reloj. Cada barrio tiene su ritmo: Recoleta es elegante, San Telmo bohemio y Palermo verde y gastronómico. Un traslado privado los lleva al hotel. La tarde queda libre.",
+                        "en": "Buenos Aires greets you with wide avenues, shaded squares, bookstores and cafés where you can spend the afternoon without watching the clock. Each neighborhood has its own rhythm: Recoleta is elegant, San Telmo bohemian, Palermo green and full of restaurants. A private transfer takes you to the hotel. The afternoon is free.",
+                        "it": "Buenos Aires vi accoglie con ampi viali, piazze ombreggiate, librerie e caffè dove si può trascorrere il pomeriggio senza guardare l'orologio. Ogni quartiere ha il suo ritmo: Recoleta è elegante, San Telmo bohémien e Palermo verde e gastronomico. Un trasferimento privato vi porta in hotel. Il pomeriggio resta libero."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "traslado privado aeropuerto – hotel · alojamiento con desayuno",
+                        "en": "private airport–hotel transfer · accommodation with breakfast",
+                        "it": "trasferimento privato aeroporto–hotel · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires · check-in desde las 15:00 h",
+                        "en": "Hotel Pulitzer, Buenos Aires · check-in from 3:00pm",
+                        "it": "Hotel Pulitzer, Buenos Aires · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Buenos Aires, a tu ritmo",
+                        "en": "Buenos Aires, at your own pace",
+                        "it": "Buenos Aires, al vostro ritmo"
+                    },
+                    "description": {
+                        "es": "Por la mañana, un recorrido privado de tres horas con guía: la Plaza de Mayo, San Telmo y sus calles de adoquines, y los parques de Palermo. Se cuenta la historia con calma, con paradas para un café. Por la noche, una milonga privada con clase de tango: se aprenden los primeros pasos y se baila con los porteños.",
+                        "en": "In the morning, a private three-hour guided tour: Plaza de Mayo, the cobblestone streets of San Telmo, and the parks of Palermo. The story unfolds unhurried, with stops for coffee. At night, a private milonga with a tango class: you learn the first steps and dance alongside the porteños.",
+                        "it": "Al mattino, un giro privato con guida di tre ore: Plaza de Mayo, le strade acciottolate di San Telmo e i parchi di Palermo. La storia si racconta con calma, con soste per un caffè. La sera, una milonga privata con lezione di tango: si imparano i primi passi e si balla insieme ai porteños."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "city tour privado de 3 hs con guía · milonga privada con clase de tango",
+                        "en": "private 3-hour guided city tour · private milonga with tango class",
+                        "it": "city tour privato di 3 ore con guida · milonga privata con lezione di tango"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires",
+                        "en": "Hotel Pulitzer, Buenos Aires",
+                        "it": "Hotel Pulitzer, Buenos Aires"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Buenos Aires – Salta",
+                        "en": "Buenos Aires – Salta",
+                        "it": "Buenos Aires – Salta"
+                    },
+                    "description": {
+                        "es": "Vuelo a Salta, una ciudad colonial de patios con flores, iglesias color rosa y peñas con guitarras. Es la puerta de entrada al noroeste argentino, donde la cultura andina y la española conviven desde hace siglos. Un traslado privado los lleva al hotel. La tarde queda libre.",
+                        "en": "Flight to Salta, a colonial city of courtyards full of flowers, pink churches and peñas with guitars. It's the gateway to northwestern Argentina, where Andean and Spanish culture have coexisted for centuries. A private transfer takes you to the hotel. The afternoon is free.",
+                        "it": "Volo a Salta, città coloniale di cortili fioriti, chiese color rosa e peñas con chitarre. È la porta d'accesso al nordovest argentino, dove la cultura andina e quella spagnola convivono da secoli. Un trasferimento privato vi porta in hotel. Il pomeriggio resta libero."
+                    },
+                    "tip": {
+                        "es": "Por la noche, una peña folklórica es la mejor forma de empezar: guitarra, empanadas salteñas y vino de la región.",
+                        "en": "In the evening, a folklore peña is the best way to start: guitar, Salta-style empanadas and wine from the region.",
+                        "it": "La sera, una peña folkloristica è il modo migliore per iniziare: chitarra, empanadas salteñas e vino della regione."
+                    },
+                    "includes": {
+                        "es": "traslado privado aeropuerto – hotel · alojamiento con desayuno",
+                        "en": "private airport–hotel transfer · accommodation with breakfast",
+                        "it": "trasferimento privato aeroporto–hotel · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel en Salta (a confirmar) · check-in desde las 15:00 h",
+                        "en": "Hotel in Salta (to be confirmed) · check-in from 3:00pm",
+                        "it": "Hotel a Salta (da confermare) · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Salta, ciudad colonial",
+                        "en": "Salta, colonial city",
+                        "it": "Salta, città coloniale"
+                    },
+                    "description": {
+                        "es": "Un city tour compartido por la ciudad que mejor conserva su pasado colonial: la plaza 9 de Julio, con la Catedral y el Cabildo, la iglesia de San Francisco, el cerro San Bernardo y el Mercado Artesanal. Con un guía se conocen los detalles que a simple vista pasan desapercibidos. El resto del día es libre.",
+                        "en": "A shared city tour through the city that best preserves its colonial past: Plaza 9 de Julio, with the Cathedral and the Cabildo, the San Francisco church, Cerro San Bernardo and the Artisans' Market. With a guide, you discover the details that go unnoticed at first glance. The rest of the day is free.",
+                        "it": "Un city tour condiviso nella città che meglio conserva il suo passato coloniale: Plaza 9 de Julio, con la Cattedrale e il Cabildo, la chiesa di San Francisco, il Cerro San Bernardo e il Mercado Artesanal. Con una guida si scoprono i dettagli che a prima vista passano inosservati. Il resto della giornata è libero."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "city tour compartido de 4 hs con guía · alojamiento con desayuno",
+                        "en": "shared 4-hour guided city tour · accommodation with breakfast",
+                        "it": "city tour condiviso di 4 ore con guida · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel en Salta (a confirmar)",
+                        "en": "Hotel in Salta (to be confirmed)",
+                        "it": "Hotel a Salta (da confermare)"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Valles Calchaquíes – Cafayate",
+                        "en": "Valles Calchaquíes – Cafayate",
+                        "it": "Valli Calchaquíes – Cafayate"
+                    },
+                    "description": {
+                        "es": "Comienza la Vuelta a los Valles Calchaquíes. La ruta sube por la Cuesta del Obispo hasta la Piedra del Molino y baja al Parque Nacional Los Cardones, un bosque de cactus gigantes. Después, Cachi y Molinos, pueblos de adobe blanco, y la Quebrada de las Flechas, con sus formaciones afiladas de arenisca. Al caer la tarde llegan a Cafayate, rodeados de viñedos, donde pasan la noche.",
+                        "en": "The Vuelta a los Valles Calchaquíes begins. The route climbs the Cuesta del Obispo to the Piedra del Molino and descends into Los Cardones National Park, a forest of giant cacti. Then Cachi and Molinos, white adobe towns, and the Quebrada de las Flechas, with its sharp sandstone formations. By late afternoon you reach Cafayate, surrounded by vineyards, where you spend the night.",
+                        "it": "Inizia la Vuelta a los Valles Calchaquíes. Il percorso sale per la Cuesta del Obispo fino alla Piedra del Molino e scende nel Parco Nazionale Los Cardones, una foresta di cactus giganti. Poi Cachi e Molinos, paesi di adobe bianco, e la Quebrada de las Flechas, con le sue formazioni di arenaria affilate. Al calar della sera si arriva a Cafayate, circondati da vigneti, dove si pernotta."
+                    },
+                    "tip": {
+                        "es": "En excursiones con noche fuera de Salta, se recomienda un solo bolso de mano por persona (o una valija cada dos).",
+                        "en": "On excursions with a night away from Salta, it's recommended to bring just one carry-on bag per person (or one suitcase for every two travelers).",
+                        "it": "Nelle escursioni con pernottamento fuori Salta, si consiglia un solo bagaglio a mano a persona (o una valigia ogni due viaggiatori)."
+                    },
+                    "includes": {
+                        "es": "excursión regular con guía bilingüe",
+                        "en": "shared excursion with bilingual guide",
+                        "it": "escursione regolare con guida bilingue"
+                    },
+                    "stay": {
+                        "es": "Hotel en Cafayate (a confirmar) · check-in desde las 15:00 h",
+                        "en": "Hotel in Cafayate (to be confirmed) · check-in from 3:00pm",
+                        "it": "Hotel a Cafayate (da confermare) · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Cafayate – Salta",
+                        "en": "Cafayate – Salta",
+                        "it": "Cafayate – Salta"
+                    },
+                    "description": {
+                        "es": "Por la mañana, una bodega de Cafayate con degustación de torrontés, el vino blanco más característico de la región. Después, el regreso por la Quebrada de las Conchas: el Anfiteatro, la Garganta del Diablo y el Obelisco, esculpidos por el viento en tonos rojos y ocres. Llegada a Salta a última hora de la tarde.",
+                        "en": "In the morning, a Cafayate winery with a tasting of torrontés, the region's most distinctive white wine. Afterward, the return through the Quebrada de las Conchas: the Amphitheater, the Devil's Throat and the Obelisk, sculpted by the wind in shades of red and ochre. Arrival in Salta in the late afternoon.",
+                        "it": "Al mattino, una cantina di Cafayate con degustazione di torrontés, il vino bianco più caratteristico della regione. Dopo, il rientro attraverso la Quebrada de las Conchas: l'Anfiteatro, la Garganta del Diablo e l'Obelisco, scolpiti dal vento in tonalità di rosso e ocra. Arrivo a Salta nel tardo pomeriggio."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "excursión regular con guía bilingüe · alojamiento con desayuno en Salta",
+                        "en": "shared excursion with bilingual guide · accommodation with breakfast in Salta",
+                        "it": "escursione regolare con guida bilingue · pernottamento con colazione a Salta"
+                    },
+                    "stay": {
+                        "es": "Hotel en Salta (a confirmar) · check-in desde las 15:00 h",
+                        "en": "Hotel in Salta (to be confirmed) · check-in from 3:00pm",
+                        "it": "Hotel a Salta (da confermare) · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Salta – El Calafate",
+                        "en": "Salta – El Calafate",
+                        "it": "Salta – El Calafate"
+                    },
+                    "description": {
+                        "es": "Traslado al aeropuerto y vuelo a El Calafate, con conexión. Es un cambio total de paisaje: del norte cálido y colorido a la estepa patagónica y el Lago Argentino. Traslado privado al hotel y noche de descanso.",
+                        "en": "Transfer to the airport and connecting flight to El Calafate. It's a complete change of scenery: from the warm, colorful north to the Patagonian steppe and Lake Argentino. Private transfer to the hotel and a night of rest.",
+                        "it": "Trasferimento all'aeroporto e volo con scalo a El Calafate. È un cambio di paesaggio totale: dal nord caldo e colorato alla steppa patagonica e al Lago Argentino. Trasferimento privato in hotel e una notte di riposo."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "traslado privado a ambos aeropuertos · traslado privado aeropuerto – hotel en El Calafate · alojamiento con desayuno",
+                        "en": "private transfer to both airports · private airport–hotel transfer in El Calafate · accommodation with breakfast",
+                        "it": "trasferimento privato a entrambi gli aeroporti · trasferimento privato aeroporto–hotel a El Calafate · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Esplendor by Wyndham El Calafate · check-in desde las 15:00 h",
+                        "en": "Esplendor by Wyndham El Calafate · check-in from 3:00pm",
+                        "it": "Esplendor by Wyndham El Calafate · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Glaciar Perito Moreno",
+                        "en": "Perito Moreno Glacier",
+                        "it": "Ghiacciaio Perito Moreno"
+                    },
+                    "description": {
+                        "es": "Un día para ver de cerca el Perito Moreno, uno de los glaciares más impresionantes y accesibles del mundo. Las pasarelas dan frente a una pared de hielo azul, y de tanto en tanto se desprende un bloque con un estruendo. Además, la navegación tradicional frente a la pared del glaciar, para verlo desde el lago.",
+                        "en": "A day to see the Perito Moreno up close, one of the most impressive and accessible glaciers in the world. The walkways face a wall of blue ice, and every so often a block breaks off with a roar. Plus, the traditional boat trip in front of the glacier's wall, to see it from the lake.",
+                        "it": "Una giornata per vedere da vicino il Perito Moreno, uno dei ghiacciai più impressionanti e accessibili del mondo. Le passerelle sono di fronte a una parete di ghiaccio azzurro, e di tanto in tanto un blocco si stacca con un boato. Inoltre, la navigazione tradizionale davanti alla parete del ghiacciaio, per vederlo dal lago."
+                    },
+                    "tip": {
+                        "es": "Lleven abrigo aunque haga sol: junto al hielo hace frío.",
+                        "en": "Bring warm clothing even if it's sunny: it's cold next to the ice.",
+                        "it": "Portate un capo caldo anche se c'è il sole: vicino al ghiaccio fa freddo."
+                    },
+                    "includes": {
+                        "es": "visita al Glaciar Perito Moreno · navegación tradicional · entrada al Parque Nacional · alojamiento con desayuno",
+                        "en": "visit to the Perito Moreno Glacier · traditional boat trip · National Park entrance fee · accommodation with breakfast",
+                        "it": "visita al Ghiacciaio Perito Moreno · navigazione tradizionale · ingresso al Parco Nazionale · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Esplendor by Wyndham El Calafate",
+                        "en": "Esplendor by Wyndham El Calafate",
+                        "it": "Esplendor by Wyndham El Calafate"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "El Calafate – El Chaltén",
+                        "en": "El Calafate – El Chaltén",
+                        "it": "El Calafate – El Chaltén"
+                    },
+                    "description": {
+                        "es": "Traslado por la ruta de la Patagonia hasta El Chaltén, al pie del Fitz Roy. Es un pueblo de montaña de calles de tierra, cervecerías y senderos que salen directo desde el centro. Tarde libre para caminar sin plan.",
+                        "en": "Transfer along the Patagonian route to El Chaltén, at the foot of the Fitz Roy. It's a mountain village of dirt streets, breweries and trails that start right from the center. Free afternoon to walk without a plan.",
+                        "it": "Trasferimento lungo la rotta della Patagonia fino a El Chaltén, ai piedi del Fitz Roy. È un paese di montagna fatto di strade di terra, birrerie e sentieri che partono direttamente dal centro. Pomeriggio libero per camminare senza un piano."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "traslado regular puerta a puerta · alojamiento con desayuno",
+                        "en": "shared door-to-door transfer · accommodation with breakfast",
+                        "it": "trasferimento regolare porta a porta · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel en El Chaltén (a confirmar) · check-in desde las 15:00 h",
+                        "en": "Hotel in El Chaltén (to be confirmed) · check-in from 3:00pm",
+                        "it": "Hotel a El Chaltén (da confermare) · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Lago del Desierto",
+                        "en": "Lago del Desierto",
+                        "it": "Lago del Desierto"
+                    },
+                    "description": {
+                        "es": "Un día completo en el Lago del Desierto, al norte de El Chaltén. Una navegación cruza el lago hasta la Reserva Vespignani, con caminatas suaves a elección y vista a los glaciares y a la montaña. Se lleva vianda: el almuerzo es frente al lago.",
+                        "en": "A full day at Lago del Desierto, north of El Chaltén. A boat crosses the lake to the Vespignani Reserve, with gentle walks to choose from and views of the glaciers and the mountain. A packed lunch is included: lunch by the lake.",
+                        "it": "Giornata intera al Lago del Desierto, a nord di El Chaltén. Una navigazione attraversa il lago fino alla Riserva Vespignani, con passeggiate leggere a scelta e vista sui ghiacciai e sulla montagna. Si porta un pranzo al sacco: si pranza davanti al lago."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "excursión regular de día completo con navegación y vianda",
+                        "en": "full-day shared excursion with boat trip and packed lunch",
+                        "it": "escursione regolare di giornata intera con navigazione e pranzo al sacco"
+                    },
+                    "stay": {
+                        "es": "Hotel en El Chaltén (a confirmar)",
+                        "en": "Hotel in El Chaltén (to be confirmed)",
+                        "it": "Hotel a El Chaltén (da confermare)"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Chaltén sin apuro",
+                        "en": "El Chaltén, unhurried",
+                        "it": "El Chaltén senza fretta"
+                    },
+                    "description": {
+                        "es": "Un día de miradores y cascadas sin dificultad. El Mirador de los Cóndores ofrece una vista amplia del pueblo y del valle, y el Chorrillo del Salto es una pequeña cascada a poca distancia del camino. Almuerzo en un restaurante. Una jornada tranquila para disfrutar del paisaje.",
+                        "en": "A day of viewpoints and waterfalls with no difficulty. The Mirador de los Cóndores offers a wide view of the village and the valley, and the Chorrillo del Salto is a small waterfall just a short walk away. A calm day to enjoy the scenery.",
+                        "it": "Una giornata di belvedere e cascate senza difficoltà. Il Mirador de los Cóndores offre una vista ampia sul paese e sulla valle, e il Chorrillo del Salto è una piccola cascata a breve distanza dal sentiero. Una giornata tranquilla per godersi il paesaggio."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "excursión regular con almuerzo (sin bebidas) · entrada al Parque Nacional Los Glaciares",
+                        "en": "shared excursion with lunch (drinks not included) · Los Glaciares National Park entrance fee",
+                        "it": "escursione regolare con pranzo (bevande escluse) · ingresso al Parco Nazionale Los Glaciares"
+                    },
+                    "stay": {
+                        "es": "Hotel en El Chaltén (a confirmar)",
+                        "en": "Hotel in El Chaltén (to be confirmed)",
+                        "it": "Hotel a El Chaltén (da confermare)"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "El Chaltén – Buenos Aires",
+                        "en": "El Chaltén – Buenos Aires",
+                        "it": "El Chaltén – Buenos Aires"
+                    },
+                    "description": {
+                        "es": "Traslado al aeropuerto de El Calafate y vuelo de regreso a Buenos Aires. Un traslado privado los lleva al hotel, donde pasan la última noche del viaje. La tarde queda libre para una última caminata o para las compras de último momento.",
+                        "en": "Transfer to El Calafate airport and return flight to Buenos Aires. A private transfer takes you to the hotel, where you spend the last night of the trip. The afternoon is free for one last walk or some last-minute shopping.",
+                        "it": "Trasferimento all'aeroporto di El Calafate e volo di ritorno a Buenos Aires. Un trasferimento privato vi porta in hotel, dove trascorrete l'ultima notte del viaggio. Il pomeriggio resta libero per un'ultima passeggiata o gli acquisti dell'ultimo minuto."
+                    },
+                    "tip": {
+                        "es": "Es un buen momento para ordenar las valijas con calma antes del vuelo internacional.",
+                        "en": "It's a good time to pack your bags calmly before the international flight.",
+                        "it": "È un buon momento per sistemare con calma le valigie prima del volo internazionale."
+                    },
+                    "includes": {
+                        "es": "traslado regular puerta a puerta El Chaltén – El Calafate · traslado privado aeropuerto – hotel · alojamiento con desayuno",
+                        "en": "shared door-to-door transfer El Chaltén – El Calafate · private airport–hotel transfer · accommodation with breakfast",
+                        "it": "trasferimento regolare porta a porta El Chaltén – El Calafate · trasferimento privato aeroporto–hotel · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires · check-in desde las 15:00 h",
+                        "en": "Hotel Pulitzer, Buenos Aires · check-in from 3:00pm",
+                        "it": "Hotel Pulitzer, Buenos Aires · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Buenos Aires – Barcelona",
+                        "en": "Buenos Aires – Barcelona",
+                        "it": "Buenos Aires – Barcellona"
+                    },
+                    "description": {
+                        "es": "Traslado privado al aeropuerto de Ezeiza y vuelo de regreso a Barcelona. Queda el ritmo de la Patagonia todavía puesto.",
+                        "en": "Private transfer to Ezeiza airport and return flight to Barcelona. The rhythm of Patagonia stays with you.",
+                        "it": "Trasferimento privato all'aeroporto di Ezeiza e volo di ritorno a Barcellona. Resta addosso il ritmo della Patagonia."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Llegada a Barcelona",
+                        "en": "Arrival in Barcelona",
+                        "it": "Arrivo a Barcellona"
+                    },
+                    "description": {
+                        "es": "Llegada a casa, con ganas de volver.",
+                        "en": "Arrival home, with the wish to come back.",
+                        "it": "Arrivo a casa, con la voglia di tornare."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    }
+                }
+            ],
+            "map_query": "",
+            "map_mid": "1IDd2n9XrCikgWIQBoTJR_mA2asIWL1U",
+            "nights": {
+                "es": "12 noches",
+                "en": "12 nights",
+                "it": "12 notti"
+            },
+            "stops": {
+                "es": "5 bases",
+                "en": "5 bases",
+                "it": "5 basi"
+            }
         },
         "family-journeys": {
             "name": "Family Journeys",
             "cover": "destinos/usuahia.avif",
             "title": {
-                "es": "Ushuaia: Family Journeys",
-                "en": "Ushuaia: Family Journeys",
-                "it": "Ushuaia: Family Journeys"
+                "es": "Cataratas, pingüinos y glaciares, a ritmo de familia",
+                "en": "Waterfalls, penguins and glaciers, at a family pace",
+                "it": "Cascate, pinguini e ghiacciai, al ritmo della famiglia"
             },
             "duration": {
-                "es": "5 días",
-                "en": "5 days",
-                "it": "5 giorni"
-            },
-            "difficulty": {
-                "es": "Moderada",
-                "en": "Moderate",
-                "it": "Moderata"
-            },
-            "summary": {
-                "es": "Un recorrido pensado para vivir Ushuaia con el espíritu Family Journeys. Contenido de ejemplo — se reemplaza desde el panel de edición.",
-                "en": "A route designed to experience Ushuaia with the Family Journeys spirit. Sample content — replaced from the admin panel.",
-                "it": "Un percorso pensato per vivere Ushuaia con lo spirito Family Journeys. Contenuto di esempio — sostituito dal pannello di amministrazione."
-            },
-            "days": [
-                {
-                    "title": {
-                        "es": "Llegada a Ushuaia",
-                        "en": "Arrival in Ushuaia",
-                        "it": "Arrivo a Ushuaia"
-                    },
-                    "description": {
-                        "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 1 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
-                    }
-                },
-                {
-                    "title": {
-                        "es": "Día 2 en Ushuaia",
-                        "en": "Day 2 in Ushuaia",
-                        "it": "Giorno 2 a Ushuaia"
-                    },
-                    "description": {
-                        "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 2 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
-                    }
-                },
-                {
-                    "title": {
-                        "es": "Día 3 en Ushuaia",
-                        "en": "Day 3 in Ushuaia",
-                        "it": "Giorno 3 a Ushuaia"
-                    },
-                    "description": {
-                        "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 3 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
-                    }
-                },
-                {
-                    "title": {
-                        "es": "Día 4 en Ushuaia",
-                        "en": "Day 4 in Ushuaia",
-                        "it": "Giorno 4 a Ushuaia"
-                    },
-                    "description": {
-                        "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 4 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
-                    }
-                },
-                {
-                    "title": {
-                        "es": "Regreso",
-                        "en": "Departure",
-                        "it": "Ritorno"
-                    },
-                    "description": {
-                        "es": "Actividad de ejemplo para el día 5 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 5 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 5 — sostituita dal pannello di amministrazione."
-                    }
-                }
-            ],
-            "map_query": ""
-        },
-        "food-wine-comfort": {
-            "name": "Food, Wine & Comfort",
-            "cover": "destinos/mendoza.jpeg",
-            "title": {
-                "es": "Mendoza: Food, Wine & Comfort",
-                "en": "Mendoza: Food, Wine & Comfort",
-                "it": "Mendoza: Food, Wine & Comfort"
-            },
-            "duration": {
-                "es": "4 días",
-                "en": "4 days",
-                "it": "4 giorni"
+                "es": "14 días",
+                "en": "14 days",
+                "it": "14 giorni"
             },
             "difficulty": {
                 "es": "Baja a moderada",
@@ -244,61 +959,845 @@
                 "it": "Da bassa a moderata"
             },
             "summary": {
-                "es": "Un recorrido pensado para vivir Mendoza con el espíritu Food, Wine & Comfort. Contenido de ejemplo — se reemplaza desde el panel de edición.",
-                "en": "A route designed to experience Mendoza with the Food, Wine & Comfort spirit. Sample content — replaced from the admin panel.",
-                "it": "Un percorso pensato per vivere Mendoza con lo spirito Food, Wine & Comfort. Contenuto di esempio — sostituito dal pannello di amministrazione."
+                "es": "Cuatro destinos pensados para chicos y grandes: las Cataratas del Iguazú entre la selva, los lobos marinos y pingüinos de la Patagonia atlántica y el Glaciar Perito Moreno. Actividades cortas y variadas, hoteles cómodos para toda la familia y tiempo libre para jugar.",
+                "en": "Four destinations designed for kids and adults alike: the Iguazú Falls among the jungle, the sea lions and penguins of the Atlantic Patagonian coast, and the Perito Moreno Glacier. Short, varied activities, comfortable hotels for the whole family, and free time to play.",
+                "it": "Quattro destinazioni pensate per grandi e piccini: le Cascate di Iguazú tra la foresta, i leoni marini e i pinguini della Patagonia atlantica e il Ghiacciaio Perito Moreno. Attività brevi e variegate, hotel comodi per tutta la famiglia e tempo libero per giocare."
             },
             "days": [
                 {
                     "title": {
-                        "es": "Llegada a Mendoza",
-                        "en": "Arrival in Mendoza",
-                        "it": "Arrivo a Mendoza"
+                        "es": "Barcelona – Buenos Aires",
+                        "en": "Barcelona – Buenos Aires",
+                        "it": "Barcellona – Buenos Aires"
                     },
                     "description": {
-                        "es": "Actividad de ejemplo para el día 1 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 1 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 1 — sostituita dal pannello di amministrazione."
+                        "es": "Vuelo nocturno a Buenos Aires. Es un buen momento para dormir: el viaje empieza al aterrizar.",
+                        "en": "Overnight flight to Buenos Aires. It's a good time to sleep: the trip begins when you land.",
+                        "it": "Volo notturno a Buenos Aires. È un buon momento per dormire: il viaggio comincia all'atterraggio."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
                     }
                 },
                 {
                     "title": {
-                        "es": "Día 2 en Mendoza",
-                        "en": "Day 2 in Mendoza",
-                        "it": "Giorno 2 a Mendoza"
+                        "es": "Llegada a Buenos Aires",
+                        "en": "Arrival in Buenos Aires",
+                        "it": "Arrivo a Buenos Aires"
                     },
                     "description": {
-                        "es": "Actividad de ejemplo para el día 2 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 2 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 2 — sostituita dal pannello di amministrazione."
+                        "es": "Buenos Aires es una ciudad enorme, con avenidas anchas, plazas con árboles y barrios que parecen de Europa. Para los chicos, lo mejor son los parques, los helados y las plazas con feria. Un traslado privado, en un vehículo con lugar para la familia y las valijas, los lleva al hotel. La tarde queda libre para descansar y caminar sin apuro.",
+                        "en": "Buenos Aires is a huge city, with wide avenues, tree-lined squares and neighborhoods that feel European. For kids, the best parts are the parks, the ice cream and the squares with fairs. A private transfer, in a vehicle with room for the whole family and the luggage, takes you to the hotel. The afternoon is free to rest and walk without rushing.",
+                        "it": "Buenos Aires è una città enorme, con ampi viali, piazze alberate e quartieri che sembrano europei. Per i bambini, il meglio sono i parchi, i gelati e le piazze con le bancarelle. Un trasferimento privato, in un veicolo con posto per tutta la famiglia e i bagagli, vi porta in hotel. Il pomeriggio resta libero per riposare e camminare senza fretta."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "traslado privado aeropuerto – hotel · alojamiento con desayuno en dos habitaciones",
+                        "en": "private airport–hotel transfer · accommodation with breakfast in two rooms",
+                        "it": "trasferimento privato aeroporto–hotel · pernottamento con colazione in due camere"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires · check-in desde las 15:00 h",
+                        "en": "Hotel Pulitzer, Buenos Aires · check-in from 3:00pm",
+                        "it": "Hotel Pulitzer, Buenos Aires · check-in dalle 15:00"
                     }
                 },
                 {
                     "title": {
-                        "es": "Día 3 en Mendoza",
-                        "en": "Day 3 in Mendoza",
-                        "it": "Giorno 3 a Mendoza"
+                        "es": "Buenos Aires en familia",
+                        "en": "Buenos Aires as a family",
+                        "it": "Buenos Aires in famiglia"
                     },
                     "description": {
-                        "es": "Actividad de ejemplo para el día 3 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 3 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 3 — sostituita dal pannello di amministrazione."
+                        "es": "Un recorrido privado con guía por la Plaza de Mayo, con la Casa Rosada; el barrio de San Telmo y sus calles de adoquines; el colorido de La Boca y los parques de Palermo. El guía adapta las historias para los más chicos. La tarde queda libre: un buen momento para una merienda en un café de barrio. Por la noche, cena en The Argentine Experience, una experiencia gastronómica interactiva donde se cocina y se aprende sobre la cultura argentina.",
+                        "en": "A private guided tour of Plaza de Mayo, with the Casa Rosada; the cobblestone streets of San Telmo; the colorful La Boca and the parks of Palermo. The guide adapts the stories for the youngest travelers. The afternoon is free: a good time for a snack at a neighborhood café. At night, dinner at The Argentine Experience, an interactive culinary experience where you cook and learn about Argentine culture.",
+                        "it": "Un giro privato con guida alla Plaza de Mayo, con la Casa Rosada; il quartiere di San Telmo con le sue strade acciottolate; il colore di La Boca e i parchi di Palermo. La guida adatta i racconti per i più piccoli. Il pomeriggio resta libero: un buon momento per una merenda in un caffè di quartiere. La sera, cena a The Argentine Experience, un'esperienza gastronomica interattiva dove si cucina e si impara sulla cultura argentina."
+                    },
+                    "tip": {
+                        "es": "Las entradas a museos y monumentos no están incluidas. Podemos agregar una parada de juegos o una visita al Rosedal. El traslado al restaurante no está incluido.",
+                        "en": "Entrance fees to museums and monuments aren't included. We can add a stop at a playground or a visit to the Rosedal. The transfer to the restaurant isn't included.",
+                        "it": "I biglietti d'ingresso a musei e monumenti non sono inclusi. Possiamo aggiungere una sosta in un parco giochi o una visita al Rosedal. Il trasferimento al ristorante non è incluso."
+                    },
+                    "includes": {
+                        "es": "city tour privado de unas 4 hs con guía · cena The Argentine Experience · alojamiento con desayuno",
+                        "en": "private guided city tour of about 4 hours · dinner at The Argentine Experience · accommodation with breakfast",
+                        "it": "city tour privato con guida di circa 4 ore · cena a The Argentine Experience · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires",
+                        "en": "Hotel Pulitzer, Buenos Aires",
+                        "it": "Hotel Pulitzer, Buenos Aires"
                     }
                 },
                 {
                     "title": {
-                        "es": "Regreso",
-                        "en": "Departure",
-                        "it": "Ritorno"
+                        "es": "Buenos Aires – Puerto Iguazú",
+                        "en": "Buenos Aires – Puerto Iguazú",
+                        "it": "Buenos Aires – Puerto Iguazú"
                     },
                     "description": {
-                        "es": "Actividad de ejemplo para el día 4 — se reemplaza desde el panel de edición.",
-                        "en": "Sample activity for day 4 — replaced from the admin panel.",
-                        "it": "Attività di esempio per il giorno 4 — sostituita dal pannello di amministrazione."
+                        "es": "Vuelo a Puerto Iguazú, en la triple frontera con Brasil y Paraguay. La ciudad está rodeada de selva roja: la tierra es de color ladrillo y la vegetación es tropical. El hotel tiene cabañas rodeadas de verde y una piscina. La tarde queda libre para refrescarse y descansar antes de ver las cataratas.",
+                        "en": "Flight to Puerto Iguazú, at the triple border with Brazil and Paraguay. The city is surrounded by red jungle: the earth is brick-colored and the vegetation is tropical. The hotel has cabins surrounded by greenery and a pool. The afternoon is free to cool off and rest before seeing the falls.",
+                        "it": "Volo a Puerto Iguazú, nella tripla frontiera con Brasile e Paraguay. La città è circondata da una foresta rossa: la terra è color mattone e la vegetazione è tropicale. L'hotel ha bungalow immersi nel verde e una piscina. Il pomeriggio resta libero per rinfrescarsi e riposare prima di vedere le cascate."
+                    },
+                    "tip": {
+                        "es": "Lleven protector solar y repelente. En Iguazú hace calor y humedad todo el año.",
+                        "en": "Bring sunscreen and insect repellent. Iguazú is hot and humid all year round.",
+                        "it": "Portate protezione solare e repellente per insetti. A Iguazú fa caldo e c'è umidità tutto l'anno."
+                    },
+                    "includes": {
+                        "es": "traslado privado aeropuerto – hotel · alojamiento con desayuno en cuádruple",
+                        "en": "private airport–hotel transfer · accommodation with breakfast in a quadruple room",
+                        "it": "trasferimento privato aeroporto–hotel · pernottamento con colazione in camera quadrupla"
+                    },
+                    "stay": {
+                        "es": "Yvy Hotel, Puerto Iguazú · check-in desde las 15:00 h",
+                        "en": "Yvy Hotel, Puerto Iguazú · check-in from 3:00pm",
+                        "it": "Yvy Hotel, Puerto Iguazú · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Cataratas Argentinas",
+                        "en": "Argentine Falls",
+                        "it": "Cascate argentine"
+                    },
+                    "description": {
+                        "es": "Día completo en el Parque Nacional Iguazú, del lado argentino. Las pasarelas atraviesan la selva y se acercan a las cascadas hasta el final de la Garganta del Diablo, donde el agua cae con un rugido que se siente en el pecho. Se ven coatíes, mariposas de colores y, con suerte, tucanes. Después, el Paseo Ecológico: un recorrido por la selva, pensado para ver animales y plantas de cerca.",
+                        "en": "A full day in Iguazú National Park, on the Argentine side. The walkways cross the jungle and approach the falls all the way to the end of the Devil's Throat, where the water crashes down with a roar you feel in your chest. You'll spot coatis, colorful butterflies and, with luck, toucans. Afterward, the Ecological Walk: a jungle trail designed to see animals and plants up close.",
+                        "it": "Giornata intera nel Parco Nazionale di Iguazú, sul lato argentino. Le passerelle attraversano la foresta e si avvicinano alle cascate fino alla fine della Garganta del Diablo, dove l'acqua cade con un boato che si sente nel petto. Si vedono coati, farfalle colorate e, con un po' di fortuna, tucani. Dopo, il Sentiero Ecologico: un percorso nella foresta pensato per vedere animali e piante da vicino."
+                    },
+                    "tip": {
+                        "es": "Los coatíes son simpáticos pero ladrones: no hay que dar comida ni dejar mochilas abiertas.",
+                        "en": "Coatis are friendly but sneaky: don't feed them or leave backpacks open.",
+                        "it": "I coati sono simpatici ma ladri: non bisogna dar loro da mangiare né lasciare gli zaini aperti."
+                    },
+                    "includes": {
+                        "es": "traslado y excursión con guía · Paseo Ecológico · entrada al Parque Nacional Iguazú",
+                        "en": "guided transfer and excursion · Ecological Walk · Iguazú National Park entrance fee",
+                        "it": "trasferimento ed escursione con guida · Sentiero Ecologico · ingresso al Parco Nazionale di Iguazú"
+                    },
+                    "stay": {
+                        "es": "Yvy Hotel, Puerto Iguazú",
+                        "en": "Yvy Hotel, Puerto Iguazú",
+                        "it": "Yvy Hotel, Puerto Iguazú"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Cataratas Brasileñas",
+                        "en": "Brazilian Falls",
+                        "it": "Cascate brasiliane"
+                    },
+                    "description": {
+                        "es": "Medio día del lado brasileño. Desde aquí las vistas son panorámicas: se ve el conjunto de cascadas de frente y una pasarela llega hasta el pie de la Garganta del Diablo. Por la tarde, tiempo libre en el hotel para la piscina.",
+                        "en": "Half a day on the Brazilian side. From here the views are panoramic: you see the whole set of falls head-on, and a walkway reaches the foot of the Devil's Throat. In the afternoon, free time at the hotel for the pool.",
+                        "it": "Mezza giornata sul lato brasiliano. Da qui le viste sono panoramiche: si vede l'intero insieme delle cascate di fronte, e una passerella arriva fino ai piedi della Garganta del Diablo. Nel pomeriggio, tempo libero in hotel per la piscina."
+                    },
+                    "tip": {
+                        "es": "Para cruzar a Brasil llevarán el pasaporte de todos. Según la nacionalidad puede requerirse documentación adicional.",
+                        "en": "To cross into Brazil you'll need everyone's passport. Depending on nationality, additional documentation may be required.",
+                        "it": "Per attraversare il confine con il Brasile serviranno i passaporti di tutti. A seconda della nazionalità potrebbe essere richiesta documentazione aggiuntiva."
+                    },
+                    "includes": {
+                        "es": "traslado y excursión con guía · entrada al Parque Nacional de Brasil",
+                        "en": "guided transfer and excursion · Brazilian National Park entrance fee",
+                        "it": "trasferimento ed escursione con guida · ingresso al Parco Nazionale del Brasile"
+                    },
+                    "stay": {
+                        "es": "Yvy Hotel, Puerto Iguazú",
+                        "en": "Yvy Hotel, Puerto Iguazú",
+                        "it": "Yvy Hotel, Puerto Iguazú"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Iguazú – Puerto Madryn",
+                        "en": "Iguazú – Puerto Madryn",
+                        "it": "Iguazú – Puerto Madryn"
+                    },
+                    "description": {
+                        "es": "Vuelo con conexión hacia la costa patagónica y traslado a Puerto Madryn, una ciudad de mar frente al Golfo Nuevo, con playas de aguas azules y una costanera tranquila. Tarde libre para caminar por la rambla y mirar el mar.",
+                        "en": "Connecting flight toward the Patagonian coast and transfer to Puerto Madryn, a seaside town on the Golfo Nuevo, with blue-water beaches and a quiet waterfront. Free afternoon to walk along the promenade and look out at the sea.",
+                        "it": "Volo con scalo verso la costa patagonica e trasferimento a Puerto Madryn, una città di mare affacciata sul Golfo Nuevo, con spiagge di acque blu e un lungomare tranquillo. Pomeriggio libero per passeggiare sul lungomare e guardare il mare."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "traslado aeropuerto – hotel · alojamiento con desayuno en dos habitaciones",
+                        "en": "airport–hotel transfer · accommodation with breakfast in two rooms",
+                        "it": "trasferimento aeroporto–hotel · pernottamento con colazione in due camere"
+                    },
+                    "stay": {
+                        "es": "Dazzler by Wyndham Puerto Madryn · check-in desde las 15:00 h",
+                        "en": "Dazzler by Wyndham Puerto Madryn · check-in from 3:00pm",
+                        "it": "Dazzler by Wyndham Puerto Madryn · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Península Valdés",
+                        "en": "Península Valdés",
+                        "it": "Penisola Valdés"
+                    },
+                    "description": {
+                        "es": "Día completo en la Península Valdés, Patrimonio de la Humanidad. Los caminos de ripio cruzan la estepa patagónica y llegan hasta playas con lobos marinos, pingüinos de Magallanes, guanacos y maras. La costa es un gran museo natural al aire libre. Un día de naturaleza, con paradas para sacar fotos y almorzar.",
+                        "en": "A full day at Península Valdés, a World Heritage Site. Gravel roads cross the Patagonian steppe and reach beaches with sea lions, Magellanic penguins, guanacos and maras. The coast is a great open-air natural museum. A day of nature, with stops for photos and lunch.",
+                        "it": "Giornata intera alla Penisola Valdés, Patrimonio dell'Umanità. Le strade sterrate attraversano la steppa patagonica e arrivano a spiagge con leoni marini, pinguini di Magellano, guanachi e mara. La costa è un grande museo naturale a cielo aperto. Una giornata di natura, con soste per le foto e il pranzo."
+                    },
+                    "tip": {
+                        "es": "La temporada de ballenas termina a principios de diciembre; el itinerario se centra en la fauna terrestre y marina que se ve todo el año.",
+                        "en": "Whale season ends in early December; this itinerary focuses on the land and marine wildlife you can see year-round.",
+                        "it": "La stagione delle balene termina all'inizio di dicembre; l'itinerario si concentra sulla fauna terrestre e marina visibile tutto l'anno."
+                    },
+                    "includes": {
+                        "es": "excursión de día completo con guía",
+                        "en": "full-day guided excursion",
+                        "it": "escursione di giornata intera con guida"
+                    },
+                    "stay": {
+                        "es": "Dazzler by Wyndham Puerto Madryn",
+                        "en": "Dazzler by Wyndham Puerto Madryn",
+                        "it": "Dazzler by Wyndham Puerto Madryn"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Madryn – El Calafate",
+                        "en": "Madryn – El Calafate",
+                        "it": "Madryn – El Calafate"
+                    },
+                    "description": {
+                        "es": "Por la mañana, un paseo por la ciudad y la reserva de Punta Loma, donde vive una colonia de lobos marinos. Desde el mirador se los ve descansar, pelear y zambullirse. Por la tarde, vuelo a El Calafate y traslado al hotel, a orillas del Lago Argentino.",
+                        "en": "In the morning, a tour of the town and the Punta Loma reserve, home to a sea lion colony. From the viewpoint you watch them resting, fighting and diving. In the afternoon, flight to El Calafate and transfer to the hotel, on the shore of Lake Argentino.",
+                        "it": "Al mattino, un giro della città e della riserva di Punta Loma, dove vive una colonia di leoni marini. Dal belvedere si vedono riposare, litigare e tuffarsi. Nel pomeriggio, volo a El Calafate e trasferimento in hotel, sulle rive del Lago Argentino."
+                    },
+                    "tip": {
+                        "es": "Es un día largo con vuelo; el itinerario deja la tarde del día siguiente más tranquila.",
+                        "en": "It's a long day with a flight; the itinerary keeps the following afternoon more relaxed.",
+                        "it": "È una giornata lunga con un volo; l'itinerario lascia il pomeriggio successivo più tranquillo."
+                    },
+                    "includes": {
+                        "es": "city tour y Punta Loma · traslado privado aeropuerto – hotel de El Calafate · alojamiento con desayuno",
+                        "en": "city tour and Punta Loma · private airport–hotel transfer in El Calafate · accommodation with breakfast",
+                        "it": "city tour e Punta Loma · trasferimento privato aeroporto–hotel a El Calafate · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Esplendor by Wyndham El Calafate · check-in desde las 15:00 h",
+                        "en": "Esplendor by Wyndham El Calafate · check-in from 3:00pm",
+                        "it": "Esplendor by Wyndham El Calafate · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Glaciar Perito Moreno",
+                        "en": "Perito Moreno Glacier",
+                        "it": "Ghiacciaio Perito Moreno"
+                    },
+                    "description": {
+                        "es": "Un día privado con guía en el Perito Moreno, uno de los glaciares más impresionantes y accesibles del mundo. Las pasarelas dan frente a una pared de hielo azul, y de tanto en tanto se desprende un bloque con un estruendo. Además, una navegación de una hora frente a la pared del glaciar, para verlo desde el lago.",
+                        "en": "A private guided day at the Perito Moreno, one of the most impressive and accessible glaciers in the world. The walkways face a wall of blue ice, and every so often a block breaks off with a roar. Plus, a one-hour boat ride in front of the glacier's wall, to see it from the lake.",
+                        "it": "Una giornata privata con guida al Perito Moreno, uno dei ghiacciai più impressionanti e accessibili del mondo. Le passerelle sono di fronte a una parete di ghiaccio azzurro, e di tanto in tanto un blocco si stacca con un boato. Inoltre, una navigazione di un'ora davanti alla parete del ghiacciaio, per vederlo dal lago."
+                    },
+                    "tip": {
+                        "es": "Lleven abrigo aunque haga sol: junto al hielo hace frío.",
+                        "en": "Bring warm clothing even if it's sunny: it's cold next to the ice.",
+                        "it": "Portate un capo caldo anche se c'è il sole: vicino al ghiaccio fa freddo."
+                    },
+                    "includes": {
+                        "es": "excursión privada con guía · navegación Safari Náutico · entrada al Parque Nacional",
+                        "en": "private guided excursion · Safari Náutico boat trip · National Park entrance fee",
+                        "it": "escursione privata con guida · navigazione Safari Náutico · ingresso al Parco Nazionale"
+                    },
+                    "stay": {
+                        "es": "Esplendor by Wyndham El Calafate",
+                        "en": "Esplendor by Wyndham El Calafate",
+                        "it": "Esplendor by Wyndham El Calafate"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Cavernas de Walichu y estancia",
+                        "en": "Walichu Caves and ranch visit",
+                        "it": "Caverne di Walichu e estancia"
+                    },
+                    "description": {
+                        "es": "Por la mañana, las Cavernas de Walichu, una reserva con pinturas rupestres de miles de años, a orillas del Lago Argentino. Por la tarde, la Estancia 25 de Mayo: se ve el arreo de ovejas, la esquila, la huerta y las hilanderas; hay caminata al arroyo y una cena con espectáculo de folklore en el quincho, con cordero al asador.",
+                        "en": "In the morning, the Walichu Caves, a reserve with thousand-year-old rock paintings on the shore of Lake Argentino. In the afternoon, Estancia 25 de Mayo: you watch the sheep herding, shearing, the garden and the spinners; there's a walk to the stream and a dinner with folklore show in the quincho, with lamb roasted over an open fire.",
+                        "it": "Al mattino, le Caverne di Walichu, una riserva con pitture rupestri millenarie sulle rive del Lago Argentino. Nel pomeriggio, l'Estancia 25 de Mayo: si assiste alla raccolta delle pecore, alla tosatura, all'orto e alle filatrici; c'è una camminata fino al ruscello e una cena con spettacolo di folklore nel quincho, con agnello all'asador."
+                    },
+                    "tip": {
+                        "es": "Los chicos de 6 años en adelante pueden hacer una pequeña iniciación a la cabalgata (opcional).",
+                        "en": "Kids aged 6 and up can try a short introductory horseback ride (optional).",
+                        "it": "I bambini dai 6 anni in su possono provare una breve iniziazione a cavallo (opzionale)."
+                    },
+                    "includes": {
+                        "es": "excursión regular a las Cavernas de Walichu con entrada · tarde de campo con cena y show en la estancia",
+                        "en": "shared excursion to the Walichu Caves with entrance fee · afternoon at the ranch with dinner and folklore show",
+                        "it": "escursione regolare alle Caverne di Walichu con ingresso · pomeriggio in estancia con cena e spettacolo"
+                    },
+                    "stay": {
+                        "es": "Esplendor by Wyndham El Calafate",
+                        "en": "Esplendor by Wyndham El Calafate",
+                        "it": "Esplendor by Wyndham El Calafate"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "El Calafate – Buenos Aires",
+                        "en": "El Calafate – Buenos Aires",
+                        "it": "El Calafate – Buenos Aires"
+                    },
+                    "description": {
+                        "es": "Traslado al aeropuerto de El Calafate y vuelo de regreso a Buenos Aires. Un traslado privado los lleva al hotel, donde pasan la última noche del viaje. La tarde queda libre para una última caminata, un helado o las compras de último momento.",
+                        "en": "Transfer to El Calafate airport and return flight to Buenos Aires. A private transfer takes you to the hotel, where you spend the last night of the trip. The afternoon is free for one last walk, an ice cream or last-minute shopping.",
+                        "it": "Trasferimento all'aeroporto di El Calafate e volo di ritorno a Buenos Aires. Un trasferimento privato vi porta in hotel, dove trascorrete l'ultima notte del viaggio. Il pomeriggio resta libero per un'ultima passeggiata, un gelato o gli acquisti dell'ultimo minuto."
+                    },
+                    "tip": {
+                        "es": "Es un buen momento para ordenar las valijas con calma antes del vuelo internacional.",
+                        "en": "It's a good time to pack your bags calmly before the international flight.",
+                        "it": "È un buon momento per sistemare con calma le valigie prima del volo internazionale."
+                    },
+                    "includes": {
+                        "es": "traslado privado aeropuerto – hotel · alojamiento con desayuno",
+                        "en": "private airport–hotel transfer · accommodation with breakfast",
+                        "it": "trasferimento privato aeroporto–hotel · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires · check-in desde las 15:00 h",
+                        "en": "Hotel Pulitzer, Buenos Aires · check-in from 3:00pm",
+                        "it": "Hotel Pulitzer, Buenos Aires · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Buenos Aires – Barcelona",
+                        "en": "Buenos Aires – Barcelona",
+                        "it": "Buenos Aires – Barcellona"
+                    },
+                    "description": {
+                        "es": "Traslado privado al aeropuerto de Ezeiza y vuelo de regreso a Barcelona. Quedan las fotos, los paisajes y las ganas de volver.",
+                        "en": "Private transfer to Ezeiza airport and return flight to Barcelona. What remains are the photos, the landscapes and the wish to come back.",
+                        "it": "Trasferimento privato all'aeroporto di Ezeiza e volo di ritorno a Barcellona. Restano le foto, i paesaggi e la voglia di tornare."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Llegada a Barcelona",
+                        "en": "Arrival in Barcelona",
+                        "it": "Arrivo a Barcellona"
+                    },
+                    "description": {
+                        "es": "Llegada a casa, con la cámara llena de fotos.",
+                        "en": "Arrival home, with a camera full of photos.",
+                        "it": "Arrivo a casa, con la macchina fotografica piena di foto."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
                     }
                 }
             ],
-            "map_query": ""
+            "map_query": "",
+            "map_mid": "1VaSnPIC9DCScdeTHI_yfmYxpl2i6YlU",
+            "nights": {
+                "es": "11 noches",
+                "en": "11 nights",
+                "it": "11 notti"
+            },
+            "stops": {
+                "es": "4 destinos",
+                "en": "4 destinations",
+                "it": "4 destinazioni"
+            }
+        },
+        "food-wine-comfort": {
+            "name": "Food, Wine & Comfort",
+            "cover": "destinos/mendoza.jpeg",
+            "title": {
+                "es": "Argentina a través de su mesa, sus vinos y su gente",
+                "en": "Argentina through its table, its wines and its people",
+                "it": "L'Argentina attraverso la sua tavola, i suoi vini e la sua gente"
+            },
+            "duration": {
+                "es": "15 días",
+                "en": "15 days",
+                "it": "15 giorni"
+            },
+            "difficulty": {
+                "es": "Baja",
+                "en": "Low",
+                "it": "Bassa"
+            },
+            "summary": {
+                "es": "Quince días para recorrer Argentina a la mesa: la elegancia de Buenos Aires, con su fogón de asado y su milonga, las bodegas y los atardeceres a caballo de Mendoza, y el norte argentino, con los valles de Salta y Cafayate, donde el torrontés crece entre cerros de colores, y las Salinas Grandes y Purmamarca, en la puna de Jujuy. Buenos hoteles, días libres para improvisar y tiempo para la sobremesa.",
+                "en": "Fifteen days to experience Argentina at the table: the elegance of Buenos Aires, with its asado fogón and its milonga, the wineries and sunset horseback rides of Mendoza, and northern Argentina, with the valleys of Salta and Cafayate, where torrontés grows among colorful hills, and the Salinas Grandes and Purmamarca, on the Jujuy puna. Good hotels, free days to improvise, and time to linger at the table.",
+                "it": "Quindici giorni per vivere l'Argentina a tavola: l'eleganza di Buenos Aires, con il suo fogón di asado e la sua milonga, le cantine e le cavalcate al tramonto di Mendoza, e il nord argentino, con le valli di Salta e Cafayate, dove il torrontés cresce tra cerros colorati, e le Salinas Grandes e Purmamarca, sulla puna di Jujuy. Buoni hotel, giorni liberi per improvvisare e tempo per la sobremesa."
+            },
+            "days": [
+                {
+                    "title": {
+                        "es": "Llegada a Buenos Aires",
+                        "en": "Arrival in Buenos Aires",
+                        "it": "Arrivo a Buenos Aires"
+                    },
+                    "description": {
+                        "es": "Buenos Aires los recibe con su carácter de gran capital: avenidas anchas, fachadas europeas, librerías abiertas hasta tarde y cafés donde nadie tiene apuro. Cada barrio cuenta algo distinto: la elegancia de Recoleta, el aire bohemio de San Telmo, los parques y restaurantes de Palermo. Un traslado privado los lleva desde el aeropuerto de Ezeiza hasta el hotel. El día queda libre para descansar del vuelo, caminar sin plan y sentarse a una buena mesa.",
+                        "en": "Buenos Aires greets you with the character of a great capital: wide avenues, European façades, bookstores open late and cafés where no one's in a hurry. Each neighborhood tells a different story: the elegance of Recoleta, the bohemian air of San Telmo, the parks and restaurants of Palermo. A private transfer takes you from Ezeiza airport to the hotel. The day is free to rest from the flight, walk without a plan and sit down to a good meal.",
+                        "it": "Buenos Aires vi accoglie con il suo carattere di grande capitale: ampi viali, facciate europee, librerie aperte fino a tardi e caffè dove nessuno ha fretta. Ogni quartiere racconta qualcosa di diverso: l'eleganza di Recoleta, l'aria bohémien di San Telmo, i parchi e i ristoranti di Palermo. Un trasferimento privato vi porta dall'aeroporto di Ezeiza all'hotel. La giornata resta libera per riposarvi dal volo, camminare senza un piano e sedervi a una buona tavola."
+                    },
+                    "tip": {
+                        "es": "Para la primera noche, una parrilla de barrio o una cena en Palermo es la mejor forma de entrar en el ritmo porteño. Los horarios son tardíos: se cena después de las 21.",
+                        "en": "For the first night, a neighborhood parrilla or dinner in Palermo is the best way to ease into the porteño rhythm. Dinner times run late: people eat after 9pm.",
+                        "it": "Per la prima serata, una parrilla di quartiere o una cena a Palermo è il modo migliore per entrare nel ritmo porteño. Gli orari sono tardivi: si cena dopo le 21."
+                    },
+                    "includes": {
+                        "es": "traslado privado aeropuerto – hotel · alojamiento con desayuno",
+                        "en": "private airport–hotel transfer · accommodation with breakfast",
+                        "it": "trasferimento privato aeroporto–hotel · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires · check-in desde las 15:00 h",
+                        "en": "Hotel Pulitzer, Buenos Aires · check-in from 3:00pm",
+                        "it": "Hotel Pulitzer, Buenos Aires · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Buenos Aires zona sur y fogón de asado",
+                        "en": "Buenos Aires south side and asado fogón",
+                        "it": "Buenos Aires zona sud e fogón di asado"
+                    },
+                    "description": {
+                        "es": "Por la mañana, un recorrido privado de unas cuatro horas con guía por la zona sur de la ciudad. Empieza en la Plaza de Mayo, con la Casa Rosada, el Cabildo y la Catedral; sigue por San Telmo y La Boca, barrios de la inmigración italiana, y llega hasta la costa de Puerto Madero. Por la noche, un fogón de asado: carne a las brasas, el ritual más argentino, acompañado de un maridaje de vinos que lleva a la mesa algo de lo que viene en Mendoza.",
+                        "en": "In the morning, a private guided tour of about four hours through the south side of the city. It starts at Plaza de Mayo, with the Casa Rosada, the Cabildo and the Cathedral; continues through San Telmo and La Boca, neighborhoods of Italian immigration, and reaches the Puerto Madero waterfront. At night, an asado fogón: meat over embers, Argentina's most iconic ritual, paired with wines that bring a taste of what's coming in Mendoza.",
+                        "it": "Al mattino, un giro privato con guida di circa quattro ore nella zona sud della città. Inizia in Plaza de Mayo, con la Casa Rosada, il Cabildo e la Cattedrale; prosegue per San Telmo e La Boca, quartieri dell'immigrazione italiana, e arriva fino alla costa di Puerto Madero. La sera, un fogón di asado: carne alla brace, il rito più argentino, accompagnato da un abbinamento di vini che porta in tavola un assaggio di quello che arriverà a Mendoza."
+                    },
+                    "tip": {
+                        "es": "Entradas a museos y monumentos no están incluidas. Si quieren entrar a alguno, avisen y lo organizamos.",
+                        "en": "Entrance fees to museums and monuments aren't included. If you'd like to visit one, let us know and we'll arrange it.",
+                        "it": "I biglietti d'ingresso a musei e monumenti non sono inclusi. Se volete visitarne uno, avvisateci e lo organizziamo."
+                    },
+                    "includes": {
+                        "es": "city tour privado de 4 hs con guía · cena fogón de asado con maridaje de vinos",
+                        "en": "private 4-hour guided city tour · asado fogón dinner with wine pairing",
+                        "it": "city tour privato di 4 ore con guida · cena fogón di asado con abbinamento di vini"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires",
+                        "en": "Hotel Pulitzer, Buenos Aires",
+                        "it": "Hotel Pulitzer, Buenos Aires"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Buenos Aires zona norte y tango",
+                        "en": "Buenos Aires north side and tango",
+                        "it": "Buenos Aires zona nord e tango"
+                    },
+                    "description": {
+                        "es": "Segundo recorrido privado de unas cuatro horas con guía, ahora por la zona norte: la elegante Recoleta con sus plazas y su famoso cementerio, y los grandes parques y avenidas de Palermo, el barrio de los bosques y los restaurantes. Por la noche, el tango deja de ser un espectáculo para convertirse en algo propio: una clase con un maestro para aprender los primeros pasos y luego una milonga, donde bailan los porteños.",
+                        "en": "A second private guided tour of about four hours, this time through the north side: elegant Recoleta with its squares and famous cemetery, and the great parks and avenues of Palermo, the neighborhood of woods and restaurants. At night, tango stops being a show and becomes something of your own: a class with a teacher to learn the first steps, followed by a milonga, where the locals dance.",
+                        "it": "Secondo giro privato con guida di circa quattro ore, questa volta nella zona nord: l'elegante Recoleta con le sue piazze e il celebre cimitero, e i grandi parchi e viali di Palermo, il quartiere dei boschi e dei ristoranti. La sera, il tango smette di essere uno spettacolo per diventare qualcosa di proprio: una lezione con un maestro per imparare i primi passi e poi una milonga, dove ballano i porteños."
+                    },
+                    "tip": {
+                        "es": "Lleven calzado cómodo con suela lisa para la clase de tango.",
+                        "en": "Bring comfortable shoes with a smooth sole for the tango class.",
+                        "it": "Portate scarpe comode con suola liscia per la lezione di tango."
+                    },
+                    "includes": {
+                        "es": "city tour privado de 4 hs con guía · clase de tango y milonga",
+                        "en": "private 4-hour guided city tour · tango class and milonga",
+                        "it": "city tour privato di 4 ore con guida · lezione di tango e milonga"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires",
+                        "en": "Hotel Pulitzer, Buenos Aires",
+                        "it": "Hotel Pulitzer, Buenos Aires"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Día libre en Buenos Aires",
+                        "en": "Free day in Buenos Aires",
+                        "it": "Giorno libero a Buenos Aires"
+                    },
+                    "description": {
+                        "es": "Un día para ustedes. Pueden volver a un barrio que les haya gustado, entrar a una librería de las que parecen teatros, recorrer un museo o sentarse en un café notable sin mirar el reloj. Si prefieren algo organizado, lo armamos con ustedes.",
+                        "en": "A day for yourselves. You can go back to a neighborhood you liked, step into one of the bookstores that look like theaters, visit a museum or sit at a classic café without watching the clock. If you'd rather have something organized, we'll plan it together.",
+                        "it": "Una giornata tutta per voi. Potete tornare in un quartiere che vi è piaciuto, entrare in una di quelle librerie che sembrano teatri, visitare un museo o sedervi in un caffè storico senza guardare l'orologio. Se preferite qualcosa di organizzato, lo pianifichiamo insieme."
+                    },
+                    "tip": {
+                        "es": "Si quieren una noche más de ciudad, ver las sugerencias al final del itinerario.",
+                        "en": "If you'd like one more night in the city, see the suggestions at the end of the itinerary.",
+                        "it": "Se volete un'altra sera in città, guardate i suggerimenti alla fine dell'itinerario."
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires",
+                        "en": "Hotel Pulitzer, Buenos Aires",
+                        "it": "Hotel Pulitzer, Buenos Aires"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Buenos Aires – Mendoza",
+                        "en": "Buenos Aires – Mendoza",
+                        "it": "Buenos Aires – Mendoza"
+                    },
+                    "description": {
+                        "es": "Vuelo a Mendoza, la capital del vino argentino. Es una ciudad de calles anchas, plátanos que dan sombra y acequias que riegan el desierto: oasis levantado a los pies de la cordillera de los Andes. Después del traslado privado al hotel, por la tarde sale una cabalgata al atardecer: un paseo a caballo con la cordillera de fondo, mientras el sol baja y la luz se vuelve dorada.",
+                        "en": "Flight to Mendoza, Argentina's wine capital. It's a city of wide streets, shade-giving plane trees and irrigation channels that water the desert: an oasis raised at the foot of the Andes. After the private transfer to the hotel, a sunset horseback ride sets off in the afternoon: a ride with the cordillera in the background, as the sun goes down and the light turns golden.",
+                        "it": "Volo a Mendoza, la capitale del vino argentino. È una città di strade ampie, platani che danno ombra e canali d'irrigazione che bagnano il deserto: un'oasi ai piedi della cordigliera delle Ande. Dopo il trasferimento privato in hotel, nel pomeriggio parte una cavalcata al tramonto: un giro a cavallo con la cordigliera sullo sfondo, mentre il sole scende e la luce diventa dorata."
+                    },
+                    "tip": {
+                        "es": "Lleven pantalón largo, calzado cerrado y una capa liviana: al caer el sol refresca. La cabalgata sale a las 16 hs, así que conviene un vuelo de mañana.",
+                        "en": "Bring long pants, closed shoes and a light layer: it cools down as the sun sets. The horseback ride departs at 4pm, so a morning flight works best.",
+                        "it": "Portate pantaloni lunghi, scarpe chiuse e un capo leggero: rinfresca al tramonto. La cavalcata parte alle 16, quindi conviene un volo mattutino."
+                    },
+                    "includes": {
+                        "es": "traslado privado · cabalgata al atardecer (servicio regular) · alojamiento con desayuno",
+                        "en": "private transfer · sunset horseback ride (shared service) · accommodation with breakfast",
+                        "it": "trasferimento privato · cavalcata al tramonto (servizio regolare) · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Huentala, Mendoza · check-in desde las 15:00 h",
+                        "en": "Hotel Huentala, Mendoza · check-in from 3:00pm",
+                        "it": "Hotel Huentala, Mendoza · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Vinos y Sabores",
+                        "en": "Vinos y Sabores",
+                        "it": "Vinos y Sabores"
+                    },
+                    "description": {
+                        "es": "Un día completo, de 8:30 a 17:30 aproximadamente, para recorrer bodegas de Mendoza con degustaciones y platos de la región. Es el día para entender por qué el malbec nació acá: altura, sol y agua de deshielo. Las bodegas se confirman el día anterior. Un guía bilingüe acompaña a un grupo reducido.",
+                        "en": "A full day, roughly from 8:30 to 17:30, touring Mendoza's wineries with tastings and dishes from the region. It's the day to understand why malbec was born here: altitude, sun and meltwater. The wineries are confirmed the day before. A bilingual guide accompanies a small group.",
+                        "it": "Una giornata intera, all'incirca dalle 8:30 alle 17:30, alla scoperta delle cantine di Mendoza con degustazioni e piatti della regione. È il giorno per capire perché il malbec è nato qui: altitudine, sole e acqua di disgelo. Le cantine si confermano il giorno prima. Una guida bilingue accompagna un gruppo ridotto."
+                    },
+                    "tip": {
+                        "es": "Las bodegas son frescas y el sol de Mendoza pega fuerte: lleven una capa liviana y protector solar.",
+                        "en": "The wineries are cool and Mendoza's sun is strong: bring a light layer and sunscreen.",
+                        "it": "Le cantine sono fresche e il sole di Mendoza è forte: portate un capo leggero e protezione solare."
+                    },
+                    "includes": {
+                        "es": "día completo en servicio regular con guía bilingüe · visitas a bodegas",
+                        "en": "full day, shared service with bilingual guide · winery visits",
+                        "it": "giornata intera in servizio regolare con guida bilingue · visite alle cantine"
+                    },
+                    "stay": {
+                        "es": "Hotel Huentala, Mendoza",
+                        "en": "Hotel Huentala, Mendoza",
+                        "it": "Hotel Huentala, Mendoza"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Día libre en Mendoza",
+                        "en": "Free day in Mendoza",
+                        "it": "Giorno libero a Mendoza"
+                    },
+                    "description": {
+                        "es": "Mendoza se disfruta sin apuro. Un día libre para caminar por la ciudad, subir al Parque General San Martín, quedarse en una plaza con un café o simplemente descansar. Si prefieren más bodegas o un día de montaña, lo organizamos.",
+                        "en": "Mendoza is best enjoyed unhurried. A free day to walk around the city, climb up to Parque General San Martín, linger in a plaza over a coffee or simply rest. If you'd rather have more wineries or a day in the mountains, we'll arrange it.",
+                        "it": "Mendoza si gode senza fretta. Una giornata libera per camminare in città, salire al Parque General San Martín, fermarvi in una piazza con un caffè o semplicemente riposare. Se preferite altre cantine o una giornata in montagna, lo organizziamo."
+                    },
+                    "tip": {
+                        "es": "Para quienes quieran seguir con los vinos, ver las sugerencias al final del itinerario.",
+                        "en": "If you'd like more wineries, see the suggestions at the end of the itinerary.",
+                        "it": "Se volete altre cantine, guardate i suggerimenti alla fine dell'itinerario."
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "Hotel Huentala, Mendoza",
+                        "en": "Hotel Huentala, Mendoza",
+                        "it": "Hotel Huentala, Mendoza"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Mendoza – Salta",
+                        "en": "Mendoza – Salta",
+                        "it": "Mendoza – Salta"
+                    },
+                    "description": {
+                        "es": "Vuelo a Salta, 'la Linda', ciudad de patios coloniales, iglesias rosadas y peñas folklóricas. Es la puerta del noroeste argentino, donde la herencia andina y la española conviven desde hace siglos. Traslado al hotel y tarde libre para caminar por la Plaza 9 de Julio y sus alrededores.",
+                        "en": "Flight to Salta, 'the Pretty One', a city of colonial courtyards, pink churches and folklore peñas. It's the gateway to northwestern Argentina, where Andean and Spanish heritage have coexisted for centuries. Transfer to the hotel and free afternoon to walk around Plaza 9 de Julio and its surroundings.",
+                        "it": "Volo a Salta, 'la Linda', città di cortili coloniali, chiese rosa e peñas folkloristiche. È la porta d'accesso al nordovest argentino, dove l'eredità andina e quella spagnola convivono da secoli. Trasferimento in hotel e pomeriggio libero per passeggiare intorno a Plaza 9 de Julio."
+                    },
+                    "tip": {
+                        "es": "Cenen en la zona de la plaza: los restaurantes del centro sirven empanadas salteñas, humita y locro.",
+                        "en": "Eat around the plaza: the restaurants downtown serve Salta-style empanadas, humita and locro.",
+                        "it": "Cenate nella zona della piazza: i ristoranti del centro servono empanadas salteñas, humita e locro."
+                    },
+                    "includes": {
+                        "es": "traslado · alojamiento con desayuno",
+                        "en": "transfer · accommodation with breakfast",
+                        "it": "trasferimento · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel en Salta (a confirmar) · check-in desde las 15:00 h",
+                        "en": "Hotel in Salta (to be confirmed) · check-in from 3:00pm",
+                        "it": "Hotel a Salta (da confermare) · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Salta, la Linda",
+                        "en": "Salta, the Pretty One",
+                        "it": "Salta, la Linda"
+                    },
+                    "description": {
+                        "es": "Un recorrido por la ciudad: la Plaza 9 de Julio, la Catedral, el Cabildo y el Cerro San Bernardo, con una vista de todo el valle de Lerma. El resto del día queda libre para recorrer museos, mercados y cafés a su ritmo.",
+                        "en": "A tour of the city: Plaza 9 de Julio, the Cathedral, the Cabildo and Cerro San Bernardo, with a view over the whole Lerma valley. The rest of the day is free to explore museums, markets and cafés at your own pace.",
+                        "it": "Un giro della città: Plaza 9 de Julio, la Cattedrale, il Cabildo e il Cerro San Bernardo, con una vista su tutta la valle di Lerma. Il resto della giornata resta libero per esplorare musei, mercati e caffè al vostro ritmo."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "city tour regular con guía · alojamiento con desayuno",
+                        "en": "shared guided city tour · accommodation with breakfast",
+                        "it": "city tour regolare con guida · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel en Salta (a confirmar)",
+                        "en": "Hotel in Salta (to be confirmed)",
+                        "it": "Hotel a Salta (da confermare)"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Salta – Cafayate",
+                        "en": "Salta – Cafayate",
+                        "it": "Salta – Cafayate"
+                    },
+                    "description": {
+                        "es": "Salen de Salta hacia Cafayate por la Quebrada de las Conchas, con sus formaciones de arenisca rojiza esculpidas por el viento: el Anfiteatro, la Garganta del Diablo y el Obelisco. En Cafayate los espera una degustación en la bodega Piattelli, entre viñedos y con los cerros de fondo, para probar torrontés y malbec de altura. Noche en Cafayate.",
+                        "en": "You leave Salta for Cafayate through the Quebrada de las Conchas, with its reddish sandstone formations carved by the wind: the Amphitheater, the Devil's Throat and the Obelisk. In Cafayate, a tasting awaits at Bodega Piattelli, among vineyards with the hills as a backdrop, to try high-altitude torrontés and malbec. Night in Cafayate.",
+                        "it": "Si lascia Salta per Cafayate attraverso la Quebrada de las Conchas, con le sue formazioni di arenaria rossastra scolpite dal vento: l'Anfiteatro, la Garganta del Diablo e l'Obelisco. A Cafayate vi aspetta una degustazione alla Bodega Piattelli, tra i vigneti e con i cerros sullo sfondo, per assaggiare torrontés e malbec d'alta quota. Notte a Cafayate."
+                    },
+                    "tip": {
+                        "es": "Prueben el torrontés bien frío: es el blanco aromático que solo aquí alcanza esta expresión.",
+                        "en": "Try the torrontés well chilled: it's the aromatic white wine that only reaches this expression here.",
+                        "it": "Assaggiate il torrontés ben freddo: è il bianco aromatico che raggiunge questa espressione solo qui."
+                    },
+                    "includes": {
+                        "es": "traslado de ruta · degustación en Bodega Piattelli · alojamiento con desayuno",
+                        "en": "overland transfer · tasting at Bodega Piattelli · accommodation with breakfast",
+                        "it": "trasferimento su strada · degustazione alla Bodega Piattelli · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel en Cafayate (a confirmar) · check-in desde las 15:00 h",
+                        "en": "Hotel in Cafayate (to be confirmed) · check-in from 3:00pm",
+                        "it": "Hotel a Cafayate (da confermare) · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Cafayate – Salta por el camino largo",
+                        "en": "Cafayate – Salta, the long way",
+                        "it": "Cafayate – Salta, la strada lunga"
+                    },
+                    "description": {
+                        "es": "Para no repetir el camino de ida, el regreso a Salta es por la Ruta 40, la más larga y la más escénica. Pasa por pueblos de adobe como Angastaco y Molinos, por Cachi, con su iglesia blanca y los nevados al fondo, y sube por la Cuesta del Obispo hasta la Piedra del Molino. La ruta atraviesa el Parque Nacional Los Cardones, un bosque de cactus gigantes. Llegada a Salta por la tarde.",
+                        "en": "To avoid repeating the outbound route, the return to Salta is via Route 40, the longer and more scenic road. It passes adobe towns like Angastaco and Molinos, through Cachi, with its white church and snow-capped peaks in the background, and climbs the Cuesta del Obispo up to the Piedra del Molino. The route crosses Los Cardones National Park, a forest of giant cacti. Arrival in Salta in the afternoon.",
+                        "it": "Per non ripetere il percorso dell'andata, il ritorno a Salta avviene lungo la Ruta 40, la più lunga e la più panoramica. Passa per paesi di adobe come Angastaco e Molinos, per Cachi, con la sua chiesa bianca e i nevados sullo sfondo, e sale lungo la Cuesta del Obispo fino alla Piedra del Molino. Il percorso attraversa il Parco Nazionale Los Cardones, una foresta di cactus giganti. Arrivo a Salta nel pomeriggio."
+                    },
+                    "tip": {
+                        "es": "Es un día largo de ruta, con muchas paradas para fotos. Lleven agua, protector solar y una capa liviana.",
+                        "en": "It's a long day on the road, with lots of photo stops. Bring water, sunscreen and a light layer.",
+                        "it": "È una giornata lunga di viaggio, con molte soste per le foto. Portate acqua, protezione solare e un capo leggero."
+                    },
+                    "includes": {
+                        "es": "traslado de ruta · alojamiento con desayuno",
+                        "en": "overland transfer · accommodation with breakfast",
+                        "it": "trasferimento su strada · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel en Salta (a confirmar) · check-in desde las 15:00 h",
+                        "en": "Hotel in Salta (to be confirmed) · check-in from 3:00pm",
+                        "it": "Hotel a Salta (da confermare) · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Salinas Grandes y Purmamarca",
+                        "en": "Salinas Grandes and Purmamarca",
+                        "it": "Salinas Grandes e Purmamarca"
+                    },
+                    "description": {
+                        "es": "Por la mañana salen de Salta hacia el norte, rumbo a Jujuy. La Cuesta de Lipán sube hasta más de 4.000 metros, y al otro lado se abren las Salinas Grandes: un desierto blanco de sal, plano hasta el horizonte, donde el cielo parece apoyarse en el suelo. Después bajan a Purmamarca, un pueblo de calles de tierra y casas de adobe al pie del Cerro de los Siete Colores. Noche en Purmamarca.",
+                        "en": "In the morning you leave Salta heading north, toward Jujuy. The Cuesta de Lipán climbs above 4,000 meters, and on the other side the Salinas Grandes open up: a white desert of salt, flat to the horizon, where the sky seems to rest on the ground. Afterward you head down to Purmamarca, a town of dirt streets and adobe houses at the foot of the Cerro de los Siete Colores. Night in Purmamarca.",
+                        "it": "Al mattino si lascia Salta verso nord, in direzione di Jujuy. La Cuesta de Lipán sale oltre i 4.000 metri, e dall'altra parte si aprono le Salinas Grandes: un deserto bianco di sale, piatto fino all'orizzonte, dove il cielo sembra poggiarsi sul suolo. Si scende poi a Purmamarca, un paese di strade di terra e case di adobe ai piedi del Cerro de los Siete Colores. Notte a Purmamarca."
+                    },
+                    "tip": {
+                        "es": "Estarán a gran altura: caminen despacio, tomen agua y eviten comidas pesadas ese día.",
+                        "en": "You'll be at high altitude: walk slowly, drink water and avoid heavy meals that day.",
+                        "it": "Sarete in alta quota: camminate piano, bevete acqua ed evitate pasti pesanti quel giorno."
+                    },
+                    "includes": {
+                        "es": "traslado de ruta · alojamiento con desayuno",
+                        "en": "overland transfer · accommodation with breakfast",
+                        "it": "trasferimento su strada · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel en Purmamarca (a confirmar) · check-in desde las 15:00 h",
+                        "en": "Hotel in Purmamarca (to be confirmed) · check-in from 3:00pm",
+                        "it": "Hotel a Purmamarca (da confermare) · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Purmamarca – Salta",
+                        "en": "Purmamarca – Salta",
+                        "it": "Purmamarca – Salta"
+                    },
+                    "description": {
+                        "es": "Antes de salir, una caminata por el Paseo de los Colorados para ver el cerro con la luz de la mañana. Después regresan a Salta. Para la última noche en la ciudad, se recomienda ir a ver un show de folklore: guitarra, bombo y zamba en una peña tradicional, con empanadas y vino de la región.",
+                        "en": "Before leaving, a walk along the Paseo de los Colorados to see the hill in the morning light. Afterward you return to Salta. For the last night in the city, a folklore show is recommended: guitar, bombo drum and zamba at a traditional peña, with empanadas and wine from the region.",
+                        "it": "Prima di partire, una passeggiata lungo il Paseo de los Colorados per vedere il cerro con la luce del mattino. Dopo si torna a Salta. Per l'ultima sera in città, si consiglia uno spettacolo di folklore: chitarra, bombo e zamba in una peña tradizionale, con empanadas e vino della regione."
+                    },
+                    "tip": {
+                        "es": "Las peñas suelen empezar tarde, después de las 21. Conviene reservar mesa con anticipación.",
+                        "en": "Peñas usually start late, after 9pm. It's best to book a table in advance.",
+                        "it": "Le peñas di solito iniziano tardi, dopo le 21. Conviene prenotare un tavolo in anticipo."
+                    },
+                    "includes": {
+                        "es": "traslado de ruta · alojamiento con desayuno",
+                        "en": "overland transfer · accommodation with breakfast",
+                        "it": "trasferimento su strada · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel en Salta (a confirmar) · check-in desde las 15:00 h",
+                        "en": "Hotel in Salta (to be confirmed) · check-in from 3:00pm",
+                        "it": "Hotel a Salta (da confermare) · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Salta – Buenos Aires",
+                        "en": "Salta – Buenos Aires",
+                        "it": "Salta – Buenos Aires"
+                    },
+                    "description": {
+                        "es": "Traslado al aeropuerto y vuelo de regreso a Buenos Aires. Traslado al hotel y tarde libre para una última caminata o para las compras de último momento. Una cena de despedida en la ciudad cierra el viaje.",
+                        "en": "Transfer to the airport and return flight to Buenos Aires. Transfer to the hotel and free afternoon for one last walk or some last-minute shopping. A farewell dinner in the city closes the trip.",
+                        "it": "Trasferimento all'aeroporto e volo di ritorno a Buenos Aires. Trasferimento in hotel e pomeriggio libero per un'ultima passeggiata o gli acquisti dell'ultimo minuto. Una cena di addio in città chiude il viaggio."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "traslados · alojamiento con desayuno",
+                        "en": "transfers · accommodation with breakfast",
+                        "it": "trasferimenti · pernottamento con colazione"
+                    },
+                    "stay": {
+                        "es": "Hotel Pulitzer, Buenos Aires · check-in desde las 15:00 h",
+                        "en": "Hotel Pulitzer, Buenos Aires · check-in from 3:00pm",
+                        "it": "Hotel Pulitzer, Buenos Aires · check-in dalle 15:00"
+                    }
+                },
+                {
+                    "title": {
+                        "es": "Buenos Aires – Barcelona",
+                        "en": "Buenos Aires – Barcelona",
+                        "it": "Buenos Aires – Barcellona"
+                    },
+                    "description": {
+                        "es": "Traslado al aeropuerto de Ezeiza y vuelo de regreso a Barcelona. Quedan los sabores, los paisajes y las ganas de volver.",
+                        "en": "Transfer to Ezeiza airport and return flight to Barcelona. What remains are the flavors, the landscapes and the wish to come back.",
+                        "it": "Trasferimento all'aeroporto di Ezeiza e volo di ritorno a Barcellona. Restano i sapori, i paesaggi e la voglia di tornare."
+                    },
+                    "tip": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "includes": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    },
+                    "stay": {
+                        "es": "",
+                        "en": "",
+                        "it": ""
+                    }
+                }
+            ],
+            "map_query": "",
+            "map_mid": "1odAISoxFRNtPJFZ0AW0yG29qkYiimIo",
+            "nights": {
+                "es": "14 noches",
+                "en": "14 nights",
+                "it": "14 notti"
+            },
+            "stops": {
+                "es": "4 regiones",
+                "en": "4 regions",
+                "it": "4 regioni"
+            }
         }
     }
 }

@@ -1632,7 +1632,7 @@ main {
 .host-block__title {
     font-family: var(--font-heading);
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--color-accent);
     margin: 0 0 16px;
 }
@@ -1650,6 +1650,13 @@ main {
     margin-bottom: 14px;
 }
 
+/* Free Explorer's gold host-block background makes the base white text
+   hard to read — same dark neutral already used for body copy on gold
+   elsewhere (vibe-itinerary summary, destino detail text). */
+.nav-cliente-alt .host-block p {
+    color: color-mix(in srgb, #2b1400 85%, transparent);
+}
+
 /* Travel Vibe */
 
 .vibe-grid {
@@ -1660,6 +1667,7 @@ main {
 }
 
 .vibe-card {
+    position: relative;
     background: rgba(255, 255, 255, 0.06);
     border: 2px solid rgba(255, 255, 255, 0.14);
     border-radius: 16px;
@@ -1681,6 +1689,36 @@ main {
 .vibe-card.is-active {
     border-color: var(--color-accent);
     background: color-mix(in srgb, var(--color-secondary) 35%, transparent);
+}
+
+/* Selected-state badge — kept separate from the hover/focus border glow
+   (which looks the same either way) so "this is chosen" reads as its own
+   signal, not just "the mouse is near it". */
+.vibe-card__check {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: #2b1400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.vibe-card__check svg {
+    width: 14px;
+    height: 14px;
+}
+
+.vibe-card.is-active .vibe-card__check {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .vibe-card__name {
@@ -1713,10 +1751,12 @@ main {
 }
 
 .vibe-itinerary__vibe {
-    font-family: var(--font-heading);
+    font-family: var(--font-body);
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.04em;
     color: var(--color-accent);
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     margin: 0 0 8px;
 }
 
@@ -1731,6 +1771,10 @@ main {
 }
 
 .nav-cliente-alt .vibe-itinerary__title {
+    color: #EFBB52;
+}
+
+.nav-cliente-alt .vibe-itinerary__vibe {
     color: #2b1400;
 }
 
@@ -1769,6 +1813,28 @@ main {
 
 .vibe-cta[hidden] {
     display: none;
+}
+
+.vibe-cta__hint {
+    margin: 0 0 4px;
+    font-size: 0.85rem;
+    color: color-mix(in srgb, #2b1400 75%, transparent);
+}
+
+.vibe-cta__selection {
+    margin: 0 0 6px;
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #2b1400;
+}
+
+.vibe-cta__instruction {
+    margin: 0 0 10px;
+    font-size: 0.76rem;
+    color: color-mix(in srgb, #2b1400 70%, transparent);
 }
 
 /* Destinos — uniform photo tiles, 3 per row, name overlaid at the bottom.
@@ -1999,6 +2065,11 @@ main {
     color: #fff;
 }
 
+.destino-detail__meta-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
 .destino-detail__meta-label {
     font-size: 0.72rem;
     font-weight: 700;
@@ -2160,6 +2231,51 @@ main {
 }
 
 .page-white-canvas:not(.nav-cliente-alt) .itinerary-day__desc {
+    color: #7208B7;
+}
+
+.itinerary-day__meta-line {
+    margin: 6px 0 0;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.itinerary-day__meta-line strong {
+    color: #7208B7;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    margin-right: 4px;
+}
+
+.nav-cliente-alt .itinerary-day__meta-line {
+    color: color-mix(in srgb, #2b1400 70%, transparent);
+}
+
+.page-white-canvas:not(.nav-cliente-alt) .itinerary-day__meta-line {
+    color: color-mix(in srgb, #7208B7 80%, transparent);
+}
+
+.itinerary-day__tip {
+    margin: 10px 0 0;
+    padding: 4px 0 4px 14px;
+    border-left: 3px solid var(--color-accent);
+    font-size: 0.78rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.itinerary-day__tip strong {
+    font-style: normal;
+    letter-spacing: 0.04em;
+}
+
+.nav-cliente-alt .itinerary-day__tip {
+    color: color-mix(in srgb, #2b1400 80%, transparent);
+}
+
+.page-white-canvas:not(.nav-cliente-alt) .itinerary-day__tip {
     color: #7208B7;
 }
 

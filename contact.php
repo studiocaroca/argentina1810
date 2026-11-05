@@ -64,9 +64,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     fail('El email no es válido.');
 }
 
-// TODO(cliente): reemplazar por la casilla real de Argentina 1810 antes
-// de publicar — este placeholder no está monitoreado.
-$to = 'hola@argentina1810.com';
+$to = 'jeremias@argentina1810.com';
 
 if ($formType === 'partner') {
     $subjectText = 'Nueva agencia socia — Argentina 1810 (Partner Agency)';

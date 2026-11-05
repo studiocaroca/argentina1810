@@ -17,7 +17,7 @@ include __DIR__ . '/../partials/head.php';
             <div class="hero__bg-content container-a1810">
                 <p class="section-eyebrow" data-section="home" data-translate="eyebrow">Partner Agency</p>
                 <h1 class="hero__title"><span class="accent" data-section="home" data-translate="title">Tu socio local en Argentina.</span></h1>
-                <p class="hero__lede" data-section="home" data-translate="lede">Tu pasajero es nuestra prioridad. Trabajaremos contigo para cuidar su experiencia y mantenerte informado durante todo el viaje. A través de Argentine Host dispondrá de asistencia las 24 horas y, cuando sea necesario, podrá contactar con una persona que conoce su itinerario.</p>
+                <p class="hero__lede" data-section="home" data-translate="lede">Tu pasajero es nuestra prioridad. Trabajaremos contigo para cuidar su experiencia y mantenerte informado durante todo el viaje. A través de Copiloto dispondrá de asistencia las 24 horas y, cuando sea necesario, podrá contactar con una persona que conoce su itinerario.</p>
                 <div class="hero__ctas">
                     <a class="btn-cta btn-cta--gold" href="/partners/como-trabajamos.php" data-section="home" data-translate="cta_primary">Conoce cómo trabajamos</a>
                     <a class="btn-cta btn-cta--outline" href="/partners/contacto.php" data-section="home" data-translate="cta_secondary">Únete como agencia socia</a>

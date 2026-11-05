@@ -20,7 +20,7 @@ include __DIR__ . '/../partials/head.php';
                 <p class="section-lede" data-section="nosotros" data-translate="paragraph1">Argentina 1810 nace para que tu agencia disponga de un equipo local que responda con rapidez, se comunique con transparencia y cuide a tu pasajero como si fuera propio. Cuando vendes Argentina con nosotros, dejas de contratar a un proveedor y ganas un socio.</p>
                 <p class="section-lede" data-section="nosotros" data-translate="paragraph2">Elegimos colaboradores que comparten nuestros principios de respeto, transparencia y compromiso con el destino, porque cada pasajero que reciben representa también la reputación de tu agencia.</p>
             </div>
-            <div class="video-placeholder" role="img" aria-label="Video institucional">
+            <div class="video-placeholder" data-institutional-video="partners" role="img" aria-label="Video institucional">
                 <video class="video-placeholder__bg" autoplay muted loop playsinline aria-hidden="true">
                     <source src="/assets/videos/paisajes-argentina.mp4" type="video/mp4">
                 </video>
@@ -36,7 +36,7 @@ include __DIR__ . '/../partials/head.php';
             <div class="trust-coverflow-wrapper">
                 <div class="trust-card" data-section="home" data-translate="highlight1">Respondemos rápido — entre 24 y 48 horas.</div>
                 <div class="trust-card" data-section="home" data-translate="highlight2">Itinerarios a medida — nunca propuestas genéricas.</div>
-                <div class="trust-card" data-section="home" data-translate="highlight3">Argentine Host — comunicación constante, 24/7.</div>
+                <div class="trust-card" data-section="home" data-translate="highlight3">Copiloto — comunicación constante, 24/7.</div>
             </div>
         </div>
     </section>
@@ -45,5 +45,6 @@ include __DIR__ . '/../partials/head.php';
 <?php $footerTrack = 'partners'; include __DIR__ . '/../partials/footer.php'; ?>
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/institutional-video.js"></script>
 </body>
 </html>
