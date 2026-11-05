@@ -48,7 +48,20 @@ include __DIR__ . '/../partials/head.php';
             <p class="blog-card__category"><?= htmlspecialchars($post['category']) ?></p>
         <?php endif; ?>
 
+        <?php foreach ($langs as $lang): ?>
+            <div data-lang="<?= $lang ?>">
+                <?php if (!empty($post['date'])): ?>
+                    <p class="blog-card__date"><?= htmlspecialchars(formatBlogDate($post['date'], $lang, $monthNames)) ?></p>
+                <?php endif; ?>
+                <h1 class="blog-post__title"><?= htmlspecialchars($post['title'][$lang] ?? $post['title']['es'] ?? '') ?></h1>
+            </div>
+        <?php endforeach; ?>
+
         <?php
+            // A single shared element (the photos aren't per-language) — kept
+            // right after the title in the markup (not before it, like
+            // before) so mobile, where it can't float beside the running
+            // text, still shows it below the title instead of above it.
             $galleryPaths = array_map(function ($src) { return '/assets/imgs/' . $src; }, $post['gallery'] ?? []);
         ?>
         <div class="blog-post__aside" aria-hidden="true" data-gallery='<?= htmlspecialchars(json_encode($galleryPaths)) ?>'>
@@ -57,10 +70,6 @@ include __DIR__ . '/../partials/head.php';
 
         <?php foreach ($langs as $lang): ?>
             <div data-lang="<?= $lang ?>">
-                <?php if (!empty($post['date'])): ?>
-                    <p class="blog-card__date"><?= htmlspecialchars(formatBlogDate($post['date'], $lang, $monthNames)) ?></p>
-                <?php endif; ?>
-                <h1 class="blog-post__title"><?= htmlspecialchars($post['title'][$lang] ?? $post['title']['es'] ?? '') ?></h1>
                 <?php if (!empty($post['excerpt'][$lang])): ?>
                     <p class="blog-post__lede"><?= htmlspecialchars($post['excerpt'][$lang]) ?></p>
                 <?php endif; ?>

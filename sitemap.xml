@@ -11,59 +11,165 @@
   <!-- Free Explorer (B2C) -->
   <url>
     <loc>https://www.argentina1810.com/cliente/</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://www.argentina1810.com/cliente/nosotros.php</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.argentina1810.com/cliente/travel-vibe.php</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.argentina1810.com/cliente/destinos.php</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.argentina1810.com/cliente/blog.php</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
     <priority>0.60</priority>
   </url>
   <url>
     <loc>https://www.argentina1810.com/cliente/contacto.php</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
     <priority>0.70</priority>
+  </url>
+
+  <!-- Free Explorer — individual destino pages -->
+  <url>
+    <loc>https://www.argentina1810.com/cliente/destino.php?slug=buenos-aires</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/cliente/destino.php?slug=iguazu</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/cliente/destino.php?slug=salta-jujuy</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/cliente/destino.php?slug=mendoza</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/cliente/destino.php?slug=puerto-madryn</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/cliente/destino.php?slug=el-calafate</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/cliente/destino.php?slug=el-chalten</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/cliente/destino.php?slug=ushuaia</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Free Explorer — blog posts -->
+  <url>
+    <loc>https://www.argentina1810.com/cliente/blog-post.php?slug=chalten-trekking-guia</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <priority>0.55</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/cliente/blog-post.php?slug=salta-valles-calchaquies</loc>
+    <lastmod>2026-02-18T00:00:00+00:00</lastmod>
+    <priority>0.55</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/cliente/blog-post.php?slug=iguazu-en-familia</loc>
+    <lastmod>2026-01-22T00:00:00+00:00</lastmod>
+    <priority>0.55</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/cliente/blog-post.php?slug=mendoza-ruta-del-vino</loc>
+    <lastmod>2025-12-05T00:00:00+00:00</lastmod>
+    <priority>0.55</priority>
   </url>
 
   <!-- Partner Agency (B2B) -->
   <url>
     <loc>https://www.argentina1810.com/partners/</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.argentina1810.com/partners/nosotros.php</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://www.argentina1810.com/partners/como-trabajamos.php</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.argentina1810.com/partners/destinos.php</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.argentina1810.com/partners/contacto.php</loc>
-    <lastmod>2026-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- Partner Agency — individual destino pages -->
+  <url>
+    <loc>https://www.argentina1810.com/partners/destino.php?slug=buenos-aires</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/partners/destino.php?slug=iguazu</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/partners/destino.php?slug=salta-jujuy</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/partners/destino.php?slug=mendoza</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/partners/destino.php?slug=puerto-madryn</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/partners/destino.php?slug=el-calafate</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/partners/destino.php?slug=el-chalten</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.argentina1810.com/partners/destino.php?slug=ushuaia</loc>
+    <lastmod>2026-11-05T00:00:00+00:00</lastmod>
     <priority>0.65</priority>
   </url>
 

@@ -2,6 +2,9 @@
 $pageTitle = 'Argentina 1810 | Viajes a medida por Argentina';
 $pageDescription = 'Diseñamos tu viaje ideal a Argentina, acompañado por especialistas locales de principio a fin.';
 $i18nSrc = '/cliente/translations.json';
+// Matches the mobile nav's gold once scrolled — without this, phone
+// browsers guess the chrome color from the page's own (violet) background.
+$themeColor = '#EDB034';
 include __DIR__ . '/../partials/head.php';
 ?>
 <body data-i18n-src="<?= htmlspecialchars($i18nSrc) ?>" class="page-hero-overlay">

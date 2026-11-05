@@ -990,6 +990,18 @@ main {
     html {
         font-size: 17px;
     }
+
+    /* Paragraph-style body copy reads oversized on mobile (the +1px root
+       bump above compounds with sizes already tuned for desktop) — titles
+       are fine as they are, so this only touches running text, not
+       headings. */
+    .section-lede,
+    .destino-detail__text,
+    .vibe-itinerary__summary,
+    .blog-post__body p,
+    .blog-post__lede {
+        font-size: 0.9rem;
+    }
 }
 
 /* ---------- Mobile nav ---------- */
@@ -2146,7 +2158,7 @@ main {
 
     .itinerary-layout__map {
         position: static;
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 4 / 5;
     }
 }
 
@@ -2557,6 +2569,14 @@ main {
 
 .blog-post__aside:hover {
     transform: rotate(-1deg);
+}
+
+@media (max-width: 767.98px) {
+    .blog-post__aside {
+        float: none;
+        width: min(280px, 70vw);
+        margin: 0 auto 24px;
+    }
 }
 
 .blog-post__aside-frame {
