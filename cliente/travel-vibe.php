@@ -160,6 +160,7 @@ $emptyLabel = ['es' => 'Itinerario — muy pronto', 'en' => 'Itinerary — comin
 <?php $footerTrack = 'cliente'; include __DIR__ . '/../partials/footer.php'; ?>
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/vibe-card-fit.js"></script>
 <script>
     // One or several Travel Vibe cards can be selected at once — each
     // toggle shows/hides its own itinerary block below, per the "elegí

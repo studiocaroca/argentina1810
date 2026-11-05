@@ -651,6 +651,21 @@ main {
     background: var(--color-secondary);
 }
 
+/* Free Explorer's nav is gold, not violet — the dropdown panel was still
+   using the site's base violet regardless of which track's menu opened it. */
+.nav-cliente-alt .lang-selector__dropdown {
+    background: #EDB034;
+    border-color: rgba(43, 20, 0, 0.25);
+}
+
+.nav-cliente-alt .lang-selector__option {
+    color: #2b1400;
+}
+
+.nav-cliente-alt .lang-selector__option:hover {
+    background: rgba(43, 20, 0, 0.12);
+}
+
 /* ---------- Admin login (lock icon in the nav) ---------- */
 
 .admin-login {
