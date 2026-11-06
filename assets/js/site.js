@@ -307,8 +307,37 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.remove('modal-open');
     }
 
+    var SOUND_LABELS = {
+        es: { on: 'Activar sonido', off: 'Silenciar' },
+        en: { on: 'Turn sound on', off: 'Mute' },
+        it: { on: 'Attiva audio', off: 'Disattiva audio' }
+    };
+    var ICON_MUTED = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4z" fill="currentColor"/><path d="M22 9l-6 6M16 9l6 6"/></svg>';
+    var ICON_SOUND = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 010 7M19 5a10 10 0 010 14"/></svg>';
+
+    function updateSoundButton(button, video) {
+        var labels = SOUND_LABELS[document.documentElement.lang] || SOUND_LABELS.es;
+        button.innerHTML = video.muted ? ICON_MUTED : ICON_SOUND;
+        button.setAttribute('aria-label', video.muted ? labels.on : labels.off);
+        button.setAttribute('aria-pressed', video.muted ? 'false' : 'true');
+    }
+
+    function muteInlineVideos() {
+        placeholders.forEach(function (el) {
+            var video = el.querySelector('video');
+            var button = el.querySelector('.video-sound-toggle');
+            if (video && button) {
+                video.muted = true;
+                updateSoundButton(button, video);
+            }
+        });
+    }
+
     function open(sourceEl) {
+        muteInlineVideos();
         var clone = sourceEl.cloneNode(true);
+        var cloneButton = clone.querySelector('.video-sound-toggle');
+        if (cloneButton) cloneButton.parentNode.removeChild(cloneButton);
         overlay.innerHTML = '';
         overlay.appendChild(clone);
         var video = clone.querySelector('video');
@@ -325,10 +354,28 @@ document.addEventListener('DOMContentLoaded', function () {
         el.setAttribute('tabindex', '0');
         el.addEventListener('click', function () { open(el); });
         el.addEventListener('keydown', function (e) {
+            if (e.target !== el) return;
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
                 open(el);
             }
+        });
+
+        var video = el.querySelector('video');
+        if (!video) return;
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'video-sound-toggle';
+        updateSoundButton(button, video);
+        button.addEventListener('click', function (e) {
+            e.stopPropagation();
+            video.muted = !video.muted;
+            if (!video.muted) video.play().catch(function () { });
+            updateSoundButton(button, video);
+        });
+        el.appendChild(button);
+        document.addEventListener('a1810:language-changed', function () {
+            updateSoundButton(button, video);
         });
     });
 

@@ -24,7 +24,6 @@ include __DIR__ . '/../partials/head.php';
                 <video class="video-placeholder__bg" autoplay muted loop playsinline aria-hidden="true">
                     <source src="/assets/videos/paisajes-argentina.mp4" type="video/mp4">
                 </video>
-                <span class="video-placeholder__icon">▶</span>
             </div>
         </div>
 
