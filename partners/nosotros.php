@@ -25,7 +25,6 @@ include __DIR__ . '/../partials/head.php';
                     <source src="/assets/videos/paisajes-argentina.mp4" type="video/mp4">
                 </video>
                 <span class="video-placeholder__icon">▶</span>
-                <span class="video-placeholder__label" data-section="home" data-translate="video_placeholder">Video institucional</span>
             </div>
         </div>
 

@@ -1,13 +1,3 @@
-// Generic ES/EN/IT switcher for the Argentina 1810 site.
-//
-// Same swap mechanism the old ATP site used (data-section + data-translate
-// looked up in a JSON file, data-translate-placeholder/-value redirect the
-// swap into an attribute instead of textContent) — kept because it works
-// and every page's markup already speaks it. What's new: the translations
-// file path comes from <body data-i18n-src="..."> instead of being
-// hardcoded, so one script serves both /cliente/ and /partners/, and the
-// chosen language persists across page loads via localStorage (the old
-// version reset to Spanish on every navigation).
 (function () {
     var LANGS = ['es', 'en', 'it'];
     var STORAGE_KEY = 'a1810-lang';
@@ -24,15 +14,9 @@
         if (!langCurrent || !langDropdown) return;
 
         var storedLang = null;
-        try { storedLang = localStorage.getItem(STORAGE_KEY); } catch (e) { /* private mode etc — ignore */ }
+        try { storedLang = localStorage.getItem(STORAGE_KEY); } catch (e) { }
         var initialLang = LANGS.indexOf(storedLang) !== -1 ? storedLang : DEFAULT_LANG;
 
-        // For content rendered server-side in all 3 languages at once (destino
-        // cards, blog posts — anything sourced from a JSON data file rather
-        // than translations.json) — each language's markup carries
-        // data-lang="es"/"en"/"it" and only the active one is shown. Applied
-        // immediately (not gated on the translations.json fetch below) so
-        // there's no flash of every language at once on first paint.
         function applyDataLangVisibility(lang) {
             document.querySelectorAll('[data-lang]').forEach(function (element) {
                 element.hidden = element.getAttribute('data-lang') !== lang;
@@ -77,7 +61,7 @@
                         .filter(function (l) { return l !== lang; })
                         .map(function (l) { return '<div class="lang-selector__option" data-language="' + l + '" role="menuitem" tabindex="0">' + l.toUpperCase() + '</div>'; })
                         .join('');
-                    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* ignore */ }
+                    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { }
                     document.dispatchEvent(new CustomEvent('a1810:language-changed', { detail: { lang: lang } }));
                 }
 

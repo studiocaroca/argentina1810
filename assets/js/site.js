@@ -1,6 +1,3 @@
-// Mobile nav toggle, shared by every Argentina 1810 page (cliente/ and
-// partners/). Kept separate from i18n.js since it has nothing to do with
-// language switching.
 document.addEventListener('DOMContentLoaded', function () {
     var toggle = document.querySelector('.site-navbar__toggle');
     var links = document.getElementById('site-navbar-links');
@@ -19,12 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// "Por qué viajar con nosotros" coverflow — same behavior as ATP's
-// "Quienes somos" carousel (one active card up front, the rest stacked
-// behind left/right, blurred and scaled down; auto-advances, pauses on
-// hover, has prev/next arrows, and steps toward whichever side the
-// pointer rests on) ported onto the site's own .trust-card markup/look
-// instead of reusing the legacy .about-* classes.
 (function () {
     var carousel = document.querySelector('.trust-coverflow');
     var cards = document.querySelectorAll('.trust-coverflow-wrapper .trust-card');
@@ -62,17 +53,10 @@ document.addEventListener('DOMContentLoaded', function () {
     function next() { goTo(current + 1); }
     function prev() { goTo(current - 1); }
 
-    // No JS timer driving auto-advance — the active card's violet dash IS
-    // the timer (see the CSS animation on .pos--active::before): it grows
-    // to the right while the card sits still, and reaching full width
-    // fires this animationend, which is what actually advances.
     carousel.addEventListener('animationend', function (e) {
         if (e.animationName === 'trustCardProgress') next();
     });
 
-    // Hovering anywhere on the carousel pauses that growing line (via CSS
-    // animation-play-state, see .trust-coverflow.is-paused) instead of a
-    // separate JS timer, so the bar and the advance can never drift apart.
     carousel.addEventListener('mouseenter', function () { carousel.classList.add('is-paused'); });
     carousel.addEventListener('mouseleave', function () { carousel.classList.remove('is-paused'); });
 
@@ -137,13 +121,6 @@ document.addEventListener('DOMContentLoaded', function () {
     render();
 })();
 
-// Footer shapes — Argentina 1810's own "Destacadas" icon set standing in
-// for ATP's old footer formas. A handful of independent "slots" each pick
-// a random icon/size/spot anywhere in the footer, fade in, hold, fade out,
-// then pick a new random one — staggered so they drift in and out out of
-// sync with each other. Each pick avoids the actual text columns, avoids
-// overlapping whichever other slots are currently visible, and avoids
-// repeating an icon another visible slot is already showing.
 document.addEventListener('DOMContentLoaded', function () {
     var sequence = [
         '/assets/imgs/iconos/Destacadas-06.png',
@@ -163,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var MIN_SIZE = 56;
     var MAX_SIZE = 140;
     var STAGGER_MS = 900;
-    var CLEARANCE = 12; // px kept between a shape and text columns / other shapes
+    var CLEARANCE = 12;
     var MAX_TRIES = 30;
 
     function rand(min, max) { return Math.random() * (max - min) + min; }
@@ -177,14 +154,10 @@ document.addEventListener('DOMContentLoaded', function () {
     containers.forEach(function (container) {
         var footer = container.parentElement;
         var initialRect = footer.getBoundingClientRect();
-        if (!initialRect.width || !initialRect.height) return; // hidden (e.g. the mobile layout) — nothing to animate
+        if (!initialRect.width || !initialRect.height) return;
 
         var textCols = footer.querySelectorAll('.site-footer__logo, .site-footer__contact, .site-footer__social, .site-footer__sitemap, .site-footer__switch');
 
-        // getBoundingClientRect() is viewport-relative, so the footer's own
-        // rect and the columns' rects both need to be re-measured together
-        // at the exact same moment — caching the footer's rect once and
-        // reusing it later breaks the moment the page scrolls in between.
         function measure() {
             var footerRect = footer.getBoundingClientRect();
             var cols = Array.prototype.map.call(textCols, function (el) {
@@ -257,13 +230,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Blog post aside images — a single slot beside the article body that
-// cross-fades through a couple of photos, one at a time: fade in, hold,
-// fade out, swap, repeat. Same appear/disappear idea as the footer shapes
-// above, just simpler (one fixed spot, no collision avoidance). Reads its
-// image list from the wrapper's data-gallery attribute (set per-post from
-// blog.json — provisional until there's an admin panel to manage it), and
-// falls back to a couple of "Destacadas" icons when a post has none.
 document.addEventListener('DOMContentLoaded', function () {
     var wrapper = document.querySelector('.blog-post__aside');
     var container = document.querySelector('.blog-post__aside-frame');
@@ -274,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function () {
     try {
         var raw = wrapper ? JSON.parse(wrapper.getAttribute('data-gallery') || '[]') : [];
         if (raw.length) { sequence = raw; isPhotoGallery = true; }
-    } catch (e) { /* malformed data-gallery — fall through to the icon default */ }
+    } catch (e) { }
 
     if (!sequence.length) {
         sequence = [
@@ -288,11 +254,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var HOLD_MS = 3200;
     var imgClass = 'blog-post__aside-img' + (isPhotoGallery ? ' blog-post__aside-img--photo' : '');
 
-    // Two stacked layers instead of one: the bottom layer stays fully
-    // opaque holding whatever photo is currently showing, so the frame's
-    // background gradient is never exposed mid-transition. The top layer
-    // fades 0→1 to reveal the next photo, then its src is copied down to
-    // the bottom layer and it resets to 0 for the next swap.
     var bottom = document.createElement('img');
     bottom.className = imgClass;
     bottom.style.transition = 'none';
@@ -327,10 +288,6 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(step, HOLD_MS);
 });
 
-// Video placeholder lightbox: click it to expand into a blurred/tinted
-// overlay (same treatment ATP used for its play modals), click anywhere to
-// close and stop playback. Works for every .video-placeholder on the page
-// (currently just Nosotros) by cloning its markup into a shared overlay.
 document.addEventListener('DOMContentLoaded', function () {
     var placeholders = document.querySelectorAll('.video-placeholder');
     if (!placeholders.length) return;
@@ -357,7 +314,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var video = clone.querySelector('video');
         if (video) {
             video.setAttribute('controls', '');
-            video.play().catch(function () { /* autoplay may be blocked — controls are there anyway */ });
+            video.play().catch(function () { });
         }
         overlay.classList.add('is-open');
         document.body.classList.add('modal-open');
@@ -382,9 +339,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Header overlay on the home pages: transparent (matching the splash
-// buttons) while at the very top of the hero video, solid brand purple as
-// soon as the page scrolls.
 document.addEventListener('DOMContentLoaded', function () {
     var header = document.querySelector('.site-header--overlay');
     if (!header) return;

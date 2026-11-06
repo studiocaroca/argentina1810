@@ -1,30 +1,12 @@
-/* ==========================================================================
-   Argentina 1810 — site chrome (nav, footer, lang selector, buttons, layout)
-   Loaded after /assets/css/styles.css, which already defines the brand
-   custom properties (--color-primary, --color-secondary, --color-accent,
-   --color-accent-light, --color-neutral, --font-heading, --font-body) and
-   sets body background/color/font. This file is plain CSS on purpose —
-   no build step required to add or tweak a new page's chrome.
-   ========================================================================== */
 
 * {
     box-sizing: border-box;
 }
 
-/* Leftover ATP-era rule in the legacy stylesheet paints every odd <section>
-   a hardcoded violet — invisible when a page's background is already that
-   same violet, but it fights any page whose canvas is themed a different
-   color (like Free Explorer's light-gold inner pages). Nothing in the
-   current design wants alternating section backgrounds, so kill it. */
 section:nth-child(odd) {
     background-color: transparent;
 }
 
-/* Partner Agency home only: swap the gold accent for the brand's light
-   violet (Deep Mauve) — everything that reads --color-accent/-light
-   (eyebrow, hero title, CTA buttons, active nav underline) picks it up
-   automatically. Both shades are light like gold was, so the existing
-   dark button text still has good contrast — no other overrides needed. */
 .theme-partners-violet {
     --color-accent: #B979F7;
     --color-accent-light: color-mix(in srgb, #B979F7 65%, white);
@@ -34,10 +16,6 @@ section:nth-child(odd) {
     display: none !important;
 }
 
-/* Accessibility skip-link, first focusable element on every page (see
-   partials/nav-cliente.php / nav-partners.php) — hidden off-screen until
-   keyboard-focused, when it slides into view so keyboard users can jump
-   straight to <main> without tabbing through the whole nav. */
 .skip-link {
     position: absolute;
     top: -60px;
@@ -81,12 +59,6 @@ section:nth-child(odd) {
     color: var(--color-accent);
 }
 
-/* Tighter word gaps on a specific, hand-picked set of titles (not every
-   .section-title — e.g. "Destinos" listing pages keep the default). Value
-   tuned for this ~41.6px title scale; other title sizes elsewhere use
-   their own scaled value instead of this one, since word-spacing is
-   em-based and the same ratio reads very differently at a much bigger or
-   smaller font-size. */
 .title-tight {
     word-spacing: -0.2em;
 }
@@ -106,8 +78,6 @@ section:nth-child(odd) {
     max-width: 68ch;
 }
 
-/* ---------- Brand logo ---------- */
-
 .site-brand {
     display: flex;
     align-items: center;
@@ -126,9 +96,6 @@ section:nth-child(odd) {
     height: 56px;
     width: auto;
     display: block;
-    /* .site-footer__col is a column flexbox — without this, stretch (the
-       default cross-axis alignment) would stretch the image to fill the
-       column's width, squashing it horizontally. */
     align-self: flex-start;
 }
 
@@ -145,8 +112,6 @@ section:nth-child(odd) {
     margin-left: 4px;
 }
 
-/* ---------- Header / nav ---------- */
-
 .site-header {
     position: fixed;
     top: 0;
@@ -158,10 +123,6 @@ section:nth-child(odd) {
     transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
-/* Free Explorer's inner pages (Nosotros, Travel Vibe, Blog, Destinos,
-   Contacto — not Home, which has its own hero-overlay header): nav
-   background is the brand gold, darkened so the existing white nav text
-   still reads clearly (plain #EFBB52 is too light for that). */
 .nav-cliente-alt .site-header {
     background: #EDB034;
 }
@@ -171,24 +132,16 @@ section:nth-child(odd) {
     border-bottom-color: #7208B7;
 }
 
-/* The brand's light violet (#B979F7) doesn't read clearly on the gold nav
-   background, and even the dark brand violet (#7208B7) isn't quite dark
-   enough — so hover goes darker still. */
 .nav-cliente-alt .nav-link:hover,
 .nav-cliente-alt .nav-link:focus-visible {
     color: #4B0578;
 }
 
-/* The active link keeps its own color even while hovered — same
-   specificity as the plain hover rule above, so it'd otherwise win or lose
-   depending on source order alone. */
 .nav-cliente-alt .nav-link.active:hover,
 .nav-cliente-alt .nav-link.active:focus-visible {
     color: #4B0578;
 }
 
-/* Footer matches the nav's gold on these pages instead of its usual dark
-   violet-black. */
 .nav-cliente-alt .site-footer {
     background: #EDB034;
 }
@@ -203,20 +156,11 @@ section:nth-child(odd) {
     color: #7208B7;
 }
 
-/* Same pages: page canvas becomes the brand's light gold (Golden Glow)
-   instead of the default violet. Body text and the standalone content
-   cards (which were a faint white-on-dark tint) flip to dark so they stay
-   legible on the now-light canvas; chrome that already has its own solid
-   dark surface (footer, host-block, video-placeholder, the card media
-   gradients) needs no change. */
 .nav-cliente-alt {
     background: #FED16E;
     color: #2b1400;
 }
 
-/* The legacy stylesheet sets h1/h2/etc. to a hardcoded white directly (not
-   inherited), so the body-level color override above doesn't reach them —
-   .section-title needs its own explicit override. */
 .nav-cliente-alt .section-title {
     color: #7208B7;
 }
@@ -251,11 +195,6 @@ section:nth-child(odd) {
     color: #fff;
 }
 
-/* Free Explorer's whitesmoke-canvas pages (Nosotros, Travel Vibe, Blog,
-   Destinos, Contacto): white canvas instead of the light-gold one, with
-   titles in the brand's dark gold instead of the dark-violet used
-   elsewhere on these pages. Placed after the rules above so it wins
-   despite equal selector specificity. */
 .page-white-canvas {
     background: whitesmoke;
 }
@@ -269,18 +208,10 @@ section:nth-child(odd) {
     font-size: clamp(1.7rem, 4vw, 2.6rem);
 }
 
-/* page-white-canvas's title color (dark gold) is gold-on-gold here — swap
-   to white instead. Placed after page-white-canvas's rule so it wins
-   despite equal specificity. */
 .page-contact-gold .section-title {
     color: #fff;
 }
 
-/* Partner Agency pages on the whitesmoke canvas (destinos listing,
-   nosotros) don't carry nav-cliente-alt, so they'd otherwise fall through
-   to cliente's gold title / white (invisible) lede and cards — swap the
-   whole set to brand violet instead. Placed after page-white-canvas's rule
-   so it wins despite equal specificity. */
 .page-white-canvas:not(.nav-cliente-alt) .section-title,
 .page-white-canvas:not(.nav-cliente-alt) .destinos-title {
     color: #7208B7;
@@ -297,10 +228,6 @@ section:nth-child(odd) {
     color: color-mix(in srgb, #4a1a63 90%, transparent);
 }
 
-/* Wide violet highlight behind the bottom half of the title text, like a
-   marker stroke — display:inline + box-decoration-break:clone so the
-   highlight hugs each wrapped line's glyphs (not the whole block width)
-   and repeats correctly if the heading wraps to more than one line. */
 .title-highlight-violet {
     display: inline;
     font-family: inherit;
@@ -313,11 +240,6 @@ section:nth-child(odd) {
     margin: 0 -0.14em;
 }
 
-/* Fondo-08 — recreated from assets/imgs/fondos/Fondos-08.png (two soft,
-   wide gray arcs peeking in from the top and bottom edges) as animated
-   layers instead of a static image, same idea as the splash page's
-   fondo01. z-index:-1 keeps it behind all normal page content without
-   needing to touch the shared nav/footer partials' own stacking. */
 .fondo08 {
     position: fixed;
     inset: 0;
@@ -327,9 +249,6 @@ section:nth-child(odd) {
     pointer-events: none;
 }
 
-/* left:0 + translateX(-65%) (self-referential) keeps each circle cut at the
-   same angle regardless of its size or any min-width/min-height clamp —
-   further left than an exact half (-50%) so more of it sits off-screen. */
 .fondo08__arc {
     position: absolute;
     left: 0;
@@ -364,9 +283,6 @@ section:nth-child(odd) {
     animation-delay: -1.5s;
 }
 
-/* Violet retint for the Partner Agency track — keeps the track's usual
-   solid brand-violet backdrop (not the whitesmoke canvas) and fades the
-   arcs back into that same violet instead of into whitesmoke. */
 .fondo08--violet {
     background: #7208B7;
 }
@@ -392,11 +308,6 @@ section:nth-child(odd) {
     background: whitesmoke;
 }
 
-/* Fondo-09 — recreated from assets/imgs/fondos/Fondos-09.png (two thin
-   light-violet rules near the left/right edges, plus a soft diagonal
-   sheen), animated with the same grow-and-shrink pulse used everywhere
-   else on the site (fondo08Pulse) instead of a different motion, so every
-   page's background breathes the same way. */
 .fondo09 {
     position: fixed;
     inset: 0;
@@ -437,9 +348,6 @@ section:nth-child(odd) {
     animation-delay: -1.5s;
 }
 
-/* Same scale range/easing as fondo08Pulse (the grow-and-shrink motion used
-   on other pages) minus its translate offset, which is specific to that
-   pattern's own left-edge-cut circles and doesn't apply here. */
 @keyframes fondo09Pulse {
     0%, 100% { transform: scale(0.85); }
     50% { transform: scale(1.15); }
@@ -450,9 +358,6 @@ section:nth-child(odd) {
     50% { transform: translateX(180%); }
 }
 
-/* Partner Agency's inner pages: same smaller title size as Free Explorer's
-   equivalent inner pages (page-white-canvas), without touching color —
-   these pages keep the default violet canvas / gold accent scheme. */
 .compact-title .section-title {
     font-size: clamp(1.7rem, 4vw, 2.6rem);
 }
@@ -489,16 +394,10 @@ section:nth-child(odd) {
     color: #fff;
 }
 
-/* Header is fixed (out of flow), so every page needs this much breathing
-   room pushed onto its first in-flow element or the header covers it. */
 main {
     padding-top: 92px;
 }
 
-/* Home pages: the hero video runs edge-to-edge from the very top of the
-   viewport, with the header floating transparently on top of it — same
-   translucent tone as the splash-page access buttons — until the page
-   scrolls, when it settles back to the solid brand purple. */
 .page-hero-overlay main {
     padding-top: 0;
 }
@@ -581,16 +480,9 @@ main {
     border-radius: 2px;
 }
 
-/* White bars against the gold nav have very low contrast — barely
-   visible, unlike the bolder nav link text that survives the same
-   background. Darken them on Free Explorer specifically; scoped via the
-   track marker (not nav-cliente-alt) so it also covers home, whose
-   mobile header is forced solid gold above but doesn't carry that class. */
 .site-header--cliente .site-navbar__toggle span {
     background: #2b1400;
 }
-
-/* ---------- Language selector ---------- */
 
 .lang-selector {
     position: relative;
@@ -651,11 +543,6 @@ main {
     background: var(--color-secondary);
 }
 
-/* Free Explorer's nav is gold, not violet — the dropdown panel was still
-   using the site's base violet regardless of which track's menu opened it.
-   Scoped to site-header--cliente (every Free Explorer page) rather than
-   nav-cliente-alt, which Home doesn't carry — see the nav-link hover fix
-   above for the same reasoning. */
 .site-header--cliente .lang-selector__dropdown {
     background: #EDB034;
     border-color: rgba(43, 20, 0, 0.25);
@@ -668,8 +555,6 @@ main {
 .site-header--cliente .lang-selector__option:hover {
     background: rgba(255, 255, 255, 0.18);
 }
-
-/* ---------- Admin login (lock icon in the nav) ---------- */
 
 .admin-login {
     display: inline-block;
@@ -688,11 +573,6 @@ main {
     outline: none;
 }
 
-/* Same low-contrast issue as the mobile nav toggle: pale color barely
-   reads against the gold nav — darken it whenever the header is actually
-   solid gold (every non-overlay page, or an overlay one once scrolled),
-   leaving it light on the still-transparent hero state where it sits over
-   a photo/video instead. */
 .site-header--cliente:not(.site-header--overlay) .admin-login,
 .site-header--cliente.site-header--overlay.is-scrolled .admin-login {
     color: rgba(43, 20, 0, 0.6);
@@ -704,8 +584,6 @@ main {
 .site-header--cliente.site-header--overlay.is-scrolled .admin-login:focus-visible {
     color: #7208B7;
 }
-
-/* ---------- Footer ---------- */
 
 .site-footer {
     position: relative;
@@ -830,13 +708,6 @@ main {
     color: #2b1400;
 }
 
-/* Decorative brand icons (the "Destacadas" set) — the same idea as ATP's
-   old footer shapes, just Argentina 1810's own motifs. Covers the whole
-   footer (behind the actual columns, z-index below .site-footer__grid) so
-   a handful of them can drift in and out anywhere there's empty space —
-   left of the brand column, between the two columns, to the right of the
-   links — never on top of the text itself (JS keeps clear of those
-   columns' actual boxes, see site.js). */
 .site-footer__shapes {
     position: absolute;
     inset: 0;
@@ -873,17 +744,9 @@ main {
     height: 44px;
     width: auto;
     vertical-align: middle;
-    /* The source SVG has its own multi-color fills; force it to solid
-       white regardless (brightness(0) makes it pure black, invert(1)
-       flips that to pure white). */
     filter: brightness(0) invert(1);
 }
 
-/* Floating WhatsApp button — present on every page of both tracks (it
-   lives in the shared footer partial, which the splash page never
-   includes). Free Explorer gets the brand's light violet; Partner Agency
-   gets the brand gold — each track's accent, not its own dominant color,
-   so the button stands out against the page instead of blending in. */
 .whatsapp-float {
     position: fixed;
     right: 24px;
@@ -900,8 +763,6 @@ main {
     animation: whatsappFloatPulse 4.5s ease-in-out infinite;
 }
 
-/* Mostly still, with a quick grow-shrink "invitation to click" near the
-   end of each cycle rather than a constant breathing motion. */
 @keyframes whatsappFloatPulse {
     0%, 78%, 100% {
         transform: scale(1);
@@ -954,8 +815,6 @@ main {
     color: #fff;
 }
 
-/* ---------- Buttons ---------- */
-
 .btn-cta {
     display: inline-flex;
     align-items: center;
@@ -999,20 +858,11 @@ main {
     transform: translateY(-2px);
 }
 
-/* Mobile-only: bump the root font-size 1px above the browser default so
-   every rem-based size site-wide reads slightly bigger — also overrides
-   the legacy ATP stylesheet's html{font-size:93%} mobile rule (which
-   shrank everything instead). Loads after styles.css, same specificity,
-   so this wins wherever both apply. */
 @media (max-width: 767.98px) {
     html {
         font-size: 17px;
     }
 
-    /* Paragraph-style body copy reads oversized on mobile (the +1px root
-       bump above compounds with sizes already tuned for desktop) — titles
-       are fine as they are, so this only touches running text, not
-       headings. */
     .section-lede,
     .destino-detail__text,
     .vibe-itinerary__summary,
@@ -1021,8 +871,6 @@ main {
         font-size: 0.9rem;
     }
 }
-
-/* ---------- Mobile nav ---------- */
 
 @media (max-width: 860px) {
     .site-navbar {
@@ -1059,20 +907,10 @@ main {
         display: flex;
     }
 
-    /* The header is a fixed-height box that just grows taller when the
-       mobile menu opens, flush against the page content below it — a
-       shadow on that edge keeps it from blending into whatever color
-       the page itself has there. */
     .site-header:has(.site-navbar__links.is-open) {
         box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.35);
     }
 
-    /* Free Explorer's violet hover/active (normally scoped to
-       .nav-cliente-alt, the marker its inner pages carry) never reaches
-       Home, which only has site-header--cliente — it fell back to the
-       site's default gold accent instead. Scoping to site-header--cliente
-       instead covers every Free Explorer page, Home included, so the menu
-       behaves the same everywhere. */
     .site-header--cliente .nav-link.active {
         color: #7208B7;
         border-bottom-color: #7208B7;
@@ -1085,12 +923,6 @@ main {
         color: #4B0578;
     }
 
-    /* Mirror issue, opposite direction: .theme-partners-violet (meant only
-       for Partner Agency Home's own hero — eyebrow, title, CTA button) sits
-       on <body>, so its --color-accent/-light swap to violet inherits into
-       the nav too since those are just CSS custom properties. Force the nav
-       back to the brand gold every other Partner Agency page already uses,
-       regardless of that page-level theme swap. */
     .site-header--partners .nav-link.active {
         color: #EFBB52;
         border-bottom-color: #EFBB52;
@@ -1113,9 +945,6 @@ main {
     }
 
     .site-footer__col--brand {
-        /* flex-basis: 320px was sized for the desktop row layout (width).
-           In column direction that 320px becomes a height hint instead,
-           leaving a tall empty box — reset it to size by content. */
         flex-basis: auto;
     }
 
@@ -1128,11 +957,6 @@ main {
     }
 }
 
-/* ==========================================================================
-   Page components — hero, trust grid, Argentine Host, Travel Vibe, Destinos,
-   Blog, contact forms. Shared by both /cliente/ and /partners/.
-   ========================================================================== */
-
 .hero {
     padding: clamp(48px, 9vw, 110px) 0 clamp(56px, 8vw, 90px);
 }
@@ -1144,9 +968,6 @@ main {
     align-items: center;
 }
 
-/* Hero with a full-bleed background video (landscapes of Argentina) behind
-   just the eyebrow + title; the lede/CTAs and the institutional video move
-   into their own sections below it. */
 .hero--video {
     position: relative;
     padding: 0;
@@ -1228,8 +1049,6 @@ main {
     margin-top: 28px;
 }
 
-/* Nosotros intro: heading + copy on the left, the institutional video on
-   the right, side by side. */
 .nosotros-intro {
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
@@ -1240,7 +1059,6 @@ main {
 .nosotros-intro .section-lede {
     font-size: 0.92rem;
 }
-
 
 @media (max-width: 860px) {
     .nosotros-intro {
@@ -1266,9 +1084,6 @@ main {
     animation: videoPlaceholderPulse 2.6s ease-in-out infinite;
 }
 
-/* Real footage stands in for the not-yet-shot institutional video — same
-   landscapes clip used on the other banners, muted/looping as a preview;
-   clicking still opens the lightbox with sound and controls. */
 .video-placeholder__bg {
     position: absolute;
     inset: 0;
@@ -1292,8 +1107,6 @@ main {
     z-index: 1;
 }
 
-/* The enlarged copy inside the lightbox shouldn't keep breathing once
-   it's already "clicked open". */
 .video-modal-overlay .video-placeholder {
     animation: none;
 }
@@ -1310,10 +1123,6 @@ main {
     }
 }
 
-/* Clicking the video placeholder expands it into an overlay — same
-   blurred/tinted backdrop ATP used for its play modals — instead of
-   opening in place. Clicking anywhere (the backdrop or the enlarged
-   video itself) closes it again and stops playback. */
 .video-modal-overlay {
     position: fixed;
     inset: 0;
@@ -1330,6 +1139,10 @@ main {
 
 .video-modal-overlay.is-open {
     display: flex;
+}
+
+.video-modal-overlay:has([data-institutional-video="cliente"]) {
+    background: rgba(239, 187, 82, 0.4);
 }
 
 .video-modal-overlay .video-placeholder {
@@ -1369,8 +1182,6 @@ main {
     color: rgba(255, 255, 255, 0.85);
 }
 
-/* Numbered process steps (Cómo trabajamos) */
-
 .process-list {
     list-style: none;
     margin: 28px 0 0;
@@ -1393,8 +1204,6 @@ main {
     animation: processGlow 7.5s ease-in-out infinite;
 }
 
-/* A brief glow sweeps down the steps in order, one at a time, then loops —
-   each li gets the same animation, just staggered by its own step number. */
 .process-list li:nth-child(1) { animation-delay: 0s; }
 .process-list li:nth-child(2) { animation-delay: 1.5s; }
 .process-list li:nth-child(3) { animation-delay: 3s; }
@@ -1431,8 +1240,6 @@ main {
     justify-content: center;
 }
 
-/* Trust grid / principles */
-
 .trust-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1440,11 +1247,6 @@ main {
     margin-top: 28px;
 }
 
-/* "Por qué viajar con nosotros" coverflow: same one-card-up-front,
-   rest-stacked-behind animation ATP's "Quienes somos" carousel used —
-   same transform math, ported to plain JS/CSS here instead of reusing the
-   legacy .about-* classes — but the cards keep their normal .trust-card
-   look (gray surface, violet dash, dark text), completely untouched. */
 .trust-coverflow {
     position: relative;
     max-width: 1300px;
@@ -1484,18 +1286,10 @@ main {
     height: 150px;
 }
 
-/* Partners' "Por qué elegirnos" has one much longer card (Argentine Host
-   service) — needs a taller wrapper so it never scrolls; partners'
-   shorter "Por qué trabajar con nosotros" stays at the compact default
-   instead of inheriting that extra height. */
 .trust-coverflow--tall .trust-coverflow-wrapper {
     height: 336px;
 }
 
-/* Free Explorer's "Por qué viajar con nosotros" also has one longer card
-   ("Nunca estás solo...") — its own size tier so it doesn't scroll either,
-   without making partners' shorter set (which shares the same compact
-   default) taller than it needs to be. */
 .trust-coverflow--nosotros .trust-coverflow-wrapper {
     height: 270px;
 }
@@ -1522,10 +1316,6 @@ main {
     --hover-scale: 1.04;
 }
 
-/* The little violet dash doubles as a progress bar for the active card:
-   it grows to the right while the card sits still, and reaching full
-   width is what triggers advancing to the next one (see the JS
-   animationend listener) — same dash, same color, just animated. */
 .trust-coverflow-wrapper .trust-card.pos--active::before {
     width: 30px;
     animation: trustCardProgress 3400ms linear forwards;
@@ -1578,21 +1368,11 @@ main {
         padding: 0 48px;
     }
 
-    /* The peeking side cards are pushed ±230/420px from center via
-       transform — on a mobile-width wrapper that's already almost or
-       fully outside its own box, so nothing visible is lost by clipping
-       here, but without this the page's scrollable width silently grows
-       to fit those off-screen cards, causing a horizontal scrollbar. */
     .trust-coverflow-wrapper {
         height: 232px;
         overflow: hidden;
     }
 
-    /* Both variants: taller than the longest card actually needs, with
-       plenty of headroom, and the internal scrollbar turned off — every
-       card in a given coverflow shares the same fixed height (so the
-       carousel doesn't jump as it cycles), so that height has to fit the
-       longest one with room to spare instead of clipping it. */
     .trust-coverflow--tall .trust-coverflow-wrapper {
         height: 440px;
     }
@@ -1606,9 +1386,6 @@ main {
         overflow-y: visible;
     }
 
-    /* "Por qué elegirnos" on Partner Agency's Cómo trabajamos — at 6%
-       white the cards barely read against the violet canvas on a small
-       screen. More opaque, frosted-glass look instead of near-invisible. */
     .trust-coverflow--tall .trust-card {
         background: rgba(255, 255, 255, 0.16);
         border-color: rgba(255, 255, 255, 0.3);
@@ -1639,8 +1416,6 @@ main {
     border-radius: 2px;
     margin-bottom: 24px;
 }
-
-/* Argentine Host block */
 
 .host-block {
     background: color-mix(in srgb, var(--color-primary) 85%, black);
@@ -1700,14 +1475,9 @@ main {
     margin-bottom: 14px;
 }
 
-/* Free Explorer's gold host-block background makes the base white text
-   hard to read — same dark neutral already used for body copy on gold
-   elsewhere (vibe-itinerary summary, destino detail text). */
 .nav-cliente-alt .host-block p {
     color: color-mix(in srgb, #2b1400 85%, transparent);
 }
-
-/* Travel Vibe */
 
 .vibe-grid {
     display: grid;
@@ -1741,9 +1511,6 @@ main {
     background: color-mix(in srgb, var(--color-secondary) 35%, transparent);
 }
 
-/* Selected-state badge — kept separate from the hover/focus border glow
-   (which looks the same either way) so "this is chosen" reads as its own
-   signal, not just "the mouse is near it". */
 .vibe-card__check {
     position: absolute;
     top: 14px;
@@ -1828,10 +1595,6 @@ main {
     color: #2b1400;
 }
 
-/* .destino-detail__meta's -64px margin-top is for overlapping a photo
-   banner above it (destino/itinerario hero pages) — there's no banner
-   here, so it needs resetting. Two classes on the same element to
-   out-rank .destino-detail__meta alone regardless of source order. */
 .destino-detail__meta.vibe-itinerary__meta {
     max-width: none;
     margin-top: 0;
@@ -1887,9 +1650,6 @@ main {
     color: color-mix(in srgb, #2b1400 70%, transparent);
 }
 
-/* Destinos — uniform photo tiles, 3 per row, name overlaid at the bottom.
-   Same hover language as the blog cards: the tile lifts a touch and the
-   photo itself zooms in behind it. */
 .destino-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1973,9 +1733,6 @@ main {
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
-/* Destino detail — same full-bleed banner idea as the blog post, but wider
-   and shorter so the destination name sits overlaid directly on the photo
-   (like the grid tile) instead of below it as a separate page title. */
 .destino-hero {
     position: relative;
     width: 100%;
@@ -1996,8 +1753,6 @@ main {
     object-fit: cover;
 }
 
-/* Pulled out of the centered flex flow so it doesn't collide with the
-   (also centered) title while there's no real photo yet. */
 .destino-hero .destino-card__placeholder {
     position: absolute;
     top: 90px;
@@ -2041,9 +1796,6 @@ main {
     margin: 0 0 24px;
 }
 
-/* A small stats-card row — set apart from the running text, like a mini
-   infographic, so "best time to visit" and "how long to stay" read as
-   quick facts rather than more paragraphs to parse. */
 .destino-detail__meta {
     position: relative;
     z-index: 2;
@@ -2062,16 +1814,11 @@ main {
     background: #EFBB52;
 }
 
-/* Partners' 3-field card (ideal para / mejor época / duración) — one row
-   of 3 equal columns instead of auto-fit's 2-column wrap. */
 .destino-detail__meta--row3 {
     grid-template-columns: repeat(3, 1fr);
     max-width: 780px;
 }
 
-/* Partners' destino CTA ("Quiero cotizar X") is violet instead of the
-   shared gold, on every screen size — cliente's own destino CTA keeps
-   its gold via the nav-cliente-alt exclusion below. */
 .page-white-canvas:not(.nav-cliente-alt) .destino-detail__cta .btn-cta--gold {
     background: #7208B7;
     color: #fff;
@@ -2083,9 +1830,6 @@ main {
     color: #fff;
 }
 
-/* Three fixed 1fr columns can't shrink below their content's natural
-   width, so on a narrow phone the row overflowed the page and caused a
-   horizontal scrollbar — stack them instead. */
 @media (max-width: 640px) {
     .destino-detail__meta--row3 {
         grid-template-columns: 1fr;
@@ -2151,16 +1895,11 @@ main {
     color: color-mix(in srgb, #2b1400 85%, transparent);
 }
 
-/* Partners' destino detail sits on the whitesmoke canvas too, but without
-   nav-cliente-alt's brownish override — the body text/quote need their own
-   dark-violet swap so they don't stay white-on-whitesmoke. */
 .page-white-canvas:not(.nav-cliente-alt) .destino-detail__text,
 .page-white-canvas:not(.nav-cliente-alt) .destino-detail__tip {
     color: #7208B7;
 }
 
-/* Itinerary day-by-day + map side by side on wide screens, map drops
-   below the days list once the column gets too narrow to hold both. */
 .itinerary-layout {
     display: grid;
     grid-template-columns: minmax(0, 680px) minmax(260px, 1fr);
@@ -2200,9 +1939,6 @@ main {
     }
 }
 
-/* Itinerary day-by-day accordion — native <details>/<summary> so each day
-   opens/closes with no JS, just the default marker swapped for a chevron
-   that rotates on open. */
 .itinerary-days__title {
     font-size: 1.3rem;
     margin: 0 0 14px;
@@ -2329,8 +2065,6 @@ main {
     color: #7208B7;
 }
 
-/* Blog */
-
 .blog-empty {
     margin-top: 32px;
     text-align: center;
@@ -2454,9 +2188,6 @@ main {
     color: var(--color-secondary);
 }
 
-/* Free Explorer's whitesmoke-canvas track: real white card + soft shadow
-   instead of the translucent-on-dark tint, to match the reference layout
-   (photo, white body, date, bold title, gray excerpt, gold "read more"). */
 .nav-cliente-alt .blog-card {
     background: #fff;
     border: none;
@@ -2471,8 +2202,6 @@ main {
 .nav-cliente-alt .blog-card__date {
     color: color-mix(in srgb, #2b1400 55%, transparent);
 }
-
-/* Single blog post */
 
 .section.blog-post {
     padding: 32px 0 24px;
@@ -2499,12 +2228,6 @@ main {
     margin-bottom: 0;
 }
 
-/* Full-bleed banner sits behind the fixed header, same overlay pattern as
-   the home hero: transparent nav on top of the image (page-hero-overlay
-   zeroes out main's padding-top), turning solid gold once scrolled.
-   `.nav-cliente-alt .site-header` (unconditional gold) outranks the base
-   `.site-header--overlay` transparency by specificity, so both states need
-   their own nav-cliente-alt-scoped override here to win. */
 .nav-cliente-alt .site-header--overlay {
     background: rgba(255, 255, 255, 0.06);
     border-bottom-color: rgba(255, 255, 255, 0.18);
@@ -2514,11 +2237,6 @@ main {
     background: #EDB034;
 }
 
-/* Mobile dropdown menu needs a readable background the instant it opens,
-   scrolled or not — always gold on Free Explorer, always violet on
-   Partner Agency, on every page (home included, which doesn't carry
-   nav-cliente-alt) via the track marker set on <header> itself. Placed
-   after the nav-cliente-alt overlay rules above so it wins that tie. */
 @media (max-width: 860px) {
     .site-header--partners.site-header--overlay {
         background: color-mix(in srgb, var(--color-primary) 82%, black) !important;
@@ -2590,10 +2308,6 @@ main {
     color: color-mix(in srgb, #2b1400 85%, transparent);
 }
 
-/* Floated beside the article text (title/lede/body wrap around it), tilted
-   like a polaroid — white frame, thicker at the bottom, slight rotation —
-   holding a single slot that cross-fades through a few "Destacadas" icons,
-   the same appear/disappear idea as ATP's old institutional imagery. */
 .blog-post__aside {
     float: right;
     width: clamp(180px, 24vw, 260px);
@@ -2627,8 +2341,6 @@ main {
     transition: opacity 1s ease;
 }
 
-/* Real photos fill the frame edge-to-edge instead of sitting padded and
-   contained like the icon fallback. */
 .blog-post__aside-img--photo {
     object-fit: cover;
     padding: 0;
@@ -2648,9 +2360,6 @@ main {
     color: var(--color-accent);
 }
 
-/* Decorative quote mark — a background image on a pseudo-element, not a
-   literal " character in the text, so it never gets selected/copied along
-   with the quoted sentence. */
 .blog-post__highlight::before {
     content: '';
     position: absolute;
@@ -2759,13 +2468,6 @@ main {
     }
 }
 
-/* Contact form */
-
-/* Same bowtie/hourglass shapes and drift as the splash page's fondo01,
-   reused behind both contact pages with each track's own colors — gold
-   for Free Explorer, violet for Partner Agency. Fixed + negative z-index
-   like the other fondoNN backgrounds, so it sits behind all real content
-   without needing z-index bumps on that content. */
 .contact-bowtie {
     position: fixed;
     inset: 0;
@@ -2781,16 +2483,6 @@ main {
     will-change: clip-path;
 }
 
-/* Each layer is one plain triangle (3 points), not a bowtie/hourglass.
-   The base (the edge glued to the left/right margin) is 8x taller than a
-   "normal" short base and stays pinned there — the animation moves only
-   the tip's x-position (via the clip-path itself, not a transform, which
-   would have dragged the base along with it), so the base never drifts
-   off its margin. Three tiers (a/b/c), same timing as the splash page's
-   fondo01 (8s/9.5s/11s, staggered delays), each tier mirrored as a
-   left+right pair that moves in perfect sync — so it reads as 3 triangles
-   going back and forth across the whole page, same as the index, instead
-   of 3 one-off shapes split unevenly between the two edges. */
 .contact-bowtie__layer--a-left {
     clip-path: polygon(-60% -199%, 29% 50%, -60% 301%);
     animation: contactBowtieDriftALeft 8s ease-in-out infinite;

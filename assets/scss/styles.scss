@@ -439,10 +439,6 @@ h6,
 /* Navbar: no overflow */
 
 
-// Mobile-only "Apto para todo público." wordmark, centered in the
-// navbar between the icon logo and the hamburger — links home like the
-// icon logo does. Hidden on desktop, where the icon logo already reads
-// fine on its own.
 
 
 
@@ -505,9 +501,8 @@ h6,
 /* Estilos para el ícono de WhatsApp */
 
 
-// Press-and-hold scroll button — sits where the WhatsApp button used to
-// be. JS flips the icon/direction between down and up depending on
-// whether the page is scrolled to the bottom.
+// Press-and-hold scroll button. JS flips the icon/direction between down
+// and up depending on whether the page is scrolled to the bottom.
 
 
 
@@ -1560,30 +1555,9 @@ nav.page-navbar .nav-item .nav-link.active:not(.btn) {
 
 
 @media (max-width: 799px) {
-  // .navbar-collapse used to sit in-flow as a flex sibling of the brand
-  // and the toggler inside .container (which has align-items: center),
-  // so opening it — height growing to fit 6 stacked links, width
-  // squeezed into a narrow column by justify-content: space-between —
-  // stretched the whole row taller and re-centered the brand/toggler
-  // into the middle of that taller row, and its cramped width also
-  // pushed its own content past the viewport's right edge. Taken out
-  // of that flow as a full-width dropdown below the bar instead, so
-  // opening it never moves the brand or toggler at all.
-  
-
-  
-
-  
-
-  
-
   nav.page-navbar .nav-item .nav-link {
     margin: 10px 0;
   }
-
-  // The centered "Apto para todo público." wordmark sits right where
-  // the dropdown lands when open — hide it then so they don't overlap.
-  
 }
 
 

@@ -5,10 +5,6 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- "/" (the access-picker splash) is intentionally left out — it's
-       marked noindex since it has no content of its own, just two links. -->
-
-  <!-- Free Explorer (B2C) -->
   <url>
     <loc>https://www.argentina1810.com/cliente/</loc>
     <lastmod>2026-11-05T00:00:00+00:00</lastmod>
@@ -40,7 +36,6 @@
     <priority>0.70</priority>
   </url>
 
-  <!-- Free Explorer — individual destino pages -->
   <url>
     <loc>https://www.argentina1810.com/cliente/destino.php?slug=buenos-aires</loc>
     <lastmod>2026-11-05T00:00:00+00:00</lastmod>
@@ -82,7 +77,6 @@
     <priority>0.70</priority>
   </url>
 
-  <!-- Free Explorer — blog posts -->
   <url>
     <loc>https://www.argentina1810.com/cliente/blog-post.php?slug=chalten-trekking-guia</loc>
     <lastmod>2026-03-10T00:00:00+00:00</lastmod>
@@ -104,7 +98,6 @@
     <priority>0.55</priority>
   </url>
 
-  <!-- Partner Agency (B2B) -->
   <url>
     <loc>https://www.argentina1810.com/partners/</loc>
     <lastmod>2026-11-05T00:00:00+00:00</lastmod>
@@ -131,7 +124,6 @@
     <priority>0.65</priority>
   </url>
 
-  <!-- Partner Agency — individual destino pages -->
   <url>
     <loc>https://www.argentina1810.com/partners/destino.php?slug=buenos-aires</loc>
     <lastmod>2026-11-05T00:00:00+00:00</lastmod>

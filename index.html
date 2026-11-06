@@ -20,18 +20,12 @@
         href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap">
 
     <style>
-        /* Brand tokens — manual de marca "Argentina 1810" */
         :root {
             --color-primary: #7208B7;
-            /* Tech Purple */
             --color-secondary: #B979F7;
-            /* Deep Mauve */
             --color-accent: #EFBB52;
-            /* Traditional Gold */
             --color-accent-light: #FED16E;
-            /* Golden Glow */
             --color-neutral: #D3D3D3;
-            /* Light Gray */
             --font-heading: 'Andor', 'Anton', 'Archivo Black', 'League Gothic', sans-serif;
             --font-body: 'Montserrat', sans-serif;
         }
@@ -64,15 +58,6 @@
             overflow-x: hidden;
         }
 
-        /* Fondo-01 — recreated from the original design file (assets/imgs/fondos/Fondos-01.png)
-           as layered, animatable shapes instead of a static raster. The source is a tall
-           (2250x4000) portrait pattern: 3 parallel diagonal bands nested in a bowtie/hourglass
-           shape, mirrored on both axes, in 4 purple shades, plus two inset gold rules near the
-           top/bottom edges. Colors and the diagonal boundary positions were sampled pixel-by-pixel
-           from the source file so this matches it closely. Each band is its own layer so it can
-           independently drift — that's the "animate it" part a flat PNG background can't do.
-           `xMidYMid slice`-equivalent behavior comes for free here since every layer is
-           percentage-based and fixed to the viewport. */
         .fondo01 {
             position: fixed;
             inset: 0;
@@ -87,11 +72,6 @@
             will-change: transform;
         }
 
-        /* Same bands as the original fondo-01 recreation, rotated 90° — the
-           light/dark banding that ran left-to-right (converging toward a
-           vertical mid-line) now runs top-to-bottom (converging toward a
-           horizontal mid-line), so the sway animation drifts vertically
-           (translateY) instead of sideways. */
         .fondo01__layer--a {
             background: #8628C9;
             clip-path: polygon(0% -8.04%, 50% 29.7%, 100% -8.04%, 100% 108.04%, 50% 70.3%, 0% 108.04%);

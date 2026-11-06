@@ -1,13 +1,7 @@
-// Travel Vibe card titles on mobile: grow each one as large as it can go
-// while still fitting on a single line. A flat font-size can't do this
-// well since the four names are very different lengths ("Active & Wild"
-// vs "Food, Wine & Comfort") — this measures each card's actual rendered
-// text against its available width instead of guessing a size that
-// happens to fit the longest one and leaves the short ones small.
 (function () {
     var MOBILE_QUERY = '(max-width: 767.98px)';
-    var MAX_SIZE = 26; // px — generous ceiling for short names like "Active & Wild"
-    var MIN_SIZE = 14; // px — floor so a long name never gets unreadably small
+    var MAX_SIZE = 26;
+    var MIN_SIZE = 14;
 
     function fit(el) {
         el.style.whiteSpace = 'nowrap';

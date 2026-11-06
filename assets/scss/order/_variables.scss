@@ -161,11 +161,6 @@ $font-family-heading:         'Andor', 'Anton', 'Archivo Black', 'League Gothic'
 $font-family-sans-serif:      'Montserrat', sans-serif;
 $font-family-base:            $font-family-sans-serif;
 
-// Was hardcoded here as just 'Andor', sans-serif — out of sync with
-// $font-family-heading above, so every element site-wide styled via
-// var(--font-heading) (site.css, 14+ rules) was missing the Anton/Archivo
-// Black/League Gothic fallbacks that $font-family-heading itself already
-// had. Interpolated now so the two can't drift apart again.
 :root {
   --font-heading: #{$font-family-heading};
   --font-body: #{$font-family-sans-serif};

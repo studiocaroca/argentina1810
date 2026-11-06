@@ -1,4 +1,5 @@
 node_modules/
+.claude/
 
 # Contenido editable desde /admin/ — vive en el servidor, no en Git.
 # El deploy nunca debe pisar lo que carga el cliente desde el panel.
